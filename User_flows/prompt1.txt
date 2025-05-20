@@ -1,0 +1,18 @@
+You are a UX design expert. The feature under evaluation is the Music App’s new "Friend Activity" feature, also known as “See what your friends are playing.”
+Given several user flows that represent different ways users currently interact with this feature.
+
+[FLOW]
+
+
+*Task: Please help identify any missing combinations or alternative user paths that a user might reasonably take based only on the steps already provided. Do not invent any new steps or interfaces — focus solely on logical rearrangements, skipped steps, or alternative paths that could occur within the existing flow structure.
+*Format: Please return your suggestions (including all possible missing combinations or alternative user paths) in the following JSON format:
+{
+  "user_flow_title": "",
+  "missing_flows": [
+    {
+      "missing_flow_id": "",
+      "reasoning": "Explain why this flow is missing or important",
+      "steps": []
+    }
+  ]
+}

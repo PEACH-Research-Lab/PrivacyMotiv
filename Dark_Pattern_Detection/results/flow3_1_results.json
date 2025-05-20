@@ -1,0 +1,27 @@
+[
+    {
+        "user_flow_title": "Viewing Friend Activity on the Music App",
+        "dark_patterns_in_this_flow": [
+          {
+            "dark_pattern_location": "step2",
+            "action": "Click on the 'Following' button, then the system checks and finds that the selected user is a synced Facebook friend.",
+            "interface": "In the middle section — the user's profile page — the square button turns into 'Follow'. On the right section — the Friend Activity sidebar — the unwanted user still appears in the list of existing friends' listening activity.",
+            "dark_patterns": [
+              {
+                "high_level_pattern": "Sneaking",
+                "reasoning": "The system disguises or delays the disclosure that unfollowing does not remove the friend from the Friend Activity list, leading users to take an action they wouldn’t have taken had the outcome been clearly communicated."
+              },
+              {
+                "meso_level_pattern": "(De)contextualizing Cues",
+                "reasoning": "The action (unfollowing) is presented in a context where the consequence (user remains in the Friend Activity feed) is not clearly linked or explained, causing user confusion."
+              },
+              {
+                "low_level_pattern": "Conflicting Information",
+                "reasoning": "The user interface implies that unfollowing a user will remove them from the Friend Activity feed, but after the action is taken, the unwanted user still appears, creating conflicting expectations and actual outcomes."
+              }
+            ]
+          }
+        ]
+    }
+    
+]

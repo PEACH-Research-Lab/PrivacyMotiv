@@ -1,0 +1,142 @@
+[
+    {
+      "user_flow_title": "Adding Friends via Facebook Connection",
+      "flows": [
+        {
+          "flow_id": "flow1",
+          "steps": [
+            {
+                "start": "Launch the Music application on a desktop computer",
+                "interface": "Home page"
+            },
+            {
+                "step": 1,
+                "action": "Click on the 'Friend Activity' button in the top-right corner to open the Friend Activity sidebar.",
+                "interface": "Friend Activity sidebar — includes an 'Add Friends' button and a 'Turn Off the Sidebar' button in the top-right corner. Below is either a list of existing friends' listening activity, or two messages: 'Let friends and followers see what you are listening to' and 'Go to Settings > Social and enable “Share my listening activity”. You can turn this off at any time', along with a large white 'Settings' button."
+            },
+            {
+                "step": 2,
+                "action": "Click the 'Add Friends' button.",
+                "interface": "Friend Activity sidebar — displays one large blue button labeled 'Connect with Facebook' and two messages: 'Connect with Facebook to see what your friends are playing', and 'We'll never post to Facebook without your permission.'"
+            },
+            {
+                "step": 3,
+                "action": "Click the 'Connect with Facebook' button.",
+                "interface": "A Facebook login pop-up window appears — asking the user to enter account details (email/phone number and password)."
+            },
+            {
+                "step": 4,
+                "action": "Enter Facebook account information and click 'Log In', then the system verifies whether you entered the correct information and are authorized to link your Facebook account (e.g., access your name, profile picture, and friend list) to grant the necessary permissions.",
+                "interface": "The Friend Activity sidebar now displays a list of your friends along with their current tracks and playlists.",
+                "endpoint": true,
+                "true_reasoning": "The system verified the correct credentials and successfully linked your Facebook account, allowing access to your name, profile picture, and friend list."
+            }
+          ]
+        },
+        {
+            "flow_id": "flow2",
+            "steps": [
+              {
+                "start": "Launch the Music application on a desktop computer",
+                "interface": "Home page"
+              },
+              {
+                "step": 1,
+                "action": "Click on the 'Friend Activity' button in the top-right corner to open the Friend Activity sidebar.",
+                "interface": "Friend Activity sidebar — includes an 'Add Friends' button and a 'Turn Off the Sidebar' button in the top-right corner. Below is either a list of existing friends' listening activity, or two messages: 'Let friends and followers see what you are listening to' and 'Go to Settings > Social and enable “Share my listening activity”. You can turn this off at any time', along with a large white 'Settings' button."
+              },
+              {
+                "step": 2,
+                "action": "Click the 'Add Friends' button.",
+                "interface": "Friend Activity sidebar — displays one large blue button labeled 'Connect with Facebook' and two messages: 'Connect with Facebook to see what your friends are playing', and 'We'll never post to Facebook without your permission.'"
+              },
+              {
+                "step": 3,
+                "action": "Click the 'Connect with Facebook' button.",
+                "interface": "A Facebook login pop-up window appears — asking the user to enter account details (email/phone number and password)."
+              },
+              {
+                "step": 4,
+                "action": "Enter Facebook account information and click 'Log In'. then the system fails to verify whether you entered the correct information and are authorized to link your Facebook account (e.g., access your name, profile picture, and friend list) to grant the necessary permissions.",
+                "interface": "Returned to the Friend Activity sidebar - shows a list of existing friends' listening activity, or two messages: 'Let friends and followers see what you are listening to.' and 'Go to Settings > Social and enable “Share my listening activity”. You can turn this off at any time', along with a large white 'Settings' button.",
+                "endpoint": false,
+                "false_reasoning": "The system could not verify the credentials or link your Facebook account, and returned to the Friend Activity sidebar interface."
+              }
+            ]
+        },
+        {
+            "flow_id": "flow3",
+            "steps": [
+              {
+                  "start": "Launch the Music application on a desktop computer",
+                  "interface": "Home page"
+              },
+              {
+                  "step": 1,
+                  "action": "Click on the profile picture or username in the top-right corner of the screen.",
+                  "interface": "A drop-down menu appears below the user profile picture in the top-right corner of the screen."
+              },
+              {
+                  "step": 2,
+                  "action": "Select 'Settings'.",
+                  "interface": "Settings page with several sub-sections. The sub-sections are: Account, Language, Explicit Content, Autoplay, Audio Quality, Your Library, Display, Zoom Level, Social, Playback, Startup and window behavior, Storage, and ProxySettings."
+              },
+              {
+                  "step": 3,
+                  "action": "Scroll down and find the 'Social' section.",
+                  "interface": "Settings page — under the 'Social' section, there are one 'connection' button and five toggle buttons. The first button shows 'Connect with Facebook' with the description 'Connect with Facebook to see what your friends are playing.' The five toggle buttons in order are: (1) 'Publish my new playlists on my profile' (default: on), (2) 'Start a private session' (default: off), (3) 'Share my listening activity' (default: off), (4) 'Show my recently played artists on my public profile' (default: on), and (5) 'Show my followers and following lists on my public profile' (default: on)."
+              },
+              {
+                  "step": 4,
+                  "action": "Click the 'Connect with Facebook' button.",
+                  "interface": "A Facebook login pop-up window appears — asking the user to enter account details (email/phone number and password)."
+              },
+              {
+                  "step": 5,
+                  "action": "Enter Facebook account information and click 'Log In'. then the system verifies whether you entered the correct information and are authorized to link your Facebook account (e.g., access your name, profile picture, and friend list) to grant the necessary permissions.",
+                  "interface": "The Friend Activity sidebar now displays a list of your friends along with their current tracks and playlists.",
+                  "endpoint": true,
+                  "true_reasoning": "The system verified the correct credentials and successfully linked your Facebook account, allowing access to your name, profile picture, and friend list."
+              }
+            ]
+        },
+        {
+              "flow_id": "flow4",
+              "steps": [
+                {
+                  "start": "Launch the Music application on a desktop computer",
+                  "interface": "Home page"
+                },
+                {
+                  "step": 1,
+                  "action": "Click on the profile picture or username in the top-right corner of the screen.",
+                  "interface": "A drop-down menu appears below the user profile picture in the top-right corner of the screen."
+                },
+                {
+                  "step": 2,
+                  "action": "Select 'Settings'.",
+                  "interface": "Settings page with several sub-sections. The sub-sections are: Account, Language, Explicit Content, Autoplay, Audio Quality, Your Library, Display, Zoom Level, Social, Playback, Startup and window behavior, Storage, and ProxySettings."
+                },
+                {
+                  "step": 3,
+                  "action": "Scroll down and find the 'Social' section.",
+                  "interface": "Settings page — under the 'Social' section, there are one 'connection' button and five toggle buttons. The first button shows 'Connect with Facebook' with the description 'Connect with Facebook to see what your friends are playing.' The five toggle buttons in order are: (1) 'Publish my new playlists on my profile' (default: on), (2) 'Start a private session' (default: off), (3) 'Share my listening activity' (default: off), (4) 'Show my recently played artists on my public profile' (default: on), and (5) 'Show my followers and following lists on my public profile' (default: on)."
+                },
+                {
+                  "step": 4,
+                  "action": "Click the 'Connect with Facebook' button.",
+                  "interface": "A Facebook login pop-up window appears — asking the user to enter account details (email/phone number and password)."
+                },
+                {
+                  "step": 5,
+                  "action": "Enter Facebook account information and click 'Log In'. then the system fails to verify whether you entered the correct information and are authorized to link your Facebook account (e.g., access your name, profile picture, and friend list) to grant the necessary permissions.",
+                  "interface": "Returned to the Friend Activity sidebar - shows a list of existing friends' listening activity, or two messages: 'Let friends and followers see what you are listening to.' and 'Go to Settings > Social and enable “Share my listening activity”. You can turn this off at any time', along with a large white 'Settings' button.",
+                  "endpoint": false,
+                  "false_reasoning": "The system could not verify the credentials or link your Facebook account, and returned to the Friend Activity sidebar interface."
+                }
+              ]
+        }
+      ]
+    }
+]
+  

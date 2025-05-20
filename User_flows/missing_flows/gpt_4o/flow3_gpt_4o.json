@@ -1,0 +1,79 @@
+[
+    {
+        "user_flow_title": "Removing Friends from Friend Activity Feed",
+        "missing_flows": [
+          {
+            "missing_flow_id": "missing_flow_A",
+            "reasoning": "Flow where user clicks the 'Following' button directly (instead of the three-dot menu) to unfollow a mutually followed friend is missing. This is a valid alternative to using the dropdown menu and mirrors flow2, but was only covered when the user is a Facebook friend (in flow1). Including this allows coverage of all removal actions initiated through the 'Following' button.",
+            "steps": [
+              {
+                "start": "Turn on the Friend Activity sidebar on your app",
+                "interface": "The Friend Activity feed displays a list of your friends along with their current tracks and playlists."
+              },
+              {
+                "step": 1,
+                "action": "Click on the username of the friend you want to remove.",
+                "interface": "User profile appears with 'Following' and three-dot button."
+              },
+              {
+                "step": 2,
+                "action": "Click on the 'Following' button, and the system confirms the user is a mutually followed friend.",
+                "interface": "The button changes to 'Follow'. The user disappears from the Friend Activity feed.",
+                "endpoint": true,
+                "true_reasoning": "The user disappears from the feed as expected, mirroring flow2 but via a different path."
+              }
+            ]
+          },
+          {
+            "missing_flow_id": "missing_flow_B",
+            "reasoning": "A flow where the user opens the three-dot menu but selects 'Block' immediately for a synced Facebook friend is not included. This case would likely still remove the user from the feed even if unfollowing alone doesn’t work for Facebook friends (as shown in flow1 and flow3). This is a valid action chain with a different outcome.",
+            "steps": [
+              {
+                "start": "Turn on the Friend Activity sidebar on your app",
+                "interface": "The Friend Activity feed displays a list of your friends along with their current tracks and playlists."
+              },
+              {
+                "step": 1,
+                "action": "Click on the username of the friend you want to remove.",
+                "interface": "User profile appears with 'Following' and three-dot button."
+              },
+              {
+                "step": 2,
+                "action": "Click on the three-dot icon.",
+                "interface": "Dropdown menu with options: Unfollow, Block, Report, Copy Link to Profile."
+              },
+              {
+                "step": 3,
+                "action": "Click on 'Block' and confirm in the pop-up window.",
+                "interface": "The user is blocked and disappears from the feed.",
+                "endpoint": true,
+                "true_reasoning": "Blocking should override platform-sync constraints and ensure removal."
+              }
+            ]
+          },
+          {
+            "missing_flow_id": "missing_flow_C",
+            "reasoning": "Flow where user clicks the 'Following' button for a mutually followed friend but no change is observed (unexpected outcome) is not covered. This can highlight inconsistencies in behavior between interface paths (e.g., blocking works, unfollowing does not) and help identify UX bugs.",
+            "steps": [
+              {
+                "start": "Turn on the Friend Activity sidebar on your app",
+                "interface": "The Friend Activity feed displays a list of your friends along with their current tracks and playlists."
+              },
+              {
+                "step": 1,
+                "action": "Click on the username of the friend you want to remove.",
+                "interface": "User profile appears with 'Following' and three-dot button."
+              },
+              {
+                "step": 2,
+                "action": "Click on the 'Following' button for a mutually followed friend.",
+                "interface": "The button changes to 'Follow', but the user still appears in the Friend Activity feed.",
+                "endpoint": false,
+                "false_reasoning": "Inconsistent removal behavior — user remains visible despite being unfollowed."
+              }
+            ]
+          }
+        ]
+      }
+      
+]

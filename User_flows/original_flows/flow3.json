@@ -1,0 +1,133 @@
+[
+    {
+      "user_flow_title": "Removing Friends from Friend Activity Feed",
+      "flows": [
+        {
+          "flow_id": "flow1",
+          "steps": [
+            {
+              "start": "Turn on the Friend Activity sidebar on your app",
+              "interface": "The Friend Activity feed displays a list of your friends along with their current tracks and playlists."
+            },
+            {
+              "step": 1,
+              "action": "View the list of your friends in the Friend Activity feed, and click on the username of the friend you want to remove.",
+              "interface": "The profile page of the selected user is displayed in the middle section of the app. Under their headshot, there is a square 'Following' button and a three-dot button representing 'More'."
+            },
+            {
+              "step": 2,
+              "action": "Click on the 'Following' button, then the system checks and finds that the selected user is a synced Facebook friend.",
+              "interface": "In the middle section — the user's profile page — the square button turns into 'Follow'. On the right section — the Friend Activity sidebar — the unwanted user still appears in the list of existing friends' listening activity.",
+              "endpoint": false,
+              "false_reasoning": "The unwanted user still appears in the list of existing friends' listening activity."
+            }
+          ]
+        },
+        {
+          "flow_id": "flow2",
+          "steps": [
+            {
+              "start": "Turn on the Friend Activity sidebar on your app",
+              "interface": "The Friend Activity feed displays a list of your friends along with their current tracks and playlists."
+            },
+            {
+              "step": 1,
+              "action": "View the list of your friends in the Friend Activity feed, and click on the username of the friend you want to remove.",
+              "interface": "The profile page of the selected user is displayed in the middle section of the app. Under their headshot, there is a square 'Following' button and a three-dot button representing 'More'."
+            },
+            {
+              "step": 2,
+              "action": "Click on the 'Following' button, then the system checks and finds that the selected user is a mutually followed friend on the Music app.",
+              "interface": "On the user profile page, under their headshot, the square button changes to 'Follow'. At the same time, the user disappears from the Friend Activity feed on the right section.",
+              "endpoint": true,
+              "true_reasoning": "The user disappears from your Friend Activity feed successfully."
+            }
+          ]
+        },
+        {
+          "flow_id": "flow3",
+          "steps": [
+            {
+              "start": "Turn on the Friend Activity sidebar on your app",
+              "interface": "The Friend Activity feed displays a list of your friends along with their current tracks and playlists."
+            },
+            {
+              "step": 1,
+              "action": "View the list of your friends in the Friend Activity feed, and click on the username of the friend you want to remove.",
+              "interface": "The profile page of the selected user is displayed in the middle section of the app. Under their headshot, there is a square 'Following' button and a three-dot button representing 'More'."
+            },
+            {
+              "step": 2,
+              "action": "Click on the three-dot icon.",
+              "interface": "A drop-down menu shows four options: Unfollow, Block, Report, and Copy Link to Profile. The 'Unfollow' option has a green icon, while the other three have gray icons."
+            },
+            {
+              "step": 3,
+              "action": "Click on the 'Unfollow' button, then the system checks and finds that the selected user is a synced Facebook friend.",
+              "interface": "In the middle section — the user's profile page — the square button turns into 'Follow'. On the right section — the Friend Activity sidebar — the unwanted user still appears in the list of existing friends' listening activity.",
+              "endpoint": false,
+              "false_reasoning": "The unwanted user still appears in the list of existing friends' listening activity."
+            }
+          ]
+        },
+        {
+          "flow_id": "flow4",
+          "steps": [
+            {
+              "start": "Turn on the Friend Activity sidebar on your app",
+              "interface": "The Friend Activity feed displays a list of your friends along with their current tracks and playlists."
+            },
+            {
+              "step": 1,
+              "action": "View the list of your friends in the Friend Activity feed, and click on the username of the friend you want to remove.",
+              "interface": "The profile page of the selected user is displayed in the middle section of the app. Under their headshot, there is a square 'Following' button and a three-dot button representing 'More'."
+            },
+            {
+              "step": 2,
+              "action": "Click on the three-dot icon.",
+              "interface": "A drop-down menu shows four options: Unfollow, Block, Report, and Copy Link to Profile. The 'Unfollow' option has a green icon, while the other three have gray icons."
+            },
+            {
+              "step": 3,
+              "action": "Click on the 'Unfollow' button, then the system checks and finds that the selected user is a mutually followed friend on the Music app.",
+              "interface": "On the user profile page, under their headshot, the square button changes to 'Follow'. At the same time, the user disappears from the Friend Activity feed on the right section.",
+              "endpoint": true,
+              "true_reasoning": "The user disappears from your Friend Activity feed successfully."
+            }
+          ]
+        },
+        {
+          "flow_id": "flow5",
+          "steps": [
+            {
+              "start": "Turn on the Friend Activity sidebar on your app",
+              "interface": "The Friend Activity feed displays a list of your friends along with their current tracks and playlists."
+            },
+            {
+              "step": 1,
+              "action": "View the list of your friends in the Friend Activity feed, and click on the username of the friend you want to remove.",
+              "interface": "The profile page of the selected user is displayed in the middle section of the app. Under their headshot, there is a square 'Following' button and a three-dot button representing 'More'."
+            },
+            {
+              "step": 2,
+              "action": "Click on the three-dot icon.",
+              "interface": "A drop-down menu shows four options: Unfollow, Block, Report, and Copy Link to Profile. The 'Unfollow' option has a green icon, while the other three have gray icons."
+            },
+            {
+              "step": 3,
+              "action": "Click on the 'Block' button.",
+              "interface": "A pop-up window appears with the title 'Block {the selected user}?' and the message '{the selected user} will no longer be able to see your profile, follow you, or see your listening activity.' There are two buttons below this message: a gray 'Cancel' button and a green 'Block' button."
+            },
+            {
+              "step": 4,
+              "action": "Click on the 'Block' button in the pop-up window.",
+              "interface": "On the user profile page, under their headshot, the square button changes to 'Follow'. At the same time, the user disappears from the Friend Activity feed on the right section.",
+              "endpoint": true,
+              "true_reasoning": "The user disappears from your Friend Activity feed successfully."
+            }
+          ]
+        }
+      ]
+    }
+]
+  
