@@ -1,3 +1,329 @@
+// V1_results
 [
-  
+    {
+        "user_flow_title": "Viewing Friend Activity on the Music App",
+        "missing_flows": [
+          {
+            "missing_flow_id": "missing_flow1",
+            "reasoning": "Instead of enabling the 'Share my listening activity' in the Social settings, the user might first try connecting with Facebook to sync more friends.",
+            "steps": [
+              {
+                "start": "Launch music app on desktop",
+                "Interface": "Home page"
+              },
+              {
+                "step": 1,
+                "action": "Tap the Friend Activity icon at the top-right corner of the app window, located to the left of the Profile icon.",
+                "system_action": "The system checks and finds that you don't have any mutual-followed friend or synced Facebook friend who have turned on their 'Share my listening activity' setting to you.",
+                "interface": "The Friend Activity sidebar appears on the right third of the screen. The sidebar displays two messages: 'Let friends and followers see what you are listening to.' and 'Go to Settings > Social and enable “Share my listening activity.” You can turn this off at any time.' Below the messages, there is a large white button labeled 'Settings'."
+              },
+              {
+                "step": 2,
+                "action": "Click the 'Settings' button.",
+                "interface": "Settings page."
+              },
+              {
+                "step": 3,
+                "action": "Scroll down and find the 'Social' section.",
+                "interface": "The setting page under the 'Social' section, there is one connection button and five toggle buttons. The connection button shows 'Connect with Facebook' with the description connect with Facebook to see what your friends are playing. The five toggle buttons are: (1) 'Publish my new playlists on my profile' (default ON), (2) 'Start a private session' (default OFF), (3) 'Share my listening activity' (default OFF), (4) 'Show my recently played artists on my public profile' (default ON), and (5) 'Show my followers and following lists on my public profile' (default ON)."
+              },
+              {
+                "step": 4,
+                "action": "Connect with Facebook using the connection button.",
+                "system_action": "Attempt to sync Facebook friends who are using the app.",
+                "interface": "Friend Activity sidebar appears again with updated information based on any newly synced friends from Facebook."
+              }
+            ]
+          },
+          {
+            "missing_flow_id": "missing_flow2",
+            "reasoning": "User might directly enable 'See what your friends are playing' from the Display settings without accessing the Social settings.",
+            "steps": [
+              {
+                "start": "Launch music app on desktop",
+                "Interface": "Home page"
+              },
+              {
+                "step": 1,
+                "action": "Click on the profile picture or username on the top right corner of the screen.",
+                "interface": "A drop-down menu appears under the user profile picture in the top-right corner of the screen."
+              },
+              {
+                "step": 2,
+                "action": "Select 'Settings'.",
+                "interface": "Settings page with multiple subtitle sections including Account, Language, Explicit content, Autoplay, Audio quality, Your Library, Display, Zoom level, Social, Playback, Startup and window behavior, Storage, and Proxy Settings."
+              },
+              {
+                "step": 3,
+                "action": "Scroll down and find the 'Display' section.",
+                "interface": "The setting page under the 'Display' section, there are three toggle buttons: (1) 'Show the now-playing panel on click of play' (default ON), (2) 'Display short, looping visuals on tracks (Canvas)' (default ON), (3) 'See what your friends are playing' (default OFF)."
+              },
+              {
+                "step": 4,
+                "action": "Find the 'See what your friends are playing' toggle button and switch it on.",
+                "system_action": "The system checks and finds that you do have some mutual-followed friends or synced Facebook friends who have turned on their 'Share my listening activity' setting to you.",
+                "interface": "Friend Activity sidebar appears on the right third of the screen. The sidebar displays a list of your friends along with the tracks and playlists they are currently listening to, or the most recent listened tracks in the past 7 days."
+              },
+              {
+                "endpoint": true,
+                "interface": "Friend Activity sidebar displays a list of your friends listen activities.",
+                "true_reasoning": "The Friend Activity sidebar is successfully opened without needing to go through all social settings."
+              }
+            ]
+          }
+        ]
+      }
+]
+
+
+// V2_results
+[
+    {
+        "user_flow_title": "Viewing Friend Activity on the Music App",
+        "missing_flows": [
+          {
+            "missing_flow_id": "alternative_path_1",
+            "description": "User accesses the Friend Activity sidebar through a direct link or shortcut instead of navigating through settings or the Friend Activity icon.",
+            "steps": [
+              {
+                "start": "User has the app running on desktop and receives a direct link or uses a keyboard shortcut.",
+                "interface": "Home page"
+              },
+              {
+                "step": 1,
+                "action": "Use the direct link or keyboard shortcut to access Friend Activity.",
+                "interface": "[INFERENCE] Friend Activity sidebar attempts to open, checking for friend data.",
+                "system_action": "The system checks for any mutual-followed friends or synced Facebook friends who have the 'Share my listening activity' setting enabled."
+              },
+              {
+                "endpoint": true,
+                "interface": "Depending on the result of the system check, the Friend Activity sidebar displays either the list of friend activities or the informational messages with the 'Settings' button.",
+                "true_reasoning": "If friends with shared activity are available, their activities are displayed. Otherwise, a prompt to enable sharing is shown."
+              }
+            ]
+          },
+          {
+            "missing_flow_id": "alternative_path_2",
+            "description": "User navigates directly to the Social settings to ensure all social features are enabled before attempting to view Friend Activity.",
+            "steps": [
+              {
+                "start": "User launches the music app on desktop.",
+                "interface": "Home page"
+              },
+              {
+                "step": 1,
+                "action": "Click on the profile picture or username on the top right corner of the screen.",
+                "interface": "Drop-down menu with 'Settings' option"
+              },
+              {
+                "step": 2,
+                "action": "Select 'Settings'.",
+                "interface": "Settings page with multiple subtitle sections."
+              },
+              {
+                "step": 3,
+                "action": "Scroll down and select 'Social' section.",
+                "interface": "Social settings with Facebook connection button and toggle options."
+              },
+              {
+                "step": 4,
+                "action": "Ensure 'Share my listening activity' is switched ON.",
+                "interface": "[INFERENCE] Confirmation message or refreshed interface with personal social sharing settings",
+                "system_action": "System updates user's sharing preferences."
+              },
+              {
+                "step": 5,
+                "action": "Navigate back to the home page.",
+                "interface": "Home page with potential direct access to Friend Activity icon."
+              },
+              {
+                "step": 6,
+                "action": "Tap the Friend Activity icon.",
+                "interface": "Friend Activity sidebar opens with updated preferences.",
+                "system_action": "System checks updated friend list with sharing preferences."
+              },
+              {
+                "endpoint": true,
+                "interface": "Depending on the result of the system check, the Friend Activity sidebar displays either the list of friend activities or the informational messages with the 'Settings' button.",
+                "true_reasoning": "User's social preferences now allow full access to friends' activities, displaying them if available."
+              }
+            ]
+          }
+        ]
+      }
+]
+
+
+// V3 prompt (without inference)
+[
+    {
+        "user_flow_title": "Viewing Friend Activity on the Music App",
+        "missing_flows": [
+          {
+            "missing_flow_id": "alternative_path_1",
+            "description": "User toggles 'See what your friends are playing' in Display settings and then relies on the application prompt for next steps instead of navigating to Social settings.",
+            "steps": [
+              {
+                "start": "User launches the music app on desktop.",
+                "interface": "Home page"
+              },
+              {
+                "step": 1,
+                "action": "Click on the profile picture or username in the top right corner.",
+                "interface": "A drop-down menu appears under the user profile picture."
+              },
+              {
+                "step": 2,
+                "action": "Select 'Settings'.",
+                "interface": "Settings page with subtitle sections including Display."
+              },
+              {
+                "step": 3,
+                "action": "Scroll to 'Display' section.",
+                "interface": "Display section with three toggle buttons including 'See what your friends are playing'."
+              },
+              {
+                "step": 4,
+                "action": "Toggle 'See what your friends are playing' to ON.",
+                "system_action": "Checks for friends with enabled 'Share my listening activity'.",
+                "interface": "Friend Activity sidebar appears with setup guidance."
+              },
+              {
+                "endpoint": true,
+                "interface": "Guidance on enabling Social sharing or showing Friends activity.",
+                "true_reasoning": "System reinforces next steps, or displays activities if setup completes."
+              }
+            ]
+          },
+          {
+            "missing_flow_id": "alternative_path_2",
+            "description": "User uses only the Friend Activity icon to initiate activation without directly accessing settings.",
+            "steps": [
+              {
+                "start": "User launches the music app on desktop.",
+                "interface": "Home page"
+              },
+              {
+                "step": 1,
+                "action": "Tap the Friend Activity icon at the top-right corner.",
+                "system_action": "Initiates check for friend activity and sharing settings.",
+                "interface": "Appearance of the Friend Activity sidebar with current state messages."
+              },
+              {
+                "step": 2,
+                "action": "Follow onscreen instructions or use sidebar 'Settings' button.",
+                "interface": "Settings page, automatically highlighting the needed Social settings."
+              },
+              {
+                "step": 3,
+                "action": "Enable 'Share my listening activity' in Social settings.",
+                "system_action": "System updates setting to allow sharing.",
+                "interface": "Return to Friend Activity or confirmation message."
+              },
+              {
+                "endpoint": true,
+                "interface": "Depending on mutual settings, display of Friend Activity or instructional messages.",
+                "true_reasoning": "Simpler activation route for those primarily using the icon path."
+              }
+            ]
+          }
+        ]
+      }
+]
+
+
+// V4
+[
+    {
+        "user_flow_title": "Viewing Friend Activity on the Music App",
+        "missing_flows": [
+          {
+            "missing_flow_id": "missing_flow1",
+            "description": "Enabling 'Share my listening activity' directly from 'Social' settings without engaging with 'Display' settings first.",
+            "missing_reasons": "Users already aware of the setting might navigate directly to 'Social' settings to enable the feature without visiting 'Display'.",
+            "steps": [
+              {
+                "start": "Launch music app on desktop",
+                "interface": "Home page"
+              },
+              {
+                "step": 1,
+                "action": "Click on the profile picture or username on the top right corner of the screen.",
+                "interface": "A drop-down menu appears under the user profile picture in the top-right corner of the screen."
+              },
+              {
+                "step": 2,
+                "action": "Select 'Settings'.",
+                "interface": "Settings page with multiple subtitle sections including Account, Language, Explicit content, Autoplay, Audio quality, Your Library, Display, Zoom level, Social, Playback, Startup and window behavior, Storage, and Proxy Settings."
+              },
+              {
+                "step": 3,
+                "action": "Scroll down and find the 'Social' section.",
+                "interface": "In the 'Social' section, there is one connection button and five toggle buttons. The connection button shows 'Connect with Facebook' with the description connect with Facebook to see what your friends are playing. The five toggle buttons are: (1) 'Publish my new playlists on my profile' (default ON), (2) 'Start a private session' (default OFF), (3) 'Share my listening activity' (default OFF), (4) 'Show my recently played artists on my public profile' (default ON), and (5) 'Show my followers and following lists on my public profile' (default ON)."
+              },
+              {
+                "step": 4,
+                "action": "Find 'Share my listening activity' and switch the toggle button to ON.",
+                "system_action": "The system checks for mutual-followed friends or synced Facebook friends who have turned on their 'Share my listening activity'.",
+                "interface": "Dependent on if friends are found sharing their activity. It either shows friend activities or instructs how to find friends through settings."
+              },
+              {
+                "endpoint": true,
+                "interface": "Successful or unsuccessful depending on friends sharing status.",
+                "true_reasoning": "Friend Activity sidebar displays a list of your friends' listening activities.",
+                "false_reasoning": "No visible friends activities due to lack of mutual settings."
+              }
+            ]
+          },
+          {
+            "missing_flow_id": "missing_flow2",
+            "description": "Connecting with Facebook before enabling 'See what your friends are playing'.",
+            "missing_reasons": "Users might choose to connect to Facebook first to discover more friends and their activities.",
+            "steps": [
+              {
+                "start": "Launch music app on desktop",
+                "interface": "Home page"
+              },
+              {
+                "step": 1,
+                "action": "Click on the profile picture or username on the top right corner of the screen.",
+                "interface": "A drop-down menu appears under the user profile picture in the top-right corner of the screen."
+              },
+              {
+                "step": 2,
+                "action": "Select 'Settings'.",
+                "interface": "Settings page with multiple subtitle sections including Account, Language, Explicit content, Autoplay, Audio quality, Your Library, Display, Zoom level, Social, Playback, Startup and window behavior, Storage, and Proxy Settings."
+              },
+              {
+                "step": 3,
+                "action": "Scroll down and find the 'Social' section.",
+                "interface": "The setting page under the 'Social' section, there is one connection button and five toggle buttons. The connection button shows 'Connect with Facebook' with the description connect with Facebook to see what your friends are playing. The five toggle buttons are: (1) 'Publish my new playlists on my profile' (default ON), (2) 'Start a private session' (default OFF), (3) 'Share my listening activity' (default OFF), (4) 'Show my recently played artists on my public profile' (default ON), and (5) 'Show my followers and following lists on my public profile' (default ON)."
+              },
+              {
+                "step": 4,
+                "action": "Click 'Connect with Facebook'.",
+                "system_action": "System opens Facebook authentication flow.",
+                "interface": "Prompt to authenticate and log in to Facebook."
+              },
+              {
+                "step": 5,
+                "action": "Complete Facebook authentication.",
+                "system_action": "User's Facebook friends who are on the music app are now visible.",
+                "interface": "Updated 'Social' section reflecting Facebook connection."
+              },
+              {
+                "step": 6,
+                "action": "Find 'Share my listening activity' and switch the toggle button to ON.",
+                "system_action": "The system updates and potentially shows more friends' listening activities.",
+                "interface": "Friend Activity sidebar potentially displays more friends' listening activities if available."
+              },
+              {
+                "endpoint": true,
+                "interface": "Friend Activity sidebar displays a more comprehensive list of friends' listening activities.",
+                "true_reasoning": "Connecting with Facebook allows access to a wider network of friends."
+              }
+            ]
+          }
+        ]
+      }
 ]

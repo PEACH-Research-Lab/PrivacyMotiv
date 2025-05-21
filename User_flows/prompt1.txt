@@ -1,3 +1,5 @@
+V1_prompt
+
 You are a UX design expert. The feature under evaluation is the Music App’s new "Friend Activity" feature, also known as “See what your friends are playing.”
 Given several user flows that represent different ways users currently interact with this feature.
 
@@ -17,3 +19,111 @@ Given several user flows that represent different ways users currently interact 
     }
   ]
 }
+
+
+
+V2_prompt
+
+You are a UX design expert specializing in identifying unexpected user paths and edge cases. The feature under evaluation is the Music App's new "Friend Activity" feature, also known as "See what your friends are playing."
+
+[INPUT FLOW]
+
+Task: Thoroughly analyze the provided user flow and identify EVERY reasonable alternative path users might take to achieve the goal specified in "user_flow_title".
+
+IMPORTANT: All interface descriptions MUST use ONLY terminology, UI elements, and system behaviors explicitly mentioned in the input flow. Do not invent or assume the existence of any buttons, screens, or features that are not clearly described in the provided input. Use the exact same language and terminology when describing interfaces. Do not invent new UI elements or features. Focus solely on realistic alternative paths within the established system as described in the input.
+
+Output Format: Return your complete set of suggestions as a JSON object following this structure:
+{
+  "user_flow_title": "Same as the input flow title",
+  "missing_flows": [
+    {
+      "missing_flow_id": "missing_flow1",
+      "description": "Brief description of this alternative path.",
+      "missing_reasons": "Explain why users might take this path and why it's important to consider",
+      "steps": [
+        {
+          "start": "Description of the starting state and context",
+          "interface": "Description of what the user sees at the start"
+        },
+        {
+          "step": 1,
+          "action": "What the user does in this step",
+          "interface": "What the user sees after taking this action",
+          "system_action": "What happens behind the scenes (if relevant)"
+        },
+        ...additional steps as needed,
+        {
+          "endpoint": true/false,
+          "interface": "Final state description",
+          "true_reasoning": "Explanation if goal was achieved",
+          "false_reasoning": "Explanation if goal was not achieved"
+        }
+      ]
+    },
+    ...additional missing flows
+  ]
+}
+
+Before submitting your response, verify that:
+1. You've captured EVERY possible alternative path a user might reasonably take
+2. All interface descriptions use ONLY terminology that appears in the input flow
+3. You've included all relevant fields for each step, matching the format of the input example
+
+// [removed] If any interface or system behavior needs to be described that isn't explicitly in the input, mark it clearly as an inference with "[INFERENCE]" to distinguish it from directly observed elements.
+
+
+
+
+
+
+V3_prompt
+
+You are a UX design expert. The feature under evaluation is the Music App’s new "Friend Activity" feature, also known as “See what your friends are playing.”
+Given several user flows that represent different ways users currently interact with this feature.
+
+[INPUT FLOW]
+
+Task: Thoroughly analyze the provided user flow and identify EVERY reasonable alternative path users might take to achieve the goal specified in "user_flow_title".
+
+IMPORTANT:
+1. All interface descriptions MUST use ONLY terminology, UI elements, and system behaviors explicitly mentioned in the input flow. Use the exact same language and terminology when describing interfaces.
+2. Do not invent or assume the existence of any buttons, screens, or features that are not clearly described in the provided input. Do not invent new UI elements or features. Focus solely on realistic alternative paths within the established system as described in the input.
+3. Captured EVERY possible alternative path a user might reasonably take. If both "true/false" endpoints are possible in the identified missing_flow, it count two missing_flows with two different endpoints.
+
+Output Format: Return your complete set of suggestions as a JSON object following this structure:
+{
+  "user_flow_title": "Same as the input flow title",
+  "missing_flows": [
+    {
+      "missing_flow_id": "missing_flow1",
+      "description": "Brief description of this alternative path.",
+      "missing_reasons": "Explain why users might take this path and why it's important to consider",
+      "steps": [
+        {
+          "start": "Description of the starting state and context",
+          "interface": "Description of what the user sees at the start"
+        },
+        {
+          "step": 1,
+          "action": "What the user does in this step",
+          "interface": "What the user sees after taking this action",
+          "system_action": "What happens behind the scenes (if relevant)"
+        },
+        ...additional steps as needed,
+        {
+          "endpoint": true/false,
+          "interface": "Description of what the user sees at the end",
+          "true_reasoning": "Explanation if goal was achieved" or "false_reasoning": "Explanation if goal was not achieved"
+        }
+      ]
+    },
+    ...additional missing flows
+  ]
+}
+
+// [removed] 
+Before submitting your response, verify that:
+1. You've captured EVERY possible alternative path a user might reasonably take
+2. All interface descriptions use ONLY terminology that appears in the input flows.
+3. Did not invent any new UI elements or features that not exists in the input flows.
+4. You've included all relevant fields for each step, matching the format of the input example
