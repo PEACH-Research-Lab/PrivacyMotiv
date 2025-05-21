@@ -3,7 +3,7 @@
         "user_flow_title": "Viewing Friend Activity on the Music App",
         "flows": [
           {
-            "flow_id": "flo",
+            "flow_id": "flow1",
             "steps": [
               {
                 "start": "Launch music app on desktop",

@@ -5,6 +5,7 @@ Given several user flows that represent different ways users currently interact 
 
 
 *Task: Please help identify any missing combinations or alternative user paths that a user might reasonably take based only on the steps already provided. Do not invent any new steps or interfaces — focus solely on logical rearrangements, skipped steps, or alternative paths that could occur within the existing flow structure.
+
 *Format: Please return your suggestions (including all possible missing combinations or alternative user paths) in the following JSON format:
 {
   "user_flow_title": "",
