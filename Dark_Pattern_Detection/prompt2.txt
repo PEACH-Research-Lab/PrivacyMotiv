@@ -1,3 +1,5 @@
+// V1_prompt
+
 Given the design brief of a user flow, a user flow and a dark pattern taxonomy, your task is to analyze the given user flow for potential dark patterns. For all three levels taxonomy, if any are present, pay close attention to where the dark pattern appears, what the dark pattern is (at each level: high, meso, and low), and why you believe it is a dark pattern. You are only allowed to match low-level patterns to their corresponding parent meso-level patterns, and match meso-level patterns to their corresponding parent high-level patterns, as defined below. Do not misassign them to where it does not belong to.
 
 Design Brief:
@@ -13,7 +15,7 @@ High-level patterns include general strategies that can be employed through a ra
 Meso-level patterns describe a context-agnostic angle of attack and may be interpreted in relations to context based on the specific modality or application type.
 Low-level patterns are situated and contextually dependent, including specific means of execution
 
-1: High-level pattern: Sneaking 
+1: High-level pattern: Sneaking
 Definition: Sneaking is a strategy which hides, disguises, or delays the disclosure of important information that, if made available to users, would cause a user to unintentionally take an action they would likely object to.
 
 1.1: Meso-level patterns: Bait and Switch
@@ -24,8 +26,8 @@ Definition: Disguised Ads Bait and Switch and use Sneaking to style interface el
 1.2: Meso-level patterns: Hiding Information
 Definition: Hiding Information subverts the user’s expectation that all relevant information to make an informed choice will be available to them, instead hiding information or delaying the disclosure of information until later in the user journey that may have led to them making another choice.
 1.2.1: Low-level patterns: Sneak into Basket
-Definition: Sneak into Basket Hides Information and uses Sneaking to add unwanted items to a user’s shopping cart without their consent. As a result, a user assumes that only the items they explicitly added to their cart will be purchased, leading to unintentional purchase of additional items. 
-1.2.2: Low-level patterns: Drip Pricing, Hidden Costs, or Partitioned Pricing 
+Definition: Sneak into Basket Hides Information and uses Sneaking to add unwanted items to a user’s shopping cart without their consent. As a result, a user assumes that only the items they explicitly added to their cart will be purchased, leading to unintentional purchase of additional items.
+1.2.2: Low-level patterns: Drip Pricing, Hidden Costs, or Partitioned Pricing
 Definition: Drip Pricing, Hidden Costs, or Partitioned Pricing Hides Information and uses Sneaking to reveal new charges or costs, present only partial price components,  or otherwise delay revealing the full price of a product or service  through late or incomplete disclosure. As a result, the user is misled about the total or complete price of the product or service, leading to them to make a purchase decision after they have expended effort on false pretenses.
 1.2.3: Low-level patterns: Reference Pricing
 Definition: Reference Pricing Hides Information and uses Sneaking to include a misleading or inaccurate price for a product or service that makes a discounted price appear more attractive. As a result, the user is misled into believing that the price they pay is discounted, leading them to make a decision to purchase a product or service on false pretenses.
@@ -63,4 +65,44 @@ Please return your analysis in JSON format using the following structure:
   ]
 }
 If a certain level of dark pattern does not apply to a step, simply omit that level from the list in that step. You may include multiple entries under dark_patterns_in_this_flow if multiple steps in the flow contain different dark patterns.
+
+
+
+// V2_prompt
+Given the design brief of a user flow, a user flow and a dark pattern taxonomy, your task is to analyze the given user flow for potential dark patterns. For all three levels taxonomy, if any are present, pay close attention to where the dark pattern appears, what the dark pattern is (at each level: high, meso, and low), and why you believe it is a dark pattern. You are only allowed to match low-level patterns to their corresponding parent meso-level patterns, and match meso-level patterns to their corresponding parent high-level patterns, as defined below. Do not misassign them to where it does not belong to.
+
+Design Brief:[Input Design Brief]
+
+User flow:[INPUT FLOW]
+
+Dark pattern taxonomy:[Additional messages]
+
+
+Please return your analysis in JSON format using the following structure:
+{
+  "user_flow_title": "Viewing Friend Activity on the Music App",
+  "dark_patterns_in_this_flow": [
+    {
+      "dark_pattern_location": "start/step1/step2/step3/…",
+      "action": "",
+      "interface": "",
+      "dark_patterns": [
+        {
+          "high_level_pattern": "",
+          "reasoning": ""
+        },
+        {
+          "meso_level_pattern": "",
+          "reasoning": ""
+        },
+        {
+          "low_level_pattern": "",
+          "reasoning": ""
+        }
+      ]
+    }
+  ]
+}
+If a certain level of dark pattern does not apply to a step, simply omit that level from the list in that step. You may include multiple entries under dark_patterns_in_this_flow if multiple steps in the flow contain different dark patterns.
+
 
