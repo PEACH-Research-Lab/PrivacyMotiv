@@ -1,0 +1,116 @@
+// flow3.1 works perfect
+[
+    {
+      "user_flow_title": "Removing Friends from Friend Activity Feed",
+      "dark_patterns_in_this_flow": [
+        {
+          "dark_pattern_location": "flow1/step2",
+          "action": "Click on the 'Following' button",
+          "interface": "In the middle section — the user's profile page — the square button turns into 'Follow'. On the right section — the Friend Activity sidebar — the unwanted user still appears in the list of existing friends' listening activity.",
+          "dark_patterns": [
+            {
+              "high_level_pattern": "Obstruction",
+              "meso_level_pattern": "Roach Motel",
+              "low_level_pattern": "Dead End",
+              "reasoning": "The user expects that clicking 'Following' to unfollow will remove the friend from the activity feed, but the interface subverts that by leaving them in place. This traps the user in the friend relationship for that feed, making it effectively impossible to reverse without resorting to the more severe 'block' action."
+            },
+            {
+              "high_level_pattern": "Interface Interference",
+              "meso_level_pattern": "Feedforward Ambiguity",
+              "reasoning": "The button label flips to 'Follow,' giving feedback that the unfollow action succeeded, yet the friend remains in the activity sidebar. This mismatch between feedback and outcome confuses the user about whether their action had any effect."
+            }
+          ]
+        }
+      ]
+    }
+]
+
+// flow3.2 doesn't work
+{
+    "user_flow_title": "Removing Friends from Friend Activity Feed",
+    "dark_patterns_in_this_flow": []
+  }
+
+//flow3.3
+[
+    {
+        "user_flow_title": "Removing Friends from Friend Activity Feed",
+        "dark_patterns_in_this_flow": [
+          {
+            "dark_pattern_location": "flow3/step2",
+            "action": "Click on the three-dot icon to open the menu",
+            "interface": "A drop-down menu shows four options: Unfollow (green icon), Block (gray icon), Report (gray), Copy Link to Profile (gray).",
+            "dark_patterns": [
+              {
+                "high_level_pattern": "Interface Interference",
+                "meso_level_pattern": "Manipulating Choice Architecture",
+                "low_level_pattern": "Visual Prominence",
+                "reasoning": "The green icon for ‘Unfollow’ is made more visually prominent than ‘Block’, steering users toward selecting an option that will not actually remove a synced Facebook friend from their activity feed."
+              }
+            ]
+          },
+          {
+            "dark_pattern_location": "flow3/step3",
+            "action": "Click on the 'Unfollow' button",
+            "interface": "The profile page button toggles to 'Follow', but the unwanted user remains in the Friend Activity sidebar.",
+            "dark_patterns": [
+              {
+                "high_level_pattern": "Obstruction",
+                "meso_level_pattern": "Roach Motel",
+                "low_level_pattern": "Dead End",
+                "reasoning": "Although the user attempts to unfollow, the system blocks removal of a synced Facebook friend, trapping the user in the relationship and preventing the intended task of removing them from the feed."
+              },
+              {
+                "high_level_pattern": "Interface Interference",
+                "meso_level_pattern": "Feedforward Ambiguity",
+                "reasoning": "The interface feedback (button changing to ‘Follow’) suggests the unfollow succeeded, but the friend’s continued presence in the feed contradicts that, leaving the user uncertain whether the action had any effect."
+              }
+            ]
+          }
+        ]
+      }
+]
+
+//flow3.4
+[
+    {
+        "user_flow_title": "Removing Friends from Friend Activity Feed",
+        "dark_patterns_in_this_flow": [
+          {
+            "dark_pattern_location": "flow4/step2",
+            "action": "Click on the three-dot icon.",
+            "interface": "A drop-down menu shows four options: Unfollow (green icon), Block (gray icon), Report (gray), Copy Link to Profile (gray).",
+            "dark_patterns": [
+              {
+                "high_level_pattern": "Interface Interference",
+                "meso_level_pattern": "Manipulating Choice Architecture",
+                "low_level_pattern": "Visual Prominence",
+                "reasoning": "The ‘Unfollow’ option is highlighted in green while the more privacy-protective ‘Block’ option is de-emphasized in gray, steering users toward the less protective action and away from blocking."
+              }
+            ]
+          }
+        ]
+      }
+]
+
+//flow3.5
+{
+    "user_flow_title": "Removing Friends from Friend Activity Feed",
+    "dark_patterns_in_this_flow": [
+      {
+        "dark_pattern_location": "flow5/step2",
+        "action": "Click on the three-dot icon.",
+        "interface": "A drop-down menu shows four options: Unfollow (green icon), Block (gray icon), Report (gray), Copy Link to Profile (gray).",
+        "dark_patterns": [
+          {
+            "high_level_pattern": "Interface Interference",
+            "meso_level_pattern": "Manipulating Choice Architecture",
+            "low_level_pattern": "Visual Prominence",
+            "reasoning": "The ‘Unfollow’ option is visually highlighted in green compared to the grayed‐out ‘Block’ option, nudging users toward the less privacy‐protective action and away from the more effective blocking choice."
+          }
+        ]
+      }
+    ]
+  }
+
+
