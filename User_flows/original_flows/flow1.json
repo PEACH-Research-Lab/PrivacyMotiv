@@ -3,7 +3,7 @@
         "user_flow_title": "Viewing Friend Activity on the Music App",
         "flows": [
           {
-            "flow_id": "flow1",
+            "flow_id": "flo",
             "steps": [
               {
                 "start": "Launch music app on desktop",
@@ -81,7 +81,7 @@
                 "interface": "Friend Activity sidebar appears on the right third of the screen."
               },
               {
-                "step": 5, 
+                "step": 5,
                 "action": "The system checks and finds that you don't have followers who have turned on their 'Share my listening activity' setting.",
                 "interface": "Friend Activity sidebar displays two messages: 'Let friends and followers see what you are listening to.' and 'Go to Settings > Social and enable “Share my listening activity”. You can turn this off at any time.' And there is a large white button labeled 'Settings'."
               },
@@ -132,7 +132,7 @@
                 "interface": "Friend Activity sidebar appears on the right third of the screen."
               },
               {
-                "step": 5, 
+                "step": 5,
                 "action": "The system checks and finds that you do have followers who have turned on their 'Share my listening activity' setting.",
                 "interface": "The Friend Activity sidebar displays a list of your friends along with the tracks and playlists they are currently listening to.",
                 "endpoint": true,
@@ -189,7 +189,7 @@
                 "interface": "The Friend Activity sidebar appears on the right third of the screen."
               },
               {
-                "step": 2, 
+                "step": 2,
                 "action": "The system checks and finds that you don't have followers who have turned on their 'Share my listening activity' setting.",
                 "interface": "Friend Activity sidebar displays two messages: 'Let friends and followers see what you are listening to.' and 'Go to Settings > Social and enable “Share my listening activity”. You can turn this off at any time.' And there is a large white button labeled 'Settings'."
               },
@@ -209,7 +209,7 @@
                 "interface": "The Friend Activity sidebar displays a list of your friends along with the tracks and playlists they are currently listening to.",
                 "endpoint": true,
                 "true_reasoning": "The Friend Activity sidebar is successfully opened."
-      
+
               }
             ]
           },
@@ -236,5 +236,5 @@
           }
         ]
       }
-      
+
 ]
