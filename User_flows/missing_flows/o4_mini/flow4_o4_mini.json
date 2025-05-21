@@ -1,3 +1,102 @@
+// base on v3_prompt
 [
-  
+  {
+    "user_flow_title": "Starting private listening via Private Session",
+    "missing_flows": [
+      {
+        "missing_flow_id": "missing_flow1",
+        "description": "Accidentally click 'Profile' instead of 'Private Session' in the drop-down menu, so no Private Session starts.",
+        "missing_reasons": "Users may misclick adjacent menu items and expect a Private Session to start. Important to surface that only the 'Private Session' option triggers the session.",
+        "steps": [
+          {
+            "start": "Launch the Music application on a desktop computer",
+            "interface": "Home page"
+          },
+          {
+            "step": 1,
+            "action": "Click on the profile picture or username in the top-right corner of the screen.",
+            "interface": "A drop-down menu appears below the user profile picture in the top-right corner of the screen. There are seven options in the drop-down menu, listed from top to bottom: Account, Profile, Upgrade to Premium, Support, Private Session, Settings, and Log out."
+          },
+          {
+            "step": 2,
+            "action": "Click 'Profile'.",
+            "interface": "The drop-down menu disappears, and your Profile page appears in the main pane."
+          },
+          {
+            "endpoint": false,
+            "interface": "Your Profile page is displayed; no blue padlock icon appears on the Top App Bar.",
+            "false_reasoning": "Clicking 'Profile' does not start a Private Session, so the blue padlock icon does not appear."
+          }
+        ]
+      },
+      {
+        "missing_flow_id": "missing_flow2",
+        "description": "Toggle 'Share my listening activity' in Social instead of 'Start a private session', so no Private Session starts.",
+        "missing_reasons": "Users might confuse similarly labeled toggles in Social settings. Important to clarify which toggle controls Private Session.",
+        "steps": [
+          {
+            "start": "Launch the Music application on a desktop computer",
+            "interface": "Home page"
+          },
+          {
+            "step": 1,
+            "action": "Click on the profile picture or username in the top-right corner of the screen.",
+            "interface": "A drop-down menu appears below the user profile picture in the top-right corner of the screen. There are seven options on the drop-down menu, from top to down are Account, Profile, Upgrade to Premium, Support, Private Session, Settings, and Log out."
+          },
+          {
+            "step": 2,
+            "action": "Click 'Settings'.",
+            "interface": "Settings page with several sub-sections. The sub-sections are: Account, Language, Explicit Content, Autoplay, Audio Quality, Your Library, Display, Zoom Level, Social, Playback, Startup and window behavior, Storage, and ProxySettings."
+          },
+          {
+            "step": 3,
+            "action": "Scroll down and find the 'Social' section.",
+            "interface": "Settings page — under the 'Social' section, there are one 'connection' button and five toggle buttons. The first button shows 'Connect with Facebook' with the description 'Connect with Facebook to see what your friends are playing.' The five toggle buttons in order are: (1) 'Publish my new playlists on my profile' (default: on), (2) 'Start a private session' (default: off), (3) 'Share my listening activity' (default: on), (4) 'Show my recently played artists on my public profile' (default: on), and (5) 'Show my followers and following lists on my public profile' (default: on)."
+          },
+          {
+            "step": 4,
+            "action": "Switch the 'Share my listening activity' toggle button to turn it off (or on).",
+            "interface": "Settings page under the 'Social' section, with the 'Share my listening activity' toggle changed.",
+            "system_action": "No blue padlock icon appears on the Top App Bar."
+          },
+          {
+            "endpoint": false,
+            "interface": "Settings page under the 'Social' section; no blue padlock icon appears on the Top App Bar.",
+            "false_reasoning": "Toggling 'Share my listening activity' does not start a Private Session."
+          }
+        ]
+      },
+      {
+        "missing_flow_id": "missing_flow3",
+        "description": "Scroll to the 'Playback' section looking for a private session option, but none exists there.",
+        "missing_reasons": "Users might assume Private Session belongs under Playback. Important to show that only the Social section contains that toggle.",
+        "steps": [
+          {
+            "start": "Launch the Music application on a desktop computer",
+            "interface": "Home page"
+          },
+          {
+            "step": 1,
+            "action": "Click on the profile picture or username in the top-right corner of the screen.",
+            "interface": "A drop-down menu appears below the user profile picture in the top-right corner of the screen. There are seven options on the drop-down menu, from top to down are Account, Profile, Upgrade to Premium, Support, Private Session, Settings, and Log out."
+          },
+          {
+            "step": 2,
+            "action": "Click 'Settings'.",
+            "interface": "Settings page with several sub-sections. The sub-sections are: Account, Language, Explicit Content, Autoplay, Audio Quality, Your Library, Display, Zoom Level, Social, Playback, Startup and window behavior, Storage, and ProxySettings."
+          },
+          {
+            "step": 3,
+            "action": "Scroll down and find the 'Playback' section.",
+            "interface": "Settings page under the 'Playback' section; various playback-related controls are displayed, but no 'Start a private session' toggle is present."
+          },
+          {
+            "endpoint": false,
+            "interface": "Settings page under the 'Playback' section; no blue padlock icon appears on the Top App Bar.",
+            "false_reasoning": "There is no Private Session control in 'Playback', so no session starts."
+          }
+        ]
+      }
+    ]
+  }
 ]

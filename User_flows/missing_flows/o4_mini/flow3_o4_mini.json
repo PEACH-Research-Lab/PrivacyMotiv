@@ -1,3 +1,106 @@
+// base on v3_prompt
 [
-  
+  {
+    "user_flow_title": "Removing Friends from Friend Activity Feed",
+    "missing_flows": [
+      {
+        "missing_flow_id": "missing_flow1",
+        "description": "Use the 'Report' option from the More menu in an attempt to remove the friend, but the friend remains in the feed.",
+        "missing_reasons": "Some users may think reporting a friend will remove them from their feed. Important to surface that reporting does not affect Friend Activity.",
+        "steps": [
+          {
+            "start": "Turn on the Friend Activity sidebar on your app",
+            "interface": "The Friend Activity feed displays a list of your friends along with their current tracks and playlists."
+          },
+          {
+            "step": 1,
+            "action": "View the list of your friends in the Friend Activity feed, and click on the username of the friend you want to remove.",
+            "interface": "The profile page of the selected user is displayed in the middle section of the app. Under their headshot, there is a square 'Following' button and a three-dot button representing 'More'."
+          },
+          {
+            "step": 2,
+            "action": "Click on the three-dot icon.",
+            "interface": "A drop-down menu shows four options: Unfollow, Block, Report, and Copy Link to Profile. The 'Unfollow' option has a green icon, while the other three have gray icons."
+          },
+          {
+            "step": 3,
+            "action": "Click on the 'Report' option.",
+            "interface": "The drop-down menu closes. The profile page remains displayed."
+          },
+          {
+            "endpoint": false,
+            "interface": "On the user profile page, under their headshot, the square 'Following' button remains. On the right section — the Friend Activity sidebar — the unwanted user still appears in the list of existing friends' listening activity.",
+            "false_reasoning": "Reporting does not remove the user from your Friend Activity feed."
+          }
+        ]
+      },
+      {
+        "missing_flow_id": "missing_flow2",
+        "description": "Use the 'Copy Link to Profile' option from the More menu in an attempt to remove the friend, but the friend remains in the feed.",
+        "missing_reasons": "Some users may explore the Copy Link option expecting it might hide or unlink the friend. Important to show that copying the link does not affect Friend Activity.",
+        "steps": [
+          {
+            "start": "Turn on the Friend Activity sidebar on your app",
+            "interface": "The Friend Activity feed displays a list of your friends along with their current tracks and playlists."
+          },
+          {
+            "step": 1,
+            "action": "View the list of your friends in the Friend Activity feed, and click on the username of the friend you want to remove.",
+            "interface": "The profile page of the selected user is displayed in the middle section of the app. Under their headshot, there is a square 'Following' button and a three-dot button representing 'More'."
+          },
+          {
+            "step": 2,
+            "action": "Click on the three-dot icon.",
+            "interface": "A drop-down menu shows four options: Unfollow, Block, Report, and Copy Link to Profile. The 'Unfollow' option has a green icon, while the other three have gray icons."
+          },
+          {
+            "step": 3,
+            "action": "Click on the 'Copy Link to Profile' option.",
+            "interface": "The drop-down menu closes. The profile page remains displayed; link is copied to clipboard (no UI confirmation shown)."
+          },
+          {
+            "endpoint": false,
+            "interface": "On the user profile page, under their headshot, the square 'Following' button remains. On the right section — the Friend Activity sidebar — the unwanted user still appears in the list of existing friends' listening activity.",
+            "false_reasoning": "Copying the link does not remove the user from your Friend Activity feed."
+          }
+        ]
+      },
+      {
+        "missing_flow_id": "missing_flow3",
+        "description": "Initiate a block but cancel in the confirmation pop-up, leaving the friend in the feed.",
+        "missing_reasons": "Users may start the block process but change their mind. Important to confirm cancellation behavior leaves the feed unchanged.",
+        "steps": [
+          {
+            "start": "Turn on the Friend Activity sidebar on your app",
+            "interface": "The Friend Activity feed displays a list of your friends along with their current tracks and playlists."
+          },
+          {
+            "step": 1,
+            "action": "View the list of your friends in the Friend Activity feed, and click on the username of the friend you want to remove.",
+            "interface": "The profile page of the selected user is displayed in the middle section of the app. Under their headshot, there is a square 'Following' button and a three-dot button representing 'More'."
+          },
+          {
+            "step": 2,
+            "action": "Click on the three-dot icon.",
+            "interface": "A drop-down menu shows four options: Unfollow, Block, Report, and Copy Link to Profile. The 'Unfollow' option has a green icon, while the other three have gray icons."
+          },
+          {
+            "step": 3,
+            "action": "Click on the 'Block' button.",
+            "interface": "A pop-up window appears with the title 'Block {the selected user}?' and the message '{the selected user} will no longer be able to see your profile, follow you, or see your listening activity.' There are two buttons below this message: a gray 'Cancel' button and a green 'Block' button."
+          },
+          {
+            "step": 4,
+            "action": "Click on the gray 'Cancel' button in the pop-up window.",
+            "interface": "The pop-up window closes. The user profile page remains displayed."
+          },
+          {
+            "endpoint": false,
+            "interface": "On the user profile page, under their headshot, the square 'Following' button remains. On the right section — the Friend Activity sidebar — the unwanted user still appears in the list of existing friends' listening activity.",
+            "false_reasoning": "Cancelling the block leaves the user in your Friend Activity feed."
+          }
+        ]
+      }
+    ]
+  }
 ]
