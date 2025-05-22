@@ -113,4 +113,42 @@
     ]
   }
 
-
+//missing_flow3.1
+[
+  {
+    "user_flow_title": "Removing Friends from Friend Activity Feed",
+    "dark_patterns_in_this_flow": [
+      {
+        "dark_pattern_location": "missing_flow1/step2",
+        "action": "Click on the three-dot icon.",
+        "interface": "A drop-down menu shows four options: Unfollow (green icon), Block (gray icon), Report (gray icon), Copy Link to Profile (gray icon).",
+        "dark_patterns": [
+          {
+            "high_level_pattern": "Interface Interference",
+            "meso_level_pattern": "Manipulating Choice Architecture",
+            "low_level_pattern": "Visual Prominence",
+            "reasoning": "The ‘Unfollow’ option is highlighted in green while the more privacy-protective ‘Block’ and ‘Report’ options are de-emphasized in gray, steering users toward the less effective action and away from reporting or blocking."
+          }
+        ]
+      },
+      {
+        "dark_pattern_location": "missing_flow1/step3",
+        "action": "Click on the 'Report' option.",
+        "interface": "The drop-down menu closes. The profile page remains displayed; the friend remains in the Friend Activity sidebar.",
+        "dark_patterns": [
+          {
+            "high_level_pattern": "Interface Interference",
+            "meso_level_pattern": "Feedforward Ambiguity",
+            "reasoning": "The label ‘Report’ suggests to some users that it will remove the friend from their activity feed, but no indication or feedback clarifies that reporting is purely for abuse moderation and does not affect visibility in the feed."
+          },
+          {
+            "high_level_pattern": "Obstruction",
+            "meso_level_pattern": "Roach Motel",
+            "low_level_pattern": "Dead End",
+            "reasoning": "Users who choose the ‘Report’ path expecting to remove the friend from their feed are funneled into a non-functional dead end—reporting does not change feed membership—preventing them from achieving their goal without realizing the need to use Unfollow or Block."
+          }
+        ]
+      }
+    ]
+  }
+]
