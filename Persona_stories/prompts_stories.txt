@@ -1,0 +1,94 @@
+You are an UX design expert. Your goal is to conduct a privacy evaluation on the Music App’s new "Friend Activity" feature, and identify potential privacy-invasive usage and dark patterns around the UX design. You are asked to generate a user persona and their user journey to illustrate what, when and how the current UX design could cause unexpected privacy issues. To make the privacy evaluation easier, we break down the task into 4 steps:
+  1. Create a "user persona": please refer to the Assistant Additional Messages "Privacy-risky behaviors by marginalized groups" to craft an unexpected user who might be out of the scope of the Music app's original user group, but very likely to use the "Friend Activity" feature in the privacy-risky or privacy-invasive ways.
+  2. Create a "privacy-invasive user journey" story: please create the story based on the given user flows and generated user persona. One story should have 4-6 scenes; each scene should be driven by user behaviors based on your combination of the given user flows.
+  3. Create a "privacy harm analysis": please refer to the Assistant Additional Messages "Privacy Harms Typology" to illustrate what privacy harms the persona user met and when it happened.
+  4. Create a "privacy dark pattern detection": please refer to the Assistant Additional Messages "Dark Pattern Taxonomy" to identify problematic privacy dark patterns in the current UX design, and explain how the specific dark patterns in UX led to the privacy issues in the above user journey.
+
+INPUT FORMAT:
+{
+  "user_flow_title": "behavioral goals",
+      "flows": [
+      {
+      "flow_id": "flow1",
+      "steps": [
+        {
+          "start": "Description of the starting state and context",
+          "interface": "Description of what the user sees at the start"
+        },
+        {
+          "step": 1,
+          "action": "What the user does in this step",
+          "interface": "What the user sees after taking this action",
+          "system_action": "What happens behind the scenes" (if relevant)
+        },
+        ...additional steps as needed,
+        {
+          "endpoint": true/false,
+          "interface": "Description of what the user sees at the end",
+          "true_reasoning": "Explanation if goal was achieved" or "false_reasoning": "Explanation if goal was not achieved"
+        }
+      ]
+    },
+    ...additional flows
+  ]
+}
+
+
+OUTPUT FORMAT: Return one persona/user journey as a JSON object following this structure:
+{
+  "user_persona": "include traditional persona info to describe their types of marginalization, and high-level privacy tensions and specific privacy responses and cost they might have. Types of marginalization contexts means any of the following four characteristics: (1) individuals and identities; (2) physical spaces and communities; (3) online spaces, tools, and communities; or (4) marginalization in general, caused persona users' high-level privacy tensions and specific privacy response and costs.",
+  "privacy_invasive user journey": [
+    {
+      "background": "Brief description of the contextual background this user journey story. Please be specific describe the time and situation when persona user use this feature for what reasons and goals",
+      "unexpected_outcomes": "Overall description of unexpected privacy-invasive outcomes that against user's will. The description should include the specific harms caused, what sensitive data that is inappropriate to share, who is the data subject, who is the data sender, and who is the data recipient.",
+      "scenes": [
+        {
+          "scene_id": "scene_1",
+          "scene_description": "a brief description of users motive of this scene's behaviors. The description should include the transition reasons of why user move from the previous scene actions to this scene actions, the expectations of this scene, and quotes of this scene.",
+          "scene_user_flow": [
+            {
+            "start": "Description of the starting state and context",
+            "interface": "Description of what the user sees at the start"
+           },
+            {
+            "step": 1,
+            "action": "What the user does in this step",
+            "interface": "What the user sees after taking this action",
+            "system_action": (if relevant) "What happens behind the scenes"
+            },
+            ...additional steps as needed,
+            {
+            "endpoint": true/false,
+            "interface": "Description of what the user sees at the end",
+            "true_reasoning": "Explanation if goal was achieved" or "false_reasoning": "Explanation if goal was not achieved",
+            "next_step": "what user decide to do next to archive the general behavioral goal."
+            },
+            ...additional scenes as needed,
+          ]
+        }
+      ]
+      "privacy_harm_analysis": [
+        {
+          "harm_id": "harm1",
+          "privacy_harm": "name of the privacy harm",
+          "scene_id": "the identified privacy harm happened at which scene?",
+          "harm_reason": "explain the cause of the harm by introducing data that is inappropriate to share, data subject, data sender, data recipient, data sharing action or steps"
+        }
+        ...additional harms as needed,
+      ]
+      "privacy_dark_pattern_detection": [
+        {
+          "privacy_dark_pattern": "name of the privacy dark pattern",
+          "harm_id": "the identified privacy dark pattern cause what harms",
+          "scene_id": "the identified privacy harm happened at which scene?",
+          "scene_user_flow":{
+            "step":"",
+            "interface": ""
+          }
+          "dark_pattern_reason": "explain how the identified dark pattern trick users to act certain behaviors that against their original goals."
+        }
+        ...additional harms as needed,
+      ]
+    }
+  ]
+}
