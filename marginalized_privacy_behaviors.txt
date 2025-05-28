@@ -1,0 +1,68 @@
+Privacy response and cost
+1. Apathy
+- Response: Lack of response to privacy threats
+- Cost: Exposure to risks
+- Examples: Undocumented immigrants felt government surveillance is inescapable; women transitioning from incarceration felt they have "nothing to lose"
+
+2. Non-use
+- Response: Not using technology, deleting accounts
+- Costs: Opportunity loss, exclusion, silencing, isolation
+- Example: Economically disadvantaged populations lose opportunities due to non-use of technologies
+
+3. Withholding Disclosure
+- Response: Self-censorship, information removal  
+- Costs: Restricts self-expression, silencing
+- Examples: Low-SES youth, marginalized Cambodians, and political refugees self-censored to avoid conflict but were further silenced; men who have sex with men may not disclose HIV status but inadvertently signal it
+
+4. Controlling Disclosure
+- Response: Compartmentalizing identity, multiple accounts, privacy controls, segmenting audiences
+- Costs: Restricts self-expression, labor-intensive, social/financial costs
+- Examples: Trans men crowdfunding surgery used privacy controls; young Azerbaijanis maintained multiple accounts for activism; LGBTQ+ social media users managed identities across platforms
+
+5. Privacy Lies
+- Response: Providing false information
+- Costs: Cognitive burden, social/legal repercussions
+- Examples: Rural Appalachians provided false information as vigilanteism; South Asian women provided false information to protect from abuse
+
+6. Privacy-Enhancing Technologies
+- Response: Authentication, cloaking, encryption
+- Costs: Social liability, erasure of records
+- Examples: Women in patriarchal societies used private modes and locks which may be seen as incriminating; financially insecure people losing access to two-factor authentication
+
+7. Physical Workarounds
+- Response: Hiding device, camera covers, headphones
+- Costs: Limits environmental awareness, vulnerable to physical coercion
+- Example: People with visual impairments used headphones to avoid aural eavesdropping at cost of physical safety
+
+8. Asking for Help 
+- Response: Learning practices, consulting network/websites/professionals
+- Costs: Bad information, involves risk/trust, limited to help available
+- Examples: IPV professionals not equipped to advise on technology-enabled abuse; visually impaired people risking trust with allies
+
+9. Collaborative Privacy Practices
+- Response: Shared guidelines, boundaries
+- Costs: Loss of autonomy, involves risk/trust
+- Examples: LGBTQ+ adults considering family boundaries; families co-developing privacy guidelines in Bangladesh
+
+10. Third-Party Protections
+- Response: Parents removing devices, organizations destroying info
+- Costs: Loss of autonomy, outside control
+- Examples: Art therapists removing identifying dementia patient information; Canadian government destroying colonial abuse records
+
+High-Level Privacy Tensions:
+
+1. Privacy vs. Identity Disclosure
+- Tension between using technology requiring identity disclosure and facing threats
+- Example: LGBTQ+ social media users connecting while risking stigma from unintended audiences
+
+2. Privacy vs. Support
+- Tension between seeking support and disclosing vulnerabilities 
+- Examples: Low income people identifying themselves for state benefits; trans men crowdfunding surgery requiring public disclosures
+
+3. Privacy vs. Autonomy
+- Tension between surveillance for safety and invasion of privacy
+- Example: VSP shelters surveilling trafficking survivors' communications; location tracking for dementia patients
+
+4. Individual vs. Collective
+- Tension between individual and group privacy interests
+- Example: LGBTQ+ parents' disclosures affecting their network's privacy boundaries
