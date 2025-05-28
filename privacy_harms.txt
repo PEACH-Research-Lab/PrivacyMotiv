@@ -1,3 +1,5 @@
+Privacy Harms Typology
+
 1. Physical Harms
 Definition: Harms that result in bodily injury or death
 Key Elements: Clear and obvious setbacks to physical health, direct causation between privacy violation and physical harm
