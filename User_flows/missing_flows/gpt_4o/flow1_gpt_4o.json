@@ -154,7 +154,7 @@
 ]
 
 
-// V3 prompt (without inference)
+// V2 prompt (without inference)
 [
     {
         "user_flow_title": "Viewing Friend Activity on the Music App",
