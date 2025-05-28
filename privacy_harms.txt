@@ -1,0 +1,106 @@
+1. Physical Harms
+Definition: Harms that result in bodily injury or death
+Key Elements: Clear and obvious setbacks to physical health, direct causation between privacy violation and physical harm
+Examples:
+• Rebecca Schaeffer's murder after stalker obtained address from DMV records  
+• Physical assault facilitated by Craigslist posting of victim's address
+• Rape and abuse enabled by malicious online impersonation
+
+2. Economic Harms  
+Definition: Monetary losses or a loss in the value of something
+Key Elements: Financial losses, both direct and indirect, measurable monetary impact, loss of value
+Examples:
+• Identity theft resulting in fraudulent transactions
+• Time and resources spent clearing up identity theft
+• Lost professional opportunities
+• Loss of productivity dealing with privacy violations
+
+3. Reputational Harms
+Definition: Injuries to an individual's reputation and standing in the community
+Key Elements: Impairment of personal esteem, damage to social standing, professional reputation impact
+Examples:
+• False information in credit reports
+• Incorrect professional credentials in background checks
+• Data inaccuracies affecting employment prospects
+• Tainted personal image leading to social rejection
+
+4. Psychological Harms
+
+4.1. Emotional Distress
+Definition: Painful or unpleasant feelings
+Key Elements: Range of negative mental responses, painful/unpleasant feelings, varying degrees of severity
+Examples:
+• Anxiety from identity theft
+• Fear from privacy violations  
+• Emotional toll affecting work and relationships
+
+4.2. Disturbance  
+Definition: Unwanted intrusions that disturb tranquility, interrupt activities, sap time, and serve as a nuisance
+Key Elements: Peace disruption, activity interruption, time wastage, nuisance impact
+Examples:
+• Unwanted telemarketing calls
+• Unsolicited text messages
+• Spam emails
+
+5. Autonomy Harms
+
+5.1. Coercion
+Definition: A constraint or undue pressure on one's freedom to act or choose
+Key Elements: Direct pressure, constrained choices, forced decisions
+Examples:
+• Conditioning medical treatment on data sharing
+• Penalizing people for exercising privacy rights
+
+5.2. Manipulation
+Definition: Undue influence over a person's behavior or decision-making
+Key Elements: Hidden influence, exploitation of vulnerabilities, circumvention of rational decision-making
+Examples:
+• Using personal data to exploit vulnerabilities
+• Targeted influence campaigns like Cambridge Analytica
+
+5.3. Failure to Inform
+Definition: Failing to provide individuals with information to assist them in making informed choices
+Key Elements: Withholding crucial information, impaired decision-making ability, loss of opportunity to respond
+Examples:
+• Not providing copies of background checks
+• Failing to inform about FCRA rights
+
+5.4. Thwarted Expectations
+Definition: Undermining of people's choices and breaking promises about personal data handling
+Key Elements: Broken promises, undermined choices, misaligned data practices with stated policies
+Examples:
+• Sharing data with third parties contrary to privacy policies
+• Using personal data for undisclosed purposes
+
+5.5. Lack of Control
+Definition: Inability to make meaningful choices about one's data or prevent future misuse
+Key Elements: Powerlessness over personal data, inability to prevent misuse, lack of meaningful choice
+Examples:
+• Inability to delete personal data
+• Lack of choice in data collection and use
+
+5.6. Chilling Effects
+Definition: Inhibiting people from engaging in certain civil liberties
+Key Elements: Deterrence from lawful activities, self-censorship, behavioral modifications
+Examples:
+• Self-censorship
+• Avoiding certain online activities
+• Reluctance to share health information
+
+6. Discrimination Harms
+Definition: Entrenching inequality and disadvantaging people based on protected characteristics
+Key Elements: Unequal treatment, stigma, shame, systemic disadvantage, disproportionate impact on marginalized groups
+Examples:
+• Using health data to deny opportunities
+• Disproportionate surveillance of marginalized communities
+• Algorithmic bias in hiring
+• Targeted harassment of women and minorities
+
+7. Relationship Harms
+Definition: Damage to relationships important for health, well-being, and functioning in society
+Key Elements: Trust violation, confidentiality breach, damage to important relationships, undermining of fiduciary duties
+Examples:
+• Breach of professional confidentiality
+• Violation of trust in personal relationships
+• Damage to relationships with organizations
+• Breach of fiduciary duties

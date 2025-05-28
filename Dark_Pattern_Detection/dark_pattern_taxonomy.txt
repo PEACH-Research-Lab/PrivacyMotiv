@@ -1,15 +1,22 @@
-1: High-level pattern: Obstruction 
+
+High-level patterns describe general strategies that can be employed through a range of modalities and technologies and application types.
+Meso-level patterns describe a context-agnostic angle of attack and may be interpreted in relations to context based on the specific modality or application type.
+Low-level patterns are situated and contextually dependent, describing specific means of execution.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1: High-level pattern: Obstruction
 Definition: Obstruction is a strategy which impedes a user’s task flow, making an interaction more difficult than it inherently needs to be, dissuading a user from taking an action.
 
-1.1: Meso-level patterns: Roach Motel 
+1.1: Meso-level patterns: Roach Motel
 Definition: Roach Motel subverts the user’s expectation that an action will be as easy to reverse as it is to make, instead creating a situation that is easy to get into, but difficult to get out of.
-1.1.1: Low-level patterns: Immortal Accounts 
+1.1.1: Low-level patterns: Immortal Accounts
 Definition: Immortal Accounts create a Roach Motel and use Obstruction to make it difficult or impossible to delete a user account once it has been created. As a result, the user may create an account or share data with the false assumption that they can later delete this information, even though that account and/or data are then unable to be removed by the user.
 1.1.2: Low-level patterns: Dead End
 Definition: Dead Ends create a Roach Motel and use Obstruction to prevent users from finding information through inactive links or redirections that limit or completely prevent the display of relevant information. As a result, the user may seek to find relevant information or action possibilities but instead be left unable to achieve their goal.
 
 1.2: Meso-level patterns: Creating Barriers
-Definition: Creating Barriers subverts the user’s expectation that relevant user tasks will be supported by the interface, instead preventing, abstracting, or otherwise complicating a user task to disincentive user action. 
+Definition: Creating Barriers subverts the user’s expectation that relevant user tasks will be supported by the interface, instead preventing, abstracting, or otherwise complicating a user task to disincentive user action.
 1.2.1: Low-level patterns: Price Comparison Prevention
 Definition: Price Comparison Prevention Creates Barriers and uses Obstruction by excluding relevant information, limiting the ability of a user to copy/paste, or otherwise inhibiting a user from comparing prices across two or more vendors. As a result, the user cannot make an informed decision about where to buy a product or service.
 1.2.2: Intermediate Currency
@@ -17,12 +24,12 @@ Definition: Intermediate Currencies Create Barriers and use Obstruction to hide 
 
 1.3: Meso-level patterns: Adding Steps
 Definition: Adding Steps subverts the user’s expectation that a task will take as few steps as technologically needed, instead creating additional points of unnecessary but required user interaction to perform a task.
-1.3.1: Low-level patterns: Privacy Maze 
+1.3.1: Low-level patterns: Privacy Maze
 Definition: Privacy Mazes Add Steps and use Obstruction to require a user to navigate through many pages to obtain relevant information or control without a comprehensive and exhaustive overview. As a result, the user is prevented from easily discovering relevant information or action possibilities, leaving them unable to make informed decisions regarding their privacy.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-1: High-level pattern: Sneaking 
+1: High-level pattern: Sneaking
 Definition: Sneaking is a strategy which hides, disguises, or delays the disclosure of important information that, if made available to users, would cause a user to unintentionally take an action they would likely object to.
 
 1.1: Meso-level patterns: Bait and Switch
@@ -33,8 +40,8 @@ Definition: Disguised Ads Bait and Switch and use Sneaking to style interface el
 1.2: Meso-level patterns: Hiding Information
 Definition: Hiding Information subverts the user’s expectation that all relevant information to make an informed choice will be available to them, instead hiding information or delaying the disclosure of information until later in the user journey that may have led to them making another choice.
 1.2.1: Low-level patterns: Sneak into Basket
-Definition: Sneak into Basket Hides Information and uses Sneaking to add unwanted items to a user’s shopping cart without their consent. As a result, a user assumes that only the items they explicitly added to their cart will be purchased, leading to unintentional purchase of additional items. 
-1.2.2: Low-level patterns: Drip Pricing, Hidden Costs, or Partitioned Pricing 
+Definition: Sneak into Basket Hides Information and uses Sneaking to add unwanted items to a user’s shopping cart without their consent. As a result, a user assumes that only the items they explicitly added to their cart will be purchased, leading to unintentional purchase of additional items.
+1.2.2: Low-level patterns: Drip Pricing, Hidden Costs, or Partitioned Pricing
 Definition: Drip Pricing, Hidden Costs, or Partitioned Pricing Hides Information and uses Sneaking to reveal new charges or costs, present only partial price components,  or otherwise delay revealing the full price of a product or service  through late or incomplete disclosure. As a result, the user is misled about the total or complete price of the product or service, leading to them to make a purchase decision after they have expended effort on false pretenses.
 1.2.3: Low-level patterns: Reference Pricing
 Definition: Reference Pricing Hides Information and uses Sneaking to include a misleading or inaccurate price for a product or service that makes a discounted price appear more attractive. As a result, the user is misled into believing that the price they pay is discounted, leading them to make a decision to purchase a product or service on false pretenses.
@@ -48,82 +55,82 @@ Definition: Information without context uses (De)contextualizing Cues and Sneaki
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-1: High-level pattern: Interface Interference 
+1: High-level pattern: Interface Interference
 Definition: Interface Interference is a strategy which privileges specific actions over others through manipulation of the user interface, thereby confusing the user or limiting discoverability of relevant action possibilities.
 
-1.1: Meso-level patterns: Manipulating Choice Architecture 
+1.1: Meso-level patterns: Manipulating Choice Architecture
 Definition: Manipulating Choice Architecture subverts the user’s expectation that the options presented will support their desired goal, instead including an order or structure of options that makes another outcome more likely.
-1.1.1: Low-level patterns: False Hierarchy 
+1.1.1: Low-level patterns: False Hierarchy
 Definition: False Hierarchy Manipulates the Choice Architecture, using Interface Interference to give one or more options visual or interactive prominence over others, particularly where items should be in parallel rather than hierarchical.  As a result, the user may misunderstand or be unable to accurately compare their options, making a selection based on a false or incomplete choice architecture.
-1.1.2: Low-level patterns: Visual Prominence 
+1.1.2: Low-level patterns: Visual Prominence
 Definition: Visual Prominence Manipulates the Choice Architecture, using Interface Interference to place an element relevant to user goals in visual competition with a more distracting and prominent element. As a result, the user may forget about or be distracted from their original goal, even if that goal was their primary intent.
-1.1.3: Low-level patterns: Bundling 
+1.1.3: Low-level patterns: Bundling
 Definition: Bundling Manipulates the Choice Architecture, using Interface Interference to group two or more products or services in a single package at a special price. As a result, the user may incorrectly assume that these items must be purchased as a bundle or be unaware of the unbundled price for the component elements, possibly leading to an uninformed purchasing decision.
-1.1.4: Low-level patterns: Pressured Selling 
-Definition: Pressured Selling Manipulates the Choice Architecture, using Interface Interference to preselect or use visual prominence to focus user attention on more expensive product options . As a result, the user may be unaware that a lower price is available or even desirable for their needs , steering the user into making a more expensive product selection than they otherwise would have. 
+1.1.4: Low-level patterns: Pressured Selling
+Definition: Pressured Selling Manipulates the Choice Architecture, using Interface Interference to preselect or use visual prominence to focus user attention on more expensive product options . As a result, the user may be unaware that a lower price is available or even desirable for their needs , steering the user into making a more expensive product selection than they otherwise would have.
 
-1.2: Meso-level patterns: Bad Defaults 
+1.2: Meso-level patterns: Bad Defaults
 Definition: Bad Defaults subverts the user’s expectation that default settings will be in their best interest, instead requiring users to take active steps to change settings that may cause harm or unintentional disclosure of information.
 
 1.3: Meso-level patterns: Emotional or Sensory Manipulation
 Definition: Emotional or Sensory Manipulation subverts the user’s expectation that the design of the site will allow them to achieve their goal without manipulation, instead altering the language, style, color, or other design elements to evoke an emotion or manipulate the senses in order to persuade the user into a particular action.
-1.3.1: Low-level patterns: Cuteness 
+1.3.1: Low-level patterns: Cuteness
 Definition: Cuteness uses Emotional or Sensory Manipulation and Interface Interference to embed attractive cues in the design of a robot interface or form factor. As a result, a user may place undue trust in the robot, leading the user to inaccurately or incompletely assess the risks of interacting with the robot.
-1.3.2: Low-level patterns: Positive or Negative Framing 
-Definition: Positive or Negative Framing uses Emotional or Sensory Manipulation and Interface Interference to visually obscure, distract, or persuade a user from important information they need to achieve their goal. As a result, the user may assume that the system is providing equal access to relevant information, leading the user to be distracted by positive or negative aesthetic cues that distract them from important information or action possibilities or otherwise convince them to pursue a different goal. 
+1.3.2: Low-level patterns: Positive or Negative Framing
+Definition: Positive or Negative Framing uses Emotional or Sensory Manipulation and Interface Interference to visually obscure, distract, or persuade a user from important information they need to achieve their goal. As a result, the user may assume that the system is providing equal access to relevant information, leading the user to be distracted by positive or negative aesthetic cues that distract them from important information or action possibilities or otherwise convince them to pursue a different goal.
 
-1.4: Meso-level patterns: Trick Questions 
+1.4: Meso-level patterns: Trick Questions
 Definition: Trick Questions subvert the user’s expectation that prompts will be written in a straightforward and intelligible manner, instead using confusing wording, double negatives, or otherwise leading language or interface cues to manipulate a user’s choice.
 
-1.5: Meso-level patterns: Choice Overload  
+1.5: Meso-level patterns: Choice Overload
 Definition: Choice Overload subverts the user’s expectation that the choices they make should be understandable and comparable, instead providing too many options to compare or encouraging users to overlook relevant information due to the volume of choices provided.
 
-1.6: Meso-level patterns: Hidden Information 
+1.6: Meso-level patterns: Hidden Information
 Definition: Hidden Information subverts the user’s expectation that relevant information will be made accessible and visible, instead disguising relevant information or framing it as irrelevant.
 
-1.7: Meso-level patterns: Language Inaccessibility  
+1.7: Meso-level patterns: Language Inaccessibility
 Definition: Language Inaccessibility subverts the user’s expectation that guidance will be provided in a way that is understandable and intelligible, instead using unnecessarily complex language or a language not spoken by the user to decrease the likelihood the user will make an informed choice.
-1.7.1: Low-level patterns: Wrong Language 
+1.7.1: Low-level patterns: Wrong Language
 Definition: Wrong Language leverages Language Accessibility, using Interface Interference to provide important information in a different language than the official language of the country where users live. As a result, the user will not have access to relevant information about their interaction with the system and their ability to choose, leading to uninformed decisions.
-1.7.2: Low-level patterns: Complex Language  
+1.7.2: Low-level patterns: Complex Language
 Definition: Complex Language leverages Language Accessibility, using Interface Interference to make information difficult to understand by using obscure word  choices and/or sentence structure. As a result, the user will not be able to comprehend relevant information about their interaction with the system and their ability to choose, leading to uninformed decisions.
 
-1.8: Meso-level patterns: Feedforward Ambiguity 
+1.8: Meso-level patterns: Feedforward Ambiguity
 Definition: Feedforward Ambiguity subverts the user’s expectation that their choice will be likely to result in an action they can predict, instead providing a discrepancy between information and actions available to users that results in an outcome that is different from what the user expects.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-1: High-level pattern: Forced Action  
+1: High-level pattern: Forced Action
 Definition: Forced Action is a strategy which requires users to knowingly or unknowingly perform an additional and/or tangential action or information to access (or continue to access) specific functionality, preventing them from continuing their interaction with a system without performing that action.
 
-1.1: Meso-level patterns: Nagging 
+1.1: Meso-level patterns: Nagging
 Definition: Nagging subverts the user’s expectation that they have rational control over the interaction they make with a system, instead distracting the user from a desired task the user is focusing on to induce an action or make a decision the user does not want to make by repeatedly interrupting the user during normal interaction.
 
-1.2: Meso-level patterns: Forced Continuity   
+1.2: Meso-level patterns: Forced Continuity
 Definition: Forced Continuity subverts the user’s expectation that a subscription created in the past will not auto-renew or otherwise continue in the future, instead causing undesired charges, difficulty to cancel, or lack of awareness that a subscription is still active.
 
-1.3: Meso-level patterns: Forced Registration 
+1.3: Meso-level patterns: Forced Registration
 Definition: Forced Registration subverts the user’s expectation that they can complete an action without registering or creating an account, instead tricking them into thinking that registration is required, often resulting in the sharing of unneeded personal data.
 
-1.4: Meso-level patterns: Forced Communication or Disclosure  
+1.4: Meso-level patterns: Forced Communication or Disclosure
 Definition: Forced Communication or Disclosure subverts the user’s expectation that a system will only request information needed to complete their desired goals, instead tricking them into sharing more information about themselves or using their information for purposes that they do not desire.
-1.4.1: Low-level patterns: Privacy Zuckering  
+1.4.1: Low-level patterns: Privacy Zuckering
 Definition: Privacy Zuckering uses Forced Communication or Disclosure as a type of Forced Action to trick users into sharing more information about themselves than they intend to or would agree to if fully informed. As a result, the user assumes that information they are requested to provide is vital for use of the service, even while this information is used or sold for other purposes.
-1.4.2: Low-level patterns: Friend Spam  
+1.4.2: Low-level patterns: Friend Spam
 Definition: Friend Spam uses Forced Communication or Disclosure as a type of Forced Action to collect information about other users through extractive means that results in unwanted contact from the service. As a result, the user assumes that information about their friends or social network is vital for use of the service, even while this information is used to spam other users.
-1.4.3: Low-level patterns: Address Book Leeching   
+1.4.3: Low-level patterns: Address Book Leeching
 Definition: Address Book Leeching uses Forced Communication or Disclosure as a type of Forced Action to collect information about other users through extractive means, which are often hidden to the user and/or conducted under false pretenses. As a result, the user assumes that only vital information will be collected when signing up for or using a service, even while this information is used to gain knowledge of other users or inform other purposes that have not been initially declared.
-1.4.4: Low-level patterns: Social Pyramid  
+1.4.4: Low-level patterns: Social Pyramid
 Definition: Social Pyramid uses Forced Communication or Disclosure as a type of Forced Action to manipulate existing users into recruiting new users to use a service, often by tying this recruitment to additional functionality or other benefits. As a result, the user assumes that social recruiting is necessary to continue to use aspects of the service, even while this information is primarily used to build the service’s user base.
 
-1.5: Meso-level patterns: Gamification   
+1.5: Meso-level patterns: Gamification
 Definition: Gamification subverts the user’s expectation that system functionality is based on alignment with user goals and needs, instead coercing them into gaining access to aspects of a service through repeated (and perhaps undesired) use of aspects of the service.
-1.5.1: Low-level patterns: Pay-to-Play  
+1.5.1: Low-level patterns: Pay-to-Play
 Definition: Pay-to-Play uses Gamification as a type of Forced Action to initially claim that aspects of a service or product are available via purchase or download, but then later charging users to actually obtain that functionality. As a result, the user incorrectly assumes that a service or product will allow them certain functionality, leading to them downloading or purchasing the product or service under false pretenses.
-1.5.2: Low-level patterns: Grinding   
+1.5.2: Low-level patterns: Grinding
 Definition: Grinding uses Gamification as a type of Forced Action to require repeated, often cumbersome and labor-intensive actions over time in order to obtain certain relevant functionality. As a result, the user may seek to avoid these repetitive actions, leading to them making unwanted additional in-app purchases to unlock the same functionality without “grinding” over an extended period of time.
 
-1.6: Meso-level patterns: Attention Capture 
+1.6: Meso-level patterns: Attention Capture
 Definition: Attention Capture subverts the user’s expectation that they have rational control over the time they spend using a system, instead tricking them into spending more time or other resources to continue use for longer than they otherwise would.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -133,31 +140,31 @@ Definition: Social Engineering is a strategy which presents options or informati
 
 1.1: Meso-level patterns: Scarcity and Popularity Claims
 Definition: Scarcity or Popularity Claims subverts the user’s expectation that information provided about a product’s availability or desirability is accurate , instead pressuring the user to purchase a product without additional reflection or verification.
-1.1.1: Low-level patterns: High Demand 
+1.1.1: Low-level patterns: High Demand
 Definition: High Demand uses Scarcity and Popularity Claims as a type of Social Engineering to indicate that a product is in high-demand or likely to sell out soon, even though that claim is misleading or false. As a result, the user may assume that demand is high when it is not, leading to their uninformed purchase of a product or service.
 
 1.2: Meso-level patterns: Social Proof
 Definition: Social Proof subverts the user’s expectation that the indicated behavior of others in a specific situation is correct or desirable, instead accelerating user decision-making and encouraging the user to trust flawed implications through provided information.
-1.2.1: Low-level patterns: Low Stock  
+1.2.1: Low-level patterns: Low Stock
 Definition: Low Stock uses Social Proof as a type of Social Engineering to indicate that a product is limited in quantity, even though that claim is misleading or false. As a result, the user may assume that a product is desirable due to demand, leading to undue or uninformed pressure to buy the product immediately.
-1.2.2: Low-level patterns: Endorsements and Testimonials  
+1.2.2: Low-level patterns: Endorsements and Testimonials
 Definition: Endorsements and Testimonials use Social Proof as a type of Social Engineering to indicate that a product or service has been endorsed by another consumer, even though the source of that endorsement or testimonial is biased, misleading, incomplete, or false. As a result, the user may assume that the endorsement or testimonial is accurate and unbiased, leading to their uninformed purchase of a product or service.
-1.2.3: Low-level patterns: Parasocial Pressure    
+1.2.3: Low-level patterns: Parasocial Pressure
 Definition: Parasocial Pressure uses Social Proof as a type of Social Engineering to indicate that a product or service has been endorsed by a celebrity, influencer, or other entity that the user trusts, even though the source of that endorsement is biased, misleading, incomplete, or false. As a result, the user may assume that the endorsement is accurate and unbiased, leading to their uninformed purchase of a product or service.
 
-1.3: Meso-level patterns: Urgency 
+1.3: Meso-level patterns: Urgency
 Definition: Urgency subverts the user’s expectation that information provided about discounts or a limited-time deal for a product is accurate, instead accelerating the user’s decision-making process by demanding immediate or timely action.
-1.3.1: Low-level patterns: Activity Messages  
+1.3.1: Low-level patterns: Activity Messages
 Definition: Activity Messages use Urgency as a type of Social Engineering to describe other user activity on the site or service, even though the data presented about other users’ purchases, views, visits, or contributions are misleading or false. As a result, the user may falsely feel a sense of urgency, assuming that others users are purchasing or otherwise interested product or service, leading to their uninformed purchase of a product or service.
-1.3.2: Low-level patterns: Countdown Timer   
+1.3.2: Low-level patterns: Countdown Timer
 Definition: Countdown Timers use Urgency as a type of Social Engineering to indicate that a deal or discount will expire by displaying a countdown clock or timer, even though the clock or timer is completely fake, disappears, or resets automatically. As a result, the user may feel undue urgency and purchasing pressure, leading to their uninformed purchase of a product or service.
-1.3.3: Low-level patterns: Limited Time Message   
+1.3.3: Low-level patterns: Limited Time Message
 Definition: Limited Time Messages use Urgency as a type of Social Engineering to indicate that a deal or discount will expire soon or be available only for a limited time, but without specifying a specific deadline. As a result, the user may feel undue urgency and purchasing pressure, leading to their uninformed purchase of a product or service.
 
-1.4: Meso-level patterns: Shaming 
+1.4: Meso-level patterns: Shaming
 Definition: Shaming subverts the user’s expectation that their decision is being guided by objective information and made in an informed way, instead using emotionally manipulative tactics to pressure the user to make certain choices over others in order for them to feel they have done the right thing.
 1.4.1: Low-level patterns: Confirmshaming
 Definition: Confirmshaming uses Personalization as a type of Social Engineering to frame a choice to opt-in or opt-out of a decision through emotional language or imagery that relies upon shame or guilt. As a result, the user may be convinced to change their goal due to the emotionally manipulative tactics, resulting in being steered away from making a choice that matched their initial goal.
 
-1.5: Meso-level patterns: Personalization  
+1.5: Meso-level patterns: Personalization
 Definition: Personalization subverts the user’s expectation that products or service features are offered to all users in similar ways, instead using personal data to shape elements of the user experience that manipulate the user’s goals while hiding other alternatives.
