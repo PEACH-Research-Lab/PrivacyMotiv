@@ -1,10 +1,133 @@
+Given a user persona and their privacy-invasive user journey story, your task consists of two parts: 
+PART1: Privacy Harm Analysis
+Use the reference section "Privacy Harms Typology" to identify and explain:
+  1. What types of privacy harms the persona experienced
+  2. When these harms occurred during the user journey
+  3. Which specific moments, scenes, or actions triggered each harm
+Please be precise and contextual—clearly link each harm to user behavior, system actions, or interface flows wherever possible.
+
+-----------------------------------------------------------------------------
+Reference: 'Privacy Harms Typology'
+
+1. Physical Harms
+  Definition: Harms that result in bodily injury or death
+  Key Elements: Clear and obvious setbacks to physical health, direct causation between privacy violation and physical harm
+  Examples:
+  • Rebecca Schaeffer's murder after stalker obtained address from DMV records  
+  • Physical assault facilitated by Craigslist posting of victim's address
+  • Rape and abuse enabled by malicious online impersonation
+
+2. Economic Harms  
+  Definition: Monetary losses or a loss in the value of something
+  Key Elements: Financial losses, both direct and indirect, measurable monetary impact, loss of value
+  Examples:
+  • Identity theft resulting in fraudulent transactions
+  • Time and resources spent clearing up identity theft
+  • Lost professional opportunities
+  • Loss of productivity dealing with privacy violations
+
+3. Reputational Harms
+  Definition: Injuries to an individual's reputation and standing in the community
+  Key Elements: Impairment of personal esteem, damage to social standing, professional reputation impact
+  Examples:
+  • False information in credit reports
+  • Incorrect professional credentials in background checks
+  • Data inaccuracies affecting employment prospects
+  • Tainted personal image leading to social rejection
+
+4. Psychological Harms
+  4.1. Emotional Distress
+    Definition: Painful or unpleasant feelings
+    Key Elements: Range of negative mental responses, painful/unpleasant feelings, varying degrees of severity
+    Examples:
+    • Anxiety from identity theft
+    • Fear from privacy violations  
+    • Emotional toll affecting work and relationships
+
+  4.2. Disturbance  
+    Definition: Unwanted intrusions that disturb tranquility, interrupt activities, sap time, and serve as a nuisance
+    Key Elements: Peace disruption, activity interruption, time wastage, nuisance impact
+    Examples:
+    • Unwanted telemarketing calls
+    • Unsolicited text messages
+    • Spam emails
+
+5. Autonomy Harms
+  5.1. Coercion
+    Definition: A constraint or undue pressure on one's freedom to act or choose
+    Key Elements: Direct pressure, constrained choices, forced decisions
+    Examples:
+    • Conditioning medical treatment on data sharing
+    • Penalizing people for exercising privacy rights
+
+  5.2. Manipulation
+    Definition: Undue influence over a person's behavior or decision-making
+    Key Elements: Hidden influence, exploitation of vulnerabilities, circumvention of rational decision-making
+    Examples:
+    • Using personal data to exploit vulnerabilities
+    • Targeted influence campaigns like Cambridge Analytica
+
+  5.3. Failure to Inform
+    Definition: Failing to provide individuals with information to assist them in making informed choices
+    Key Elements: Withholding crucial information, impaired decision-making ability, loss of opportunity to respond
+    Examples:
+    • Not providing copies of background checks
+    • Failing to inform about FCRA rights
+
+  5.4. Thwarted Expectations
+    Definition: Undermining of people's choices and breaking promises about personal data handling
+    Key Elements: Broken promises, undermined choices, misaligned data practices with stated policies
+    Examples:
+    • Sharing data with third parties contrary to privacy policies
+    • Using personal data for undisclosed purposes
+
+  5.5. Lack of Control
+    Definition: Inability to make meaningful choices about one's data or prevent future misuse
+    Key Elements: Powerlessness over personal data, inability to prevent misuse, lack of meaningful choice
+    Examples:
+    • Inability to delete personal data
+    • Lack of choice in data collection and use
+
+  5.6. Chilling Effects
+    Definition: Inhibiting people from engaging in certain civil liberties
+    Key Elements: Deterrence from lawful activities, self-censorship, behavioral modifications
+    Examples:
+    • Self-censorship
+    • Avoiding certain online activities
+    • Reluctance to share health information
+
+6. Discrimination Harms
+  Definition: Entrenching inequality and disadvantaging people based on protected characteristics
+  Key Elements: Unequal treatment, stigma, shame, systemic disadvantage, disproportionate impact on marginalized groups
+  Examples:
+  • Using health data to deny opportunities
+  • Disproportionate surveillance of marginalized communities
+  • Algorithmic bias in hiring
+  • Targeted harassment of women and minorities
+
+7. Relationship Harms
+  Definition: Damage to relationships important for health, well-being, and functioning in society
+  Key Elements: Trust violation, confidentiality breach, damage to important relationships, undermining of fiduciary duties
+  Examples:
+  • Breach of professional confidentiality
+  • Violation of trust in personal relationships
+  • Damage to relationships with organizations
+  • Breach of fiduciary duties
+-----------------------------------------------------------------------------
+
+PART2: Privacy Dark Pattern Detection
+Your task is to detect privacy-related dark patterns in the user journey. Use the reference section "Dark Pattern Taxonomy" to:
+  1. Identify problematic dark patterns present in the current UX design
+  2. Explain how these specific patterns contributed to the privacy issues described in the user journey described above
+
+-----------------------------------------------------------------------------
+Reference: 'Dark pattern taxonomy'
 
 High-level patterns describe general strategies that can be employed through a range of modalities and technologies and application types.
 Meso-level patterns describe a context-agnostic angle of attack and may be interpreted in relations to context based on the specific modality or application type.
 Low-level patterns are situated and contextually dependent, describing specific means of execution.
 
------Dark pattern taxonomy-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+*****************************************************************************
 1: High-level pattern: Obstruction
 Definition: Obstruction is a strategy which impedes a user’s task flow, making an interaction more difficult than it inherently needs to be, dissuading a user from taking an action.
 
@@ -26,9 +149,9 @@ Definition: Intermediate Currencies Create Barriers and use Obstruction to hide 
 Definition: Adding Steps subverts the user’s expectation that a task will take as few steps as technologically needed, instead creating additional points of unnecessary but required user interaction to perform a task.
 1.3.1: Low-level patterns: Privacy Maze
 Definition: Privacy Mazes Add Steps and use Obstruction to require a user to navigate through many pages to obtain relevant information or control without a comprehensive and exhaustive overview. As a result, the user is prevented from easily discovering relevant information or action possibilities, leaving them unable to make informed decisions regarding their privacy.
+*****************************************************************************
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+*****************************************************************************
 1: High-level pattern: Sneaking
 Definition: Sneaking is a strategy which hides, disguises, or delays the disclosure of important information that, if made available to users, would cause a user to unintentionally take an action they would likely object to.
 
@@ -52,9 +175,9 @@ Definition: (De)contextualizing Cues subverts the user’s expectation that prov
 Definition: Conflicting Information uses (De)contextualizing Cues and Sneaking to include two or more sources of information that conflict with each other. As a result, the user is unsure what the consequences of their actions will be and will be more likely to accept default settings that may not be in their best interest.
 1.3.2: Low-level patterns: Information without Context
 Definition: Information without context uses (De)contextualizing Cues and Sneaking to alter the relevant information or user controls to limit discoverability. As a result, the user is unlikely to find the information or action possibility they are interested in.
+*****************************************************************************
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+*****************************************************************************
 1: High-level pattern: Interface Interference
 Definition: Interface Interference is a strategy which privileges specific actions over others through manipulation of the user interface, thereby confusing the user or limiting discoverability of relevant action possibilities.
 
@@ -97,9 +220,9 @@ Definition: Complex Language leverages Language Accessibility, using Interface I
 
 1.8: Meso-level patterns: Feedforward Ambiguity
 Definition: Feedforward Ambiguity subverts the user’s expectation that their choice will be likely to result in an action they can predict, instead providing a discrepancy between information and actions available to users that results in an outcome that is different from what the user expects.
+*****************************************************************************
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+*****************************************************************************
 1: High-level pattern: Forced Action
 Definition: Forced Action is a strategy which requires users to knowingly or unknowingly perform an additional and/or tangential action or information to access (or continue to access) specific functionality, preventing them from continuing their interaction with a system without performing that action.
 
@@ -132,9 +255,9 @@ Definition: Grinding uses Gamification as a type of Forced Action to require rep
 
 1.6: Meso-level patterns: Attention Capture
 Definition: Attention Capture subverts the user’s expectation that they have rational control over the time they spend using a system, instead tricking them into spending more time or other resources to continue use for longer than they otherwise would.
+*****************************************************************************
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+*****************************************************************************
 1: High-level pattern: Social Engineering
 Definition: Social Engineering is a strategy which presents options or information that causes a user to be more likely to perform a specific  action based on their individual and/or social cognitive biases,  thereby leveraging a user's desire to follow expected or imposed social norms
 
@@ -168,3 +291,37 @@ Definition: Confirmshaming uses Personalization as a type of Social Engineering 
 
 1.5: Meso-level patterns: Personalization
 Definition: Personalization subverts the user’s expectation that products or service features are offered to all users in similar ways, instead using personal data to shape elements of the user experience that manipulate the user’s goals while hiding other alternatives.
+*****************************************************************************
+
+-----------------------------------------------------------------------------
+
+INPUT USER PERSONA AND JOURNEY STORY:
+[Input]
+
+OUTPUT FORMAT: Return privacy harm analysis and identified privacy dark patterns as a JSON object using the structure below:
+{
+  "privacy_harm_analysis": [
+    {
+      "harm_id": "harm1",
+      "privacy_harm": "Name of the privacy harm",
+      "scene_id": "ID of the scene where the privacy harm occurred",
+      "harm_reason": "Explain the cause of the harm by detailing what sensitive data was inappropriately shared, who the data subject is, who shared the data (data sender), who received it (data recipient), and what action or system behavior triggered the exposure."
+    }
+    /* Additional harm entries as needed */
+  ],
+  "privacy_dark_pattern_detection": [
+    {
+      "privacy_dark_pattern": "Name of the privacy dark pattern",
+      "harm_id": "ID of the related privacy harm",
+      "scene_id": "ID of the scene where the dark pattern appeared",
+      "scene_user_flow": {
+        "step": "Describe the exact step from the user flow",
+        "interface": "Name or description of the interface where the dark pattern occurred"
+      },
+      "dark_pattern_reason": "Explain how the dark pattern tricks users into behaving in ways that go against their original intentions or privacy preferences."
+    }
+    /* Additional dark pattern entries as needed */
+  ]
+}
+
+

@@ -1,0 +1,350 @@
+[
+    {
+        "user_persona": {
+          "basic_info": {
+            "name": "Amira Khan",
+            "age": 16,
+            "tech_comfort": "Moderate"
+          },
+          "marginalization_type": [
+            "Physical spaces and communities",
+            "General structural marginalization",
+            "Individuals and identities"
+          ],
+          "contextual_info": {
+            "app_use_reason": "Amira uses the music app as one of the few ways she can privately express her identity and connect with friends outside her conservative household. The Friend Activity feature lets her keep up with what her more liberal cousins and classmates are listening to.",
+            "privacy_expectations": "She believes that because the app is 'just music', her family won't suspect anything even if she uses it for personal connection. She doesn't fully understand that toggling on 'Share my listening activity' means her activity is public to anyone who follows her, including relatives.",
+            "information_cared_about": "She's careful about anything that might reveal her support for LGBTQ+ content, feminist podcasts, or secular music that her parents might disapprove of."
+          },
+          "privacy_tensions_and_costs": {
+            "high_level_tensions": [
+              "Privacy vs. Identity Disclosure",
+              "Privacy vs. Autonomy"
+            ],
+            "privacy_response": "Controlling Disclosure and Physical Workarounds",
+            "privacy_costs": [
+              "Self-censorship of listening choices",
+              "Risk of family confrontation if discovered",
+              "Increased emotional labor maintaining multiple online identities"
+            ]
+          }
+        },
+        "privacy_invasive user journey": [
+          {
+            "background": "Amira just got home from school and is trying to relax before dinner. She wants to see what her cousin Layla is listening to, hoping to find music that reflects how she's been feeling—angry and inspired after a recent school protest. She toggles on the Friend Activity feature, thinking she's only viewing others, unaware it will also broadcast her activity.",
+            "unexpected_outcomes": "By enabling 'Share my listening activity', Amira's profile broadcasts songs from feminist protest playlists and an LGBTQ+ artist she listens to privately. Her older brother, who follows her account and often checks her profile, sees it. The next day, she's confronted and restricted from using the app. Sensitive data: Her music linked to identity and political beliefs. Data subject: Amira. Data sender: Amira via settings. Data recipient: Her brother and potentially other relatives.",
+            "scenes": [
+              {
+                "scene_id": "scene_1",
+                "scene_description": "Wanting to feel less isolated, Amira decides to check out Layla's music, assuming she can view without being viewed. 'It's just for a few minutes… I won't even play anything weird,' she tells herself.",
+                "scene_user_flow": [
+                  {
+                    "start": "Amira opens the music app on her bedroom laptop after homework.",
+                    "interface": "Home screen appears with soft pink theme she applied."
+                  },
+                  {
+                    "step": 1,
+                    "action": "She clicks on her profile > Settings > Display.",
+                    "interface": "Sees the 'See what your friends are playing' toggle and switches it ON.",
+                    "system_action": "System shows sidebar with no activity visible yet."
+                  },
+                  {
+                    "step": 2,
+                    "action": "Follows the prompt and goes to Social settings to activate sharing.",
+                    "interface": "Sees all five toggles. 'Share my listening activity' is OFF.",
+                    "system_action": "No friend activity is shown until sharing is mutual."
+                  },
+                  {
+                    "step": 3,
+                    "action": "Turns ON 'Share my listening activity'.",
+                    "interface": "Sidebar refreshes with new names and songs from mutuals.",
+                    "system_action": "Her own listening activity is now being broadcast to followers, including her brother."
+                  },
+                  {
+                    "endpoint": false,
+                    "interface": "Sidebar displays Layla's recent playlist, and Amira starts to feel better.",
+                    "false_reasoning": "She assumes no one checks her profile closely, especially her family.",
+                    "next_step": "She plays music from a protest playlist Layla had saved."
+                  }
+                ]
+              },
+              {
+                "scene_id": "scene_2",
+                "scene_description": "The next evening, her brother confronts her at the dinner table. 'Why are you listening to that kind of stuff?' he asks angrily. She realizes he saw her recent tracks.",
+                "scene_user_flow": [
+                  {
+                    "start": "Shocked, Amira rushes to her room and opens the app.",
+                    "interface": "Sidebar still shows her now-playing track—an LGBTQ+ spoken word piece."
+                  },
+                  {
+                    "step": 1,
+                    "action": "Goes to Settings > Social.",
+                    "interface": "Finds the 'Share my listening activity' still ON.",
+                    "system_action": "Broadcast still active."
+                  },
+                  {
+                    "step": 2,
+                    "action": "Frantically turns OFF the toggle.",
+                    "interface": "Sidebar keeps showing friends, but her track history is no longer live.",
+                    "system_action": "Sharing ends immediately but past activity may remain visible."
+                  },
+                  {
+                    "endpoint": true,
+                    "interface": "Sidebar shows Layla and others' music, but Amira's profile is now quiet.",
+                    "true_reasoning": "She disables sharing but feels unsafe.",
+                    "next_step": "Deletes her playlists and logs out, unsure when she'll feel safe enough to return."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+    },
+    {
+        "user_persona": {
+          "basic_info": {
+            "name": "Jordan Nguyen",
+            "age": 27,
+            "tech_comfort": "Expert"
+          },
+          "marginalization_type": [
+            "Online spaces, tools, and communities",
+            "General structural marginalization"
+          ],
+          "contextual_info": {
+            "app_use_reason": "Jordan is an independent journalist and digital rights advocate who uses the app's Friend Activity feature to monitor how influential figures and fellow activists use media. He believes music consumption can reflect political moods or emotional shifts in their public life.",
+            "privacy_expectations": "Jordan assumes his activity is cloaked when he starts a private session, but forgets to re-enable it after testing the Friend Activity feature. He misinterprets what toggling visibility actually does.",
+            "information_cared_about": "He's especially cautious about tracks that could reveal his emotional state, political leanings, or associations with controversial groups—any of which could make him a surveillance or harassment target."
+          },
+          "privacy_tensions_and_costs": {
+            "high_level_tensions": [
+              "Privacy vs. Autonomy",
+              "Privacy vs. Identity Disclosure"
+            ],
+            "privacy_response": "Privacy Lies and Physical Workarounds",
+            "privacy_costs": [
+              "Potential political profiling due to public activity",
+              "Misinformation about privacy features leading to accidental data sharing",
+              "Cognitive burden from managing multiple privacy tools across platforms"
+            ]
+          }
+        },
+        "privacy_invasive user journey": [
+          {
+            "background": "Jordan is attending a virtual conference on digital privacy and wants to analyze how others in his network engage with media during keynote sessions. He enables Friend Activity for research purposes and intends to keep his own listening hidden by using the 'Private Session' feature—but forgets to reactivate it after restarting his device.",
+            "unexpected_outcomes": "Jordan's recent playlist—containing politically sensitive protest songs and emotional audio essays—is broadcast to professional contacts and activist watchers. Sensitive data: Listening habits tied to activist causes. Data subject: Jordan. Data sender: Jordan via system misconfiguration. Data recipients: Fellow journalists, political analysts, and potential online harassers.",
+            "scenes": [
+              {
+                "scene_id": "scene_1",
+                "scene_description": "Jordan is preparing for his presentation on digital traceability and wants to observe his colleagues' real-time music patterns. He intends to stay anonymous by activating Private Mode before toggling Friend Activity.",
+                "scene_user_flow": [
+                  {
+                    "start": "Launches the music app on desktop from a secure work profile.",
+                    "interface": "Home screen with dark theme enabled."
+                  },
+                  {
+                    "step": 1,
+                    "action": "Clicks on the profile icon, goes to Settings > Social.",
+                    "interface": "The page with the five social toggles appears.",
+                    "system_action": "Settings read as default: all visibility ON except 'Private Session'."
+                  },
+                  {
+                    "step": 2,
+                    "action": "Turns ON 'Start Private Session'.",
+                    "interface": "A small icon indicates private mode is active."
+                  },
+                  {
+                    "step": 3,
+                    "action": "Goes back and enables 'See what your friends are playing'.",
+                    "interface": "Sidebar shows no activity yet—he expects it will update.",
+                    "system_action": "His setting remains private unless reset."
+                  },
+                  {
+                    "endpoint": false,
+                    "interface": "Sidebar active but no incoming friend data yet.",
+                    "false_reasoning": "Jordan assumes his session will remain private across app reboots.",
+                    "next_step": "Closes the app to restart the system before a call."
+                  }
+                ]
+              },
+              {
+                "scene_id": "scene_2",
+                "scene_description": "Later that night, Jordan listens to a playlist of resistance music while working on a blog post about digital activism. He forgets the session reset his privacy settings.",
+                "scene_user_flow": [
+                  {
+                    "start": "He relaunches the app after rebooting for a software update.",
+                    "interface": "Default homepage opens, sidebar is still active.",
+                    "system_action": "Private session setting reverts to OFF by default."
+                  },
+                  {
+                    "step": 1,
+                    "action": "Jordan plays music while writing in another window, unaware of sharing.",
+                    "interface": "Songs visibly play on his profile and feed.",
+                    "system_action": "All mutual-followed users see his listening activity, including professional followers."
+                  },
+                  {
+                    "endpoint": false,
+                    "interface": "Sidebar continues displaying others' activities.",
+                    "false_reasoning": "Jordan mistakenly believes he is in private session mode.",
+                    "next_step": "Goes to sleep, leaving the playlist running overnight."
+                  }
+                ]
+              },
+              {
+                "scene_id": "scene_3",
+                "scene_description": "The next morning, Jordan receives a message from a junior colleague: 'Hey, loved the radical playlist last night lol, bold choice.' He panics and checks his profile.",
+                "scene_user_flow": [
+                  {
+                    "start": "Jordan quickly opens the app and navigates to Social settings.",
+                    "interface": "Sees that 'Private Session' is OFF, but sharing is ON.",
+                    "system_action": "Confirms past 12 hours of activity were visible."
+                  },
+                  {
+                    "step": 1,
+                    "action": "He toggles 'Share my listening activity' OFF and deletes recent playlists.",
+                    "interface": "Feed stops updating, but shared history may remain cached for some users.",
+                    "system_action": "His activity is no longer visible to others going forward."
+                  },
+                  {
+                    "endpoint": true,
+                    "interface": "Sidebar now only shows others' music, his is hidden.",
+                    "true_reasoning": "He regains control but feels exposed and professionally vulnerable.",
+                    "next_step": "Plans to create a separate burner account for observation and work-related browsing."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+    },
+    {
+        "user_persona": {
+          "basic_info": {
+            "name": "Rina Patel",
+            "age": 19,
+            "tech_comfort": "Moderate"
+          },
+          "marginalization_type": [
+            "Individuals and identities",
+            "General structural marginalization"
+          ],
+          "contextual_info": {
+            "app_use_reason": "Rina uses the music app to stay connected with her college friends and peers, especially after moving away from her hometown. She sees the Friend Activity feature as a way to feel socially included and not left out of group listening trends.",
+            "privacy_expectations": "Rina believes her music activity is visible only to friends she actively chats with and assumes that viewing others' activity means they can also see hers. She doesn't fully understand how toggling sharing settings affects exposure.",
+            "information_cared_about": "She cares about controlling access to emotionally vulnerable listening habits (e.g., music related to breakups, mental health) and doesn't want certain peers to infer her moods or personal struggles."
+          },
+          "privacy_tensions_and_costs": {
+            "high_level_tensions": [
+              "Privacy vs. Support",
+              "Privacy vs. Identity Disclosure"
+            ],
+            "privacy_response": "Controlling Disclosure and Apathy",
+            "privacy_costs": [
+              "Restricted self-expression due to fear of being judged for music preferences",
+              "Accidental exposure of emotional states to peers",
+              "Strained relationships due to unintentional visibility of activity"
+            ]
+          }
+        },
+        "privacy_invasive user journey": [
+          {
+            "background": "It's midterm season, and Rina is feeling isolated and anxious in her college dorm. She misses her high school friend group and decides to turn on the Friend Activity feature to see what her friends back home are listening to. She thinks this will make her feel emotionally closer to them and ease her loneliness.",
+            "unexpected_outcomes": "By enabling 'Share my listening activity', Rina unintentionally broadcasts her late-night playlist—which includes emotional breakup songs and anxiety-related tracks—to casual acquaintances and classmates who follow her but whom she did not realize were mutuals. These include a fellow classmate she's trying to impress and a group she recently distanced from. Sensitive data: Rina's emotional state inferred from her music. Data subject: Rina. Data sender: Rina via app settings. Data recipients: Her peers and classmates on the platform.",
+            "scenes": [
+              {
+                "scene_id": "scene_1",
+                "scene_description": "Feeling homesick and looking for emotional support, Rina wants to passively reconnect with old friends. She expects the Friend Activity feature to show her their activity without exposing hers in return. 'Maybe seeing what they're listening to will make me feel less alone,' she thinks.",
+                "scene_user_flow": [
+                  {
+                    "start": "Rina launches the music app on her laptop in her dorm room late at night.",
+                    "interface": "The home page of the app is displayed."
+                  },
+                  {
+                    "step": 1,
+                    "action": "Clicks on her profile picture at the top right corner.",
+                    "interface": "A drop-down menu appears."
+                  },
+                  {
+                    "step": 2,
+                    "action": "Selects 'Settings'.",
+                    "interface": "Settings page with various sections appears."
+                  },
+                  {
+                    "step": 3,
+                    "action": "Scrolls down to 'Display' and toggles 'See what your friends are playing' to ON.",
+                    "interface": "Friend Activity sidebar appears with no friend data and a prompt to enable activity sharing.",
+                    "system_action": "System checks for mutuals with enabled sharing but finds none."
+                  },
+                  {
+                    "step": 4,
+                    "action": "Clicks on the large 'Settings' button in the sidebar.",
+                    "interface": "Redirected to the Social settings page."
+                  },
+                  {
+                    "step": 5,
+                    "action": "Toggles 'Share my listening activity' to ON, hoping to activate the sidebar feed.",
+                    "interface": "Still no friend activity appears, but her sharing is now active.",
+                    "system_action": "System begins broadcasting her activity to all mutual-followed or connected users with sharing enabled."
+                  },
+                  {
+                    "endpoint": false,
+                    "interface": "Sidebar shows no activity, despite toggling all settings.",
+                    "false_reasoning": "She didn't realize the system starts sharing immediately, even without showing reciprocal data.",
+                    "next_step": "Rina leaves it on and goes to bed, hoping something will show up tomorrow."
+                  }
+                ]
+              },
+              {
+                "scene_id": "scene_2",
+                "scene_description": "The next afternoon in class, Rina notices a classmate smirking after mentioning a song she had been looping the night before. She realizes he's seen her activity. Her heart sinks. 'Wait—wasn't I just trying to see others' songs?'",
+                "scene_user_flow": [
+                  {
+                    "start": "Rina reopens the app during a study break to check if friend activity appears.",
+                    "interface": "The sidebar now shows several friends' current tracks."
+                  },
+                  {
+                    "step": 1,
+                    "action": "She sees names of mutuals she forgot were added and people from her college she doesn't talk to anymore.",
+                    "interface": "The list includes her dorm crush and a roommate she recently had a falling out with.",
+                    "system_action": "All mutuals with enabled sharing have access to her activity."
+                  },
+                  {
+                    "endpoint": true,
+                    "interface": "Sidebar is populated with activity, but she now understands hers is visible too.",
+                    "true_reasoning": "Her goal to feel connected is technically met, but it comes with a privacy cost.",
+                    "next_step": "She debates whether to switch off sharing but fears being seen as secretive."
+                  }
+                ]
+              },
+              {
+                "scene_id": "scene_3",
+                "scene_description": "A few days later, she hears from a friend that others saw she was listening to a breakup song at 3 AM and were gossiping. She feels violated but doesn't know how to reverse it. 'This is why I shouldn't have clicked anything,' she mutters.",
+                "scene_user_flow": [
+                  {
+                    "start": "Rina opens the app with the intention to turn off activity sharing.",
+                    "interface": "Home screen with Friend Activity sidebar visible."
+                  },
+                  {
+                    "step": 1,
+                    "action": "Navigates again to 'Settings' > 'Social'.",
+                    "interface": "Social settings page with the same five toggles."
+                  },
+                  {
+                    "step": 2,
+                    "action": "Switches 'Share my listening activity' OFF.",
+                    "interface": "Sidebar now shows other users' activity but hers is hidden.",
+                    "system_action": "Her profile stops broadcasting new activity."
+                  },
+                  {
+                    "endpoint": true,
+                    "interface": "Sidebar remains active but less emotionally loaded for her.",
+                    "true_reasoning": "Her privacy is restored but the damage is already done.",
+                    "next_step": "Rina avoids using the sidebar unless she's playing generic music."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+    }       
+]

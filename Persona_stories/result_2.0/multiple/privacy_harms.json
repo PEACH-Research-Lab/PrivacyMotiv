@@ -1,0 +1,42 @@
+[
+    {
+        "privacy_harm_analysis": [
+          {
+            "harm_id": "harm1",
+            "privacy_harm": "Lack of Control",
+            "scene_id": "scene_2",
+            "harm_reason": "Leila (data subject) unknowingly enabled the 'Share my listening activity' toggle while trying to access the Friend Activity feature. The system (data sender) began broadcasting her listening habits without clearly informing her of the consequences. Leila assumed she could view others' data without reciprocating, revealing a lack of meaningful choice and powerlessness over her personal data visibility."
+          },
+          {
+            "harm_id": "harm2",
+            "privacy_harm": "Failure to Inform",
+            "scene_id": "scene_1",
+            "harm_reason": "The system directed Leila to enable 'Share my listening activity' in order to access others’ Friend Activity but failed to clearly warn her that this would make her own activity public. The vague interface and lack of immediate, visible consequences resulted in her making a decision without being properly informed, impairing her ability to make an autonomous, privacy-conscious choice."
+          },
+          {
+            "harm_id": "harm3",
+            "privacy_harm": "Thwarted Expectations",
+            "scene_id": "scene_3",
+            "harm_reason": "Leila expected that listening to emotional and personal playlists—especially tracks tied to trauma and racial identity—would remain private. However, the system (data sender) broadcasted this to all mutual contacts who had enabled visibility, including a distant classmate (data recipient) who later referenced it. This violated her expectation of privacy and control, as she did not consent to this specific form of disclosure."
+          },
+          {
+            "harm_id": "harm4",
+            "privacy_harm": "Psychological Harm - Emotional Distress",
+            "scene_id": "scene_3",
+            "harm_reason": "After realizing that her emotionally vulnerable music choices had been seen and commented on by someone she barely knows, Leila experienced embarrassment, panic, and a loss of emotional safety. The inappropriate data sharing triggered a panic episode, exacerbating her existing emotional vulnerability tied to racial trauma and social isolation."
+          },
+          {
+            "harm_id": "harm5",
+            "privacy_harm": "Autonomy Harm - Manipulation",
+            "scene_id": "scene_2",
+            "harm_reason": "Leila was subtly manipulated into sharing personal data through an interface design that required enabling data broadcasting in order to access social features. This exploitative interaction design leveraged her emotional need for connection, circumventing her rational decision-making and exploiting her vulnerability to gain more user-generated content for the platform."
+          },
+          {
+            "harm_id": "harm6",
+            "privacy_harm": "Relationship Harm",
+            "scene_id": "scene_3",
+            "harm_reason": "The unexpected message from a distant classmate referencing her listening activity damaged Leila’s sense of interpersonal trust and boundary-setting. She felt violated by someone she did not intend to engage with, leading to a breakdown in her perceived safety in peer relationships and discouraging further social connection via the app."
+          }
+        ]
+    }     
+]

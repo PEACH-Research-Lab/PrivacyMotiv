@@ -1,10 +1,14 @@
+Given a user persona and their privacy-invasive user journey story, your task is to detect "Privacy Dark Patterns."
+Use the reference section 'Dark Pattern Taxonomy' to identify problematic privacy-related dark patterns in the current UX design, and explain how these specific patterns contributed to the privacy issues in the user journey described above.
+
+-----------------------------------------------------------------------------
+Reference: 'Dark pattern taxonomy'
 
 High-level patterns describe general strategies that can be employed through a range of modalities and technologies and application types.
 Meso-level patterns describe a context-agnostic angle of attack and may be interpreted in relations to context based on the specific modality or application type.
 Low-level patterns are situated and contextually dependent, describing specific means of execution.
 
------Dark pattern taxonomy-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+*****************************************************************************
 1: High-level pattern: Obstruction
 Definition: Obstruction is a strategy which impedes a user’s task flow, making an interaction more difficult than it inherently needs to be, dissuading a user from taking an action.
 
@@ -26,9 +30,9 @@ Definition: Intermediate Currencies Create Barriers and use Obstruction to hide 
 Definition: Adding Steps subverts the user’s expectation that a task will take as few steps as technologically needed, instead creating additional points of unnecessary but required user interaction to perform a task.
 1.3.1: Low-level patterns: Privacy Maze
 Definition: Privacy Mazes Add Steps and use Obstruction to require a user to navigate through many pages to obtain relevant information or control without a comprehensive and exhaustive overview. As a result, the user is prevented from easily discovering relevant information or action possibilities, leaving them unable to make informed decisions regarding their privacy.
+*****************************************************************************
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+*****************************************************************************
 1: High-level pattern: Sneaking
 Definition: Sneaking is a strategy which hides, disguises, or delays the disclosure of important information that, if made available to users, would cause a user to unintentionally take an action they would likely object to.
 
@@ -52,9 +56,9 @@ Definition: (De)contextualizing Cues subverts the user’s expectation that prov
 Definition: Conflicting Information uses (De)contextualizing Cues and Sneaking to include two or more sources of information that conflict with each other. As a result, the user is unsure what the consequences of their actions will be and will be more likely to accept default settings that may not be in their best interest.
 1.3.2: Low-level patterns: Information without Context
 Definition: Information without context uses (De)contextualizing Cues and Sneaking to alter the relevant information or user controls to limit discoverability. As a result, the user is unlikely to find the information or action possibility they are interested in.
+*****************************************************************************
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+*****************************************************************************
 1: High-level pattern: Interface Interference
 Definition: Interface Interference is a strategy which privileges specific actions over others through manipulation of the user interface, thereby confusing the user or limiting discoverability of relevant action possibilities.
 
@@ -97,9 +101,9 @@ Definition: Complex Language leverages Language Accessibility, using Interface I
 
 1.8: Meso-level patterns: Feedforward Ambiguity
 Definition: Feedforward Ambiguity subverts the user’s expectation that their choice will be likely to result in an action they can predict, instead providing a discrepancy between information and actions available to users that results in an outcome that is different from what the user expects.
+*****************************************************************************
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+*****************************************************************************
 1: High-level pattern: Forced Action
 Definition: Forced Action is a strategy which requires users to knowingly or unknowingly perform an additional and/or tangential action or information to access (or continue to access) specific functionality, preventing them from continuing their interaction with a system without performing that action.
 
@@ -132,9 +136,9 @@ Definition: Grinding uses Gamification as a type of Forced Action to require rep
 
 1.6: Meso-level patterns: Attention Capture
 Definition: Attention Capture subverts the user’s expectation that they have rational control over the time they spend using a system, instead tricking them into spending more time or other resources to continue use for longer than they otherwise would.
+*****************************************************************************
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+*****************************************************************************
 1: High-level pattern: Social Engineering
 Definition: Social Engineering is a strategy which presents options or information that causes a user to be more likely to perform a specific  action based on their individual and/or social cognitive biases,  thereby leveraging a user's desire to follow expected or imposed social norms
 
@@ -168,3 +172,26 @@ Definition: Confirmshaming uses Personalization as a type of Social Engineering 
 
 1.5: Meso-level patterns: Personalization
 Definition: Personalization subverts the user’s expectation that products or service features are offered to all users in similar ways, instead using personal data to shape elements of the user experience that manipulate the user’s goals while hiding other alternatives.
+*****************************************************************************
+
+-----------------------------------------------------------------------------
+
+INPUT USER PERSONA AND JOURNEY STORY:
+[Input]
+
+OUTPUT FORMAT: Return identified privacy dark patterns as a JSON object using the structure below:
+{
+  "privacy_dark_pattern_detection": [
+    {
+      "privacy_dark_pattern": "Name of the privacy dark pattern",
+      "harm_id": "ID of the related privacy harm",
+      "scene_id": "ID of the scene where the dark pattern appeared",
+      "scene_user_flow": {
+        "step": "Describe the exact step from the user flow",
+        "interface": "Name or description of the interface where the dark pattern occurred"
+      },
+      "dark_pattern_reason": "Explain how the dark pattern tricks users into behaving in ways that go against their original intentions or privacy preferences."
+    }
+    /* Additional dark pattern entries as needed */
+  ]
+}

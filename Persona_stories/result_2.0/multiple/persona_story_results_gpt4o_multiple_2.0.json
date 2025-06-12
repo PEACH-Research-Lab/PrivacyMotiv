@@ -1,0 +1,246 @@
+[
+  {
+    "user_persona": {
+      "basic_info": {
+        "name": "Leila N.",
+        "age": 20,
+        "tech_comfort_level": "Moderate"
+      },
+      "type_of_marginalization": [
+        "Individuals and identities",
+        "Online spaces, tools, and communities"
+      ],
+      "contextual_info": {
+        "app_usage_reason": "Leila uses the app to feel connected to friends from college, particularly after transferring schools due to experiencing racial harassment. She finds comfort in knowing what others are listening to and uses it to feel included.",
+        "privacy_expectations_and_vulnerabilities": "Leila expects the app to show her only publicly shared content and does not fully understand the visibility settings. She mistakenly assumes others won’t know she’s viewing their activity. She is emotionally vulnerable due to recent isolation and tends to over-share without understanding consequences.",
+        "information_to_control": "She cares about controlling what music others associate with her identity, especially songs related to her cultural background and emotional states."
+      },
+      "privacy_tensions_and_costs": {
+        "high_level_privacy_tension": "Privacy vs. Support",
+        "specific_privacy_response": "Controlling Disclosure—Leila manages multiple profiles and toggles visibility settings, hoping to see others without being seen.",
+        "costs": "Emotional labor, risk of exposure, misunderstanding of app's logic leads to unwanted visibility and unintentional self-disclosure"
+      }
+    },
+    "privacy_invasive user journey": [
+      {
+        "background": "In the middle of the semester, Leila moves to a new university and feels increasingly disconnected from her old friend group. Late one evening, she installs the music app on her desktop and begins exploring the 'Friend Activity' feature, hoping to see what her old friends are listening to so she can feel close to them again. She doesn’t realize that enabling visibility on her own listening habits is required to view theirs. Her goal is to silently observe what friends are playing without revealing her own listening history.",
+        "unexpected_outcomes": "After enabling the 'Share my listening activity' toggle and connecting with Facebook, Leila's profile is now broadcasting every track she listens to. She had been playing several emotional tracks related to her recent trauma, including songs with racial justice themes. A classmate she barely knows—who is mutual friends with one of her old friends—messages her, referencing the song she listened to. Leila is startled and embarrassed. The system (data sender) shared her activity; the classmate (data recipient) received it; Leila (data subject) had not realized she made this data visible. She feels exposed and manipulated, triggering a panic episode.",
+        "scenes": [
+          {
+            "scene_id": "scene_1",
+            "scene_description": "Leila wants to feel close to her old friend group, so she tries to activate the Friend Activity panel. She hopes to watch what others are listening to, expecting she can do so quietly. She thinks: 'Maybe if I turn this on, I can see what Tasha and Sam are into now.'",
+            "scene_user_flow": [
+              {
+                "start": "Launch music app on desktop",
+                "interface": "Home page"
+              },
+              {
+                "step": 1,
+                "action": "Click on the profile picture or username on the top right corner of the screen.",
+                "interface": "A drop-down menu appears under the user profile picture in the top-right corner of the screen."
+              },
+              {
+                "step": 2,
+                "action": "Select 'Settings'.",
+                "interface": "Settings page with multiple subtitle sections including Account, Language, Explicit content, Autoplay, Audio quality, Your Library, Display, Zoom level, Social, Playback, Startup and window behavior, Storage, and Proxy Settings."
+              },
+              {
+                "step": 3,
+                "action": "Scroll down and find the 'Display' section.",
+                "interface": "The setting page under the 'Display' section, there are three toggle buttons: (1) 'Show the now-playing panel on click of play' (default ON), (2) 'Display short, looping visuals on tracks (Canvas)' (default ON), (3) 'See what your friends are playing' (default OFF)."
+              },
+              {
+                "step": 4,
+                "action": "Find the 'See what your friends are playing' toggle button and switch it on.",
+                "system_action": "The system checks and finds that you don't have any mutual-followed friend or synced Facebook friend who have turned on their 'Share my listening activity' setting to you.",
+                "interface": "Friend Activity sidebar appears on the right third of the screen. The sidebar displays two messages: 'Let friends and followers see what you are listening to.' and 'Go to Settings > Social and enable “Share my listening activity”. You can turn this off at any time.' Below the messages, there is a large white button labeled 'Settings'."
+              },
+              {
+                "endpoint": false,
+                "interface": "Friend Activity sidebar with the same two messages.",
+                "false_reasoning": "No friends activity appears on the Friend Activity sidebar.",
+                "next_step": "Leila clicks on the 'Settings' button to continue trying to see others’ listening activity."
+              }
+            ]
+          },
+          {
+            "scene_id": "scene_2",
+            "scene_description": "Still trying to access friend activity, Leila follows the system's prompt. She doesn’t fully realize that enabling her own sharing might make her listening public. She thinks: 'Maybe I just need to connect with Facebook and turn on something.'",
+            "scene_user_flow": [
+              {
+                "start": "Settings page opens from clicking the 'Settings' button in the Friend Activity sidebar",
+                "interface": "Settings page"
+              },
+              {
+                "step": 1,
+                "action": "Scroll down and find the 'Social' section.",
+                "interface": "In the 'Social' section, there is one connection button and five toggle buttons."
+              },
+              {
+                "step": 2,
+                "action": "Click 'Connect with Facebook'.",
+                "interface": "Interface refreshes with connected Facebook friends"
+              },
+              {
+                "step": 3,
+                "action": "Find 'Share my listening activity' and switch the toggle button to ON.",
+                "system_action": "The system checks and finds that you do have some mutual-followed friends or synced Facebook friends who have turned on their 'Share my listening activity' setting to you.",
+                "interface": "The Friend Activity sidebar displays a list of your friends along with the tracks and playlists they are currently listening to, or the most recent listened tracks in the past 7 days."
+              },
+              {
+                "endpoint": true,
+                "interface": "Friend Activity sidebar displays friends' listening activities.",
+                "true_reasoning": "Leila successfully activates the feature and sees some familiar names and playlists.",
+                "next_step": "She keeps the sidebar open and starts browsing her own playlist, unaware her activity is now being shared."
+              }
+            ]
+          },
+          {
+            "scene_id": "scene_3",
+            "scene_description": "Leila listens to an emotionally vulnerable playlist. She doesn't know others can now see this. She thinks: 'This playlist gets me through nights like this. No one will know anyway.'",
+            "scene_user_flow": [
+              {
+                "start": "Leila selects a playlist titled 'grieving / healing'",
+                "interface": "Now playing panel updates to show current song"
+              },
+              {
+                "step": 1,
+                "action": "Listens to songs including activist and trauma-themed tracks",
+                "interface": "Now playing panel cycles through song names and artist visuals",
+                "system_action": "Songs are broadcast in real-time to all mutuals who also enabled listening activity"
+              },
+              {
+                "endpoint": true,
+                "interface": "Friend Activity sidebar continues displaying friend activity (and now, hers as well)",
+                "true_reasoning": "Leila unknowingly broadcasts emotional content",
+                "next_step": "Later, a vague message from a distant classmate referencing her song makes her suspicious"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "user_persona": {
+      "basic_info": {
+        "name": "Carlos V.",
+        "age": 34,
+        "tech_comfort_level": "Novice"
+      },
+      "type_of_marginalization": [
+        "Physical spaces and communities",
+        "General structural marginalization"
+      ],
+      "contextual_info": {
+        "app_usage_reason": "Carlos lives in transitional housing after leaving a volatile domestic situation. He uses the music app as a mental escape and to feel connected to normalcy by browsing what people are listening to.",
+        "privacy_expectations_and_vulnerabilities": "He doesn’t fully understand how activity visibility works. Coming from a high-surveillance shelter environment, he assumes platforms are private unless told otherwise.",
+        "information_to_control": "Carlos is sensitive about revealing music that might imply his location, state of mind, or personal affiliations, especially since he’s still avoiding contact with an abusive former partner."
+      },
+      "privacy_tensions_and_costs": {
+        "high_level_privacy_tension": "Privacy vs. Autonomy",
+        "specific_privacy_response": "Apathy—Carlos believes surveillance is everywhere and that nothing he does online is really private, so he doesn’t adjust settings.",
+        "costs": "Exposure to abusive surveillance, retraumatization, limited autonomy in controlling disclosure"
+      }
+    },
+    "privacy_invasive user journey": [
+      {
+        "background": "Carlos uses a desktop computer provided in a shared community center. On a rainy afternoon, he opens the music app and explores the 'Friend Activity' feature. He’s curious to see if any of the younger shelter residents are using it and wants to blend in. He clicks through settings assuming nothing he does will matter—he's used to being watched. His goal is to observe others and feel included in something normal.",
+        "unexpected_outcomes": "Carlos forgets that he's connected the music app with his old Facebook account, which still includes his abusive ex-partner. After enabling 'Share my listening activity,' his current listening habits—including tracks about healing, domestic violence, and fear—are broadcast to mutuals. His ex sees this activity and deduces Carlos’s emotional state and likely location. This triggers contact attempts and distress. The system shared sensitive emotional metadata (music selection), Carlos is the data subject, and the ex-partner was the unintended data recipient.",
+        "scenes": [
+          {
+            "scene_id": "scene_1",
+            "scene_description": "Carlos logs in and decides to activate the Friend Activity panel, thinking: 'Let’s see if anyone here listens to music I like. It’s not like any of this matters anymore.'",
+            "scene_user_flow": [
+              {
+                "start": "Launch music app on desktop",
+                "interface": "Home page"
+              },
+              {
+                "step": 1,
+                "action": "Click on the profile picture or username on the top right corner of the screen.",
+                "interface": "A drop-down menu appears under the user profile picture in the top-right corner of the screen."
+              },
+              {
+                "step": 2,
+                "action": "Select 'Settings'.",
+                "interface": "Settings page with multiple subtitle sections including Account, Language, Explicit content, Autoplay, Audio quality, Your Library, Display, Zoom level, Social, Playback, Startup and window behavior, Storage, and Proxy Settings."
+              },
+              {
+                "step": 3,
+                "action": "Scroll down and find the 'Display' section.",
+                "interface": "The setting page under the 'Display' section, there are three toggle buttons: (1) 'Show the now-playing panel on click of play' (default ON), (2) 'Display short, looping visuals on tracks (Canvas)' (default ON), (3) 'See what your friends are playing' (default OFF)."
+              },
+              {
+                "step": 4,
+                "action": "Find the 'See what your friends are playing' toggle button and switch it on.",
+                "system_action": "The system checks and finds that you don't have any mutual-followed friend or synced Facebook friend who have turned on their 'Share my listening activity' setting to you.",
+                "interface": "Friend Activity sidebar appears on the right third of the screen. The sidebar displays two messages: 'Let friends and followers see what you are listening to.' and 'Go to Settings > Social and enable “Share my listening activity”. You can turn this off at any time.' Below the messages, there is a large white button labeled 'Settings'."
+              },
+              {
+                "endpoint": false,
+                "interface": "Friend Activity sidebar with the same two messages.",
+                "false_reasoning": "No friends activity appears on the Friend Activity sidebar.",
+                "next_step": "Carlos clicks on the 'Settings' button to continue exploring"
+              }
+            ]
+          },
+          {
+            "scene_id": "scene_2",
+            "scene_description": "Carlos vaguely remembers that Facebook was connected during sign-up but doesn’t realize his ex is still on that list. He clicks through social settings without thinking. He mumbles, 'Whatever, I’ll just turn this on—maybe then I’ll see someone’s feed.'",
+            "scene_user_flow": [
+              {
+                "start": "Settings page opens from clicking the 'Settings' button in the Friend Activity sidebar",
+                "interface": "Settings page"
+              },
+              {
+                "step": 1,
+                "action": "Scroll down and find the 'Social' section.",
+                "interface": "In the 'Social' section, there is one connection button and five toggle buttons."
+              },
+              {
+                "step": 2,
+                "action": "Click 'Connect with Facebook'.",
+                "interface": "Interface refreshes with connected Facebook friends"
+              },
+              {
+                "step": 3,
+                "action": "Find 'Share my listening activity' and switch the toggle button to ON.",
+                "system_action": "The system checks and finds that you do have some mutual-followed friends or synced Facebook friends who have turned on their 'Share my listening activity' setting to you.",
+                "interface": "The Friend Activity sidebar displays a list of your friends along with the tracks and playlists they are currently listening to, or the most recent listened tracks in the past 7 days."
+              },
+              {
+                "endpoint": true,
+                "interface": "Friend Activity sidebar displays friends' listening activities.",
+                "true_reasoning": "Carlos sees a few unfamiliar names and feels slightly more included.",
+                "next_step": "He minimizes the sidebar and listens to a private playlist titled 'quiet strength'"
+              }
+            ]
+          },
+          {
+            "scene_id": "scene_3",
+            "scene_description": "Carlos puts on music that helps him cope with trauma. He’s unaware this is being shared. He thinks: 'Finally some time alone... just me and my songs.'",
+            "scene_user_flow": [
+              {
+                "start": "Carlos selects a playlist containing tracks titled 'Leaving,' 'No More Hiding,' and 'Blue Shelter'",
+                "interface": "Now playing panel updates to reflect song titles"
+              },
+              {
+                "step": 1,
+                "action": "Listens to tracks for 45 minutes",
+                "interface": "Song titles rotate in the now-playing panel",
+                "system_action": "His listening activity is broadcast to all mutual Facebook friends"
+              },
+              {
+                "endpoint": true,
+                "interface": "Friend Activity sidebar (for others) shows Carlos’s recent tracks.",
+                "true_reasoning": "System shares activity in real-time without Carlos’s full awareness",
+                "next_step": "An hour later, Carlos receives a vague message from his ex saying: 'So you’re still hiding out. Thought “No More Hiding” was an interesting choice.'"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }  
+]

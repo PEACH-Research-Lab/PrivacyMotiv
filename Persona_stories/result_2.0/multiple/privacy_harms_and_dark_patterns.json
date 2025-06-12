@@ -1,0 +1,122 @@
+[
+  {
+    "privacy_harm_analysis": [
+      {
+        "harm_id": "harm1",
+        "privacy_harm": "Psychological Harms – Emotional Distress",
+        "scene_id": "scene_3",
+        "harm_reason": "Leila, the data subject, unknowingly broadcasted her listening activity involving deeply personal, trauma-related music through the music app's Friend Activity feature. The system (data sender) shared this activity in real time with mutuals, including a distant classmate (data recipient), who then contacted her referencing the track. This caused Leila to feel exposed and emotionally violated, triggering a panic episode."
+      },
+      {
+        "harm_id": "harm2",
+        "privacy_harm": "Autonomy Harms – Thwarted Expectations",
+        "scene_id": "scene_2",
+        "harm_reason": "Leila expected to view others' listening activity without making her own visible. However, the system required her to activate 'Share my listening activity' to see others’ behavior, thereby sharing her own activity without her fully understanding the consequences. The app’s design contradicted her assumption and undermined her agency over visibility."
+      },
+      {
+        "harm_id": "harm3",
+        "privacy_harm": "Autonomy Harms – Lack of Control",
+        "scene_id": "scene_3",
+        "harm_reason": "After enabling visibility settings to access Friend Activity, Leila had no clear feedback or overview of her exposure. Her listening history was streamed in real-time without easy control or a reminder of who could see it. This shows she lacked meaningful control over her personal data, particularly under vulnerable emotional states."
+      },
+      {
+        "harm_id": "harm4",
+        "privacy_harm": "Relationship Harms",
+        "scene_id": "scene_3",
+        "harm_reason": "A classmate with tenuous social ties messaged Leila about a vulnerable playlist she was listening to. This unsolicited contact damaged her sense of relational boundaries and trust in mediated social environments. It also caused discomfort about how acquaintances perceive her."
+      }
+    ],
+    "privacy_dark_pattern_detection": [
+      {
+        "privacy_dark_pattern": "Privacy Maze",
+        "harm_id": "harm2",
+        "scene_id": "scene_1",
+        "scene_user_flow": {
+          "step": "Leila clicks the 'Settings' button under 'Friend Activity' sidebar after no friend activity shows up",
+          "interface": "Friend Activity sidebar"
+        },
+        "dark_pattern_reason": "Leila was required to click through multiple settings menus and toggle configurations, making the relationship between sharing and viewing unclear. This maze of settings prevents informed, easy decision-making about privacy."
+      },
+      {
+        "privacy_dark_pattern": "Privacy Zuckering",
+        "harm_id": "harm3",
+        "scene_id": "scene_2",
+        "scene_user_flow": {
+          "step": "Click 'Connect with Facebook' and toggle 'Share my listening activity' ON",
+          "interface": "Settings page under Social section"
+        },
+        "dark_pattern_reason": "Leila was nudged into sharing her own data under the guise of gaining access to others’ listening history, without full understanding that this made her own emotional music history public."
+      },
+      {
+        "privacy_dark_pattern": "Thwarted Expectations",
+        "harm_id": "harm2",
+        "scene_id": "scene_2",
+        "scene_user_flow": {
+          "step": "Switch 'Share my listening activity' ON to enable viewing friends’ activity",
+          "interface": "Settings page, Social section"
+        },
+        "dark_pattern_reason": "The system leveraged user assumptions about passive viewing and reversed them—forcing users to share in order to see—violating expectations of passive observation."
+      }
+    ]
+  },
+  {
+    "privacy_harm_analysis": [
+      {
+        "harm_id": "harm1",
+        "privacy_harm": "Psychological Harms – Emotional Distress",
+        "scene_id": "scene_3",
+        "harm_reason": "Carlos, the data subject, unknowingly broadcasted his listening activity—featuring songs about trauma and fear—through the Friend Activity feature. The system (data sender) shared this activity with synced Facebook mutuals, including his abusive ex-partner (data recipient). This unsolicited exposure triggered emotional distress and retraumatization."
+      },
+      {
+        "harm_id": "harm2",
+        "privacy_harm": "Autonomy Harms – Lack of Control",
+        "scene_id": "scene_3",
+        "harm_reason": "Carlos had no clear understanding that enabling 'Share my listening activity' would publicize his deeply personal music choices. He was unaware his connected Facebook friends still included his abuser, and lacked tools or feedback to control or audit visibility. His autonomy over disclosure was effectively compromised by design."
+      },
+      {
+        "harm_id": "harm3",
+        "privacy_harm": "Physical Harms",
+        "scene_id": "scene_3",
+        "harm_reason": "Carlos's ex-partner received emotional and contextual clues about his location and psychological state based on the playlist names and track content. This led to contact attempts, which may endanger Carlos’s physical safety due to his history of domestic violence. The system behavior put him at risk by exposing identifying patterns of movement or thought through metadata."
+      },
+      {
+        "harm_id": "harm4",
+        "privacy_harm": "Relationship Harms",
+        "scene_id": "scene_3",
+        "harm_reason": "Carlos's unintended broadcast of personal music content to an abusive ex undermined his sense of safety and trust in platform-mediated relationships. The reactivation of an unwanted tie damaged his ongoing efforts to establish safe boundaries while rebuilding his life."
+      }
+    ],
+    "privacy_dark_pattern_detection": [
+      {
+        "privacy_dark_pattern": "Privacy Maze",
+        "harm_id": "harm2",
+        "scene_id": "scene_1",
+        "scene_user_flow": {
+          "step": "Carlos clicks the 'Settings' button under 'Friend Activity' sidebar after no activity appears",
+          "interface": "Friend Activity sidebar"
+        },
+        "dark_pattern_reason": "Carlos had to click through multiple, non-intuitive toggles and sections to activate visibility. The logic behind why his feed was empty was hidden, making it difficult for him to understand the consequences of enabling the feature."
+      },
+      {
+        "privacy_dark_pattern": "Privacy Zuckering",
+        "harm_id": "harm1",
+        "scene_id": "scene_2",
+        "scene_user_flow": {
+          "step": "Click 'Connect with Facebook' and toggle 'Share my listening activity' ON",
+          "interface": "Settings page under Social section"
+        },
+        "dark_pattern_reason": "The app nudged Carlos to connect Facebook and share his activity without emphasizing that this would expose his emotional listening history to all Facebook mutuals, including potentially dangerous individuals."
+      },
+      {
+        "privacy_dark_pattern": "Thwarted Expectations",
+        "harm_id": "harm2",
+        "scene_id": "scene_2",
+        "scene_user_flow": {
+          "step": "Switch 'Share my listening activity' ON to enable viewing others’ activity",
+          "interface": "Settings page, Social section"
+        },
+        "dark_pattern_reason": "Carlos assumed that viewing friend activity wouldn't require self-disclosure. The system contradicted this by forcing reciprocal sharing, violating his expectations of passive engagement and privacy."
+      }
+    ]
+  } 
+]
