@@ -1,12 +1,12 @@
 Given a user persona and their privacy-invasive user journey story, your task is to conduct a "Privacy Harm Analysis."
-Use the reference section 'Privacy Harms Typology' to identify and explain:
+Use the REFERENCE section 'Privacy Harms Typology' to identify and explain:
   1. What types of privacy harms the persona experienced
   2. When these harms occurred during the user journey
-  3. Include specific moments, scenes, or actions where each harm was triggered
-Please be precise and contextual—link each harm to user behavior, system action, or interface flow wherever possible.
+  3. Which specific moments, scenes, or actions triggered each harm
+Please be precise and contextual—clearly link each harm to user behavior, system actions, or interface flows wherever possible.
 
 -----------------------------------------------------------------------------
-Reference: 'Privacy Harms Typology'
+REFERENCE: 'Privacy Harms Typology'
 
 1. Physical Harms
   Definition: Harms that result in bodily injury or death
@@ -115,18 +115,26 @@ Reference: 'Privacy Harms Typology'
 -----------------------------------------------------------------------------
 
 INPUT USER PERSONA AND JOURNEY STORY:
-[Input]
+* USER PERSONA:
+[USERPERSONA]
+
+* JOURNEY STORY
+[JOURNEY STORY]
 
 OUTPUT FORMAT: Return privacy harm analysis as a JSON object following this structure:
 {
   "privacy_harm_analysis": [
     {
-      "harm_id": "harm1",
       "privacy_harm": "Name of the privacy harm",
-      "scene_id": "ID of the scene where the privacy harm occurred",
-      "harm_reason": "Explain the cause of the harm by detailing what sensitive data was inappropriately shared, who the data subject is, who shared the data (data sender), who received it (data recipient), and what action or system behavior triggered the exposure."
+      "privacy_harms": [
+        {
+          "harm_type": "",
+          "scene_id": "ID of the scene where the privacy harm occurred during the user journey",
+          "harm_explanation": "Explain the cause of the harm by detailing what sensitive data was inappropriately shared, who the data subject is, who shared the data (data sender), who received it (data recipient), and what action or system behavior triggered the exposure."
+        }
+        // You may include multiple harm entries here
+      ]
     }
-    /* Additional harm entries as needed */
   ]
 }
 

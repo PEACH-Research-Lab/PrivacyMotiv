@@ -1,0 +1,247 @@
+[
+    {
+      "basic_info": {
+        "name": "Rosa Martínez",
+        "age": 29,
+        "tech_comfort_level": "moderate"
+      },
+      "contextual_info": {
+        "marginalization_types_with_short_description": [
+          "Individuals & identities: undocumented immigrant from Guatemala living in the U.S."
+        ],
+        "privacy_awareness_level": "high",
+        "information_cared_about": [
+          "current location",
+          "immigration status documents",
+          "family contacts",
+          "employment details"
+        ]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Disclosure of identity—sharing real identity online risks ICE detection",
+          "Privacy vs. Support—needs online mutual-aid groups for housing help"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Withholding disclosure",
+            "description": "Uses initials and avoids posting photos that reveal face or location."
+          },
+          {
+            "response": "Privacy lies",
+            "description": "Enters a false birth date on job-search sites to avoid matching to immigration databases."
+          },
+          {
+            "response": "Privacy-enhancing technologies",
+            "description": "Chats through end-to-end-encrypted apps and browses with Tor on public Wi-Fi."
+          }
+        ],
+        "costs_and_consequences": [
+          "Labor-intensive identity management limits networking opportunities.",
+          "Potential legal repercussions if false data is discovered.",
+          "Encrypted traffic occasionally blocked by employers, hindering job search."
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Jae Park",
+        "age": 21,
+        "tech_comfort_level": "expert"
+      },
+      "contextual_info": {
+        "marginalization_types_with_short_description": [
+          "Individuals & identities: non-binary Korean-American",
+          "Physical spaces & communities: lives in a conservative rural town"
+        ],
+        "privacy_awareness_level": "high",
+        "information_cared_about": [
+          "gender identity exploration history",
+          "social-media friend lists",
+          "photo metadata"
+        ]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Disclosure of identity—must hide queerness from local peers",
+          "Individual vs. Collective—risk of outing LGBTQ+ friends via mutual tags"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Controlling disclosure",
+            "description": "Runs three separate social-media accounts with non-overlapping audiences."
+          },
+          {
+            "response": "Privacy-enhancing technologies",
+            "description": "Strips EXIF data and uses auto-deleting encrypted messaging for support groups."
+          }
+        ],
+        "costs_and_consequences": [
+          "Constant audience segmentation is emotionally taxing and time-consuming.",
+          "Accidental cross-posting could expose identity, causing social backlash.",
+          "Friends sometimes feel excluded, straining relationships."
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Ethel Greene",
+        "age": 65,
+        "tech_comfort_level": "novice"
+      },
+      "contextual_info": {
+        "marginalization_types_with_short_description": [
+          "Physical spaces & communities: resident of subsidized senior housing",
+          "Marginalization in general: fixed low income"
+        ],
+        "privacy_awareness_level": "low",
+        "information_cared_about": [
+          "financial benefit letters",
+          "medical appointment details"
+        ]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support—needs online health portals but fears scams"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Apathy",
+            "description": "Believes scams are inevitable and clicks unsolicited links out of frustration."
+          },
+          {
+            "response": "Non-use",
+            "description": "Refuses to create online banking account despite bank branch closure."
+          }
+        ],
+        "costs_and_consequences": [
+          "Higher exposure to phishing risks.",
+          "Missed tele-health discounts and delayed benefit payments.",
+          "Relies on neighbors for online tasks, creating new dependency."
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Omar Al-Hashimi",
+        "age": 17,
+        "tech_comfort_level": "moderate"
+      },
+      "contextual_info": {
+        "marginalization_types_with_short_description": [
+          "Individuals & identities: Syrian refugee and political dissident",
+          "Online spaces: youth activist channels on encrypted platforms"
+        ],
+        "privacy_awareness_level": "high",
+        "information_cared_about": [
+          "real-name linkage",
+          "geotagged photos",
+          "chat logs of protests"
+        ]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Autonomy—parental monitoring app required by guardian conflicts with activism secrecy"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Privacy-enhancing technologies",
+            "description": "Uses Signal with disappearing messages and disables camera geotagging."
+          },
+          {
+            "response": "Physical workarounds",
+            "description": "Keeps activism phone hidden in a locked drawer at home."
+          }
+        ],
+        "costs_and_consequences": [
+          "Loses device access if caught, hindering schoolwork.",
+          "May erase valuable historical evidence of abuse when messages auto-delete.",
+          "Constant anxiety affects academic performance."
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Maria Silva",
+        "age": 34,
+        "tech_comfort_level": "expert"
+      },
+      "contextual_info": {
+        "marginalization_types_with_short_description": [
+          "Individuals & identities: Latina single mother engaging in sex work online",
+          "Online spaces: relies on niche subscription platforms for income"
+        ],
+        "privacy_awareness_level": "high",
+        "information_cared_about": [
+          "real name and address",
+          "child's school location",
+          "income records"
+        ]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support—needs to promote content to earn but risks doxxing",
+          "Individual vs. Collective—child's privacy affected by her disclosures"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Controlling disclosure",
+            "description": "Uses stage name, virtual mailboxes, and watermarks to track reposts."
+          },
+          {
+            "response": "Collaborative privacy practices",
+            "description": "Sets household rules about never posting home photos."
+          }
+        ],
+        "costs_and_consequences": [
+          "Maintaining multiple security services is expensive.",
+          "Potential loss of income when removing geotagged BTS content.",
+          "Emotional labor of constant vigilance leads to burnout."
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Devika Nair",
+        "age": 40,
+        "tech_comfort_level": "moderate"
+      },
+      "contextual_info": {
+        "marginalization_types_with_short_description": [
+          "Physical spaces & communities: recent survivor in an intimate-partner-violence (IPV) shelter"
+        ],
+        "privacy_awareness_level": "medium",
+        "information_cared_about": [
+          "current shelter address",
+          "call logs and text messages",
+          "legal case files"
+        ]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support—needs phone tracking enabled for emergency aid",
+          "Privacy vs. Autonomy—shelter's mandatory device checks feel invasive"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Privacy-enhancing technologies",
+            "description": "Uses secure folder with fingerprint lock and emergency-wipe app."
+          },
+          {
+            "response": "Asking for help",
+            "description": "Consults digital-safety advocates about stalkerware scans."
+          },
+          {
+            "response": "Third-party protections",
+            "description": "Shelter IT staff routinely wipe her phone backups to remove hidden trackers."
+          }
+        ],
+        "costs_and_consequences": [
+          "Loses sentimental photos when backups are wiped.",
+          "Must trust shelter staff with sensitive data.",
+          "Abuser may retaliate if lock-out discovered."
+        ]
+      }
+    }
+]
+  

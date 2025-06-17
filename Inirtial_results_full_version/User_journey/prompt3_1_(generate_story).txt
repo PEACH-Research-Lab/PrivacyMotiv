@@ -1,0 +1,62 @@
+Given a persona and the user flows for a specific feature of an app, your task is to write a privacy-invasive user journey story consisting of four or more scenes.
+Each scene should:
+  1. Be rooted in the user’s behavior as described in the persona
+  2. Align with actions found in the provided user flows
+  3. Clearly describe the setting, user action, system response, and resulting privacy consequence
+
+
+INPUT PERSONA:
+[PERSONA]
+
+INPUT USER FLOWS:
+[USER FLOWS]
+
+OUTPUT FORMAT: Return multiple different persona–user journey stories as a JSON object, following this structure: 
+{
+  "user_name": "",
+  "privacy_invasive_user_journey": [
+    {
+      "background": "Brief description of the contextual background for this user journey story. Please be specific—describe the time, situation, and reasons why the persona uses this feature, as well as their goals.",
+      "scenes": [
+        {
+          "scene_id": "scene_1",
+          "scene_description": "A brief description of the user's motive in this scene. Include the reason for transitioning from the previous scene's actions to this one, the user's expectations in this moment, and include direct quotes that reflect the user's thinking or dialogue.",
+          "scene_user_flow": [
+            {
+              "start": "Describe the starting state and context",
+              "interface": "Describe what the user sees at the start"
+            },
+            {
+              "step": 1,
+              "action": "Describe the user action in this step",
+              "interface": "Describe the interface immediately after the action",
+              "system_action": "If relevant, describe the system behavior behind the scenes"
+            },
+            // ...additional steps as needed can be added here
+            {
+              "endpoint": true,
+              "interface": "Describe what the user sees at the end of the scene",
+              "true_reasoning": "Explain why the user's goal was successfully achieved",
+              "next_step": "Describe what the user decides to do next to continue toward their overall goal"
+            }
+            // OR if the goal was not achieved:
+            // {
+            //   "endpoint": false,
+            //   "interface": "Describe what the user sees at the end of the scene",
+            //   "false_reasoning": "Explain why the user's goal was not achieved",
+            //   "next_step": "Describe what the user decides to do next to continue toward their overall goal"
+            // }
+          ],
+          "reflections": "User’s thoughts, emotions, concerns, or any other reflections about this scene"
+        }
+        // ...Add additional scenes here as needed
+      ],
+      "unexpected_outcomes": "Detailed description of disturbing or privacy-invasive outcomes that occur against the user's will. The description should highlight specific harms, including what sensitive data was inappropriately shared, who the data subject is, who disclosed the data (data sender), and who received it (data recipient). The outcome should reflect a subtle or unsettling violation of privacy—something beyond typical or expected consequences."
+    }
+  ]
+}
+
+When describing interfaces in the persona–user journey stories, follow these strict rules:
+  1. Use only the terminology, UI elements, and system behaviors explicitly described in the provided input flow.
+  2. When referring to interface components (e.g., buttons, screens, options), use the actual elements described in the interface. Focus on what the user sees and interacts with.
+  3. Do not invent or assume the existence of any screens, buttons, or features that are not clearly stated in the input.

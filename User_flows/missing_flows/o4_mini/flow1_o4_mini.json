@@ -5,7 +5,7 @@
       "missing_flows": [
         {
           "missing_flow_id": "missing_flow1",
-          "description": "Enable “Share my listening activity” first in Social settings, then enable “See what your friends are playing” in Display when no friends have shared.",
+          "description": "Enable 'Share my listening activity' first in Social settings, then enable 'See what your friends are playing' in Display when no friends have shared.",
           "missing_reasons": "Some users may go to Social settings first since it directly mentions sharing activity, before adjusting Display settings. Important to consider because it affects how users arrive at viewing Friend Activity.",
           "steps": [
             {
@@ -42,18 +42,18 @@
               "step": 6,
               "action": "Find the 'See what your friends are playing' toggle button and switch it on.",
               "system_action": "The system checks and finds that you don't have any mutual-followed friend or synced Facebook friend who have turned on their 'Share my listening activity' setting to you.",
-              "interface": "Friend Activity sidebar appears on the right third of the screen. The sidebar displays two messages: 'Let friends and followers see what you are listening to.' and 'Go to Settings > Social and enable “Share my listening activity”. You can turn this off at any time.' Below the messages, there is a large white button labeled 'Settings'."
+              "interface": "Friend Activity sidebar appears on the right third of the screen. The sidebar displays two messages: 'Let friends and followers see what you are listening to.' and 'Go to Settings > Social and enable 'Share my listening activity'. You can turn this off at any time.' Below the messages, there is a large white button labeled 'Settings'."
             },
             {
               "endpoint": false,
-              "interface": "Friend Activity sidebar appears on the right third of the screen. The sidebar displays two messages: 'Let friends and followers see what you are listening to.' and 'Go to Settings > Social and enable “Share my listening activity”. You can turn this off at any time.' Below the messages, there is a large white button labeled 'Settings'.",
+              "interface": "Friend Activity sidebar appears on the right third of the screen. The sidebar displays two messages: 'Let friends and followers see what you are listening to.' and 'Go to Settings > Social and enable 'Share my listening activity'. You can turn this off at any time.' Below the messages, there is a large white button labeled 'Settings'.",
               "false_reasoning": "No friends activity appears because no mutual-shared friends exist."
             }
           ]
         },
         {
           "missing_flow_id": "missing_flow2",
-          "description": "Enable “Share my listening activity” first in Social settings, then enable “See what your friends are playing” in Display when friends have shared.",
+          "description": "Enable 'Share my listening activity' first in Social settings, then enable 'See what your friends are playing' in Display when friends have shared.",
           "missing_reasons": "Users with existing shared friends may expect activity to appear immediately after enabling both settings, regardless of order.",
           "steps": [
             {
@@ -101,7 +101,7 @@
         },
         {
           "missing_flow_id": "missing_flow3",
-          "description": "Enable “Share my listening activity” first in Social settings, then tap the Friend Activity icon when no friends have shared.",
+          "description": "Enable 'Share my listening activity' first in Social settings, then tap the Friend Activity icon when no friends have shared.",
           "missing_reasons": "Some users may know the icon is the primary entry point and use it after enabling share. Important for understanding icon behavior following share setting changes.",
           "steps": [
             {
@@ -133,18 +133,18 @@
               "step": 5,
               "action": "Tap the Friend Activity icon at the top-right corner of the app window, located to the left of the Profile icon.",
               "system_action": "The system checks and finds that you don't have any mutual-followed friend or synced Facebook friend who have turned on their 'Share my listening activity' setting to you.",
-              "interface": "Friend Activity sidebar appears on the right third of the screen. The sidebar displays two messages: 'Let friends and followers see what you are listening to.' and 'Go to Settings > Social and enable “Share my listening activity”. You can turn this off at any time.' Below the messages, there is a large white button labeled 'Settings'."
+              "interface": "Friend Activity sidebar appears on the right third of the screen. The sidebar displays two messages: 'Let friends and followers see what you are listening to.' and 'Go to Settings > Social and enable 'Share my listening activity'. You can turn this off at any time.' Below the messages, there is a large white button labeled 'Settings'."
             },
             {
               "endpoint": false,
-              "interface": "Friend Activity sidebar appears on the right third of the screen. The sidebar displays two messages: 'Let friends and followers see what you are listening to.' and 'Go to Settings > Social and enable “Share my listening activity”. You can turn this off at any time.' Below the messages, there is a large white button labeled 'Settings'.",
+              "interface": "Friend Activity sidebar appears on the right third of the screen. The sidebar displays two messages: 'Let friends and followers see what you are listening to.' and 'Go to Settings > Social and enable 'Share my listening activity'. You can turn this off at any time.' Below the messages, there is a large white button labeled 'Settings'.",
               "false_reasoning": "No friends activity appears because no mutual-shared friends exist."
             }
           ]
         },
         {
           "missing_flow_id": "missing_flow4",
-          "description": "Enable “Share my listening activity” first in Social settings, then tap the Friend Activity icon when friends have shared.",
+          "description": "Enable 'Share my listening activity' first in Social settings, then tap the Friend Activity icon when friends have shared.",
           "missing_reasons": "Users with mutual-shared friends may expect activity to appear immediately when using the icon after enabling share. Important to validate successful entry point.",
           "steps": [
             {
