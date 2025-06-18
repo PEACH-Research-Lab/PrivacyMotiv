@@ -1,0 +1,165 @@
+### (1) Underrepresented User Persona
+
+**Name:** Lina Fernandez
+**Age:** 23
+**Occupation:** Recent college graduate, part-time barista
+**Location:** Small town outside a major city
+**Background:** Lina is a Latina who identifies as LGBTQ+. She recently graduated with a degree in Sociology and is passionate about music as a means of personal expression and connection. Privacy is important to her due to past experiences with doxxing and online harassment.
+**Goals:** To enjoy music privately and connect with her close friends without unwanted exposure.
+**Technology Usage:** Primarily uses her laptop to access apps and platforms. She is cautious about social media sharing.
+**Motivations:** Lina values her privacy and prefers to choose what to share about her listening habits. She wants to control how much of her online activity is visible to others.
+
+### (2) Unexpected User Journey Map
+
+**Scene 1: Unwanted Visibility**
+- **Background Setting:** Lina logs into the Music App to listen to some curated playlists.
+- **User Action:** Lina opens the app and notices the Friend Activity sidebar is already visible.
+- **Interaction Touchpoint:** The sidebar automatically shows her what her Facebook friends are playing.
+- **Emotions/Thoughts:** Lina feels uneasy about her listening activity being visible to friends she hasn’t personally connected with recently.
+
+**Scene 2: Facebook Connection Concerns**
+- **Background Setting:** Curious about her friends’ music tastes, Lina attempts to add more friends to her activity feed.
+- **User Action:** She clicks the 'Connect with Facebook' button.
+- **Interaction Touchpoint:** A pop-up asks for her Facebook credentials, with a vague promise not to post without permission.
+- **Emotions/Thoughts:** Lina hesitates, worried about unsolicited data sharing between the Music App and her Facebook account.
+
+**Scene 3: Attempted Privacy Control**
+- **Background Setting:** Wanting privacy, Lina decides to turn on a Private Session.
+- **User Action:** She navigates to her profile and enables the Private Session.
+- **Interaction Touchpoint:** A blue padlock icon appears, but there’s no confirmation on what remains visible or hidden.
+- **Emotions/Thoughts:** She is unsure whether her actions are truly private from all friends, leading to anxiety about potential gaps in privacy.
+
+**Scene 4: Unwanted Sharing Revelation**
+- **Background Setting:** After using the app, Lina views her activity on a friend’s device later.
+- **User Action:** She sees her recent activity still displayed in her friend’s feed.
+- **Interaction Touchpoint:** The Friend Activity sidebar on her friend’s app shows her activity despite her efforts to be private.
+- **Emotions/Thoughts:** Lina feels betrayed and upset, questioning the effectiveness of the app’s privacy settings.
+
+### (3) Unintended Privacy Harm Analysis
+
+- **Harms Identified:**
+  - **Autonomy Harm: Lack of Control** - Lina is unable to make meaningful choices about what personal data is shared, feeling powerless over what her app actions disclose.
+  - **Reputational Harm** - Lina is concerned that involuntary sharing with friends could lead to misinterpretations or unwanted judgment of her music tastes.
+  - **Psychological Harm: Emotional Distress** - Lina’s anxiety about privacy settings not working as expected contributes to emotional distress.
+
+### (4) Unaware-Dark Pattern Detection
+
+- **Dark Pattern Identified:**
+  - **Forced Communication or Disclosure (Privacy Zuckering):** The 'Connect with Facebook' feature pushes users to link accounts under the guise of enhancing the social feature without clear disclosure of implications.
+  - **Hidden Information (Privacy Maze):** Lina struggles to find comprehensive privacy controls and clear information about what the Private Session entails.
+  - **Interface Interference (Bad Defaults):** The default sharing settings assume a level of comfort with sharing that Lina does not have, lacking intuitive controls to manage visibility succinctly.
+
+- **Contribution to Privacy Issues:**
+  - These patterns obscure what data is shared and create complexity and assumptions about user consent, leading to unintended visibility and emotional distress for users like Lina.
+
+
+-----------------------------------------------------------------------------
+### (1) Underrepresented User Persona
+
+**Name:** Jamal Ahmed
+**Age:** 29
+**Occupation:** Freelance graphic designer
+**Location:** Mid-sized city in the Midwest
+**Background:** Jamal is a Black Muslim man who values his privacy due to past experiences with racial profiling and online harassment. He frequently uses music apps for relaxation and inspiration but is wary about sharing personal data, especially on social media.
+**Goals:** To enjoy music without sharing his listening habits publicly and maintaining a clear boundary between personal and professional life.
+**Technology Usage:** Uses a desktop computer and smartphone for work and leisure but employs privacy settings rigorously.
+**Motivations:** Jamal values autonomy over his personal information and aims to avoid unwanted exposure or profiling based on his music preferences.
+
+### (2) Unexpected User Journey Map
+
+**Scene 1: Unanticipated Sharing**
+- **Background Setting:** Jamal logs into the Music App to listen to his favorite playlists.
+- **User Action:** He notices the Friend Activity sidebar showing his listening activity to friends.
+- **Interaction Touchpoint:** The sidebar automatically displays his recent tracks to synced Facebook friends.
+- **Emotions/Thoughts:** Jamal feels uneasy, realizing he didn't explicitly consent to share his activity.
+
+**Scene 2: Facebook Connection Dilemma**
+- **Background Setting:** Jamal is curious about what his friends are listening to and attempts to add them to his feed.
+- **User Action:** He clicks ‘Connect with Facebook’.
+- **Interaction Touchpoint:** A prompt requests his Facebook login details, promising not to post without his permission, but lacks clarity on data use.
+- **Emotions/Thoughts:** Jamal is cautious and anxious about extending his digital footprint without clear boundaries.
+
+**Scene 3: Enabling Privacy Settings**
+- **Background Setting:** Wanting privacy, Jamal attempts to start a Private Session.
+- **User Action:** He navigates to his profile and enables Private Session.
+- **Interaction Touchpoint:** A blue padlock icon appears, indicating a Private Session, but lacks detailed information.
+- **Emotions/Thoughts:** Jamal remains skeptical about the efficacy of the feature, concerned about inadvertent sharing.
+
+**Scene 4: Discovery of Continued Exposure**
+- **Background Setting:** While with a friend, Jamal sees his activity displayed on their app.
+- **User Action:** He notices that enabling Private Session didn't prevent sharing with his Facebook friends.
+- **Interaction Touchpoint:** The sidebar on the friend's app still shows his recent activity.
+- **Emotions/Thoughts:** Jamal feels frustrated and betrayed, questioning the transparency and functionality of the app’s privacy settings.
+
+### (3) Unintended Privacy Harm Analysis
+
+- **Harms Identified:**
+  - **Autonomy Harm: Thwarted Expectations** - Jamal expected that enabling Private Session would prevent sharing, but his expectations were not met, leading to uncertainty about privacy controls.
+  - **Reputational Harm** - Jamal fears that involuntary sharing could lead to assumptions or profiling based on his music preferences.
+  - **Psychological Harm: Emotional Distress** - The uncertainty and inefficacy of privacy controls result in anxiety and distress.
+
+### (4) Unaware-Dark Pattern Detection
+
+- **Dark Pattern Identified:**
+  - **Forced Communication or Disclosure (Privacy Zuckering):** The process to connect with Facebook is designed to gather more data without clear, upfront consent details.
+  - **Interface Interference (Bad Defaults):** The initial sharing settings favor openness, assuming users are comfortable with sharing their activities without considering privacy preferences.
+  - **Hidden Information (Privacy Maze):** The Private Session lacks clear explanations, causing misunderstandings about its privacy scope.
+
+- **Contribution to Privacy Issues:**
+  - These patterns make it challenging for users like Jamal to easily understand and control their data sharing preferences, leading to inadvertent data exposure and associated distress.
+
+
+
+-----------------------------------------------------------------------------
+### (1) Underrepresented User Persona
+
+**Name:** Anaya Patel
+**Age:** 26
+**Occupation:** Assistant teacher
+**Location:** Suburban area in a large city
+**Background:** Anaya, an Asian woman, is privacy-conscious due to past online harassment incidents. She enjoys sharing music with close friends but prefers not to disclose her activities to a broad audience.
+**Goals:** To maintain privacy while enjoying music and sharing selectively, without automatic data sharing visible to all friends or contacts.
+**Technology Usage:** Uses her desktop for streaming services and social media, always seeking apps that prioritize user privacy.
+**Motivations:** Anaya wants control over shared information to avoid scenarios that could lead to unwanted attention or misinterpretations.
+
+### (2) Unexpected User Journey Map
+
+**Scene 1: Unwanted Visibility**
+- **Background Setting:** Anaya logs into her Music App to play some music.
+- **User Action:** She opens the app and finds the Friend Activity sidebar visible by default.
+- **Interaction Touchpoint:** Automatically, her friends can see her listening activity from the past days.
+- **Emotions/Thoughts:** Anaya feels uneasy as she wasn’t aware her activities were being shared without explicit consent.
+
+**Scene 2: Confusing Connection Process**
+- **Background Setting:** Anaya is prompted to add friends to enhance her social experience.
+- **User Action:** She tries to connect her Facebook for more friends’ visibility.
+- **Interaction Touchpoint:** A login prompt lacks clear information on what data will be shared with Facebook.
+- **Emotions/Thoughts:** Anaya feels concerned about potential data exposure, worried about privacy breaches.
+
+**Scene 3: Attempt at Privacy**
+- **Background Setting:** Seeking privacy, Anaya decides to initiate a Private Session.
+- **User Action:** She navigates through her profile settings and turns on Private Session.
+- **Interaction Touchpoint:** A blue padlock appears, but the settings don’t explicitly explain what is hidden.
+- **Emotions/Thoughts:** Anaya remains skeptical, fearing some data might still be shared with friends.
+
+**Scene 4: Realization of Active Sharing**
+- **Background Setting:** While chatting with a friend, Anaya learns her activity continues to display.
+- **User Action:** She sees her recent listening activity on the Friend Activity sidebar on her friend’s app.
+- **Interaction Touchpoint:** The intended privacy measures fail to prevent data sharing with Facebook-linked friends.
+- **Emotions/Thoughts:** Anaya feels frustrated and anxious about her privacy being compromised.
+
+### (3) Unintended Privacy Harm Analysis
+
+- **Harms Identified:**
+  - **Autonomy Harm: Lack of Control** - Anaya experiences a lack of autonomy over her music data, unable to properly manage shared information.
+  - **Psychological Harm: Emotional Distress** - The continued, unwanted sharing leads Anaya to feel anxious about her privacy being constantly at risk.
+
+### (4) Unaware-Dark Pattern Detection
+
+- **Dark Pattern Identified:**
+  - **Hidden Information (Privacy Maze):** The app complicates access to clear privacy controls, making Anaya uncertain about the effectiveness of her actions like enabling Private Session.
+  - **Forced Communication or Disclosure (Privacy Zuckering):** Anaya is prompted to link her Facebook account without full transparency on what data will be shared and used.
+  - **Interface Interference (Bad Defaults):** Default app settings prioritize sharing rather than user control, assuming user comfort with broad visibility.
+
+- **Contribution to Privacy Issues:**
+  - These patterns obscure data control mechanisms, prevent straightforward privacy management, and lead to involuntary data exposure, contributing to Anaya’s distress over unsecured privacy.
