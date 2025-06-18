@@ -125,7 +125,6 @@ OUTPUT FORMAT: Return privacy harm analysis as a JSON object following this stru
 {
   "privacy_harm_analysis": [
     {
-      "privacy_harm": "Name of the privacy harm",
       "privacy_harms": [
         {
           "harm_type": "",

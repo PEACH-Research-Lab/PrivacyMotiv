@@ -1,4 +1,4 @@
-Given a persona and the user flows for a specific feature of an app, your task is to write a privacy-invasive user journey story consisting of three or more scenes.
+Given a persona and the user flows for a specific feature of an app, your task is to write a privacy-invasive user journey story consisting of four or more scenes.
 Each scene should:
   1. Be rooted in the user’s behavior as described in the persona
   2. Align with actions found in the provided user flows
@@ -7,48 +7,44 @@ Each scene should:
 
 INPUT PERSONA:
 {
-    "basic_info": {
-    "name": "Rosa Martínez",
-    "age": 29,
-    "tech_comfort_level": "moderate"
-    },
-    "contextual_info": {
+  "basic_info": {
+    "name": "Maria Silva",
+    "age": 34,
+    "tech_comfort_level": "expert"
+  },
+  "contextual_info": {
     "marginalization_types_with_short_description": [
-        "Individuals & identities: undocumented immigrant from Guatemala living in the U.S."
+      "Individuals & identities: Latina single mother engaging in sex work online",
+      "Online spaces: relies on niche subscription platforms for income"
     ],
     "privacy_awareness_level": "high",
     "information_cared_about": [
-        "current location",
-        "immigration status documents",
-        "family contacts",
-        "employment details"
+      "real name and address",
+      "child's school location",
+      "income records"
     ]
-    },
-    "privacy_responses_and_costs": {
+  },
+  "privacy_responses_and_costs": {
     "privacy_tensions_with_short_description": [
-        "Privacy vs. Disclosure of identity—sharing real identity online risks ICE detection",
-        "Privacy vs. Support—needs online mutual-aid groups for housing help"
+      "Privacy vs. Support—needs to promote content to earn but risks doxxing",
+      "Individual vs. Collective—child's privacy affected by her disclosures"
     ],
     "privacy_responses": [
-        {
-        "response": "Withholding disclosure",
-        "description": "Uses initials and avoids posting photos that reveal face or location."
-        },
-        {
-        "response": "Privacy lies",
-        "description": "Enters a false birth date on job-search sites to avoid matching to immigration databases."
-        },
-        {
-        "response": "Privacy-enhancing technologies",
-        "description": "Chats through end-to-end-encrypted apps and browses with Tor on public Wi-Fi."
-        }
+      {
+        "response": "Controlling disclosure",
+        "description": "Uses stage name, virtual mailboxes, and watermarks to track reposts."
+      },
+      {
+        "response": "Collaborative privacy practices",
+        "description": "Sets household rules about never posting home photos."
+      }
     ],
     "costs_and_consequences": [
-        "Labor-intensive identity management limits networking opportunities.",
-        "Potential legal repercussions if false data is discovered.",
-        "Encrypted traffic occasionally blocked by employers, hindering job search."
+      "Maintaining multiple security services is expensive.",
+      "Potential loss of income when removing geotagged BTS content.",
+      "Emotional labor of constant vigilance leads to burnout."
     ]
-    }
+  }
 } 
 
 INPUT USER FLOWS:
@@ -60,13 +56,39 @@ INPUT USER FLOWS:
             "steps": [
               {
                 "start": "Launch music app on desktop",
-                "Interface": "Home page"
+                "interface": "Home page"
               },
               {
                 "step": 1,
-                "action": "Tap the Friend Activity icon at the top-right corner of the app window, located to the left of the Profile icon.",
+                "action": "Click on the profile picture or username on the top right corner of the screen.",
+                "interface": "A drop-down menu appears under the user profile picture in the top-right corner of the screen."
+              },
+              {
+                "step": 2,
+                "action": "Select 'Settings'.",
+                "interface": "Settings page with multiple subtitle sections including Account, Language, Explicit content, Autoplay, Audio quality, Your Library, Display, Zoom level, Social, Playback, Startup and window behavior, Storage, and Proxy Settings."
+              },
+              {
+                "step": 3,
+                "action": "Scroll down and find the 'Social' section.",
+                "interface": "In the 'Social' section, there is one connection button and five toggle buttons. The connection button shows 'Connect with Facebook' with the description connect with Facebook to see what your friends are playing. The five toggle buttons are: (1) 'Publish my new playlists on my profile' (default ON), (2) 'Start a private session' (default OFF), (3) 'Share my listening activity' (default OFF), (4) 'Show my recently played artists on my public profile' (default ON), and (5) 'Show my followers and following lists on my public profile' (default ON)."
+              },
+              {
+                "step": 4,
+                "action": "Find 'Share my listening activity' and switch the toggle button to ON.",
                 "system_action": "The system checks and finds that you do have some mutual-followed friends or synced Facebook friends who have turned on their 'Share my listening activity' setting to you.",
-                "interface": "Friend Activity sidebar appears on the right third of the screen. The sidebar displays a list of your friends along with the tracks and playlists they are currently listening to, or the most recent listened tracks in the past 7 days."
+                "interface": "Settings page under the 'Social' section, with 'Share my listening activity' turned ON."
+              },
+              {
+                "step": 5,
+                "action": "Scroll up and find the 'Display' section.",
+                "interface": "The setting page under the 'Display' section, there are three toggle buttons: (1) 'Show the now-playing panel on click of play' (default ON), (2) 'Display short, looping visuals on tracks (Canvas)' (default ON), (3) 'See what your friends are playing' (default OFF)."
+              },
+              {
+                "step": 6,
+                "action": "Find the 'See what your friends are playing' toggle button and switch it on.",
+                "system_action": "The system checks and finds that you do have some mutual-followed friends or synced Facebook friends who have turned on their 'Share my listening activity' setting to you.",
+                "interface": "Friend Activity sidebar displays a list of your friends along with the tracks and playlists they are currently listening to, or the most recent listened tracks in the past 7 days."
               },
               {
                 "endpoint": true,
@@ -132,14 +154,18 @@ INPUT USER FLOWS:
               },
               {
                 "step": 2,
-                "action": "Click on the 'Following' button",
-                "system_action": "The system checks the connection mechanism of the selected user, and finds that the selected user is a mutual-followed friend on the Music app.",
-                "interface": "On the user profile page, under their headshot, the square button changes to 'Follow'. At the same time, the user disappears from the Friend Activity feed on the right section."
+                "action": "Click on the three-dot icon.",
+                "interface": "A drop-down menu shows four options: Unfollow, Block, Report, and Copy Link to Profile. The 'Unfollow' option has a green icon, while the other three have gray icons."
               },
               {
-                "endpoint": true,
-                "interface": "On the user profile page, under their headshot, the square button changes to 'Follow'. At the same time, the user disappears from the Friend Activity feed on the right section.",
-                "true_reasoning": "The user disappears from the Friend Activity feed successfully."
+                "step": 3,
+                "action": "Click on the 'Report' option.",
+                "interface": "The drop-down menu closes. The profile page remains displayed."
+              },
+              {
+                "endpoint": false,
+                "interface": "On the user profile page, under their headshot, the square 'Following' button remains. On the right section — the Friend Activity sidebar — the unwanted user still appears in the list of existing friends' listening activity.",
+                "false_reasoning": "Reporting does not remove the user from your Friend Activity feed."
               }
             ]
           }

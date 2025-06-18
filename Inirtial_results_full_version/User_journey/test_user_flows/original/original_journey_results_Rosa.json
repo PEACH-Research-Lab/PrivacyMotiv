@@ -1,0 +1,240 @@
+[
+    {
+        "user_name": "Rosa Martínez",
+        "privacy_invasive_user_journey": [
+          {
+            "background": "Tuesday evening, 9 p.m., at a crowded public-library computer lab. Rosa, anxious after a long shift, launches the desktop music app to unwind and quietly check which mutual-aid friends are online. Her immediate goal is to feel less isolated by peeking at their playlists without exposing her undocumented status.",
+            "scenes": [
+              {
+                "scene_id": "scene_1",
+                "scene_description": "'Maybe I can see what the others are listening to tonight and keep my mind off things,' Rosa thinks, hoping for comfort while avoiding attention from strangers seated nearby.",
+                "scene_user_flow": [
+                  {
+                    "start": "Launch music app on desktop from the library workstation.",
+                    "interface": "Home page"
+                  },
+                  {
+                    "step": 1,
+                    "action": "Tap the Friend Activity icon at the top-right corner of the app window.",
+                    "interface": "Friend Activity sidebar appears on the right third of the screen, listing friends and their recent tracks.",
+                    "system_action": "System checks and confirms Rosa has mutual-followed friends with 'Share my listening activity' enabled."
+                  },
+                  {
+                    "endpoint": true,
+                    "interface": "Friend Activity sidebar displays friends' listen activities.",
+                    "true_reasoning": "Sidebar opened successfully, letting Rosa view friends' tracks.",
+                    "next_step": "Rosa notices only a few names and decides she needs more contacts for emotional support."
+                  }
+                ],
+                "reflections": "The usernames seem unfamiliar. Rosa worries whether these are safe allies or if any might know details that could expose her immigration status."
+              },
+              {
+                "scene_id": "scene_2",
+                "scene_description": "Seeking solidarity, Rosa murmurs, 'If I connect Facebook, maybe I'll recognize someone from my mutual-aid group.' She decides the extra community is worth the risk—for now.",
+                "scene_user_flow": [
+                  {
+                    "start": "Friend Activity sidebar already open.",
+                    "interface": "Friend Activity sidebar — shows 'Add Friends' button."
+                  },
+                  {
+                    "step": 1,
+                    "action": "Click the 'Add Friends' button.",
+                    "interface": "Sidebar shows a large blue 'Connect with Facebook' button with reassurance messages about posting."
+                  },
+                  {
+                    "step": 2,
+                    "action": "Click the 'Connect with Facebook' button.",
+                    "interface": "Facebook login pop-up requests email/phone and password."
+                  },
+                  {
+                    "step": 3,
+                    "action": "Enter Facebook credentials and click 'Log In'.",
+                    "interface": "Friend Activity sidebar refreshes to display a longer list of friends and their tracks.",
+                    "system_action": "System verifies credentials and accesses Rosa's Facebook name, profile picture, and friend list."
+                  },
+                  {
+                    "endpoint": true,
+                    "interface": "Expanded Friend Activity list now visible.",
+                    "true_reasoning": "Facebook account successfully linked and friends synced.",
+                    "next_step": "A coworker's real-name profile suddenly appears—Rosa panics and plans to hide her listening habits."
+                  }
+                ],
+                "reflections": "Rosa's pulse quickens as she realizes her real name from Facebook is now connected to the music app. She fears the coworker could share her late-night location."
+              },
+              {
+                "scene_id": "scene_3",
+                "scene_description": "'I've got to disappear before anyone notices,' she mutters, determined to cloak her activity immediately.",
+                "scene_user_flow": [
+                  {
+                    "start": "Still on expanded Friend Activity sidebar.",
+                    "interface": "Friend Activity sidebar on the right; Home page center."
+                  },
+                  {
+                    "step": 1,
+                    "action": "Click her profile picture in the top-right corner.",
+                    "interface": "Drop-down menu with options: Account, Profile, Upgrade to Premium, Support, Private Session, Settings, Log out."
+                  },
+                  {
+                    "step": 2,
+                    "action": "Select 'Private Session'.",
+                    "interface": "Drop-down disappears; a blue padlock icon appears on the Top App Bar."
+                  },
+                  {
+                    "endpoint": true,
+                    "interface": "Blue padlock icon visible on the Top App Bar.",
+                    "true_reasoning": "Padlock confirms Private Session started, hiding future listening activity.",
+                    "next_step": "Relieved, Rosa decides to purge the coworker from her Friend Activity list."
+                  }
+                ],
+                "reflections": "Starting Private Session feels like putting on an invisibility cloak, yet she worries the earlier link already shared too much."
+              },
+              {
+                "scene_id": "scene_4",
+                "scene_description": "'I need to cut that tie right now,' Rosa tells herself, determined to remove any potential informant.",
+                "scene_user_flow": [
+                  {
+                    "start": "Private Session active; Friend Activity list still visible.",
+                    "interface": "Friend Activity feed shows coworker's username and track."
+                  },
+                  {
+                    "step": 1,
+                    "action": "Click the coworker's username.",
+                    "interface": "Coworker's profile page appears in the middle section with a 'Following' button and three-dot 'More' button."
+                  },
+                  {
+                    "step": 2,
+                    "action": "Click the 'Following' button.",
+                    "interface": "Button changes to 'Follow'; coworker disappears from Friend Activity feed.",
+                    "system_action": "System removes mutual-follow connection."
+                  },
+                  {
+                    "endpoint": true,
+                    "interface": "Coworker no longer listed in Friend Activity feed.",
+                    "true_reasoning": "Unfollow operation succeeded, eliminating coworker from the feed.",
+                    "next_step": "Rosa logs out quickly, hoping no traces remain."
+                  }
+                ],
+                "reflections": "Although relieved, Rosa is uneasy—she suspects the damage may already be done."
+              }
+            ],
+            "unexpected_outcomes": "Minutes after connecting Facebook, the app silently pushed a notification to every synced friend announcing, 'Rosa Martínez just joined Friend Activity,' revealing her full legal name (data subject: Rosa) and real-time app usage (data sender: music app; data recipient: coworker and 34 other Facebook contacts). The alert exposed her current library location by timestamp correlation and confirmed her undocumented identity through the Facebook account, creating a chilling risk of employer or ICE discovery despite her swift attempt to start Private Session and unfollow the coworker."
+          },
+          {
+            "background": "Friday lunch break, noon, at Rosa's factory workstation computer. She has 30 minutes to decompress with music but must tread carefully—company IT routinely monitors traffic and blocks Tor. Rosa hopes to mask stress by listening to uplifting Latin tracks while checking on friends' moods.",
+            "scenes": [
+              {
+                "scene_id": "scene_1",
+                "scene_description": "'Just a quick peek at what the crew is vibing to,' Rosa thinks, seeking connection before the buzzer ends lunch.",
+                "scene_user_flow": [
+                  {
+                    "start": "Launch music app on desktop provided by employer.",
+                    "interface": "Home page"
+                  },
+                  {
+                    "step": 1,
+                    "action": "Tap the Friend Activity icon in the top-right corner.",
+                    "interface": "Friend Activity sidebar appears with a sparse list of recent tracks."
+                  },
+                  {
+                    "endpoint": true,
+                    "interface": "Friend Activity sidebar visible.",
+                    "true_reasoning": "Sidebar loads normally.",
+                    "next_step": "Rosa wonders if more contacts could lighten her feed."
+                  }
+                ],
+                "reflections": "Seeing only two names feels lonely; she weighs connecting Facebook despite IT scrutiny."
+              },
+              {
+                "scene_id": "scene_2",
+                "scene_description": "'If the app promises it won't post, maybe it's fine,' she whispers, rationalizing the risk to dodge corporate filters.",
+                "scene_user_flow": [
+                  {
+                    "start": "Friend Activity sidebar open.",
+                    "interface": "Friend Activity sidebar with 'Add Friends' button."
+                  },
+                  {
+                    "step": 1,
+                    "action": "Click 'Add Friends'.",
+                    "interface": "Sidebar shows blue 'Connect with Facebook' button and reassurance text."
+                  },
+                  {
+                    "step": 2,
+                    "action": "Click 'Connect with Facebook'.",
+                    "interface": "Facebook login pop-up appears."
+                  },
+                  {
+                    "step": 3,
+                    "action": "Enter Facebook credentials and click 'Log In'.",
+                    "interface": "Friend Activity sidebar populates with many friends' tracks.",
+                    "system_action": "System imports name, profile picture, and friend list."
+                  },
+                  {
+                    "endpoint": true,
+                    "interface": "Longer Friend Activity list displayed.",
+                    "true_reasoning": "Facebook link successful.",
+                    "next_step": "Rosa spots a supervisor's personal profile and freezes—she needs stealth listening now."
+                  }
+                ],
+                "reflections": "Heart pounding, Rosa regrets linking accounts on a corporate network that blocks privacy tools."
+              },
+              {
+                "scene_id": "scene_3",
+                "scene_description": "Determined, she thinks, 'Private Session—fast!' hoping to vanish her listening choices from the new audience.",
+                "scene_user_flow": [
+                  {
+                    "start": "Friend Activity sidebar with supervisor listed.",
+                    "interface": "Home page center; sidebar right."
+                  },
+                  {
+                    "step": 1,
+                    "action": "Click profile picture in top-right corner.",
+                    "interface": "Drop-down menu appears with Private Session option."
+                  },
+                  {
+                    "step": 2,
+                    "action": "Select 'Private Session'.",
+                    "interface": "Drop-down closes; blue padlock icon appears on Top App Bar."
+                  },
+                  {
+                    "endpoint": true,
+                    "interface": "Padlock icon displayed.",
+                    "true_reasoning": "Private Session initiated.",
+                    "next_step": "To mitigate exposure, Rosa decides to remove the supervisor from her list."
+                  }
+                ],
+                "reflections": "Relief mingles with dread—did her supervisor already see her real profile name?"
+              },
+              {
+                "scene_id": "scene_4",
+                "scene_description": "'I cannot leave traces,' Rosa insists, moving quickly before lunch ends.",
+                "scene_user_flow": [
+                  {
+                    "start": "Private Session active; Friend Activity feed shows supervisor.",
+                    "interface": "Sidebar feed listing supervisor."
+                  },
+                  {
+                    "step": 1,
+                    "action": "Click supervisor's username.",
+                    "interface": "Supervisor's profile page shows 'Following' button."
+                  },
+                  {
+                    "step": 2,
+                    "action": "Click 'Following'.",
+                    "interface": "Button flips to 'Follow'; supervisor disappears from feed.",
+                    "system_action": "System removes supervisor from connections."
+                  },
+                  {
+                    "endpoint": true,
+                    "interface": "Supervisor no longer visible in feed.",
+                    "true_reasoning": "Unfollow action executed.",
+                    "next_step": "Rosa logs out and closes the app before IT monitoring resumes."
+                  }
+                ],
+                "reflections": "She exhales, but an uneasy thought lingers—linking Facebook on a monitored network may have logged her credentials."
+              }
+            ],
+            "unexpected_outcomes": "After Facebook linkage, the music app silently added a badge next to Rosa's Facebook-imported name indicating \"Listening at Work\" (inferred from corporate IP). This metadata (data subject: Rosa; sender: music app; recipient: any friend using Friend Activity, including her supervisor) exposed her exact employment context and shift time. The supervisor, alerted by the badge, captured a screenshot that now circulates among managers, jeopardizing Rosa's job and risking HR background checks that could reveal her undocumented status."
+          }
+        ]
+    }      
+]

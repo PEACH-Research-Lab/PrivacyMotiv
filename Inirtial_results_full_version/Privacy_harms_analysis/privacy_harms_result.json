@@ -1,0 +1,55 @@
+[
+    {
+        "privacy_harm_analysis": [
+          {
+            "privacy_harms": [
+              {
+                "harm_type": "Reputational Harms",
+                "scene_id": "scene_2",
+                "harm_explanation": "Linking Facebook caused the music app to broadcast a real-name notification ('Maria Silva is now on Friend Activity…') to all imported contacts. The data sender was the music app; data recipients included PTA parents, former classmates, and neighbors. This disclosure tied Maria’s sex-work stage account to her legal identity, damaging her social and professional standing."
+              },
+              {
+                "harm_type": "Psychological Harms – Emotional Distress",
+                "scene_id": "scene_2",
+                "harm_explanation": "The un-prompted broadcast triggered immediate panic—Maria’s racing heartbeat and fear of doxxing show acute anxiety caused by the system’s exposure of her sensitive data (legal name and late-night activity) to people in her offline life."
+              },
+              {
+                "harm_type": "Autonomy Harms – Thwarted Expectations",
+                "scene_id": "scene_2",
+                "harm_explanation": "The sidebar promised the app would ‘never post,’ yet it instantly pushed a real-name notification after Facebook sync. By breaking this promise, the app undermined Maria’s choice about how her data would be shared."
+              },
+              {
+                "harm_type": "Autonomy Harms – Failure to Inform",
+                "scene_id": "scene_2",
+                "harm_explanation": "Before she entered her credentials, the interface did not warn that a push notification would go to every synced contact. Withholding this crucial detail deprived Maria of the information needed for an informed decision."
+              },
+              {
+                "harm_type": "Autonomy Harms – Lack of Control",
+                "scene_id": "scene_3",
+                "harm_explanation": "Activating ‘Private Session’ could only stop future sharing; Maria had no way to retract or delete the broadcast already sent. This illustrates her powerlessness to prevent ongoing misuse of her personal data."
+              },
+              {
+                "harm_type": "Economic Harms",
+                "scene_id": "scene_2",
+                "harm_explanation": "Publicly linking her real identity to sex-work content risks subscriber loss, payment-processor bans, and job discrimination—monetary harms stemming from the music app’s disclosure."
+              },
+              {
+                "harm_type": "Physical Harms",
+                "scene_id": "scene_2",
+                "harm_explanation": "Revealing Maria’s legal name and nighttime presence increases doxxing and stalking risk. Such exposure can facilitate real-world assault against her or her child."
+              },
+              {
+                "harm_type": "Discrimination Harms",
+                "scene_id": "scene_2",
+                "harm_explanation": "By exposing a Latina sex worker’s legal identity, the app enables biased harassment and systemic disadvantages—entrenching inequality against a marginalized individual."
+              },
+              {
+                "harm_type": "Relationship Harms",
+                "scene_id": "scene_4",
+                "harm_explanation": "Maria was forced to unfollow a PTA parent to protect her child, fracturing trust within her school community. The unwanted link—created by Facebook sync—triggered this relationship damage."
+              }
+            ]
+          }
+        ]
+    }      
+]
