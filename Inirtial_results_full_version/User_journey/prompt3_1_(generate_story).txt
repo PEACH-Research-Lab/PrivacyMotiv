@@ -1,6 +1,6 @@
 Given a persona and the user flows for a specific feature of an app, your task is to write a privacy-invasive user journey story consisting of four or more scenes.
 Each scene should:
-  1. Be rooted in the user’s behavior as described in the persona
+  1. Be rooted in the user's behavior as described in the persona
   2. Align with actions found in the provided user flows
   3. Clearly describe the setting, user action, system response, and resulting privacy consequence
 
@@ -47,7 +47,7 @@ OUTPUT FORMAT: Return multiple different persona–user journey stories as a JSO
             //   "next_step": "Describe what the user decides to do next to continue toward their overall goal"
             // }
           ],
-          "reflections": "User’s thoughts, emotions, concerns, or any other reflections about this scene"
+          "reflections": "User's thoughts, emotions, concerns, or any other reflections about this scene"
         }
         // ...Add additional scenes here as needed
       ],
