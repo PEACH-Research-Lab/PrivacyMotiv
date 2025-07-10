@@ -1,0 +1,124 @@
+{
+    "user_name": "Maria Silva",
+    "privacy_invasive_user_journey": [
+      {
+        "background": "Friday night (10 p.m.) after putting her child to bed, Maria sits at her desktop to schedule next-week promo posts for her subscription platform. She wants fresh song recommendations that match the sultry vibe of her upcoming photo set, so she opens the music app hoping to see what her most engaged followers have been listening to. Her immediate goal is to scout trending tracks while staying under her stage name and keeping her real identity hidden.",
+        "scenes": [
+          {
+            "scene_id": "scene_1",
+            "scene_description": "Maria thinks, “Let me peek at what my top tippers are playing—maybe I'll discover a perfect background track.” She decides to open the Friend Activity sidebar to browse listening trends.",
+            "scene_user_flow": [
+              {
+                "start": "Maria has the Music app open on her desktop.",
+                "interface": "Home page"
+              },
+              {
+                "step": 1,
+                "action": "Tap the Friend Activity icon located to the left of the Profile icon.",
+                "interface": "Friend Activity sidebar appears on the right third of the screen, listing friends' recent tracks.",
+                "system_action": "The system checks her mutual-follow list and Facebook-synced friends who share listening activity."
+              },
+              {
+                "endpoint": true,
+                "interface": "Friend Activity sidebar shows a scrollable list of friends with tracks played in the last 7 days.",
+                "true_reasoning": "Sidebar opened successfully, satisfying her curiosity.",
+                "next_step": "She notices the list is sparse and plans to add more listeners she networks with on Facebook."
+              }
+            ],
+            "reflections": "She's pleased but wishes the list were longer: “If I sync my promo Facebook, I'll see a richer feed—just this once.”"
+          },
+          {
+            "scene_id": "scene_2",
+            "scene_description": "Driven by the need for more data, Maria decides, “I'll quickly connect my promo Facebook—nothing sensitive there.” She proceeds to add friends via Facebook.",
+            "scene_user_flow": [
+              {
+                "start": "The Friend Activity sidebar is still open.",
+                "interface": "Friend Activity sidebar with an 'Add Friends' button."
+              },
+              {
+                "step": 1,
+                "action": "Click the 'Add Friends' button.",
+                "interface": "Sidebar now shows a large blue 'Connect with Facebook' button and reassurance that the app will never post without permission."
+              },
+              {
+                "step": 2,
+                "action": "Click the 'Connect with Facebook' button.",
+                "interface": "A Facebook login pop-up window asks for credentials."
+              },
+              {
+                "step": 3,
+                "action": "Enter Facebook email and password, then click 'Log In'.",
+                "interface": "Friend Activity sidebar refreshes to display a longer list of friends with their tracks.",
+                "system_action": "System links her Facebook account, accessing her name, profile picture, and friend list."
+              },
+              {
+                "endpoint": true,
+                "interface": "Sidebar shows dozens of Facebook friends' listening activity.",
+                "true_reasoning": "Sync complete; feed is now populated.",
+                "next_step": "She scans the list and spots an unfamiliar nickname that feels ominously close to her child's school chat group."
+              }
+            ],
+            "reflections": "A pang of worry: “Did the app just pull my *real* name into this account? I need to double-check who can see me.”"
+          },
+          {
+            "scene_id": "scene_3",
+            "scene_description": "Maria notices a PTA parent among the newly added friends. Alarmed, she thinks, “I have to remove them before they link LunaFire to Maria-the-mom.” She hurries to unfollow the user.",
+            "scene_user_flow": [
+              {
+                "start": "Friend Activity sidebar displays the questionable friend.",
+                "interface": "Friend Activity feed listing current tracks."
+              },
+              {
+                "step": 1,
+                "action": "Click the username of the friend to remove.",
+                "interface": "The friend's profile page appears in the middle section with a square 'Following' button."
+              },
+              {
+                "step": 2,
+                "action": "Click the 'Following' button.",
+                "interface": "Button changes to 'Follow'; friend disappears from the sidebar.",
+                "system_action": "System updates connection status, removing mutual follow."
+              },
+              {
+                "endpoint": true,
+                "interface": "Profile page shows 'Follow' (not following). Friend is gone from sidebar.",
+                "true_reasoning": "Unfollow successful; visibility removed.",
+                "next_step": "Feeling exposed, she decides to enable Private Session before sampling explicit tracks."
+              }
+            ],
+            "reflections": "Relief mixed with dread: “I acted fast, but did that parent already see my stage-name playlist history?”"
+          },
+          {
+            "scene_id": "scene_4",
+            "scene_description": "To prevent further linkage, Maria thinks, “I'll hide the rest of tonight's listening—better safe.” She starts a Private Session.",
+            "scene_user_flow": [
+              {
+                "start": "Music app still open on desktop.",
+                "interface": "Home page"
+              },
+              {
+                "step": 1,
+                "action": "Click the profile picture in the top-right corner.",
+                "interface": "Drop-down menu with options: Account, Profile, Upgrade to Premium, Support, Private Session, Settings, Log out."
+              },
+              {
+                "step": 2,
+                "action": "Click 'Private Session'.",
+                "interface": "Drop-down closes; a blue padlock icon appears on the Top App Bar.",
+                "system_action": "System initiates a Private Session masking future listens."
+              },
+              {
+                "endpoint": true,
+                "interface": "Blue padlock icon remains visible, confirming Private Session.",
+                "true_reasoning": "Private Session activated as intended.",
+                "next_step": "She queues songs for her shoot, trusting she's invisible now."
+              }
+            ],
+            "reflections": "Calmer, yet uneasy: “I've patched the leak—hopefully that PTA parent didn't screenshot anything.”"
+          }
+        ],
+        "unexpected_outcomes": "By linking her Facebook account, the system silently swapped Maria's stage-name avatar with her real Facebook profile picture and full name (data sender: Music app via Facebook OAuth; data subject: Maria; data recipient: every mutual-follow in the app, including anonymous fans). Within minutes, a follower recognized the unique surname and cross-posted screenshots of her listening activity—including suggestive tracks queued before Private Session—in a public forum. The screenshots timestamped the moment *before* she unfollowed the PTA parent, exposing her real identity and music preferences. This breach threatens her child's safety (real-world location inference) and jeopardizes her income stream, undoing her careful disclosure controls."
+      }
+    ]
+  }
+  

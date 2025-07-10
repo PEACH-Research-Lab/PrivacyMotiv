@@ -51,8 +51,7 @@ OUTPUT FORMAT: Return multiple different persona–user journey stories as a JSO
         }
         // ...Add additional scenes here as needed
       ],
-      "unexpected_outcomes": "Detailed description of disturbing or privacy-invasive outcomes that occur against the user's will. The description should highlight specific harms, including what sensitive data was inappropriately shared, who the data subject is, who disclosed the data (data sender), and who received it (data recipient). The outcome should reflect a subtle or unsettling violation of privacy—something beyond typical or expected consequences."
-    }
+      "unexpected_outcomes": Detailed description of disturbing or privacy-invasive outcomes that occur against the user's will. The outcome should be a specific and concrete event, not a general possibility, and should vividly describe the harm caused. Include what sensitive data was inappropriately shared, who the data subject is, who disclosed the data (data sender), and who received it (data recipient). Emphasize unsettling violations of privacy with clear, factual consequences. The description should feel grounded in reality and unsettling in its plausibility.    }
   ]
 }
 

@@ -1,9 +1,9 @@
 Given a user persona and their privacy-invasive user journey story, your task is to conduct a "Privacy Harm Analysis."
 Use the REFERENCE section 'Privacy Harms Typology' to identify and explain:
-  1. What types of privacy harms the persona experienced
-  2. When these harms occurred during the user journey
-  3. Which specific moments, scenes, or actions triggered each harm
-Please be precise and contextual—clearly link each harm to user behavior, system actions, or interface flows wherever possible.
+  1. What types of actual privacy harms the persona experienced
+  2. When those harms occurred during the user journey
+  3. Which specific moments, scenes, or actions directly triggered each harm
+Please be precise and grounded, focus only on definitive, scene-based harms that clearly occurred, not hypothetical risks or potential future issues. Each harm should be linked to concrete user behavior, system actions, or interface flows.
 
 -----------------------------------------------------------------------------
 REFERENCE: 'Privacy Harms Typology'
@@ -129,7 +129,7 @@ OUTPUT FORMAT: Return privacy harm analysis as a JSON object following this stru
         {
           "harm_type": "",
           "scene_id": "ID of the scene where the privacy harm occurred during the user journey",
-          "harm_explanation": "Explain the cause of the harm by detailing what sensitive data was inappropriately shared, who the data subject is, who shared the data (data sender), who received it (data recipient), and what action or system behavior triggered the exposure."
+          "harm_explanation": "Explain the cause of the harm by detailing what sensitive data was inappropriately shared, who the data subject is, who shared the data (data sender), who received it (data recipient), and what action or behavior triggered the exposure."
         }
         // You may include multiple harm entries here
       ]

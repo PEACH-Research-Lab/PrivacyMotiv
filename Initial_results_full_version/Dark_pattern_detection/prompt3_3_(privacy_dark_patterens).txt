@@ -187,7 +187,7 @@ OUTPUT FORMAT: Return identified privacy dark patterns as a JSON object using th
 {
   "privacy_dark_pattern_detection": [
     {
-      "privacy_dark_pattern": "Name of the privacy dark pattern",
+      "privacy_dark_pattern": "Name of the privacy dark pattern. Include the full hierarchy path from the taxonomy if needed: High-level - Meso-level - Low-level. If there is no low-level pattern, use: High-level - Meso-level. If only the high-level applies, use just: High-level",
       "scene_id": "ID of the scene where the dark pattern appeared",
       "scene_user_flow": [
         {
@@ -197,7 +197,7 @@ OUTPUT FORMAT: Return identified privacy dark patterns as a JSON object using th
         }
         // You may include multiple steps in a scene here
       ],
-      "dark_pattern_explanation": "Explain how the dark pattern tricks users into behaving in ways that go against their original intentions or privacy preferences."
+      "dark_pattern_explanation": "Explain how the dark pattern manifests, starting from the high-level pattern, describing how each applicable level (high > meso > low) tricks users into behaving in ways that go against their original intentions or privacy preferences."
     }
     // Additional dark pattern entries as needed
   ]
