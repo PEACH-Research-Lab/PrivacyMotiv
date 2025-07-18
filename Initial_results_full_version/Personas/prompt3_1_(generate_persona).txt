@@ -1,11 +1,11 @@
-Create user personas that take into account privacy issues faced by marginalized groups.
+Create user personas that take into account privacy issues faced by individuals who are either vulnerable, marginalized, or both.
 Each persona should include the following components:
 
 🔹 Basic Persona Info
 Name; Age; Tech comfort level
 
 🔹 Contextual Persona Info
-Use the following typology of marginalization contexts to guide contextual persona construction. You may choose one or more context types per persona:
+Use the following typology of marginalization contexts, along with REFERENCE to the common denominators and characteristics of vulnerability and/or vulnerable populations, to guide contextual persona construction.
 **Types of Marginalization Contexts:
 (1) Individuals and identities (specific marginalized identities)
 (2) Physical spaces and communities (marginalization at the level of communities)
@@ -19,10 +19,24 @@ Use the following typology of marginalization contexts to guide contextual perso
 🔹 Privacy Responses and Costs
 ** Use the REFERENCE sections 'Privacy Responses and Costs' and 'High-level privacy-related tensions and trade-offs' below to identify the persona's privacy behaviors. Address the following:
 1. What privacy tensions arise when the persona responds to perceived privacy threats?
-2. What is the persona's level of privacy awareness when using technology?
+2. What specific privacy responses they take or wish they could take?
 3. What are the specific costs and consequences of different responses to these threats?
 
 -----------------------------------------------------------------------------
+REFERENCE: 'Common Denominators and Characteristics of Vulnerability and/or Vulnerable Populations'
+Usually vulnerability and/or vulnerable populations concerns people who do not enjoy full physical, psychological and social well-being, and as a result are (at risk of) falling behind in society or become socially isolated.
+Some common characteristics include:
+(1) accumulation of problems or limitations (multi-complex problems); 
+(2) feelings of powerlessness and distrust; 
+(3) disrupted communication; 
+(4) limited or no access to resources; 
+(5) marginality; 
+(6) imbalance in burden and capacity; 
+(7) dependency situation; 
+(8) low self-esteem
+
+*****************************************************************************
+
 REFERENCE: 'Privacy Responses and Costs'
 
 1. Privacy Response: Apathy (i.e. lack of response)

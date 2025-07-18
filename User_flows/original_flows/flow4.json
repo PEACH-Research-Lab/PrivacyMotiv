@@ -1,6 +1,6 @@
 [
   {
-    "user_flow_title": "Starting private listening via Private Session",
+    "user_flow_title": "Enjoying private listening via Private Session",
     "flows": [
       {
         "flow_id": "flow1",
@@ -46,7 +46,7 @@
           {
             "step": 3,
             "action": "Scroll down and find the 'Social' section.",
-            "interface": "Settings page — under the 'Social' section, there are one 'connection' button and five toggle buttons. The first button shows 'Connect with Facebook' with the description 'Connect with Facebook to see what your friends are playing.' The five toggle buttons in order are: (1) 'Publish my new playlists on my profile' (default: on), (2) 'Start a private session' (default: off), (3) 'Share my listening activity' (default: on), (4) 'Show my recently played artists on my public profile' (default: on), and (5) 'Show my followers and following lists on my public profile' (default: on). In addition, there is a question mark icon next to the 'Start a private session' setting."
+            "interface": "Settings page - under the 'Social' section, there are one 'connection' button and five toggle buttons. The first button shows 'Connect with Facebook' with the description 'Connect with Facebook to see what your friends are playing.' The five toggle buttons in order are: (1) 'Publish my new playlists on my profile' (default: on), (2) 'Start a private session' (default: off), (3) 'Share my listening activity' (default: on), (4) 'Show my recently played artists on my public profile' (default: on), and (5) 'Show my followers and following lists on my public profile' (default: on). In addition, there is a question mark icon next to the 'Start a private session' setting."
           },
           {
             "step": 4,
@@ -62,6 +62,140 @@
             "endpoint": true,
             "interface": "A blue padlock icon appears on the Top App Bar.",
             "true_reasoning": "The blue padlock icon indicates that the Private Session has successfully started."
+          }
+        ]
+      },
+      {
+        "flow_id": "flow3",
+        "steps": [
+          {
+            "start": "Launch the Music application on a desktop computer",
+            "interface": "Home page"
+          },
+          {
+            "step": 1,
+            "action": "Click on the profile picture or username in the top-right corner of the screen.",
+            "interface": "A drop-down menu appears below the user profile picture in the top-right corner of the screen. There are seven options in the drop-down menu, listed from top to bottom: Account, Profile, Upgrade to Premium, Support, Private Session, Settings, and Log out."
+          },
+          {
+            "step": 2,
+            "action": "Click 'Private Session'.",
+            "interface": "The drop-down menu disappears, and a blue padlock icon appears on the Top App Bar."
+          },
+          {
+            "step": 3,
+            "system_action": "The system continuously checks whether the Private Session has remained active for 6 hours and determines it has not met this threshold.",
+            "endpoint": true,
+            "interface": "The blue padlock icon still shows on the Top App Bar.",
+            "true_reasoning": "The blue padlock icon indicates that the Private Session is still on."
+          }
+        ]
+      },
+      {
+        "flow_id": "flow4",
+        "steps": [
+          {
+            "start": "Launch the Music application on a desktop computer",
+            "interface": "Home page"
+          },
+          {
+            "step": 1,
+            "action": "Click on the profile picture or username in the top-right corner of the screen.",
+            "interface": "A drop-down menu appears below the user profile picture in the top-right corner of the screen. There are seven options in the drop-down menu, listed from top to bottom: Account, Profile, Upgrade to Premium, Support, Private Session, Settings, and Log out."
+          },
+          {
+            "step": 2,
+            "action": "Click 'Private Session'.",
+            "interface": "The drop-down menu disappears, and a blue padlock icon appears on the Top App Bar."
+          },
+          {
+            "step": 3,
+            "system_action": "The system continuously checks whether the Private Session has remained active for 6 hours and confirms that it has.",
+            "endpoint": false,
+            "interface": "The blue padlock icon disapears from the Top App Bar.",
+            "false_reasoning": "The blue padlock icon no longer appears because the Private Session has automatically ended after 6 hours of continuous activity."
+          }
+        ]
+      },
+      {
+        "flow_id": "flow5",
+        "steps": [
+          {
+            "start": "Launch the Music application on a desktop computer",
+            "interface": "Home page"
+          },
+          {
+            "step": 1,
+            "action": "Click on the profile picture or username in the top-right corner of the screen.",
+            "interface": "A drop-down menu appears below the user profile picture in the top-right corner of the screen. There are seven options on the drop-down menu, from top to down are Account, Profile, Upgrade to Premium, Support, Private Session, Settings, and Log out."
+          },
+          {
+            "step": 2,
+            "action": "Click 'Settings'.",
+            "interface": "Settings page with several sub-sections. The sub-sections are: Account, Language, Explicit Content, Autoplay, Audio Quality, Your Library, Display, Zoom Level, Social, Playback, Startup and window behavior, Storage, and ProxySettings."
+          },
+          {
+            "step": 3,
+            "action": "Scroll down and find the 'Social' section.",
+            "interface": "Settings page - under the 'Social' section, there are one 'connection' button and five toggle buttons. The first button shows 'Connect with Facebook' with the description 'Connect with Facebook to see what your friends are playing.' The five toggle buttons in order are: (1) 'Publish my new playlists on my profile' (default: on), (2) 'Start a private session' (default: off), (3) 'Share my listening activity' (default: on), (4) 'Show my recently played artists on my public profile' (default: on), and (5) 'Show my followers and following lists on my public profile' (default: on). In addition, there is a question mark icon next to the 'Start a private session' setting."
+          },
+          {
+            "step": 4,
+            "action": "Hover over the question mark icon.",
+            "interface": "A tooltip box appears with the message: 'Temporarily hide your activity from your followers. Private sessions will automatically end after 6 hours, or when you restart the app.'"
+          },
+          {
+            "step": 5,
+            "action": "Switch the 'Start a private session' toggle button to turn it on.",
+            "interface": "A blue padlock icon appears on the Top App Bar."
+          },
+          {
+            "step": 6,
+            "system_action": "The system continuously checks whether the Private Session has remained active for 6 hours and determines it has not met this threshold.",
+            "endpoint": true,
+            "interface": "The blue padlock icon still shows on the Top App Bar.",
+            "true_reasoning": "The blue padlock icon indicates that the Private Session is still on."
+          }
+        ]
+      },
+      {
+        "flow_id": "flow6",
+        "steps": [
+          {
+            "start": "Launch the Music application on a desktop computer",
+            "interface": "Home page"
+          },
+          {
+            "step": 1,
+            "action": "Click on the profile picture or username in the top-right corner of the screen.",
+            "interface": "A drop-down menu appears below the user profile picture in the top-right corner of the screen. There are seven options on the drop-down menu, from top to down are Account, Profile, Upgrade to Premium, Support, Private Session, Settings, and Log out."
+          },
+          {
+            "step": 2,
+            "action": "Click 'Settings'.",
+            "interface": "Settings page with several sub-sections. The sub-sections are: Account, Language, Explicit Content, Autoplay, Audio Quality, Your Library, Display, Zoom Level, Social, Playback, Startup and window behavior, Storage, and ProxySettings."
+          },
+          {
+            "step": 3,
+            "action": "Scroll down and find the 'Social' section.",
+            "interface": "Settings page - under the 'Social' section, there are one 'connection' button and five toggle buttons. The first button shows 'Connect with Facebook' with the description 'Connect with Facebook to see what your friends are playing.' The five toggle buttons in order are: (1) 'Publish my new playlists on my profile' (default: on), (2) 'Start a private session' (default: off), (3) 'Share my listening activity' (default: on), (4) 'Show my recently played artists on my public profile' (default: on), and (5) 'Show my followers and following lists on my public profile' (default: on). In addition, there is a question mark icon next to the 'Start a private session' setting."
+          },
+          {
+            "step": 4,
+            "action": "Hover over the question mark icon.",
+            "interface": "A tooltip box appears with the message: 'Temporarily hide your activity from your followers. Private sessions will automatically end after 6 hours, or when you restart the app.'"
+          },
+          {
+            "step": 5,
+            "action": "Switch the 'Start a private session' toggle button to turn it on.",
+            "interface": "A blue padlock icon appears on the Top App Bar."
+          },
+          {
+            "step": 6,
+            "system_action": "The system continuously checks whether the Private Session has remained active for 6 hours and confirms that it has.",
+            "endpoint": false,
+            "interface": "The blue padlock icon disapears from the Top App Bar.",
+            "false_reasoning": "The blue padlock icon no longer appears because the Private Session has automatically ended after 6 hours of continuous activity."
           }
         ]
       }

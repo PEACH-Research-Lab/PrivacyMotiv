@@ -18,11 +18,11 @@
             "step": 2,
             "action": "Click on the 'Following' button",
             "system_action": "The system checks the connection mechanism of the selected user, and finds that the selected user is a synced Facebook friend.",
-            "interface": "In the middle section — the user's profile page — the square button turns into 'Follow'. On the right section — the Friend Activity sidebar — the unwanted user still appears in the list of existing friends' listening activity."
+            "interface": "In the middle section - the user's profile page - the square button turns into 'Follow'. On the right section - the Friend Activity sidebar - the unwanted user still appears in the list of existing friends' listening activity."
           },
           {
             "endpoint": false,
-            "interface": "In the middle section — the user's profile page — the square button turns into 'Follow'. On the right section — the Friend Activity sidebar — the unwanted user still appears in the list of existing friends' listening activity.",
+            "interface": "In the middle section - the user's profile page - the square button turns into 'Follow'. On the right section - the Friend Activity sidebar - the unwanted user still appears in the list of existing friends' listening activity.",
             "false_reasoning": "The unwanted user still appears in the list of existing friends' listening activity."
           }
         ]
@@ -73,11 +73,11 @@
             "step": 3,
             "action": "Click on the 'Unfollow' button",
             "system_action": "The system checks the connection mechanism of the selected 'unfollow' user, and finds that the selected user is a synced Facebook friend.",
-            "interface": "In the middle section — the user's profile page — the square button turns into 'Follow'. On the right section — the Friend Activity sidebar — the unwanted user still appears in the list of existing friends' listening activity."
+            "interface": "In the middle section - the user's profile page - the square button turns into 'Follow'. On the right section - the Friend Activity sidebar - the unwanted user still appears in the list of existing friends' listening activity."
           },
           {
             "endpoint": false,
-            "interface": "In the middle section — the user's profile page — the square button turns into 'Follow'. On the right section — the Friend Activity sidebar — the unwanted user still appears in the list of existing friends' listening activity.",
+            "interface": "In the middle section - the user's profile page - the square button turns into 'Follow'. On the right section - the Friend Activity sidebar - the unwanted user still appears in the list of existing friends' listening activity.",
             "false_reasoning": "The unwanted user still appears in the list of existing friends' listening activity."
           }
         ]
