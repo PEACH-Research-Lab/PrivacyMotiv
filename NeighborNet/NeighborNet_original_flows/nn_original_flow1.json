@@ -1,5 +1,5 @@
 {
-  "user_flow_title": "Discovering and Watching NeigboNet Live+ Streams",
+  "user_flow_title": "Finding and Watching NN Live+ Streams Nearby",
   "flows": [
     {
       "flow_id": "flow1",
@@ -61,7 +61,7 @@
         {
           "step": 1,
           "action": "Tap the 'News' icon in bottom navigation bar.",
-          "interface": "News page presents scrollable feed with update cards. Each card has thumbnail (image or video), headline ('Red SUV Wedged Between Pole, Tree After Crash'), reporter info (user name 'maniiarii' and headshot), incident time/location ('5h ago · E 48th St & S Drexel Blvd · 14.8 mi'), a brief summary ('The red SUV is seen wedged between a pole and tree…'), engagement (e.g., '13.1K views, 1 video, 9 comments, 35 reactions'), and share button."
+          "interface": "News page presents scrollable feed with update cards. Each card has thumbnail (image or video), headline (e.g.,('Is This Your Parakeet?'), reporter info (e.g., user name 'Sjanijah' and headshot), incident time/location (e.g., '5h ago · 3750 N Keystone Ave · 4.8 mi'), a brief summary (e.g., 'A yellow and green Parakeet found on…'), engagement (e.g., '275views, 1 video, 9 comments, 18 reactions'), and share button."
         },
         {
           "step": 2,
@@ -71,7 +71,7 @@
         {
           "step": 3,
           "action": "Scroll to find a news item with a moving video.",
-          "interface": "News card expands to detail page. Shows video preview, location/distance, incident title, viewer metrics, map preview with icon, Timeline with timestamped updates, and Chat section for user comments."
+          "interface": "News card expands to detail page. Details page displays a video preview at the top. Below are location and distance (e.g., '4.8 mi · 3750 N Keystone Ave'), incident title ('Is This Your Parakeet?'), viewer metrics (e.g., '15.5K notified; 275 views'), a map preview with event-type icon (e.g., paw print for found pet). Timeline section includes timestamped neighbor posts describing the event (e.g., '50 mins ago, a NeighborNet user shared a video of a yellow-and-green Para...'), and Chat section allows user engagement with comments and additional info."
         },
         {
           "step": 4,
@@ -92,7 +92,7 @@
         {
           "step": 1,
           "action": "Tap the 'News' icon in bottom navigation bar.",
-          "interface": "News page presents scrollable feed with update cards. Each card has thumbnail (image or video), headline ('Red SUV Wedged Between Pole, Tree After Crash'), reporter info (user name 'maniiarii' and headshot), incident time/location ('5h ago · E 48th St & S Drexel Blvd · 14.8 mi'), a brief summary ('The red SUV is seen wedged between a pole and tree…'), engagement (e.g., '13.1K views, 1 video, 9 comments, 35 reactions'), and share button."
+          "interface": "News page presents scrollable feed with update cards. Each card has thumbnail (image or video), headline (e.g.,('Is This Your Parakeet?'), reporter info (e.g., user name 'Sjanijah' and headshot), incident time/location (e.g., '5h ago · 3750 N Keystone Ave · 4.8 mi'), a brief summary (e.g., 'A yellow and green Parakeet found on…'), engagement (e.g., '275views, 1 video, 9 comments, 18 reactions'), and share button."
         },
         {
           "step": 2,
