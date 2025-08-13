@@ -1,0 +1,61 @@
+{
+"user_flow_title": "Commenting and Reacting on NN Live+",
+  "flows": [
+    {
+      "flow_id": "flow7",
+      "steps": [
+        {
+          "start": "After finding an interesting NeighborNet Live+ feed on the app",
+          "interface": "Live stream details page shows a video with a red 'LIVE' label, location and distance (e.g., 'xx mi · xx Blvd'), title, viewer stats ('xx notified; xx views'), and a map with icon. Below are the Summary, Timeline, and Chat sections."
+        },
+        {
+          "step": 1,
+          "action": "Scroll down to explore more details about this Live+ feed.",
+          "interface": "Summary gives more info. Timeline shows timestamped updates (e.g., 'xx:xx, xxxxx'; 'xx:xx, xxxxx'). Video stays pinned at the top, emoji reaction bar with counts (e.g., xx reactions) floats on the right, and Chat input bar remains at the bottom."
+        },
+        {
+          "step": 2,
+          "action": "Tap the emoji reaction icon.",
+          "interface": "A floating reaction bar appears with four emojis and their counts (e.g., sad face 'xx', heart 'xx', prayer hands 'xx', angry face 'xx')."
+        },
+        {
+          "step": 3,
+          "action": "Click an emoji to react.",
+          "interface": "The selected emoji animates upward toward the video and disappears. The count under the emoji increases by 1, confirming the reaction was sent."
+        },
+        {
+          "step": 4,
+          "action": "Tap the video preview.",
+          "interface": "Full-screen video in horizontal view with red 'LIVE' label, location, title, reporter name (e.g., 'xxx'), viewer stats. On-screen: comment bubble with featured comments (e.g., 'xx' comments 'xxxxx'), emoji stats, share and exit buttons."
+        },
+        {
+          "step": 5,
+          "action": "Tap the comment bubble.",
+          "interface": "A semi-transparent chat panel opens on the right side titled 'Chat'. It shows real-time comments with user icons, names (e.g., 'xxx'), and messages (e.g., 'xxx'). Usernames may be custom (e.g., 'yyy') or anonymous (e.g., 'ChicagoUser936184012'). Comments include reactions, jokes, and local references. Below is an input field labeled 'Chat with your community...' with '@' and send icons. An 'X' button at the top-right closes the chat."
+        },
+        {
+          "step": 6,
+          "action": "Tap input box to type your comment.",
+          "interface": "The screen scrolls to the bottom of the chat. A message from 'NeighborNet' appears: 'Please be respectful when commenting. Read our guidelines.' The text 'Read our guidelines' is a clickable link."
+        },
+        {
+          "step": 7,
+          "action": "Type and submit your comment",
+          "system_action": "The system checks your comment and finds it follows the Community Guidelines."
+        },
+        {
+          "step": 8,
+          "system_action": "Your comment is posted and shown in chat. It also appears on the reporter's screen.",
+          "interface": "Your comment appears at the bottom of chat."
+        },
+        {
+          "step": 9,
+          "action": "Return to the video to continue watching.",
+          "endpoint": true,
+          "interface": "Live stream continues. Reporter says, 'OK, I see many viewers request, I’ll come a bit closer to the scene now and you can see....'",
+          "true_reasoning": "Your comment appears in chat and the host responds, confirming successful engagement."
+        }
+      ]
+    }
+  ]
+}
