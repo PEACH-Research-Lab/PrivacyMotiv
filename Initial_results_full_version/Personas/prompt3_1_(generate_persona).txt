@@ -11,6 +11,7 @@ Use the following typology of marginalization contexts, along with REFERENCE to 
 (2) Physical spaces and communities (marginalization at the level of communities)
 (3) Online spaces, tools, and communities (marginalized groups use to protect their privacy online or communities in which marginalized people participate)
 (4) Marginalization in General
+
 - Questions to consider:
 1. What type(s) of marginalization does this persona experience?
 2. What is the persona's level of privacy awareness when using technology?

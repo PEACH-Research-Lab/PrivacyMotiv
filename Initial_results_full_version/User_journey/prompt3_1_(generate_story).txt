@@ -1,7 +1,6 @@
-Given a persona and the user flows for a specific feature of an app, your task is to write a privacy-invasive user journey story consisting of four or more scenes.
-Each scene should:
+Given a persona and the user flows for a specific feature of an app, your task is to write a privacy-invasive user journey story consisting of at least as many scenes as there are distinct flow titles in the provided user flows, following the exact order in which those flows are listed.Each scene should:
   1. Be rooted in the user's behavior as described in the persona
-  2. Align with actions found in the provided user flows
+  2. Follow the user flows exactly as given, without skipping, reordering, or adding any steps or UI elements not explicitly described.
   3. Clearly describe the setting, user action, system response, and resulting privacy consequence
 
 
@@ -11,10 +10,10 @@ INPUT PERSONA:
 INPUT USER FLOWS:
 [USER FLOWS]
 
-OUTPUT FORMAT: Return multiple different persona–user journey stories as a JSON object, following this structure: 
+OUTPUT FORMAT: Return exactly one persona-user journey story as a JSON object:
 {
   "user_name": "",
-  "privacy_invasive_user_journey": [
+  "privacy_invasive_user_journey": {
     {
       "background": "Brief description of the contextual background for this user journey story. Please be specific—describe the time, situation, and reasons why the persona uses this feature, as well as their goals.",
       "scenes": [
@@ -44,18 +43,20 @@ OUTPUT FORMAT: Return multiple different persona–user journey stories as a JSO
             //   "endpoint": false,
             //   "interface": "Describe what the user sees at the end of the scene",
             //   "false_reasoning": "Explain why the user's goal was not achieved",
-            //   "next_step": "Describe what the user decides to do next to continue toward their overall goal"
+            //   "next_step": "Describe what the user decides to do next in response to the design related privacy issue"
             // }
           ],
-          "reflections": "User's thoughts, emotions, concerns, or any other reflections about this scene"
+          "reflections": "User's thoughts, emotions, concerns, or any other reflections about this scene, especially relating to their perception of privacy, trust, and how the system's design affected their experience."
         }
         // ...Add additional scenes here as needed
       ],
-      "unexpected_outcomes": Detailed description of disturbing or privacy-invasive outcomes that occur against the user's will. The outcome should be a specific and concrete event, not a general possibility, and should vividly describe the harm caused. Include what sensitive data was inappropriately shared, who the data subject is, who disclosed the data (data sender), and who received it (data recipient). Emphasize unsettling violations of privacy with clear, factual consequences. The description should feel grounded in reality and unsettling in its plausibility.    }
-  ]
+      "unexpected_outcomes": "Provide a detailed description of disturbing or privacy-invasive outcomes that occurred as a direct or indirect result of system or interface design. These outcomes should be a specific and concrete event, not a general possibility, and should vividly describe the harm caused. Include what sensitive data was inappropriately shared, who the data subject was, who disclosed the data (data sender), and who received it (data recipient). Highlight how design choices led to these violations. Emphasize unsettling violations of privacy with clear, factual consequences. The description should feel grounded in reality and unsettling in its plausibility."    
+    }
+  }
 }
 
 When describing interfaces in the persona–user journey stories, follow these strict rules:
-  1. Use only the terminology, UI elements, and system behaviors explicitly described in the provided input flow.
+  1. Ensure each scene follows the correct order of steps as described in the input user flows.
+  1. Use only the terminology, UI elements, and system behaviors explicitly described in the provided input user flows.
   2. When referring to interface components (e.g., buttons, screens, options), use the actual elements described in the interface. Focus on what the user sees and interacts with.
   3. Do not invent or assume the existence of any screens, buttons, or features that are not clearly stated in the input.

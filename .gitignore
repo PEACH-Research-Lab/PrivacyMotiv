@@ -3,3 +3,6 @@
 /Initial_results_full_version/User_journey/test_user_flows/combine_missing/combine_missing_journey_results_Rosa.json
 /Initial_results_full_version/User_journey/test_user_flows/original/original_journey_results_Rosa.json
 /system_building
+/User_flows/get_random_sub_combinations.py
+/User_flows/old_combine_flows_copy.py
+/User_flows/random_picked_combinations.json

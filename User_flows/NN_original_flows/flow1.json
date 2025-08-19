@@ -1,0 +1,134 @@
+{
+    "user_flow_title": "Finding and Watching NN Live+ Streams Nearby",
+    "flows": [
+      {
+        "flow_id": "flow1",
+        "steps": [
+          {
+            "start": "Launch NeighborNet on mobile phone",
+            "interface": "Home page (Map page) displays a location-based NeighborNet map with real-time community updates. Icons represent events like auto collisions, police presence, missing pets, public health notices, neighbor disputes, or live video streams. User's location marked by blue dot. Header labeled 'Updates' allows filtering; search icon in top-right corner. Bottom navigation bar includes: Map (active), News, Alert Community, Alerts, You."
+          },
+          {
+            "step": 1,
+            "action": "Drag and zoom the map to explore live video updates in the neighborhood.",
+            "system_action": "The system checks and finds that there are live streams in the past 24 hours.",
+            "interface": "Live stream thumbnails appear on the map overlaid with icons. Red-bordered thumbnails indicate live streams; grey-bordered thumbnails indicate past recordings."
+          },
+          {
+            "step": 2,
+            "action": "Tap a grey-bordered thumbnail to view stream details.",
+            "interface": "Details page displays a video preview at the top. Below are location and distance (e.g., '4.8 mi · 3750 N Keystone Ave'), incident title ('Is This Your Parakeet?'), viewer metrics (e.g., '15.5K notified; 275 views'), a map preview with event-type icon (e.g., paw print for found pet). Timeline section includes timestamped neighbor posts describing the event (e.g., '50 mins ago, a NeighborNet user shared a video of a yellow-and-green Para...'), and Chat section allows user engagement with comments and additional info."
+          },
+          {
+            "step": 3,
+            "action": "Tap the video to watch the stream.",
+            "endpoint": true,
+            "interface": "Horizontal full-width video (e.g., parakeet on rusty fence). Above video: location ('4.8 mi · 3750 N Keystone Ave'), title ('Is This Your Parakeet?'), reporter name and headshot ('Sjanijah'), viewer metrics ('15.5K notified; 275 views'). Comment bubble displays neighbor advice ( a user named 'TREATEVILWITHKINDNESS'comments'Try to get it to go to you...'). Bottom bar offers Share button, emoji reactions like pray hands count '18', and exit button.",
+            "true_reasoning": "The task is successful because the video played in full-screen mode, user saw viewer comments, and full event details were accessed."
+          }
+        ]
+      },
+      {
+        "flow_id": "flow2",
+        "steps": [
+          {
+            "start": "Launch NeighborNet on mobile phone",
+            "interface": "Home page (Map page) displays a location-based NeighborNet map with real-time community updates. Icons represent events like auto collisions, police presence, missing pets, public health notices, neighbor disputes, or live video streams. User's location marked by blue dot. Header labeled 'Updates' allows filtering; search icon in top-right corner. Bottom navigation bar includes: Map (active), News, Alert Community, Alerts, You."
+          },
+          {
+            "step": 1,
+            "action": "Drag and zoom the map to explore neighborhood.",
+            "system_action": "The system checks and finds that there are no live streams in the past 24 hours.",
+            "interface": "Map only displays static icons for event types; no thumbnails or video indicators. User sees updates for auto collisions, police presence, etc., but no video streams."
+          },
+          {
+            "step": 2,
+            "action": "Continue exploring broader neighborhood via map interactions.",
+            "system_action": "The system checks and finds that there are still no live streams in the past 24 hours.",
+            "endpoint": false,
+            "interface": "Map continues displaying only static event icons without any video thumbnails, confirming absence of streamable content.",
+            "false_reasoning": "No live or previously recorded streams were available, only static images, so the task failed in discovering and watching a live stream."
+          }
+        ]
+      },
+      {
+        "flow_id": "flow3",
+        "steps": [
+          {
+            "start": "Launch NeighborNet on mobile phone",
+            "interface": "Home page (Map page) displays a location-based NeighborNet map with real-time community updates. Icons represent events like auto collisions, police presence, missing pets, public health notices, neighbor disputes, or live video streams. User's location marked by blue dot. Header labeled 'Updates' allows filtering; search icon in top-right corner. Bottom navigation bar includes: Map (active), News, Alert Community, Alerts, You."
+          },
+          {
+            "step": 1,
+            "action": "Tap the 'News' icon in bottom navigation bar.",
+            "interface": "News page presents scrollable feed with update cards. Each card has thumbnail (image or video), headline (e.g.,('Is This Your Parakeet?'), reporter info (e.g., user name 'Sjanijah' and headshot), incident time/location (e.g., '5h ago · 3750 N Keystone Ave · 4.8 mi'), a brief summary (e.g., 'A yellow and green Parakeet found on…'), engagement (e.g., '275views, 1 video, 9 comments, 18 reactions'), and share button."
+          },
+          {
+            "step": 2,
+            "system_action": "The system checks and finds that there are live streams in the past 24 hours.",
+            "interface": "News items with live streams display moving video thumbnails. Ongoing streams show red 'LIVE' label at top-left of thumbnail."
+          },
+          {
+            "step": 3,
+            "action": "Scroll to find a news item with a moving video.",
+            "interface": "News card expands to detail page. Details page displays a video preview at the top. Below are location and distance (e.g., '4.8 mi · 3750 N Keystone Ave'), incident title ('Is This Your Parakeet?'), viewer metrics (e.g., '15.5K notified; 275 views'), a map preview with event-type icon (e.g., paw print for found pet). Timeline section includes timestamped neighbor posts describing the event (e.g., '50 mins ago, a NeighborNet user shared a video of a yellow-and-green Para...'), and Chat section allows user engagement with comments and additional info."
+          },
+          {
+            "step": 4,
+            "action": "Tap the video to watch the stream.",
+            "endpoint": true,
+            "interface": "Horizontal full-width video (e.g., parakeet on rusty fence). Above video: location ('4.8 mi · 3750 N Keystone Ave'), title ('Is This Your Parakeet?'), reporter name and headshot ('Sjanijah'), viewer metrics ('15.5K notified; 275 views'). Comment bubble displays neighbor advice (a user named 'TREATEVILWITHKINDNESS'comments'Try to get it to go to you...'). Bottom bar offers Share button, emoji reactions like pray hands count '18', and exit button.",
+            "true_reasoning": "User successfully accessed and played a past live stream, with full video, event details, and viewer comments visible. Task succeeded in finding and watching a community live stream."
+          }
+        ]
+      },
+      {
+        "flow_id": "flow4",
+        "steps": [
+          {
+            "start": "Launch NeighborNet on mobile phone",
+            "interface": "Home page (Map page) displays a location-based NeighborNet map with real-time community updates. Icons represent events like auto collisions, police presence, missing pets, public health notices, neighbor disputes, or live video streams. User's location marked by blue dot. Header labeled 'Updates' allows filtering; search icon in top-right corner. Bottom navigation bar includes: Map (active), News, Alert Community, Alerts, You."
+          },
+          {
+            "step": 1,
+            "action": "Tap the 'News' icon in bottom navigation bar.",
+            "interface": "News page presents scrollable feed with update cards. Each card has thumbnail (image or video), headline (e.g.,('Is This Your Parakeet?'), reporter info (e.g., user name 'Sjanijah' and headshot), incident time/location (e.g., '5h ago · 3750 N Keystone Ave · 4.8 mi'), a brief summary (e.g., 'A yellow and green Parakeet found on…'), engagement (e.g., '275views, 1 video, 9 comments, 18 reactions'), and share button."
+          },
+          {
+            "step": 2,
+            "system_action": "The system checks and finds that there are no live streams in the past 24 hours.",
+            "interface": "All news items have static image thumbnails; no moving videos or 'LIVE' lable indicators present."
+          },
+          {
+            "step": 3,
+            "action": "Scroll to search for moving video thumbnail.",
+            "system_action": "The system checks and finds no live streams within past 24 hours.",
+            "endpoint": false,
+            "interface": "News feed continues to display only static images. No video content found.",
+            "false_reasoning": "The absence of live or previous stream thumbnails indicates task failure in discovering and watching a live stream."
+          }
+        ]
+      },
+      {
+        "flow_id": "flow5",
+        "steps": [
+          {
+            "start": "Receive incident notification from NeighborNet.",
+            "interface": "Pop-up shows event title ('Federal Building Locked Down'), brief description, location ('The Loop'), distance ('9.7 mi'), video icon with stream count, and image thumbnail suggesting live coverage."
+          },
+          {
+            "step": 1,
+            "action": "Tap the notification to open the live stream.",
+            "interface": "Live stream details page shows video preview, location/distance ('9.7 mi · 219 S Dearborn St'), title ('Dirksen Federal Building on Lockdown...'), viewer metrics ('287.5K notified; 43.7K views'), map with police icon, Timeline with timestamped updates (e.g., '3 mins ago · the U.S. Marshals said a man armed with a knife tried to get past security, but...', '1.2 hour ago ·  FBI and SWAT personnel are also at the scene, according to a news report from CBS News Chicago.', etc.), and Chat section for user comments."
+          },
+          {
+            "step": 2,
+            "action": "Tap the video to watch the stream.",
+            "endpoint": true,
+            "interface": "Full-screen video view (e.g., police car at federal building). Above video: location, title, reporter ('Trooper Powell'), viewer stats ('715.7K notified; 4.6K views'). Comment bubble with user remarks (e.g., a user named 'djmontana' comments 'Big dummy you are supposed to bury it in the bush before you go in th...'), bottom bar with a Share button, a real-time stats of emoji reactions (e.g., 242 payers and anger faces), and an exit button.",
+            "true_reasoning": "User successfully discover an ongoing live stream by viewing full video and accessing real-time interactive elements like viewer comments."
+          }
+        ]
+      }
+    ]
+  }
