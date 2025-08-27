@@ -61,7 +61,8 @@ function App() {
     const loadPersonas = async () => {
       try {
         const fileName = selectedApp === 'APP1' ? 'app1_persona.json' : 'app2_persona.json'
-        const response = await fetch(`/src/assets/${fileName}`)
+        // const response = await fetch(`/src/assets/${fileName}`)
+        const response = await fetch(`/${fileName}`)
         const data = await response.json()
         setPersonas(data)
       } catch (error) {

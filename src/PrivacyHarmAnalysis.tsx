@@ -87,7 +87,8 @@ function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyH
   const getPersonaImage = (personaName: string) => {
     // Get the persona-specific image based on the selected app
     const appFolder = selectedApp === 'APP1' ? 'app1_persona' : 'app2_persona'
-    const imagePath = `/src/assets/${appFolder}/${personaName}.png`
+    // const imagePath = `/src/assets/${appFolder}/${personaName}.png`
+    const imagePath = `/${appFolder}/${personaName}.png`
     console.log(`Constructing image path: ${imagePath} for persona: ${personaName} in app: ${selectedApp}`)
     return imagePath
   }
