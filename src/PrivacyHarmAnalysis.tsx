@@ -439,7 +439,8 @@ function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyH
                               }}
                             >
                               <img 
-                                src="/src/assets/lofi_collections/example_small.png" 
+                                // src="/src/assets/lofi_collections/example_small.png" 
+                                src="./lofi_collections/example_small.png"
                                 alt={`Flow ${flow.function} small version`}
                                 className="pha-lofi-small-image"
                               />
@@ -526,7 +527,8 @@ function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyH
                   }}
                 >
                   <img 
-                    src="/src/assets/lofi_collections/example_big.png" 
+                    // src="/src/assets/lofi_collections/example_big.png" 
+                    src="./lofi_collections/example_big.png"
                     alt={`Flow ${currentStory?.flow_in_app[selectedFlowIndex]?.function} big version`}
                     className="pha-lofi-big-image"
                     style={{ transform: `scale(${imageZoom})` }}
