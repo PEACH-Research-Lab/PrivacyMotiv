@@ -1,0 +1,229 @@
+{
+    "user_name": "Maria Silva",
+    "privacy_invasive_user_journey": [
+      {
+        "background": "Friday afternoon, Maria takes a short break between editing videos for her subscription platform. She wants fresh Latin-pop tracks to layer under her next teaser clip but also hopes to keep her stage identity separate from her personal life. She opens the desktop music app, intending to scan Friend Activity for inspiration and then slip back to work.",
+        "scenes": [
+          {
+            "scene_id": "scene_1",
+            "scene_description": "“Let's just peek at what everyone's vibing to,” Maria thinks, expecting a quick browse and no exposure of personal info.",
+            "scene_user_flow": [
+              {
+                "start": "Maria is on her laptop at her co-working desk and double-clicks the app icon.",
+                "interface": "Home page"
+              },
+              {
+                "step": 1,
+                "action": "Tap the Friend Activity icon at the top-right corner.",
+                "interface": "Friend Activity sidebar slides in on the right third of the screen, listing friends' recent tracks.",
+                "system_action": "The system checks for mutual or Facebook-synced friends with 'Share my listening activity' enabled."
+              },
+              {
+                "endpoint": true,
+                "interface": "Friend Activity sidebar remains visible with several familiar usernames.",
+                "true_reasoning": "Maria can now skim trending tracks.",
+                "next_step": "She decides she wants a broader set of friends to get more eclectic ideas."
+              }
+            ],
+            "reflections": "Comfortable so far—no private details appear. She feels in control."
+          },
+          {
+            "scene_id": "scene_2",
+            "scene_description": "Wanting more variety, Maria chooses to sync Facebook, forgetting that her personal FB uses her legal name. “It's only pulling the playlist list, not my profile… right?”",
+            "scene_user_flow": [
+              {
+                "start": "Friend Activity sidebar is open with an 'Add Friends' button.",
+                "interface": "Friend Activity sidebar"
+              },
+              {
+                "step": 1,
+                "action": "Click 'Add Friends'.",
+                "interface": "Sidebar now shows a large blue 'Connect with Facebook' button and reassurance: 'We'll never post to Facebook without your permission.'"
+              },
+              {
+                "step": 2,
+                "action": "Click 'Connect with Facebook'.",
+                "interface": "Facebook login pop-up window appears."
+              },
+              {
+                "step": 3,
+                "action": "Enter personal Facebook email and password, then click 'Log In'.",
+                "interface": "Friend Activity sidebar refreshes with a longer list of friends and new profile photos.",
+                "system_action": "System pulls Facebook name, picture, and full friend list."
+              },
+              {
+                "endpoint": true,
+                "interface": "Sidebar populated with many contacts, including a childhood neighbor.",
+                "true_reasoning": "Facebook account successfully linked.",
+                "next_step": "Maria plans to scan the new tracks and then disconnect the link later."
+              }
+            ],
+            "reflections": "A small uneasy knot forms—she notices her legal first name briefly flashed in the upper left before the sidebar settled."
+          },
+          {
+            "scene_id": "scene_3",
+            "scene_description": "Maria recognizes a former college acquaintance in the feed. Panic sparks: that person knows her real surname and could connect it to her stage persona.",
+            "scene_user_flow": [
+              {
+                "start": "Friend Activity sidebar still open with the acquaintance's username visible.",
+                "interface": "Friend Activity sidebar"
+              },
+              {
+                "step": 1,
+                "action": "Click on that acquaintance's username.",
+                "interface": "Middle section switches to the acquaintance's profile page with a square 'Following' button and three-dot 'More' button."
+              },
+              {
+                "step": 2,
+                "action": "Click the square 'Following' button to unfollow.",
+                "interface": "Button changes to 'Follow'; on the right, the same acquaintance still appears in the Friend Activity list.",
+                "system_action": "App notes the user is a synced Facebook friend and keeps them in the sidebar."
+              },
+              {
+                "endpoint": false,
+                "interface": "Acquaintance remains listed in Friend Activity.",
+                "false_reasoning": "Unfollowing does not remove synced friends from sidebar.",
+                "next_step": "Maria decides to hide her immediate listening by starting a Private Session."
+              }
+            ],
+            "reflections": "Frustration: “Why won't you disappear? I never wanted crossover friends here.” Anxiety about being unmasked rises."
+          },
+          {
+            "scene_id": "scene_4",
+            "scene_description": "Determined to cover her tracks, Maria activates Private Session, hoping no new activity will leak.",
+            "scene_user_flow": [
+              {
+                "start": "Profile picture is at the top-right corner.",
+                "interface": "Home page remains visible."
+              },
+              {
+                "step": 1,
+                "action": "Click on profile picture.",
+                "interface": "Drop-down menu appears with 'Private Session' fifth in the list."
+              },
+              {
+                "step": 2,
+                "action": "Click 'Private Session'.",
+                "interface": "Menu disappears; a blue padlock icon appears on the Top App Bar."
+              },
+              {
+                "endpoint": true,
+                "interface": "Blue padlock icon persists.",
+                "true_reasoning": "Private Session is on; Maria's new listens should stay hidden.",
+                "next_step": "She minimizes the window, planning to research how to sever the Facebook link entirely."
+              }
+            ],
+            "reflections": "Relief mingles with dread: the acquaintance could already have screenshotted her handle next to her legal name."
+          }
+        ],
+        "unexpected_outcomes": "By syncing Facebook, Maria's stage-name account silently ingested her legal name and profile photo. A mutual fan—who follows her stage persona—also happens to be Facebook friends with the college acquaintance. When the fan refreshes their own Friend Activity sidebar, it now shows Maria's stage icon beside her legal initials, enough to triangulate her identity. Sensitive data: **real name** (data subject: Maria) leaked from music app (data sender: the app displaying Facebook-derived info) to other users scrolling Friend Activity (data recipients: fans and acquaintances). The brief overlap undermines her pseudonymity and increases doxxing risk."
+      },
+      {
+        "background": "Sunday night, Maria schedules social-media posts for early Monday. She wants fresh upbeat tracks but intends to keep her listening history private because her eight-year-old is asleep nearby. She also hopes to prune any leftover personal-life connections inside the app.",
+        "scenes": [
+          {
+            "scene_id": "scene_1",
+            "scene_description": "“First, stealth mode,” she mutters, aiming to safeguard against accidental sharing before she even starts browsing.",
+            "scene_user_flow": [
+              {
+                "start": "Maria opens the desktop app.",
+                "interface": "Home page"
+              },
+              {
+                "step": 1,
+                "action": "Click profile picture.",
+                "interface": "Drop-down menu with 'Private Session' option."
+              },
+              {
+                "step": 2,
+                "action": "Select 'Private Session'.",
+                "interface": "Drop-down disappears; blue padlock icon appears on Top App Bar."
+              },
+              {
+                "endpoint": true,
+                "interface": "Blue padlock icon visible.",
+                "true_reasoning": "Private Session enabled.",
+                "next_step": "Maria wants to double-check who can still see her past listens."
+              }
+            ],
+            "reflections": "Calm—she believes nothing from tonight will leak, though she's unsure about historic data."
+          },
+          {
+            "scene_id": "scene_2",
+            "scene_description": "Curiosity nags: “Did that PTA mom ever vanish from my list?” She pulls up Friend Activity.",
+            "scene_user_flow": [
+              {
+                "start": "Blue padlock icon shows Private Session is active.",
+                "interface": "Home page"
+              },
+              {
+                "step": 1,
+                "action": "Click Friend Activity icon.",
+                "interface": "Friend Activity sidebar appears with familiar names and tracks from the past seven days.",
+                "system_action": "System surfaces any mutual or Facebook-synced friends."
+              },
+              {
+                "endpoint": true,
+                "interface": "Sidebar lists the PTA mom's username with a children's choir playlist Maria listened to last Wednesday.",
+                "true_reasoning": "Sidebar fetches last-week history even during Private Session.",
+                "next_step": "Maria decides to sever the PTA connection."
+              }
+            ],
+            "reflections": "Shock—she forgot that older plays linger. Seeing a kids-choir playlist could hint at her child's school activities."
+          },
+          {
+            "scene_id": "scene_3",
+            "scene_description": "Determined, she tries to remove the PTA mom using the profile page flow.",
+            "scene_user_flow": [
+              {
+                "start": "PTA mom listed in Friend Activity.",
+                "interface": "Friend Activity sidebar"
+              },
+              {
+                "step": 1,
+                "action": "Click the PTA mom's username.",
+                "interface": "Middle section shows the PTA mom's profile page with a 'Following' button."
+              },
+              {
+                "step": 2,
+                "action": "Click the square 'Following' button.",
+                "interface": "'Following' turns to 'Follow', but PTA mom still appears in Friend Activity list.",
+                "system_action": "System notes the user is a Facebook-synced friend and retains them in the sidebar."
+              },
+              {
+                "endpoint": false,
+                "interface": "Sidebar unchanged—PTA mom still listed.",
+                "false_reasoning": "Unfollowing does not remove synced friends.",
+                "next_step": "Maria recalls that Facebook linkage may be the root cause and decides to disconnect it entirely."
+              }
+            ],
+            "reflections": "Annoyance gives way to alarm: her carefully separated worlds keep bleeding together."
+          },
+          {
+            "scene_id": "scene_4",
+            "scene_description": "She heads back to 'Add Friends' hoping there's a disconnect, but the only clear path is the same 'Connect with Facebook' prompt—no unlink option. “Did they trap me?”",
+            "scene_user_flow": [
+              {
+                "start": "Friend Activity sidebar with 'Add Friends' button.",
+                "interface": "Friend Activity sidebar"
+              },
+              {
+                "step": 1,
+                "action": "Click 'Add Friends'.",
+                "interface": "Large blue 'Connect with Facebook' button reappears with the reassuring text about not posting."
+              },
+              {
+                "endpoint": true,
+                "interface": "Same connect prompt—no removal choice.",
+                "true_reasoning": "UI lacks an unlink feature; Maria can only add, not delete, Facebook integration.",
+                "next_step": "She closes the sidebar in frustration, vowing to comb settings later."
+              }
+            ],
+            "reflections": "Feelings of entrapment and fatigue. She wonders if the service values growth metrics more than user safety."
+          }
+        ],
+        "unexpected_outcomes": "Although Private Session masked new plays, historic data exposed Maria's **child-related listening history**—specifically a playlist labeled with the local elementary school's spring concert. Data subject: Maria's child; data sender: music app's sidebar reviving the old track entry; data recipients: any synced friends, including casual PTA contacts and online fans with Facebook ties. This cross-context exposure heightens risk of mapping her child's school location, directly contradicting the household rule against sharing home or school details."
+      }
+    ]
+  }
+  

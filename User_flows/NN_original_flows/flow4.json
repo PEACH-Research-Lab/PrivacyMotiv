@@ -1,0 +1,108 @@
+{
+    "user_flow_title": "Hiding and Deleting Your Live+ History",
+    "flows": [
+        {
+            "flow_id": "flow1",
+            "steps": [
+                {
+                    "start": "Launch the NeighborNet on mobile phone",
+                    "interface": "Home page (Map page) displays a location-based NeighborNet map, highlighting real-time community updates. A variety of icons are overlaid on a simplified neighborhood grid, each representing different report types such as auto collisions, police presence, missing pets, public health notices, neighbor disputes, or live video streams. The user's current location is marked with a blue dot. A header at the top labeled 'Updates' allows for filtering, with a search icon in the top-right corner. A bottom navigation bar provides access to five main sections: Map (active), News, Alert Community, Alerts, and You."
+                },
+                {
+                    "step": 1,
+                    "action": "Tap the 'You' icon in the bottom navigation bar to go to the user profile page.",
+                    "interface": "The 'You' tab displays the user profile page, where users manage their personal profile and achievements. At the top, a profile headshot is centered with the username displayed under the headshot. Below is a list of user features, including Family Plan, Safety Tools, Alert Zones, Friends, and Location Sharing. Below these features, a green summary bar shows personal activity metrics across four categories: xxx Your Alerts, xxx Your Broadcast, xxx Views. Below this bar, additional features are listed, including App Settings, Give Us Feedbacks, FAQ, and a row of social media icons (Facebook, Twitter, Instagram, Medium) for outreach and community engagement."
+                },
+                {
+                    "step": 2,
+                    "action": "Tap 'xxx Your Broadcast'.",
+                    "interface": "The screen displays the 'My Broadcasts' title at the top. Under the title, a vertical list of broadcast entries appears, each as a block with a static video thumbnail, a title summarizing the incident at the bottom, and a three-dot icon in the top-right corner."
+                },
+                {
+                    "step": 3,
+                    "action": "Find the broadcast you want to delete/hide, and tap the three-dot icon of that broadcast.",
+                    "interface": "A modal appears with the following options: View Incident, Hide Video From Profile, Download Broadcast, Delete Video, and Cancel."
+                },
+                {
+                    "step": 4,
+                    "action": "Tap 'Hide Video From Profile'.",
+                    "endpoint": true,
+                    "interface": "A small yellow 'HIDDEN' badge appears in the top-left corner of the selected broadcast."
+                }
+            ]
+        },
+        {
+            "user_flow_title": "Hiding and Deleting Your Live+ History",
+            "flow_id": "flow2",
+            "steps": [
+                {
+                    "start": "Launch the NeighborNet on mobile phone",
+                    "interface": "Home page (Map page) displays a location-based NeighborNet map, highlighting real-time community updates. A variety of icons are overlaid on a simplified neighborhood grid, each representing different report types such as auto collisions, police presence, missing pets, public health notices, neighbor disputes, or live video streams. The user's current location is marked with a blue dot. A header at the top labeled 'Updates' allows for filtering, with a search icon in the top-right corner. A bottom navigation bar provides access to five main sections: Map (active), News, Alert Community, Alerts, and You."
+                },
+                {
+                    "step": 1,
+                    "action": "Tap the 'You' icon in the bottom navigation bar to go to the user profile page.",
+                    "interface": "The 'You' tab displays the user profile page, where users manage their personal profile and achievements. At the top, a profile headshot is centered with the username displayed under the headshot. Below is a list of user features, including Family Plan, Safety Tools, Alert Zones, Friends, and Location Sharing. Below these features, a green summary bar shows personal activity metrics across four categories: xxx Your Alerts, xxx Your Broadcast, xxx Views. Below this bar, additional features are listed, including App Settings, Give Us Feedbacks, FAQ, and a row of social media icons (Facebook, Twitter, Instagram, Medium) for outreach and community engagement."
+                },
+                {
+                    "step": 2,
+                    "action": "Tap 'xxx Your Broadcast'.",
+                    "interface": "The screen displays the 'My Broadcasts' title at the top. Under the title, a vertical list of broadcast entries appears, each as a block with a static video thumbnail, a title summarizing the incident at the bottom, and a three-dot icon in the top-right corner."
+                },
+                {
+                    "step": 3,
+                    "action": "Find the broadcast you want to delete/hide, and tap the three-dot icon of that broadcast.",
+                    "interface": "A modal appears with the following options: View Incident, Hide Video From Profile, Download Broadcast, Delete Video, and Cancel."
+                },
+                {
+                    "step": 4,
+                    "action": "Tap 'Delete Video'.",
+                    "interface": "A pop-up appears with the message: “Delete Video? This action cannot be undone.” Two buttons are shown: Cancel (in blue) and Delete (in red)."
+                },
+                {
+                    "step": 5,
+                    "action": "Tap 'Delete'.",
+                    "endpoint": true,
+                    "interface": "The selected broadcast disappears from the list of your broadcasts."
+                }
+            ]
+        },
+        {
+            "user_flow_title": "Hiding and Deleting Your Live+ History",
+            "flow_id": "flow3",
+            "steps": [
+                {
+                    "start": "Launch the NeighborNet on mobile phone",
+                    "interface": "Home page (Map page) displays a location-based NeighborNet map, highlighting real-time community updates. A variety of icons are overlaid on a simplified neighborhood grid, each representing different report types such as auto collisions, police presence, missing pets, public health notices, neighbor disputes, or live video streams. The user's current location is marked with a blue dot. A header at the top labeled 'Updates' allows for filtering, with a search icon in the top-right corner. A bottom navigation bar provides access to five main sections: Map (active), News, Alert Community, Alerts, and You."
+                },
+                {
+                    "step": 1,
+                    "action": "Tap the 'You' icon in the bottom navigation bar to go to the user profile page.",
+                    "interface": "The 'You' tab displays the user profile page, where users manage their personal profile and achievements. At the top, a profile headshot is centered with the username displayed under the headshot. Below is a list of user features, including Family Plan, Safety Tools, Alert Zones, Friends, and Location Sharing. Below these features, a green summary bar shows personal activity metrics across four categories: xxx Your Alerts, xxx Your Broadcast, xxx Views. Below this bar, additional features are listed, including App Settings, Give Us Feedbacks, FAQ, and a row of social media icons (Facebook, Twitter, Instagram, Medium) for outreach and community engagement."
+                },
+                {
+                    "step": 2,
+                    "action": "Tap 'xxx Your Broadcast'.",
+                    "interface": "The screen displays the 'My Broadcasts' title at the top. Under the title, a vertical list of broadcast entries appears, each as a block with a static video thumbnail, a title summarizing the incident at the bottom, and a three-dot icon in the top-right corner."
+                },
+                {
+                    "step": 3,
+                    "action": "Find the broadcast you want to delete/hide, and tap the three-dot icon of that broadcast.",
+                    "interface": "A modal appears with the following options: View Incident, Hide Video From Profile, Download Broadcast, Delete Video, and Cancel."
+                },
+                {
+                    "step": 4,
+                    "action": "Tap 'Delete Video'.",
+                    "interface": "A pop-up appears with the message: “Delete Video? This action cannot be undone.” Two buttons are shown: Cancel (in blue) and Delete (in red)."
+                },
+                {
+                    "step": 5,
+                    "action": "Tap 'Cancel'.",
+                    "endpoint": false,
+                    "interface": "The screen returns to the 'My Broadcasts' page, and the selected broadcast remains visible in the list."
+                }
+            ]
+        }            
+    ]
+}
+  

@@ -1,0 +1,59 @@
+{
+    "privacy_harm_analysis": [
+      {
+        "privacy_harms": [
+          {
+            "harm_type": "Reputational Harms",
+            "scene_id": "scene_2",
+            "harm_explanation": "The system automatically replaced Maria's stage-name identity with her real Facebook name and profile picture after she used the 'Connect with Facebook' option in the Music app. This silent substitution exposed Maria (data subject) to all mutual followers (data recipients), including anonymous fans and individuals from her personal life. The exposure occurred without her informed consent, undermining her carefully constructed professional persona and damaging her public and private reputation."
+          },
+          {
+            "harm_type": "Psychological Harms - Emotional Distress",
+            "scene_id": "scene_3",
+            "harm_explanation": "Upon noticing a PTA parent in the friend list, Maria experienced acute anxiety about being recognized as both her professional persona and her real identity. This emotional distress was triggered by the unauthorized linkage of her real identity to her work persona, threatening her child's safety and causing her immediate panic. The distress intensified when she realized she could not undo the exposure retroactively."
+          },
+          {
+            "harm_type": "Autonomy Harms - Failure to Inform",
+            "scene_id": "scene_2",
+            "harm_explanation": "The Music app did not transparently disclose that linking a Facebook account would replace Maria's pseudonymous profile with her real name and avatar. Maria (data subject) was not informed about the full scope of data integration and identity exposure that would result from clicking 'Connect with Facebook' (data sender: Facebook/Music app). This prevented her from making an informed choice about a critical action."
+          },
+          {
+            "harm_type": "Autonomy Harms - Thwarted Expectations",
+            "scene_id": "scene_2",
+            "harm_explanation": "Maria expected that her pseudonymous identity would be preserved despite connecting her Facebook account, especially given the app's reassurance that it would never post without permission. The system's substitution of her stage-name identity with her real name and photo violated that expectation, undermining her prior privacy efforts and choices."
+          },
+          {
+            "harm_type": "Autonomy Harms - Lack of Control",
+            "scene_id": "scene_2",
+            "harm_explanation": "After connecting her Facebook account, Maria had no granular controls to prevent the exposure of her real identity or selectively manage who could see her name and photo. The system offered no meaningful way to undo the data merge or to restrict the visibility of the real-name profile post-exposure, leaving her powerless over her own information."
+          },
+          {
+            "harm_type": "Discrimination Harms",
+            "scene_id": "scene_2",
+            "harm_explanation": "The exposure of Maria's real name and listening activity (including sexually suggestive content) in a public forum subjected her to stigma and professional risk due to her identity as a Latina sex worker and a single mother. The public screenshots of her activities—distributed without her consent—exacerbated societal biases and could disproportionately harm her due to intersectional discrimination."
+          },
+          {
+            "harm_type": "Relationship Harms",
+            "scene_id": "scene_3",
+            "harm_explanation": "Maria's connection to a PTA parent on the platform risked compromising trust within her child's school community. The exposure could damage relationships with other parents or school staff, potentially impacting her child's treatment or social environment, all stemming from a confidentiality breach she had taken precautions to avoid."
+          },
+          {
+            "harm_type": "Psychological Harms - Disturbance",
+            "scene_id": "scene_4",
+            "harm_explanation": "After the exposure, Maria had to activate Private Session and modify her behavior on the platform to regain some peace of mind. This reaction, prompted by a system-level privacy failure, disrupted her normal workflow and created a nuisance that eroded her sense of digital safety."
+          },
+          {
+            "harm_type": "Economic Harms",
+            "scene_id": "scene_2",
+            "harm_explanation": "The breach of Maria's anonymity risks eroding her subscriber base and professional viability, as clients might avoid engaging with her content due to stigma or perceived risk. The exposure also opens the door to harassment or platform bans, which could translate into direct financial losses, undoing her income protections as an online sex worker."
+          },
+          {
+            "harm_type": "Physical Harms",
+            "scene_id": "scene_2",
+            "harm_explanation": "Because the public exposure of Maria's real identity includes clues that could be used to locate her child's school or home, there is a credible threat of real-world stalking or violence. Maria's past security efforts (virtual mailboxes, strict no-home-photo rules) indicate her awareness of such risks, making the breach a potential facilitator of physical harm."
+          }
+        ]
+      }
+    ]
+  }
+  

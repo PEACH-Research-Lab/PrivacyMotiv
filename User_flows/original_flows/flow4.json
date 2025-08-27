@@ -46,7 +46,7 @@
           {
             "step": 3,
             "action": "Scroll down and find the 'Social' section.",
-            "interface": "Settings page — under the 'Social' section, there are one 'connection' button and five toggle buttons. The first button shows 'Connect with Facebook' with the description 'Connect with Facebook to see what your friends are playing.' The five toggle buttons in order are: (1) 'Publish my new playlists on my profile' (default: on), (2) 'Start a private session' (default: off), (3) 'Share my listening activity' (default: on), (4) 'Show my recently played artists on my public profile' (default: on), and (5) 'Show my followers and following lists on my public profile' (default: on). In addition, there is a question mark icon next to the 'Start a private session' setting."
+            "interface": "Settings page - under the 'Social' section, there are one 'connection' button and five toggle buttons. The first button shows 'Connect with Facebook' with the description 'Connect with Facebook to see what your friends are playing.' The five toggle buttons in order are: (1) 'Publish my new playlists on my profile' (default: on), (2) 'Start a private session' (default: off), (3) 'Share my listening activity' (default: on), (4) 'Show my recently played artists on my public profile' (default: on), and (5) 'Show my followers and following lists on my public profile' (default: on). In addition, there is a question mark icon next to the 'Start a private session' setting."
           },
           {
             "step": 4,
@@ -137,7 +137,7 @@
           {
             "step": 3,
             "action": "Scroll down and find the 'Social' section.",
-            "interface": "Settings page — under the 'Social' section, there are one 'connection' button and five toggle buttons. The first button shows 'Connect with Facebook' with the description 'Connect with Facebook to see what your friends are playing.' The five toggle buttons in order are: (1) 'Publish my new playlists on my profile' (default: on), (2) 'Start a private session' (default: off), (3) 'Share my listening activity' (default: on), (4) 'Show my recently played artists on my public profile' (default: on), and (5) 'Show my followers and following lists on my public profile' (default: on). In addition, there is a question mark icon next to the 'Start a private session' setting."
+            "interface": "Settings page - under the 'Social' section, there are one 'connection' button and five toggle buttons. The first button shows 'Connect with Facebook' with the description 'Connect with Facebook to see what your friends are playing.' The five toggle buttons in order are: (1) 'Publish my new playlists on my profile' (default: on), (2) 'Start a private session' (default: off), (3) 'Share my listening activity' (default: on), (4) 'Show my recently played artists on my public profile' (default: on), and (5) 'Show my followers and following lists on my public profile' (default: on). In addition, there is a question mark icon next to the 'Start a private session' setting."
           },
           {
             "step": 4,
@@ -178,7 +178,7 @@
           {
             "step": 3,
             "action": "Scroll down and find the 'Social' section.",
-            "interface": "Settings page — under the 'Social' section, there are one 'connection' button and five toggle buttons. The first button shows 'Connect with Facebook' with the description 'Connect with Facebook to see what your friends are playing.' The five toggle buttons in order are: (1) 'Publish my new playlists on my profile' (default: on), (2) 'Start a private session' (default: off), (3) 'Share my listening activity' (default: on), (4) 'Show my recently played artists on my public profile' (default: on), and (5) 'Show my followers and following lists on my public profile' (default: on). In addition, there is a question mark icon next to the 'Start a private session' setting."
+            "interface": "Settings page - under the 'Social' section, there are one 'connection' button and five toggle buttons. The first button shows 'Connect with Facebook' with the description 'Connect with Facebook to see what your friends are playing.' The five toggle buttons in order are: (1) 'Publish my new playlists on my profile' (default: on), (2) 'Start a private session' (default: off), (3) 'Share my listening activity' (default: on), (4) 'Show my recently played artists on my public profile' (default: on), and (5) 'Show my followers and following lists on my public profile' (default: on). In addition, there is a question mark icon next to the 'Start a private session' setting."
           },
           {
             "step": 4,

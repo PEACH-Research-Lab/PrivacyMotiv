@@ -12,17 +12,17 @@
           {
             "step": 1,
             "action": "Click on the 'Friend Activity' button in the top-right corner to open the Friend Activity sidebar.",
-            "interface": "Friend Activity sidebar — includes an 'Add Friends' button and a 'Turn Off the Sidebar' button in the top-right corner. Below is either a list of existing friends' listening activity, or two messages: 'Let friends and followers see what you are listening to' and 'Go to Settings > Social and enable “Share my listening activity”. You can turn this off at any time', along with a large white 'Settings' button."
+            "interface": "Friend Activity sidebar - includes an 'Add Friends' button and a 'Turn Off the Sidebar' button in the top-right corner. Below is either a list of existing friends' listening activity, or two messages: 'Let friends and followers see what you are listening to' and 'Go to Settings > Social and enable “Share my listening activity”. You can turn this off at any time', along with a large white 'Settings' button."
           },
           {
             "step": 2,
             "action": "Click the 'Add Friends' button.",
-            "interface": "Friend Activity sidebar — displays one large blue button labeled 'Connect with Facebook' and two messages: 'Connect with Facebook to see what your friends are playing', and 'We'll never post to Facebook without your permission.'"
+            "interface": "Friend Activity sidebar - displays one large blue button labeled 'Connect with Facebook' and two messages: 'Connect with Facebook to see what your friends are playing', and 'We'll never post to Facebook without your permission.'"
           },
           {
             "step": 3,
             "action": "Click the 'Connect with Facebook' button.",
-            "interface": "A Facebook login pop-up window appears — asking the user to enter account details (email/phone number and password)."
+            "interface": "A Facebook login pop-up window appears - asking the user to enter account details (email/phone number and password)."
           },
           {
             "step": 4,
@@ -47,17 +47,17 @@
           {
             "step": 1,
             "action": "Click on the 'Friend Activity' button in the top-right corner to open the Friend Activity sidebar.",
-            "interface": "Friend Activity sidebar — includes an 'Add Friends' button and a 'Turn Off the Sidebar' button in the top-right corner. Below is either a list of existing friends' listening activity, or two messages: 'Let friends and followers see what you are listening to' and 'Go to Settings > Social and enable “Share my listening activity”. You can turn this off at any time', along with a large white 'Settings' button."
+            "interface": "Friend Activity sidebar - includes an 'Add Friends' button and a 'Turn Off the Sidebar' button in the top-right corner. Below is either a list of existing friends' listening activity, or two messages: 'Let friends and followers see what you are listening to' and 'Go to Settings > Social and enable “Share my listening activity”. You can turn this off at any time', along with a large white 'Settings' button."
           },
           {
             "step": 2,
             "action": "Click the 'Add Friends' button.",
-            "interface": "Friend Activity sidebar — displays one large blue button labeled 'Connect with Facebook' and two messages: 'Connect with Facebook to see what your friends are playing', and 'We'll never post to Facebook without your permission.'"
+            "interface": "Friend Activity sidebar - displays one large blue button labeled 'Connect with Facebook' and two messages: 'Connect with Facebook to see what your friends are playing', and 'We'll never post to Facebook without your permission.'"
           },
           {
             "step": 3,
             "action": "Click the 'Connect with Facebook' button.",
-            "interface": "A Facebook login pop-up window appears — asking the user to enter account details (email/phone number and password)."
+            "interface": "A Facebook login pop-up window appears - asking the user to enter account details (email/phone number and password)."
           },
           {
             "step": 4,
@@ -92,12 +92,12 @@
           {
             "step": 3,
             "action": "Scroll down and find the 'Social' section.",
-            "interface": "Settings page — under the 'Social' section, there are one 'connection' button and five toggle buttons. The first button shows 'Connect with Facebook' with the description 'Connect with Facebook to see what your friends are playing.' The five toggle buttons in order are: (1) 'Publish my new playlists on my profile' (default: on), (2) 'Start a private session' (default: off), (3) 'Share my listening activity' (default: off), (4) 'Show my recently played artists on my public profile' (default: on), and (5) 'Show my followers and following lists on my public profile' (default: on)."
+            "interface": "Settings page - under the 'Social' section, there are one 'connection' button and five toggle buttons. The first button shows 'Connect with Facebook' with the description 'Connect with Facebook to see what your friends are playing.' The five toggle buttons in order are: (1) 'Publish my new playlists on my profile' (default: on), (2) 'Start a private session' (default: off), (3) 'Share my listening activity' (default: off), (4) 'Show my recently played artists on my public profile' (default: on), and (5) 'Show my followers and following lists on my public profile' (default: on)."
           },
           {
             "step": 4,
             "action": "Click the 'Connect with Facebook' button.",
-            "interface": "A Facebook login pop-up window appears — asking the user to enter account details (email/phone number and password)."
+            "interface": "A Facebook login pop-up window appears - asking the user to enter account details (email/phone number and password)."
           },
           {
             "step": 5,
@@ -132,12 +132,12 @@
           {
             "step": 3,
             "action": "Scroll down and find the 'Social' section.",
-            "interface": "Settings page — under the 'Social' section, there are one 'connection' button and five toggle buttons. The first button shows 'Connect with Facebook' with the description 'Connect with Facebook to see what your friends are playing.' The five toggle buttons in order are: (1) 'Publish my new playlists on my profile' (default: on), (2) 'Start a private session' (default: off), (3) 'Share my listening activity' (default: off), (4) 'Show my recently played artists on my public profile' (default: on), and (5) 'Show my followers and following lists on my public profile' (default: on)."
+            "interface": "Settings page - under the 'Social' section, there are one 'connection' button and five toggle buttons. The first button shows 'Connect with Facebook' with the description 'Connect with Facebook to see what your friends are playing.' The five toggle buttons in order are: (1) 'Publish my new playlists on my profile' (default: on), (2) 'Start a private session' (default: off), (3) 'Share my listening activity' (default: off), (4) 'Show my recently played artists on my public profile' (default: on), and (5) 'Show my followers and following lists on my public profile' (default: on)."
           },
           {
             "step": 4,
             "action": "Click the 'Connect with Facebook' button.",
-            "interface": "A Facebook login pop-up window appears — asking the user to enter account details (email/phone number and password)."
+            "interface": "A Facebook login pop-up window appears - asking the user to enter account details (email/phone number and password)."
           },
           {
             "step": 5,

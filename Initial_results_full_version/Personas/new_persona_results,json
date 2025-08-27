@@ -1,0 +1,947 @@
+[
+    {
+      "basic_info": {
+        "name": "Amina",
+        "age": 12,
+        "tech_comfort_level": "low"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Structural and institutional exclusion - Discrimination due to refugee status",
+        "privacy_awareness_level": "low",
+        "information_cared_about": ["location", "immigration status", "identity documents"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - afraid to identify to receive assistance",
+          "Privacy vs. Disclosure of identity - risk of stigma or denial of aid"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Apathy",
+            "description": "Feels surveillance is inevitable, so avoids acting or reporting."
+          },
+          {
+            "response": "Non-use",
+            "description": "Avoids official portals or apps to not expose status."
+          }
+        ],
+        "costs_and_consequences": [
+          "Missed access to legal aid, medical care, or language support",
+          "Continued vulnerability without reporting abuse or needs"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Carlos",
+        "age": 18,
+        "tech_comfort_level": "medium"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Structural and institutional exclusion - Unequal access to legal protections",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["legal case records", "police interactions", "personal history"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - must register identity to receive legal aid",
+          "Identity disclosure vs. institutional documentation - risk of misuse or bias"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Withholding disclosure",
+            "description": "Avoids sharing full name or case details on online forms."
+          },
+          {
+            "response": "Privacy-enhancing technologies",
+            "description": "Uses VPN or temporary email to obscure digital trail."
+          }
+        ],
+        "costs_and_consequences": [
+          "Incomplete legal support due to limited info",
+          "Additional effort and complexity managing privacy tools"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Eleanor",
+        "age": 72,
+        "tech_comfort_level": "low"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Intersectional identities and characteristics - Elderly individual with cognitive decline",
+        "privacy_awareness_level": "low",
+        "information_cared_about": ["health data", "location", "financial transactions"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Autonomy - carers may monitor devices to protect",
+          "Privacy vs. Support - needs remote monitoring but fears intrusion"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Third-party protections",
+            "description": "Relies on caregivers to manage device access and privacy."
+          },
+          {
+            "response": "Physical workarounds",
+            "description": "Uses simple devices with limited connectivity to reduce exposure."
+          }
+        ],
+        "costs_and_consequences": [
+          "Loss of independence and personal control",
+          "Potential exclusion from beneficial tech innovations"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Jamal",
+        "age": 15,
+        "tech_comfort_level": "high"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Intersectional identities and characteristics - Child navigating social media",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["posts", "location tagging", "social connections"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Self-expression - wants to post but fears visibility by adults",
+          "Privacy vs. Support - parental monitoring vs peer privacy"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Withholding disclosure",
+            "description": "Omits identifying info and avoids location tags."
+          },
+          {
+            "response": "Controlling disclosure",
+            "description": "Uses private accounts or separate pseudonymous profiles."
+          }
+        ],
+        "costs_and_consequences": [
+          "Less authentic social engagement",
+          "Mental load managing multiple profiles"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Sasha",
+        "age": 20,
+        "tech_comfort_level": "high"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Intersectional identities and characteristics - LGBTQ+ youth",
+        "privacy_awareness_level": "high",
+        "information_cared_about": ["sexual orientation", "dating activity", "identity"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Disclosure of identity - revealing orientation brings risk",
+          "Privacy vs. Support - wants community but fears outing"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Controlling disclosure",
+            "description": "Maintains separate activist and personal profiles."
+          },
+          {
+            "response": "Privacy-enhancing technologies",
+            "description": "Encrypts messages, uses secure apps."
+          }
+        ],
+        "costs_and_consequences": [
+          "Emotional labor maintaining identity compartments",
+          "Risk of mistrust or technical failure in encrypted tools"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Liam",
+        "age": 35,
+        "tech_comfort_level": "medium"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Intersectional identities and characteristics - Individual with chronic illness",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["medical records", "symptom logs", "treatment plans"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - sharing health data for care vs exposure",
+          "Privacy vs. Disclosure of identity - risk of insurer misuse"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Withholding disclosure",
+            "description": "Shares only limited health info in online forums."
+          },
+          {
+            "response": "Asking for help",
+            "description": "Seeks advice from trusted patient communities discreetly."
+          }
+        ],
+        "costs_and_consequences": [
+          "Less tailored advice or misdiagnosis online",
+          "Risk trusting poor-quality info"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Arjun",
+        "age": 28,
+        "tech_comfort_level": "medium"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Intersectional identities and characteristics - Person with physical disability",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["accessibility needs", "mobility data", "assistive device usage"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - assistive services need data access",
+          "Privacy vs. Disclosure of identity - disability status may be stigmatizing"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Controlling disclosure",
+            "description": "Uses platforms where disability info held privately."
+          },
+          {
+            "response": "Non-use",
+            "description": "Avoids platforms that force outing of disability status."
+          }
+        ],
+        "costs_and_consequences": [
+          "Reduced access to some supportive apps",
+          "Social isolation or missing communities"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Maya",
+        "age": 30,
+        "tech_comfort_level": "high"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Intersectional identities and characteristics - Gender non-conforming individual",
+        "privacy_awareness_level": "high",
+        "information_cared_about": ["gender identity", "social media footprint", "dating profiles"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Disclosure of identity - outing exposes to harassment",
+          "Privacy vs. Support - wants community but risks doxxing"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Controlling disclosure",
+            "description": "Maintains anonymous or pseudonym profiles focused on identity support."
+          },
+          {
+            "response": "Privacy-enhancing technologies",
+            "description": "Uses anonymous services and encrypted messaging."
+          }
+        ],
+        "costs_and_consequences": [
+          "Difficulty building personal connections under pseudonym",
+          "Technical overhead and stress"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Fatima",
+        "age": 45,
+        "tech_comfort_level": "medium"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Intersectional identities and characteristics - Member of Indigenous community",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["ancestral data", "location", "cultural info"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Collective - sharing cultural heritage online vs exploitation",
+          "Privacy vs. Identity disclosure - risk of cultural misappropriation"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Collaborative privacy practices",
+            "description": "Shares data within trusted group only, under community agreements."
+          },
+          {
+            "response": "Withholding disclosure",
+            "description": "Avoids full public sharing of cultural context online."
+          }
+        ],
+        "costs_and_consequences": [
+          "Restricts broader advocacy or storytelling",
+          "Requires coordination and trust within community"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Victor",
+        "age": 50,
+        "tech_comfort_level": "low"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Intersectional identities and characteristics - Remote village resident",
+        "privacy_awareness_level": "low",
+        "information_cared_about": ["geo-location", "contact patterns", "economic activity"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Inclusion - wants access but fears tracking",
+          "Privacy vs. Identity - farming practices may expose financial vulnerability"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Non-use",
+            "description": "Avoids smartphone-based platforms due to surveillance concerns."
+          }
+        ],
+        "costs_and_consequences": [
+          "Missed digital access to markets, health alerts, services",
+          "Continued isolation"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Elena",
+        "age": 29,
+        "tech_comfort_level": "medium"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Socioeconomic disadvantage - Unemployed single parent",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["financial records", "benefit claims", "contact info"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - welfare requires sharing data",
+          "Disclosure vs. Stigma - revealing unemployment brings judgment"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Withholding disclosure",
+            "description": "Redacts or simplifies info on public-facing forms or forums."
+          },
+          {
+            "response": "Privacy-enhancing technologies",
+            "description": "Uses alias emails, avoids linking social profiles to forms."
+          }
+        ],
+        "costs_and_consequences": [
+          "Delays in benefit processing",
+          "Complex account setup and management"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Noah",
+        "age": 40,
+        "tech_comfort_level": "low"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Socioeconomic disadvantage - Low literacy adult",
+        "privacy_awareness_level": "low",
+        "information_cared_about": ["identity", "financial data", "basic navigation data"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Accessibility - cannot understand consent forms",
+          "Privacy vs. Support - wants services but unsure what gives away info"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Apathy",
+            "description": "Clicks through defaults or avoids use entirely."
+          },
+          {
+            "response": "Non-use",
+            "description": "Avoids apps and platforms perceived complex."
+          }
+        ],
+        "costs_and_consequences": [
+          "Exclusion from digital services or aid",
+          "Misunderstanding of terms leading to unexpected exposure"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Rosa",
+        "age": 55,
+        "tech_comfort_level": "low"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Socioeconomic disadvantage - Rural subsistence farmer",
+        "privacy_awareness_level": "low",
+        "information_cared_about": ["land ownership records", "income", "location"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Inclusion - agricultural platforms collect economic data",
+          "Privacy vs. Location - geo-tracking may expose farm lands"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Non-use",
+            "description": "Rejects farm-management apps fearing data exposure."
+          }
+        ],
+        "costs_and_consequences": [
+          "Missed productivity tools or weather alerts",
+          "Continued digital exclusion from markets"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Leo",
+        "age": 17,
+        "tech_comfort_level": "high"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Socioeconomic disadvantage - Urban poor teenager",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["social ties", "financial help", "school info"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - school support apps require personal info",
+          "Privacy vs. Disclosure of identity - peers might judge background"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Withholding disclosure",
+            "description": "Uses minimal profile info or anonymous submission."
+          },
+          {
+            "response": "Controlling disclosure",
+            "description": "Uses different accounts for school, social, and support."
+          }
+        ],
+        "costs_and_consequences": [
+          "Fragmented identity across platforms",
+          "Mental effort managing clones"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Layla",
+        "age": 19,
+        "tech_comfort_level": "medium"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Socioeconomic disadvantage - Housing-insecure youth",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["location", "shelter history", "service usage"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - shelter services require registration",
+          "Privacy vs. Disclosure of identity - fears data used against housing status"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Withholding disclosure",
+            "description": "Shares only essential info when asked."
+          },
+          {
+            "response": "Asking for help",
+            "description": "Inquires privately from known support organizations."
+          }
+        ],
+        "costs_and_consequences": [
+          "Reduced access to certain support if incomplete",
+          "Risk of trusting unreliable guidance"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Samir",
+        "age": 33,
+        "tech_comfort_level": "low"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Internal and experiential factors - Survivor of domestic violence",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["location", "communications", "support usage"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - contacting services may alert abuser",
+          "Privacy vs. Autonomy - needs to hide usage from partner"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Physical workarounds",
+            "description": "Uses hidden browser history, private mode, or borrowed device."
+          },
+          {
+            "response": "Non-use",
+            "description": "Avoids apps that could leave trace."
+          }
+        ],
+        "costs_and_consequences": [
+          "Harder to seek help quickly",
+          "Isolation and continued risk"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Joy",
+        "age": 38,
+        "tech_comfort_level": "medium"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Internal and experiential factors - Formerly incarcerated individual",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["criminal record", "rehabilitation history", "job applications"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - reentry services require sharing records",
+          "Privacy vs. Disclosure of identity - fear stigma by employers"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Controlling disclosure",
+            "description": "Sets up separate contact information for job-search and activism."
+          },
+          {
+            "response": "Privacy lies",
+            "description": "Minimizes detail about conviction when possible."
+          }
+        ],
+        "costs_and_consequences": [
+          "Legal risk if false info discovered",
+          "Emotional burden of managing identity"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Ben",
+        "age": 27,
+        "tech_comfort_level": "medium"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Internal and experiential factors - Person with severe anxiety",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["mental health data", "support group usage", "location"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - mental health apps track usage",
+          "Privacy vs. Disclosure of identity - stigma about anxiety"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Withholding disclosure",
+            "description": "Avoids linking real identity to mental health apps."
+          },
+          {
+            "response": "Privacy-enhancing technologies",
+            "description": "Uses anonymous accounts or privacy-respecting platforms."
+          }
+        ],
+        "costs_and_consequences": [
+          "Less personalized recommendations",
+          "Difficult to maintain continuity in support"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Alice",
+        "age": 68,
+        "tech_comfort_level": "low"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Internal and experiential factors - Socially isolated senior",
+        "privacy_awareness_level": "low",
+        "information_cared_about": ["contact list", "location check-ins", "health alerts"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - family wants tracking for safety",
+          "Privacy vs. Autonomy - resists location-sharing"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Third-party protections",
+            "description": "Family sets up monitoring apps on her behalf."
+          },
+          {
+            "response": "Apathy",
+            "description": "Does not engage with settings or privacy features."
+          }
+        ],
+        "costs_and_consequences": [
+          "Loss of independence",
+          "Potential over-monitoring with limited consent"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "David",
+        "age": 31,
+        "tech_comfort_level": "medium"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Internal and experiential factors - Individual with history of addiction",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["support group attendance", "treatment history", "peer network"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - support groups want attendance logs",
+          "Privacy vs. Disclosure of identity - fear stigma in community"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Privacy lies",
+            "description": "Gives ambiguous details or pseudonymous attendance."
+          },
+          {
+            "response": "Controlling disclosure",
+            "description": "Keeps separate email/accounts for recovery chats."
+          }
+        ],
+        "costs_and_consequences": [
+          "Potential breach of trust if deception revealed",
+          "Labor managing multiple identities"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Nina",
+        "age": 25,
+        "tech_comfort_level": "medium"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Reduced capacity in emergencies and disasters - Person affected by climate displacement",
+        "privacy_awareness_level": "low",
+        "information_cared_about": ["location", "displacement history", "aid registration"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - aid agencies require personal data",
+          "Privacy vs. Disclosure - fears misuse of displacement history"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Non-use",
+            "description": "Avoids digital aid registration platforms."
+          },
+          {
+            "response": "Withholding disclosure",
+            "description": "Shares minimal info in person."
+          }
+        ],
+        "costs_and_consequences": [
+          "Missed access to resources",
+          "Continued hardship and invisibility"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Tom",
+        "age": 42,
+        "tech_comfort_level": "medium"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Reduced capacity in emergencies and disasters - Disabled person in wildfire zone",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["location during alerts", "medical needs", "mobility data"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Safety - emergency tracking for evacuation vs autonomy",
+          "Privacy vs. Disclosure - reluctant to have private health status known"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Third-party protections",
+            "description": "Emergency services collect location automatically."
+          },
+          {
+            "response": "Physical workarounds",
+            "description": "Keeps device off until needed to avoid constant monitoring."
+          }
+        ],
+        "costs_and_consequences": [
+          "Delayed alerts and support",
+          "Stress over losing situational awareness"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Zara",
+        "age": 80,
+        "tech_comfort_level": "low"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Reduced capacity in emergencies and disasters - Elderly in flood-prone area",
+        "privacy_awareness_level": "low",
+        "information_cared_about": ["evacuation records", "location data", "health alerts"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Safety - authorities track location for evacuation",
+          "Privacy vs. Autonomy - fears being monitored constantly"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Third-party protections",
+            "description": "Family or services enroll her in monitoring."
+          }
+        ],
+        "costs_and_consequences": [
+          "Loss of control and autonomy",
+          "Possible exclusion if not enrolled"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Isaac",
+        "age": 38,
+        "tech_comfort_level": "medium"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Reduced capacity in emergencies and disasters - Undocumented worker in pandemic",
+        "privacy_awareness_level": "high",
+        "information_cared_about": ["health-screening records", "work authorization status", "location"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - vaccination or testing sites require ID",
+          "Privacy vs. Disclosure - fear exposure of undocumented status"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Privacy lies",
+            "description": "Provides alternate identity information when possible."
+          },
+          {
+            "response": "Withholding disclosure",
+            "description": "Declines optional fields in digital forms."
+          }
+        ],
+        "costs_and_consequences": [
+          "Potential denial of services or penalties",
+          "Emotional burden or legal risk if false info flagged"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Tariq",
+        "age": 22,
+        "tech_comfort_level": "high"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Reduced capacity in emergencies and disasters - Youth caregiver during disaster",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["family location", "medical needs", "communication logs"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - emergency platforms require data sharing",
+          "Privacy vs. Collective - responsible for siblings' data also"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Collaborative privacy practices",
+            "description": "Coordinates shared guidelines on data with family."
+          },
+          {
+            "response": "Withholding disclosure",
+            "description": "Provides limited info when necessary."
+          }
+        ],
+        "costs_and_consequences": [
+          "Family conflict if guidelines not aligned",
+          "Less effective aid if partial information"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Kiran",
+        "age": 34,
+        "tech_comfort_level": "medium"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Structural and institutional exclusion - Disenfranchised ethnic minority",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["ethnic identity", "public records", "education history"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Disclosure of identity - registry data may be discriminatory",
+          "Privacy vs. Support - identity needed for benefits but risky"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Withholding disclosure",
+            "description": "Uses partial identity when signing up for services."
+          },
+          {
+            "response": "Privacy lies",
+            "description": "Provides ambiguity around ethnic background."
+          }
+        ],
+        "costs_and_consequences": [
+          "Denied or delayed access to services",
+          "Risk of detection or misrepresentation"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Jose",
+        "age": 26,
+        "tech_comfort_level": "high"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Intersectional identities and characteristics - Migrant laborer",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["immigration status", "location tracking", "work history"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - some platforms require status disclosure",
+          "Privacy vs. Autonomy - surveillance via location-based check-ins"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Controlling disclosure",
+            "description": "Uses separate phone or SIM to minimize linking."
+          },
+          {
+            "response": "Privacy lies",
+            "description": "Provides generic information in employer-platforms."
+          }
+        ],
+        "costs_and_consequences": [
+          "Less reliable communication with official services",
+          "Risk of sanctions if status exposed"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Linda",
+        "age": 22,
+        "tech_comfort_level": "low"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Socioeconomic disadvantage - High school dropout",
+        "privacy_awareness_level": "low",
+        "information_cared_about": ["educational history", "job-search data", "identity"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - job portals require identity",
+          "Disclosure vs. Stigma - dropout status may limit opportunities"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Apathy",
+            "description": "Does not complete profiles or avoids platforms."
+          }
+        ],
+        "costs_and_consequences": [
+          "Limited access to job listings",
+          "Economic exclusion"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Eva",
+        "age": 16,
+        "tech_comfort_level": "high"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Internal and experiential factors - Teen facing online bullying",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["social posts", "school identity", "online friends"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Self-expression - wants to post but fears harassing responses",
+          "Privacy vs. Support - needs help but doesn't want bully to notice"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Withholding disclosure",
+            "description": "Removes identifying details, avoids naming school."
+          },
+          {
+            "response": "Non-use",
+            "description": "Stops using platforms where bullying occurs."
+          }
+        ],
+        "costs_and_consequences": [
+          "Silenced voice online",
+          "Less social connection"
+        ]
+      }
+    },
+    {
+      "basic_info": {
+        "name": "Yusuf",
+        "age": 45,
+        "tech_comfort_level": "medium"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Reduced capacity in emergencies and disasters - Non-English speaker in hurricane zone",
+        "privacy_awareness_level": "low",
+        "information_cared_about": ["language preferences", "location", "aid registration info"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - translation services require personal info",
+          "Privacy vs. Access - language barrier reduces understanding of privacy risks"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Non-use",
+            "description": "Avoids digital aid platforms not available in native language."
+          },
+          {
+            "response": "Apathy",
+            "description": "Doesn't adjust settings or read consent in English."
+          }
+        ],
+        "costs_and_consequences": [
+          "Missed emergency alerts",
+          "Increased vulnerability during disasters"
+        ]
+      }
+    }  
+]
+  

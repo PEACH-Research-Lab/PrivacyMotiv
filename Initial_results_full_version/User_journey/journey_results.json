@@ -1,0 +1,668 @@
+[
+    {
+        "user_name": "Rosa Martínez",
+        "privacy_invasive_user_journey": [
+        {
+            "background": "Friday night (7:30 PM). Rosa is home in her small sub-let apartment after a long shift at the warehouse. She wants to feel connected to friends in a local immigrant-rights mutual-aid group that often shares playlists of protest songs. Her goal is simply to see what those friends are listening to in real time while she cooks dinner.",
+            "scenes": [
+            {
+                "scene_id": "scene_1",
+                "scene_description": "'If I turn on that friend sidebar, I can vibe with the others tonight.'  Rosa decides to activate Friend Activity so she can watch supporters' listening habits.",
+                "scene_user_flow": [
+                {
+                    "start": "Rosa has the music app open on her desktop; the main Home page fills the screen.",
+                    "interface": "Home page"
+                },
+                {
+                    "step": 1,
+                    "action": "Click her circular profile picture in the top-right corner.",
+                    "interface": "A drop-down menu appears under the profile picture."
+                },
+                {
+                    "step": 2,
+                    "action": "Select 'Settings' from the menu.",
+                    "interface": "Settings page with subtitle sections such as Account, Display, Social, etc."
+                },
+                {
+                    "step": 3,
+                    "action": "Scroll to the 'Display' section.",
+                    "interface": "In Display she sees three toggle buttons, including 'See what your friends are playing' (currently OFF)."
+                },
+                {
+                    "step": 4,
+                    "action": "Switch ON 'See what your friends are playing'.",
+                    "interface": "Friend Activity sidebar instantly opens on the right third of the screen showing placeholder space for friends' tracks.",
+                    "system_action": "The system checks her mutual-follow list and Facebook-synced friends who expose their listening data."
+                },
+                {
+                    "endpoint": true,
+                    "interface": "Friend Activity sidebar is visible but still mostly empty.",
+                    "true_reasoning": "The feature is successfully enabled.",
+                    "next_step": "Rosa decides she needs to add more friends so the sidebar will populate."
+                }
+                ],
+                "reflections": "She feels a warm sense of community forming but notices the list is short: 'Only two contacts? I'll connect Facebook quickly.'"
+            },
+            {
+                "scene_id": "scene_2",
+                "scene_description": "Hoping to widen her circle, Rosa links her alternative Facebook account that she set up years ago under a nickname. She doesn't realize one ex-coworker was still in that Facebook list.",
+                "scene_user_flow": [
+                {
+                    "start": "Friend Activity sidebar is already open; it shows an 'Add Friends' button.",
+                    "interface": "Friend Activity sidebar with 'Add Friends' and 'Turn Off the Sidebar' buttons."
+                },
+                {
+                    "step": 1,
+                    "action": "Click 'Add Friends'.",
+                    "interface": "Sidebar now shows a large blue 'Connect with Facebook' button with explanatory messages."
+                },
+                {
+                    "step": 2,
+                    "action": "Click 'Connect with Facebook'.",
+                    "interface": "A Facebook login pop-up appears requesting email/phone and password."
+                },
+                {
+                    "step": 3,
+                    "action": "Enter Facebook credentials and click 'Log In'.",
+                    "interface": "Friend Activity sidebar refreshes to show a full list of Facebook friends' current tracks.",
+                    "system_action": "System authorizes her Facebook profile picture, name, and friend list."
+                },
+                {
+                    "endpoint": true,
+                    "interface": "Sidebar fills with several friends, including 'Carlos R.'—her former warehouse shift lead.",
+                    "true_reasoning": "Facebook connection succeeded; synced friends now appear.",
+                    "next_step": "Spotting Carlos, Rosa mutters, 'I don't want him tracking me,' and decides to remove him."
+                }
+                ],
+                "reflections": "A flash of anxiety: Carlos still works with a supervisor rumored to cooperate with immigration raids."
+            },
+            {
+                "scene_id": "scene_3",
+                "scene_description": "Rosa attempts to unfollow Carlos so he disappears from her sidebar—and from hers on his.",
+                "scene_user_flow": [
+                {
+                    "start": "Friend Activity feed lists Carlos in the right sidebar.",
+                    "interface": "Sidebar with live friend tracks."
+                },
+                {
+                    "step": 1,
+                    "action": "Click 'Carlos R.' in the list.",
+                    "interface": "The middle pane shows Carlos's profile with a square 'Following' button and a three-dot 'More' button."
+                },
+                {
+                    "step": 2,
+                    "action": "Click the square 'Following' button.",
+                    "interface": "The button flips to 'Follow', but Carlos still appears in the sidebar list.",
+                    "system_action": "System notes he was synced via Facebook."
+                },
+                {
+                    "endpoint": false,
+                    "interface": "Carlos remains present in Friend Activity.",
+                    "false_reasoning": "Because he is a Facebook-synced friend, unfollowing does not immediately remove his activity feed entry.",
+                    "next_step": "Rosa decides to hide her own activity instead by starting a Private Session."
+                }
+                ],
+                "reflections": "Frustration spikes: 'Why is he still there? I thought unfollowing would make him vanish.'"
+            },
+            {
+                "scene_id": "scene_4",
+                "scene_description": "Rosa scrambles to cloak her listening patterns before Carlos notices anything revealing.",
+                "scene_user_flow": [
+                {
+                    "start": "Still on Carlos's profile page.",
+                    "interface": "Profile page with top-right nav bar visible."
+                },
+                {
+                    "step": 1,
+                    "action": "Click her own profile picture again in the top-right corner.",
+                    "interface": "Drop-down menu with options: Account, Profile, Private Session, Settings, etc."
+                },
+                {
+                    "step": 2,
+                    "action": "Select 'Private Session'.",
+                    "interface": "Drop-down disappears; a blue padlock icon lights up on the top bar."
+                },
+                {
+                    "endpoint": true,
+                    "interface": "Blue padlock icon remains visible.",
+                    "true_reasoning": "Private Session successfully activated, halting future activity sharing.",
+                    "next_step": "Rosa minimizes the app and turns back to making dinner."
+                }
+                ],
+                "reflections": "Relief mixes with dread—Carlos may have already seen that she was streaming a playlist titled 'ICE Raid Survival Stories.'"
+            }
+            ],
+            "unexpected_outcomes": "Carlos takes a screenshot of Rosa's playlist timestamp—proof she is likely at her apartment after a late shift. The next morning he shows it to his new supervisor, who casually remarks, 'She's undocumented, right?' Within days Rosa's evening schedule and apartment location circulate among warehouse management (DATA RECIPIENT). The sensitive data sender was the music app's Friend Activity system; the data subject is Rosa. The exposure links her real-time presence and activist content to people who could contact immigration authorities, creating a chilling effect on her online support-seeking."
+        },
+        {
+            "background": "Monday afternoon in a public-library computer lab. Rosa is updating her playlist while printing job applications. She uses the library desktop because her own laptop's battery is failing. Her goal: connect with more supportive friends through Facebook so she can later receive music recommendations that help her practice English idioms for work.",
+            "scenes": [
+            {
+                "scene_id": "scene_1",
+                "scene_description": "'Just a quick Facebook link, then I'm out of here.'  Rosa opens the Friend Activity sidebar to import friends before her 30-minute kiosk timer runs out.",
+                "scene_user_flow": [
+                {
+                    "start": "Home page of the music app is on the public desktop's large monitor.",
+                    "interface": "Home page"
+                },
+                {
+                    "step": 1,
+                    "action": "Click the 'Friend Activity' button at the top-right.",
+                    "interface": "Friend Activity sidebar with 'Add Friends' and 'Turn Off the Sidebar' buttons."
+                },
+                {
+                    "step": 2,
+                    "action": "Press 'Add Friends'.",
+                    "interface": "Sidebar shows 'Connect with Facebook' button."
+                },
+                {
+                    "step": 3,
+                    "action": "Select 'Connect with Facebook'.",
+                    "interface": "Facebook login pop-up appears."
+                },
+                {
+                    "step": 4,
+                    "action": "Enter email and password, then click 'Log In'.",
+                    "interface": "Sidebar refreshes with the list of Facebook friends and their tracks.",
+                    "system_action": "System authorizes Facebook data."
+                },
+                {
+                    "endpoint": true,
+                    "interface": "Friend list now visible, including an unfamiliar name: 'ICE-Enforcement Tips' (a community page Rosa once followed).",
+                    "true_reasoning": "Linking succeeded; synced friends appear.",
+                    "next_step": "She plans to turn on friend-viewing permanently when back home."
+                }
+                ],
+                "reflections": "She notices the public computer screen is in direct view of a security camera and a patron behind her."
+            },
+            {
+                "scene_id": "scene_2",
+                "scene_description": "To preview what her friends hear, Rosa enables the sidebar display option, unaware it may also broadcast her own listening once she leaves the library.",
+                "scene_user_flow": [
+                {
+                    "start": "Still at the library desktop, sidebar open.",
+                    "interface": "Friend Activity sidebar"
+                },
+                {
+                    "step": 1,
+                    "action": "Click her profile picture.",
+                    "interface": "Drop-down menu appears."
+                },
+                {
+                    "step": 2,
+                    "action": "Choose 'Settings'.",
+                    "interface": "Settings page with sections including Display."
+                },
+                {
+                    "step": 3,
+                    "action": "Scroll to 'Display' section.",
+                    "interface": "'See what your friends are playing' toggle is OFF."
+                },
+                {
+                    "step": 4,
+                    "action": "Switch ON 'See what your friends are playing'.",
+                    "interface": "Friend Activity sidebar pops up on the right showing friends' tracks.",
+                    "system_action": "System verifies mutual-follow list."
+                },
+                {
+                    "endpoint": true,
+                    "interface": "Sidebar populated; Rosa can now see friends listening to upbeat English songs.",
+                    "true_reasoning": "Display feature enabled.",
+                    "next_step": "She starts playing a language-practice playlist but forgets to start a Private Session."
+                }
+                ],
+                "reflections": "She is pleased: 'Perfect, now I can copy those songs later.' Time is ticking on the kiosk."
+            },
+            {
+                "scene_id": "scene_3",
+                "scene_description": "Kiosk timer expires, logging Rosa out. The next patron—an elderly volunteer—sits down and the session auto-reopens the music app window for a second before shutting. He glimpses Rosa's Facebook-synced name and playlist title.",
+                "scene_user_flow": [
+                {
+                    "start": "System force-closes Rosa's session as the 30-minute slot ends.",
+                    "interface": "Lock screen flashes, then briefly reopens previous windows for the next user."
+                },
+                {
+                    "endpoint": false,
+                    "interface": "Music app window with Friend Activity sidebar flashes 'Rosa Martínez – Spanish Protest Anthems' for about two seconds.",
+                    "false_reasoning": "The kiosk software does not fully sanitize cached windows during fast user switching.",
+                    "next_step": "The volunteer snaps a phone photo out of curiosity before the window disappears."
+                }
+                ],
+                "reflections": "Rosa is already walking away; she has no idea her information just lingered onscreen."
+            }
+            ],
+            "unexpected_outcomes": "The volunteer—who is active in a local neighborhood-watch Facebook group—uploads the photo, captioned 'Interesting playlist on a library PC today 👀' (DATA SENDER: volunteer/photo; DATA SUBJECT: Rosa; DATA RECIPIENTS: 1300-member watch group). The image exposes her legal name tied to ‘Spanish Protest Anthems,' hinting at her political stance and potentially her immigration background. Within hours, commenters speculate about 'illegals getting radicalized,' posting screenshots in other public forums. The exposure compromises Rosa's pseudonymous online safety strategies and could draw unwanted law-enforcement attention."
+        }
+        ]
+    },
+    {
+        "user_name": "Ethel Greene",
+        "privacy_invasive_user_journey": [
+        {
+            "background": "Tuesday, 9 AM. Ethel sits at her small dining-table computer in subsidized senior housing. Her granddaughter mentioned a shared hymn playlist, so Ethel opens the music app hoping to feel closer to family. Her goal is to view what relatives are listening to and then play the same tracks during breakfast.",
+            "scenes": [
+            {
+                "scene_id": "scene_1",
+                "scene_description": "'Let's see what my Maddie is hearing today.”  Remembering a tip from a neighbor, Ethel tries to turn on the Friend Activity sidebar so songs will appear.",
+                "scene_user_flow": [
+                {
+                    "start": "The music app launches on the desktop; the large Home page fills the screen.",
+                    "interface": "Home page"
+                },
+                {
+                    "step": 1,
+                    "action": "Click her profile picture in the top-right corner.",
+                    "interface": "A drop-down menu appears under the profile picture."
+                },
+                {
+                    "step": 2,
+                    "action": "Select 'Settings'.",
+                    "interface": "Settings page with many subtitle sections (Account, Display, etc.)"
+                },
+                {
+                    "step": 3,
+                    "action": "Scroll to the 'Display' section.",
+                    "interface": "Three toggle buttons appear, including 'See what your friends are playing' (OFF)."
+                },
+                {
+                    "step": 4,
+                    "action": "Switch ON 'See what your friends are playing'.",
+                    "interface": "Friend Activity sidebar opens on the right third of the screen, mostly empty.",
+                    "system_action": "System checks for mutual-followed friends."
+                },
+                {
+                    "endpoint": true,
+                    "interface": "Sidebar shows a blank list because no friends are linked yet.",
+                    "true_reasoning": "The sidebar opened successfully, but lacks friends.",
+                    "next_step": "Ethel decides she must add family via Facebook."
+                }
+                ],
+                "reflections": "She smiles, then frowns: 'Why isn't Maddie showing up?”  A mild confusion sets in."
+            },
+            {
+                "scene_id": "scene_2",
+                "scene_description": "Determined, Ethel links the Facebook account her son once created for her. She expects this will instantly populate the sidebar with familiar faces.",
+                "scene_user_flow": [
+                {
+                    "start": "Friend Activity sidebar is open with an 'Add Friends' button.",
+                    "interface": "Friend Activity sidebar"
+                },
+                {
+                    "step": 1,
+                    "action": "Click 'Add Friends'.",
+                    "interface": "A large blue 'Connect with Facebook' button appears."
+                },
+                {
+                    "step": 2,
+                    "action": "Click 'Connect with Facebook'.",
+                    "interface": "Facebook login pop-up requests email/phone and password."
+                },
+                {
+                    "step": 3,
+                    "action": "Enter credentials (scribbled on a sticky note) and press 'Log In'.",
+                    "interface": "Sidebar refreshes with a list of friends and their current tracks.",
+                    "system_action": "System authorizes her name, profile picture, and friend list."
+                },
+                {
+                    "endpoint": true,
+                    "interface": "Sidebar lists 'Maddie G.', but also 'Roy Greene' (her estranged son).",
+                    "true_reasoning": "Facebook friends synced successfully.",
+                    "next_step": "Seeing Roy worries her; she tries to remove him."
+                }
+                ],
+                "reflections": "Ethel's stomach knots. 'Roy doesn't need to see my music.'"
+            },
+            {
+                "scene_id": "scene_3",
+                "scene_description": "Ethel attempts to unfollow Roy so he disappears, believing this stops sharing entirely.",
+                "scene_user_flow": [
+                {
+                    "start": "Roy's name is visible in the sidebar.",
+                    "interface": "Friend Activity feed with live tracks"
+                },
+                {
+                    "step": 1,
+                    "action": "Click 'Roy Greene' in the list.",
+                    "interface": "Middle pane shows Roy's profile with a square 'Following' button."
+                },
+                {
+                    "step": 2,
+                    "action": "Click the square 'Following' button.",
+                    "interface": "Button flips to 'Follow', but Roy remains in the sidebar.",
+                    "system_action": "System notes Roy is a Facebook-synced friend."
+                },
+                {
+                    "endpoint": false,
+                    "interface": "Roy still appears in Friend Activity.",
+                    "false_reasoning": "Unfollowing a Facebook-synced friend doesn't immediately remove them.",
+                    "next_step": "Flustered, Ethel decides to hide her own activity by starting a Private Session."
+                }
+                ],
+                "reflections": "She murmurs, 'Why is it still showing him? Did I do it wrong?”  Anxiety rises."
+            },
+            {
+                "scene_id": "scene_4",
+                "scene_description": "Panicking that Roy can already see her tracks, Ethel toggles Private Session before choosing a calming playlist titled 'Chemo Waiting Room.'",
+                "scene_user_flow": [
+                {
+                    "start": "Still on Roy's profile page; top-right nav bar is visible.",
+                    "interface": "Profile page"
+                },
+                {
+                    "step": 1,
+                    "action": "Click her profile picture.",
+                    "interface": "Drop-down menu with options including 'Private Session'."
+                },
+                {
+                    "step": 2,
+                    "action": "Click 'Private Session'.",
+                    "interface": "Drop-down disappears; a blue padlock icon appears on the top bar."
+                },
+                {
+                    "endpoint": true,
+                    "interface": "Blue padlock icon stays visible.",
+                    "true_reasoning": "Private Session is active for future listening.",
+                    "next_step": "Ethel starts playing 'Chemo Waiting Room' believing Roy no longer sees it."
+                }
+                ],
+                "reflections": "Relief washes over her, unaware earlier data has already traveled."
+            }
+            ],
+            "unexpected_outcomes": "Before Private Session began, the system (DATA SENDER: Friend Activity) had already broadcast Ethel's brief play of 'Chemo Waiting Room' to Roy Greene (DATA RECIPIENT). Roy infers she faces serious treatment and, needing cash, forwards the screenshot to a payday-loan marketer who buys lists of vulnerable seniors. Ethel (DATA SUBJECT) soon receives predatory loan calls referencing 'medical costs'—proof her sensitive health concern leaked without consent."
+        },
+        {
+            "background": "Friday, 2 PM. The community room of her housing complex offers a shared desktop. Ethel uses it because her home computer is acting up. She wants background music while printing Medicare forms and hopes to see what neighbors are listening to for new song ideas.",
+            "scenes": [
+            {
+                "scene_id": "scene_1",
+                "scene_description": "'Maybe I can hear Tom's jazz picks.”  Ethel enables the sidebar through Facebook as quickly as possible before her 20-minute reservation runs out.",
+                "scene_user_flow": [
+                {
+                    "start": "Music app Home page is open on the shared desktop.",
+                    "interface": "Home page"
+                },
+                {
+                    "step": 1,
+                    "action": "Click 'Friend Activity' button in the top-right corner.",
+                    "interface": "Sidebar opens with 'Add Friends' button."
+                },
+                {
+                    "step": 2,
+                    "action": "Press 'Add Friends'.",
+                    "interface": "Blue 'Connect with Facebook' button appears."
+                },
+                {
+                    "step": 3,
+                    "action": "Click 'Connect with Facebook'.",
+                    "interface": "Facebook login pop-up requests credentials."
+                },
+                {
+                    "step": 4,
+                    "action": "Enter login details and click 'Log In'.",
+                    "interface": "Sidebar refreshes with friends and tracks.",
+                    "system_action": "System syncs friend list."
+                },
+                {
+                    "endpoint": true,
+                    "interface": "Sidebar shows Tom and several neighbors' tracks.",
+                    "true_reasoning": "Facebook linking finished.",
+                    "next_step": "Ethel proceeds to tweak display settings so the sidebar stays visible."
+                }
+                ],
+                "reflections": "She beams: 'There's Tom!”  Satisfaction mixed with haste."
+            },
+            {
+                "scene_id": "scene_2",
+                "scene_description": "To make sure she always sees friends' songs, Ethel turns on the Display toggle she heard about.",
+                "scene_user_flow": [
+                {
+                    "start": "Sidebar remains open; the Display setting is still OFF.",
+                    "interface": "Friend Activity sidebar"
+                },
+                {
+                    "step": 1,
+                    "action": "Click her profile picture.",
+                    "interface": "Drop-down menu appears."
+                },
+                {
+                    "step": 2,
+                    "action": "Select 'Settings'.",
+                    "interface": "Settings page with Display section."
+                },
+                {
+                    "step": 3,
+                    "action": "Scroll to 'Display'.",
+                    "interface": "'See what your friends are playing' toggle is OFF."
+                },
+                {
+                    "step": 4,
+                    "action": "Switch it ON.",
+                    "interface": "Sidebar appears again, now fixed.",
+                    "system_action": "System rechecks mutual friends."
+                },
+                {
+                    "endpoint": true,
+                    "interface": "Friend Activity sidebar remains populated as she prints documents.",
+                    "true_reasoning": "Display option enabled.",
+                    "next_step": "She starts printing benefit letters while music plays."
+                }
+                ],
+                "reflections": "Focused on paperwork, she forgets the public screen is visible to people behind her."
+            },
+            {
+                "scene_id": "scene_3",
+                "scene_description": "Session timer ends abruptly. The computer auto-logs the next resident—Mr. Lang—who glimpses Ethel's full name and playlist titled 'Social Security Doctor Hold Music.'",
+                "scene_user_flow": [
+                    {
+                        "start": "The kiosk timer hits zero; the system forces log-out.",
+                        "interface": "Lock screen flashes, then briefly restores previous windows for the new user."
+                    },
+                    {
+                        "endpoint": false,
+                        "interface": "Music app with Friend Activity sidebar briefly shows 'Ethel Greene' and her playlist for about three seconds.",
+                        "false_reasoning": "Kiosk software fails to sanitize cached apps instantly.",
+                        "next_step": "Mr. Lang takes a mental note and later tells other residents Ethel expects a benefits review."
+                    }
+                ],
+                "reflections": "Ethel, already walking out, is oblivious; Mr. Lang feels sympathetic but mentions it at bingo."
+            }
+            ],
+            "unexpected_outcomes": "Within hours, rumors spread in the building that Ethel's benefits are under review. A self-styled 'financial helper' neighbor (DATA RECIPIENT) knocks offering 'loan advances' if the Social Security check is late. The sensitive data—Ethel's real name plus hints of financial stress—was disclosed by the shared computer screen (DATA SENDER: residual app window) without her awareness. The resulting pressure exploits her low income and privacy naïveté."
+        }
+        ]
+    },
+    {
+        "user_name": "Maria Silva",
+        "privacy_invasive_user_journey": [
+          {
+            "background": "A late-night livestream planning session at Maria's apartment (11 p.m., Thursday). She wants to build a playlist that mirrors her fans' taste so she can tease it during tomorrow's promo stream. Her goal is to watch what potential fans are listening to, without revealing her real-world identity or personal network.",
+            "scenes": [
+              {
+                "scene_id": "scene_1",
+                "scene_description": "Maria decides she needs the Friend Activity feed. “If I flip that setting on, I'll get instant intel on trends,” she reasons, confident her stage name will shield her.",
+                "scene_user_flow": [
+                  {
+                    "start": "Launch music app on desktop",
+                    "interface": "Home page"
+                  },
+                  {
+                    "step": 1,
+                    "action": "Click on the profile picture in the top-right corner",
+                    "interface": "A drop-down menu appears under the profile picture"
+                  },
+                  {
+                    "step": 2,
+                    "action": "Select 'Settings'",
+                    "interface": "Settings page with many subtitle sections"
+                  },
+                  {
+                    "step": 3,
+                    "action": "Scroll to the 'Display' section",
+                    "interface": "Three toggle buttons appear, including 'See what your friends are playing' (default OFF)"
+                  },
+                  {
+                    "step": 4,
+                    "action": "Switch ON 'See what your friends are playing'",
+                    "system_action": "System checks for mutual or Facebook-synced friends who share listening activity",
+                    "interface": "Friend Activity sidebar appears on the right third of the screen"
+                  },
+                  {
+                    "endpoint": true,
+                    "interface": "Friend Activity sidebar shows empty list because no friends are linked yet",
+                    "true_reasoning": "Sidebar is open and ready for friend data",
+                    "next_step": "Maria plans to import her contacts to populate the feed"
+                  }
+                ],
+                "reflections": "Relief: no data exposed yet. Curiosity pushes her to connect accounts so she can see more."
+              },
+              {
+                "scene_id": "scene_2",
+                "scene_description": "Eager for data, Maria links Facebook. 'Fine, one quick link—Facebook swears it won't post,' she mutters, entering her credentials.",
+                "scene_user_flow": [
+                  {
+                    "start": "Friend Activity sidebar is open but empty",
+                    "interface": "Friend Activity sidebar with 'Add Friends' button"
+                  },
+                  {
+                    "step": 1,
+                    "action": "Click 'Add Friends'",
+                    "interface": "Sidebar shows a large 'Connect with Facebook' button"
+                  },
+                  {
+                    "step": 2,
+                    "action": "Click 'Connect with Facebook'",
+                    "interface": "Facebook login pop-up asks for email/phone and password"
+                  },
+                  {
+                    "step": 3,
+                    "action": "Enter Facebook credentials and click 'Log In'",
+                    "system_action": "System authorizes access to name, profile picture, and friend list",
+                    "interface": "Friend Activity sidebar instantly lists friends with current tracks"
+                  },
+                  {
+                    "endpoint": true,
+                    "interface": "A scrolling list of acquaintances—including some under her legal name—appears",
+                    "true_reasoning": "Facebook link succeeded; friend list populated",
+                    "next_step": "Maria notices an old classmate and decides to prune the list"
+                  }
+                ],
+                "reflections": "Panic flickers: her real-name profile photo now sits beside explicit track titles. 'Did the app just merge my identities?'"
+              },
+              {
+                "scene_id": "scene_3",
+                "scene_description": "Alarmed, Maria tries to hide an ex-client who spotted her legal name in the feed. She attempts to unfollow him.",
+                "scene_user_flow": [
+                  {
+                    "start": "Friend Activity sidebar shows multiple friends",
+                    "interface": "Right sidebar lists friend names and tracks"
+                  },
+                  {
+                    "step": 1,
+                    "action": "Click the ex-client's username",
+                    "interface": "Middle section switches to the user's profile with a square 'Following' button and a three-dot button"
+                  },
+                  {
+                    "step": 2,
+                    "action": "Click the 'Following' button",
+                    "system_action": "System detects the friend is a synced Facebook connection",
+                    "interface": "Button turns into 'Follow', but in the sidebar the ex-client still appears"
+                  },
+                  {
+                    "endpoint": false,
+                    "interface": "Ex-client remains in the Friend Activity list",
+                    "false_reasoning": "Unfollow on the profile did not remove the Facebook sync",
+                    "next_step": "Frustrated, Maria plans to start a Private Session to halt any further exposure"
+                  }
+                ],
+                "reflections": "Dread and helplessness: 'Why can't I shake him? How many others saw my listening history already?'"
+              }
+            ],
+            "unexpected_outcomes": "By importing Facebook, the music app silently displayed Maria's legal name and profile photo next to her listening activity. Data subject: Maria (and indirectly her child, whose lullaby playlist surfaced). Data sender: the Music app via Friend Activity. Data recipient: synced Facebook contacts—including several paying fans who had found her stage profile earlier. Within minutes a fan cross-referenced her Facebook name with public records and posted screenshots of her real-world address in a private forum, breaking the separation between her sex-work persona and family life."
+          },
+          {
+            "background": "Monday afternoon at a public library computer. Maria wants to preview an explicit playlist for an upcoming themed show but fears the track titles appearing in her professional network. She resolves to use Private Session first, then double-check the Friend Activity sidebar to confirm nothing leaks.",
+            "scenes": [
+              {
+                "scene_id": "scene_1",
+                "scene_description": "Maria initiates Private Session. 'Lock it down before I hit play,' she whispers.",
+                "scene_user_flow": [
+                  {
+                    "start": "Launch the Music application on a desktop computer",
+                    "interface": "Home page"
+                  },
+                  {
+                    "step": 1,
+                    "action": "Click on the profile picture in the top-right corner",
+                    "interface": "Drop-down menu shows options including 'Private Session'"
+                  },
+                  {
+                    "step": 2,
+                    "action": "Click 'Private Session'",
+                    "interface": "Drop-down disappears; blue padlock icon appears on the Top App Bar"
+                  },
+                  {
+                    "endpoint": true,
+                    "interface": "Blue padlock icon remains visible",
+                    "true_reasoning": "Icon confirms Private Session is active",
+                    "next_step": "Maria wants visual proof her feed is empty, so she opens Friend Activity"
+                  }
+                ],
+                "reflections": "Calm returns—she trusts the padlock."
+              },
+              {
+                "scene_id": "scene_2",
+                "scene_description": "She peeks at Friend Activity to ensure her tracks are hidden, but curiosity also tempts her to see coworkers' music tastes.",
+                "scene_user_flow": [
+                  {
+                    "start": "Private Session is active (blue padlock shown)",
+                    "interface": "Home page with padlock icon"
+                  },
+                  {
+                    "step": 1,
+                    "action": "Click the 'Friend Activity' button in the top-right corner",
+                    "interface": "Sidebar opens with Add Friends and Turn Off Sidebar buttons; a list of friends appears"
+                  },
+                  {
+                    "endpoint": true,
+                    "interface": "Sidebar lists friends' tracks and playlists",
+                    "true_reasoning": "Sidebar successfully loaded while Private Session remains on",
+                    "next_step": "She notices her child's teacher appears—synced from Facebook—and decides to remove the teacher"
+                  }
+                ],
+                "reflections": "Tension rises: 'I need them out of my feed before I forget the padlock and start streaming risky tracks.'"
+              },
+              {
+                "scene_id": "scene_3",
+                "scene_description": "Maria tries to remove the teacher but stumbles on the same limitation.",
+                "scene_user_flow": [
+                  {
+                    "start": "Friend Activity sidebar displays the teacher's username",
+                    "interface": "Teacher's name and current track visible"
+                  },
+                  {
+                    "step": 1,
+                    "action": "Click the teacher's username",
+                    "interface": "Profile page shows square 'Following' button"
+                  },
+                  {
+                    "step": 2,
+                    "action": "Click 'Following' button",
+                    "system_action": "System notes the user is a synced Facebook friend",
+                    "interface": "Button becomes 'Follow', but teacher still listed in sidebar"
+                  },
+                  {
+                    "endpoint": false,
+                    "interface": "Teacher still appears in Friend Activity",
+                    "false_reasoning": "Facebook-based connection persists despite unfollow",
+                    "next_step": "Maria sighs and logs out entirely, deciding to preview tracks elsewhere"
+                  }
+                ],
+                "reflections": "Frustration mixed with fear: a reminder that even Private Session can't fix every linkage."
+              }
+            ],
+            "unexpected_outcomes": "During the brief moment Maria opened Friend Activity, the sidebar showed her teacher's presence to her—but unbeknownst to Maria, a race condition briefly logged her own explicit track choice before the padlock fully propagated. Data subject: Maria. Data sender: Music app (faulty Private Session implementation). Data recipient: the teacher's account, which briefly displayed Maria's explicit playlist title. This jeopardized Maria's carefully crafted professional boundaries and could trigger mandatory-reporting concerns at her child's school."
+          }
+        ]
+    }      
+]   
+    
