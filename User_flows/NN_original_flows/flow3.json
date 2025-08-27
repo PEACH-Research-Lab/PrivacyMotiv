@@ -1,0 +1,491 @@
+{
+    "user_flow_title": "Going NN Live+ to Alert Neighbors",
+    "flows":[
+        {
+            "flow_id": "flow1",
+            "steps": [
+                {
+                    "start": "Launch the NeighborNet on mobile phone",
+                    "interface": "Home page (Map page) displays a location-based NeighborNet map, highlighting real-time community updates. A variety of icons are overlaid on a simplified neighborhood grid, each representing different report types such as auto collisions, police presence, missing pets, public health notices, neighbor disputes, or live video streams. The user's current location is marked with a blue dot. A header at the top labeled 'Updates' allows for filtering, with a search icon in the top-right corner. A bottom navigation bar provides access to five main sections: Map (active), News, Alert Community, Alerts, and You."
+                },
+                {
+                    "step": 1,
+                    "action": "Tap the 'Alert Community' icon in the bottom navigation bar.",
+                    "interface": "The screen displays the initial Go Live+ interface with a prominent red recording button centered on a black background. Above the button, a system permission prompt appears: 'NeighborNet Would Like to Access the Microphone' with the description: 'Allow microphone access to broadcast live, connect to Protect Agents or enable distress detection. See our Privacy Policy for more information.' Two options are presented: 'Don’t Allow' and 'Allow'. Below the red record button, a horizontal toolbar shows icons for optional live settings, including mute/unmute, microphone, flash, and rotate camera. A downward arrow in the top-right corner allows users to minimize or close the screen."
+                },
+                {
+                    "step": 2,
+                    "action": "Tap 'Allow'.",
+                    "interface": "The screen displays the Go Live+ interface, prompting the user to grant camera access. A system pop-up appears in the center: 'NeighborNet Would Like to Access the Camera', with the description: 'Allow camera access to connect to our Agents or broadcast live. See our Privacy Policy for more information.' Two options are available: 'Don’t Allow' and 'Allow'. Below the prompt, a large red button labeled 'Start Alert' is centered on a black background, indicating the user’s entry point to begin streaming. A badge at the bottom shows user progress (e.g., 'Achieve Community Helper'), and a toolbar displays control icons (e.g., night mode, microphone, flash, and rotate camera). A downward arrow in the top-right corner lets users minimize or exit the screen."
+                },
+                {
+                    "step": 3,
+                    "action": "Tap 'Allow'.",
+                    "interface": "The screen displays the main title 'Alert Your Neighbors' in the middle of the interface. Below it shows the user’s current location and daily platform activity (e.g., 'Near xxx location xxxx alerts created today'). Below users can select from predefined alert categories-'Police', 'Fire', 'EMS', 'Collision', 'Missing Pet', 'Local Event' or tap 'More' for additional options, each represented by labeled icon buttons. A large red circular button is centered at the bottom of the screen, allowing the user to initiate a live stream or alert. A toolbar at the very bottom provides access to live stream controls, including night mode, microphone, flash, and rotate camera. A downward-facing arrow in the top-right corner allows users to exit or collapse the screen."
+                },
+                {
+                    "step": 4,
+                    "action": "Select an incident type.",
+                    "interface": "The screen shows a minimal black background indicating the start of a NeighborNet Live+ broadcast. At the center, a large countdown number is displayed: 3, 2, 1, followed by the message: 'Starting live broadcast…', signaling that the stream is about to go live. Below the message is a rounded 'Cancel' button, allowing the user to stop the broadcast before it begins."
+                },
+                {
+                    "step": 5,
+                    "action": "Tap 'Cancel'.",
+                    "interface": "When a user attempts to end an active NeighborNet Live+ broadcast, a confirmation modal appears centered on the screen with the title 'End Alert?' and the prompt message: 'Are you sure you want to end this broadcast?' Two large buttons are displayed: a white button labeled 'Stay Live' allowing the user to return to the stream without ending it, and a black button labeled 'End' to confirm ending the broadcast."
+                },
+                {
+                    "step": 6,
+                    "action": "Tap 'End'.",
+                    "endpoint": false,
+                    "interface": "A modal appears in the center of the screen with the message: 'Your Alert Was Not Published', indicating that the user's attempt to start a NeighborNet Live+ broadcast has failed. A prominent white button labeled 'Try Broadcasting Again' allows the user to reattempt the stream."
+                }
+            ]
+        },
+        {
+            "flow_id": "flow2",
+            "steps": [
+                {
+                    "start": "Launch the NeighborNet on mobile phone",
+                    "interface": "Home page (Map page) displays a location-based NeighborNet map, highlighting real-time community updates. A variety of icons are overlaid on a simplified neighborhood grid, each representing different report types such as auto collisions, police presence, missing pets, public health notices, neighbor disputes, or live video streams. The user's current location is marked with a blue dot. A header at the top labeled 'Updates' allows for filtering, with a search icon in the top-right corner. A bottom navigation bar provides access to five main sections: Map (active), News, Alert Community, Alerts, and You."
+                },
+                {
+                    "step": 1,
+                    "action": "Tap the 'Alert Community' icon in the bottom navigation bar.",
+                    "interface": "The screen displays the initial Go Live+ interface with a prominent red recording button centered on a black background. Above the button, a system permission prompt appears: 'NeighborNet Would Like to Access the Microphone' with the description: 'Allow microphone access to broadcast live, connect to Protect Agents or enable distress detection. See our Privacy Policy for more information.' Two options are presented: 'Don’t Allow' and 'Allow'. Below the red record button, a horizontal toolbar shows icons for optional live settings, including mute/unmute, microphone, flash, and rotate camera. A downward arrow in the top-right corner allows users to minimize or close the screen."
+                },
+                {
+                    "step": 2,
+                    "action": "Tap 'Allow'.",
+                    "interface": "The screen displays the Go Live+ interface, prompting the user to grant camera access. A system pop-up appears in the center: 'NeighborNet Would Like to Access the Camera', with the description: 'Allow camera access to connect to our Agents or broadcast live. See our Privacy Policy for more information.' Two options are available: 'Don’t Allow' and 'Allow'. Below the prompt, a large red button labeled 'Start Alert' is centered on a black background, indicating the user’s entry point to begin streaming. A badge at the bottom shows user progress (e.g., 'Achieve Community Helper'), and a toolbar displays control icons (e.g., night mode, microphone, flash, and rotate camera). A downward arrow in the top-right corner lets users minimize or exit the screen."
+                },
+                {
+                    "step": 3,
+                    "action": "Tap 'Allow'.",
+                    "interface": "The screen displays the main title 'Alert Your Neighbors' in the middle of the interface. Below it shows the user’s current location and daily platform activity (e.g., 'Near xxx location xxxx alerts created today'). Below users can select from predefined alert categories-'Police', 'Fire', 'EMS', 'Collision', 'Missing Pet', 'Local Event' or tap 'More' for additional options, each represented by labeled icon buttons. A large red circular button is centered at the bottom of the screen, allowing the user to initiate a live stream or alert. A toolbar at the very bottom provides access to live stream controls, including night mode, microphone, flash, and rotate camera. A downward-facing arrow in the top-right corner allows users to exit or collapse the screen."
+                },
+                {
+                    "step": 4,
+                    "action": "Select an incident type.",
+                    "interface": "The screen shows a minimal black background indicating the start of a NeighborNet Live+ broadcast. At the center, a large countdown number is displayed: 3, 2, 1, followed by the message: 'Starting live broadcast…', signaling that the stream is about to go live. Below the message is a rounded 'Cancel' button, allowing the user to stop the broadcast before it begins."
+                },
+                {
+                    "step": 5,
+                    "action": "Tap 'Cancel'.",
+                    "interface": "When a user attempts to end an active NeighborNet Live+ broadcast, a confirmation modal appears centered on the screen with the title 'End Alert?' and the prompt message: 'Are you sure you want to end this broadcast?' Two large buttons are displayed: a white button labeled 'Stay Live' allowing the user to return to the stream without ending it, and a black button labeled 'End' to confirm ending the broadcast."
+                },
+                {
+                    "step": 6,
+                    "action": "Tap 'Stay Live'.",
+                    "interface": "The screen shows the active NeighborNet Live+ broadcast in progress. In the top-left corner, a red 'LIVE' label is displayed next to the selected incident type and user’s location. In the top-right, a progress bar with the description: 'Finding related incidents within 0.25 miles...' is shown, followed by a status message: 'Stay Live – Hold your camera steady'. A recording duration appears in the bottom-right corner, along with an 'X' button inside a red circle that allows users to end the stream. Next to it is a live recording timer and a toolbar that provides access to live stream controls, including night mode, microphone, flash, and rotate camera. The rest of the screen displays the live video feed."
+                },
+                {
+                    "step": 7,
+                    "system_action": "Decide whether there are any reported incidents within 0.25 miles and whether those incidents have been active in the last 20 minutes.",
+                    "system_answer": "No"
+                },
+                {
+                    "step": 8,
+                    "endpoint": false,
+                    "interface": "A modal appears in the center of the screen with the message: 'Your Alert Was Not Published', indicating that the user's attempt to start a NeighborNet Live+ broadcast has failed. A prominent white button labeled 'Try Broadcasting Again' allows the user to reattempt the stream."                }
+            ]
+        },
+        {
+            "flow_id": "flow3",
+            "steps": [
+                {
+                    "start": "Launch the NeighborNet on mobile phone",
+                    "interface": "Home page (Map page) displays a location-based NeighborNet map, highlighting real-time community updates. A variety of icons are overlaid on a simplified neighborhood grid, each representing different report types such as auto collisions, police presence, missing pets, public health notices, neighbor disputes, or live video streams. The user's current location is marked with a blue dot. A header at the top labeled 'Updates' allows for filtering, with a search icon in the top-right corner. A bottom navigation bar provides access to five main sections: Map (active), News, Alert Community, Alerts, and You."
+                },
+                {
+                    "step": 1,
+                    "action": "Tap the 'Alert Community' icon in the bottom navigation bar.",
+                    "interface": "The screen displays the initial Go Live+ interface with a prominent red recording button centered on a black background. Above the button, a system permission prompt appears: 'NeighborNet Would Like to Access the Microphone' with the description: 'Allow microphone access to broadcast live, connect to Protect Agents or enable distress detection. See our Privacy Policy for more information.' Two options are presented: 'Don’t Allow' and 'Allow'. Below the red record button, a horizontal toolbar shows icons for optional live settings, including mute/unmute, microphone, flash, and rotate camera. A downward arrow in the top-right corner allows users to minimize or close the screen."
+                },
+                {
+                    "step": 2,
+                    "action": "Tap 'Allow'.",
+                    "interface": "The screen displays the Go Live+ interface, prompting the user to grant camera access. A system pop-up appears in the center: 'NeighborNet Would Like to Access the Camera', with the description: 'Allow camera access to connect to our Agents or broadcast live. See our Privacy Policy for more information.' Two options are available: 'Don’t Allow' and 'Allow'. Below the prompt, a large red button labeled 'Start Alert' is centered on a black background, indicating the user’s entry point to begin streaming. A badge at the bottom shows user progress (e.g., 'Achieve Community Helper'), and a toolbar displays control icons (e.g., night mode, microphone, flash, and rotate camera). A downward arrow in the top-right corner lets users minimize or exit the screen."
+                },
+                {
+                    "step": 3,
+                    "action": "Tap 'Allow'.",
+                    "interface": "The screen displays the main title 'Alert Your Neighbors' in the middle of the interface. Below it shows the user’s current location and daily platform activity (e.g., 'Near xxx location xxxx alerts created today'). Below users can select from predefined alert categories-'Police', 'Fire', 'EMS', 'Collision', 'Missing Pet', 'Local Event' or tap 'More' for additional options, each represented by labeled icon buttons. A large red circular button is centered at the bottom of the screen, allowing the user to initiate a live stream or alert. A toolbar at the very bottom provides access to live stream controls, including night mode, microphone, flash, and rotate camera. A downward-facing arrow in the top-right corner allows users to exit or collapse the screen."
+                },
+                {
+                    "step": 4,
+                    "action": "Select an incident type.",
+                    "interface": "The screen shows a minimal black background indicating the start of a NeighborNet Live+ broadcast. At the center, a large countdown number is displayed: 3, 2, 1, followed by the message: 'Starting live broadcast…', signaling that the stream is about to go live. Below the message is a rounded 'Cancel' button, allowing the user to stop the broadcast before it begins."
+                },
+                {
+                    "step": 5,
+                    "action": "Tap 'Cancel'.",
+                    "interface": "When a user attempts to end an active NeighborNet Live+ broadcast, a confirmation modal appears centered on the screen with the title 'End Alert?' and the prompt message: 'Are you sure you want to end this broadcast?' Two large buttons are displayed: a white button labeled 'Stay Live' allowing the user to return to the stream without ending it, and a black button labeled 'End' to confirm ending the broadcast."
+                },
+                {
+                    "step": 6,
+                    "action": "Tap 'Stay Live'.",
+                    "interface": "The screen shows the active NeighborNet Live+ broadcast in progress. In the top-left corner, a red 'LIVE' label is displayed next to the selected incident type and user’s location. In the top-right, a progress bar with the description: 'Finding related incidents within 0.25 miles...' is shown, followed by a status message: 'Stay Live – Hold your camera steady'. A recording duration appears in the bottom-right corner, along with an 'X' button inside a red circle that allows users to end the stream. Next to it is a live recording timer and a toolbar that provides access to live stream controls, including night mode, microphone, flash, and rotate camera. The rest of the screen displays the live video feed."
+                },
+                {
+                    "step": 7,
+                    "system_action": "Decide whether there are any reported incidents within 0.25 miles and whether those incidents have been active in the last 20 minutes.",
+                    "system_answer": "Yes"
+                },
+                {
+                    "step": 8,
+                    "endpoint": true,
+                    "interface": "While staying on the live stream page, a comment bubble begins to appear at the top-right of the screen and a floating bottom bar displays viewer status and reaction emojis."
+                }
+            ]
+          },
+          {
+            "flow_id": "flow4",
+            "steps": [
+                {
+                    "start": "Launch the NeighborNet on mobile phone",
+                    "interface": "Home page (Map page) displays a location-based NeighborNet map, highlighting real-time community updates. A variety of icons are overlaid on a simplified neighborhood grid, each representing different report types such as auto collisions, police presence, missing pets, public health notices, neighbor disputes, or live video streams. The user's current location is marked with a blue dot. A header at the top labeled 'Updates' allows for filtering, with a search icon in the top-right corner. A bottom navigation bar provides access to five main sections: Map (active), News, Alert Community, Alerts, and You."
+                },
+                {
+                    "step": 1,
+                    "action": "Tap the 'Alert Community' icon in the bottom navigation bar.",
+                    "interface": "The screen displays the initial Go Live+ interface with a prominent red recording button centered on a black background. Above the button, a system permission prompt appears: 'NeighborNet Would Like to Access the Microphone' with the description: 'Allow microphone access to broadcast live, connect to Protect Agents or enable distress detection. See our Privacy Policy for more information.' Two options are presented: 'Don’t Allow' and 'Allow'. Below the red record button, a horizontal toolbar shows icons for optional live settings, including mute/unmute, microphone, flash, and rotate camera. A downward arrow in the top-right corner allows users to minimize or close the screen."
+                },
+                {
+                    "step": 2,
+                    "action": "Tap 'Allow'.",
+                    "interface": "The screen displays the Go Live+ interface, prompting the user to grant camera access. A system pop-up appears in the center: 'NeighborNet Would Like to Access the Camera', with the description: 'Allow camera access to connect to our Agents or broadcast live. See our Privacy Policy for more information.' Two options are available: 'Don’t Allow' and 'Allow'. Below the prompt, a large red button labeled 'Start Alert' is centered on a black background, indicating the user’s entry point to begin streaming. A badge at the bottom shows user progress (e.g., 'Achieve Community Helper'), and a toolbar displays control icons (e.g., night mode, microphone, flash, and rotate camera). A downward arrow in the top-right corner lets users minimize or exit the screen."
+                },
+                {
+                    "step": 3,
+                    "action": "Tap 'Allow'.",
+                    "interface": "The screen displays the main title 'Alert Your Neighbors' in the middle of the interface. Below it shows the user’s current location and daily platform activity (e.g., 'Near xxx location xxxx alerts created today'). Below users can select from predefined alert categories-'Police', 'Fire', 'EMS', 'Collision', 'Missing Pet', 'Local Event' or tap 'More' for additional options, each represented by labeled icon buttons. A large red circular button is centered at the bottom of the screen, allowing the user to initiate a live stream or alert. A toolbar at the very bottom provides access to live stream controls, including night mode, microphone, flash, and rotate camera. A downward-facing arrow in the top-right corner allows users to exit or collapse the screen."
+                },
+                {
+                    "step": 4,
+                    "action": "Select an incident type.",
+                    "interface": "The screen shows a minimal black background indicating the start of a NeighborNet Live+ broadcast. At the center, a large countdown number is displayed: 3, 2, 1, followed by the message: 'Starting live broadcast…', signaling that the stream is about to go live. Below the message is a rounded 'Cancel' button, allowing the user to stop the broadcast before it begins."
+                },
+                {
+                    "step": 5,
+                    "action": "Wait for 3 seconds to start broadcast.",
+                    "interface": "The screen shows the active NeighborNet Live+ broadcast in progress. In the top-left corner, a red 'LIVE' label is displayed next to the selected incident type and user’s location. In the top-right, a progress bar with the description: 'Finding related incidents within 0.25 miles...' is shown, followed by a status message: 'Stay Live – Hold your camera steady'. A recording duration appears in the bottom-right corner, along with an 'X' button inside a red circle that allows users to end the stream. Next to it is a live recording timer and a toolbar that provides access to live stream controls, including night mode, microphone, flash, and rotate camera. The rest of the screen displays the live video feed."
+                },
+                {
+                    "step": 6,
+                    "action": "Tap 'X'.",
+                    "interface": "When a user attempts to end an active NeighborNet Live+ broadcast, a confirmation modal appears centered on the screen with the title: 'End Alert?' and the prompt: 'Are you sure you want to end this broadcast?' Two large buttons are displayed: a white button labeled 'Stay Live' allowing the user to return to the stream without ending it, and a black button labeled 'End' to confirm ending the broadcast."
+                },
+                {
+                    "step": 7,
+                    "action": "Tap 'End'.",
+                    "endpoint": false,
+                    "interface": "A modal appears in the center of the screen with the message: 'Your Alert Was Not Published', indicating that the user's attempt to start a NeighborNet Live+ broadcast has failed. A prominent white button labeled 'Try Broadcasting Again' allows the user to reattempt the stream."
+                }
+            ]
+          },
+          {
+            "flow_id": "flow5",
+            "steps": [
+                {
+                    "start": "Launch the NeighborNet on mobile phone",
+                    "interface": "Home page (Map page) displays a location-based NeighborNet map, highlighting real-time community updates. A variety of icons are overlaid on a simplified neighborhood grid, each representing different report types such as auto collisions, police presence, missing pets, public health notices, neighbor disputes, or live video streams. The user's current location is marked with a blue dot. A header at the top labeled 'Updates' allows for filtering, with a search icon in the top-right corner. A bottom navigation bar provides access to five main sections: Map (active), News, Alert Community, Alerts, and You."
+                },
+                {
+                    "step": 1,
+                    "action": "Tap the 'Alert Community' icon in the bottom navigation bar.",
+                    "interface": "The screen displays the initial Go Live+ interface with a prominent red recording button centered on a black background. Above the button, a system permission prompt appears: 'NeighborNet Would Like to Access the Microphone' with the description: 'Allow microphone access to broadcast live, connect to Protect Agents or enable distress detection. See our Privacy Policy for more information.' Two options are presented: 'Don’t Allow' and 'Allow'. Below the red record button, a horizontal toolbar shows icons for optional live settings, including mute/unmute, microphone, flash, and rotate camera. A downward arrow in the top-right corner allows users to minimize or close the screen."
+                },
+                {
+                    "step": 2,
+                    "action": "Tap 'Allow'.",
+                    "interface": "The screen displays the Go Live+ interface, prompting the user to grant camera access. A system pop-up appears in the center: 'NeighborNet Would Like to Access the Camera', with the description: 'Allow camera access to connect to our Agents or broadcast live. See our Privacy Policy for more information.' Two options are available: 'Don’t Allow' and 'Allow'. Below the prompt, a large red button labeled 'Start Alert' is centered on a black background, indicating the user’s entry point to begin streaming. A badge at the bottom shows user progress (e.g., 'Achieve Community Helper'), and a toolbar displays control icons (e.g., night mode, microphone, flash, and rotate camera). A downward arrow in the top-right corner lets users minimize or exit the screen."
+                },
+                {
+                    "step": 3,
+                    "action": "Tap 'Allow'.",
+                    "interface": "The screen displays the main title 'Alert Your Neighbors' in the middle of the interface. Below it shows the user’s current location and daily platform activity (e.g., 'Near xxx location xxxx alerts created today'). Below users can select from predefined alert categories-'Police', 'Fire', 'EMS', 'Collision', 'Missing Pet', 'Local Event' or tap 'More' for additional options, each represented by labeled icon buttons. A large red circular button is centered at the bottom of the screen, allowing the user to initiate a live stream or alert. A toolbar at the very bottom provides access to live stream controls, including night mode, microphone, flash, and rotate camera. A downward-facing arrow in the top-right corner allows users to exit or collapse the screen."
+                },
+                {
+                    "step": 4,
+                    "action": "Select an incident type.",
+                    "interface": "The screen shows a minimal black background indicating the start of a NeighborNet Live+ broadcast. At the center, a large countdown number is displayed: 3, 2, 1, followed by the message: 'Starting live broadcast…', signaling that the stream is about to go live. Below the message is a rounded 'Cancel' button, allowing the user to stop the broadcast before it begins."
+                },
+                {
+                    "step": 5,
+                    "action": "Wait for 3 seconds to start broadcast.",
+                    "interface": "The screen shows the active NeighborNet Live+ broadcast in progress. In the top-left corner, a red 'LIVE' label is displayed next to the selected incident type and user’s location. In the top-right, a progress bar with the description: 'Finding related incidents within 0.25 miles...' is shown, followed by a status message: 'Stay Live – Hold your camera steady'. A recording duration appears in the bottom-right corner, along with an 'X' button inside a red circle that allows users to end the stream. Next to it is a live recording timer and a toolbar that provides access to live stream controls, including night mode, microphone, flash, and rotate camera. The rest of the screen displays the live video feed."
+                },
+                {
+                    "step": 6,
+                    "system_action": "Decide whether there are any reported incidents within 0.25 miles and the incidents have been active in the last 20 minutes.",
+                    "system_answer": "yes"
+                },
+                {
+                    "step": 7,
+                    "endpoint": true,
+                    "interface": "While staying on the live stream page, a comment bubble starts to appear on the top-right of the screen, and a floating bottom bar offers viewer status and reaction emojis."
+                }
+            ]
+          },
+          {
+            "flow_id": "flow6",
+            "steps": [
+                {
+                    "start": "Launch the NeighborNet on mobile phone",
+                    "interface": "Home page (Map page) displays a location-based NeighborNet map, highlighting real-time community updates. A variety of icons are overlaid on a simplified neighborhood grid, each representing different report types such as auto collisions, police presence, missing pets, public health notices, neighbor disputes, or live video streams. The user's current location is marked with a blue dot. A header at the top labeled 'Updates' allows for filtering, with a search icon in the top-right corner. A bottom navigation bar provides access to five main sections: Map (active), News, Alert Community, Alerts, and You."
+                },
+                {
+                    "step": 1,
+                    "action": "Tap the 'Alert Community' icon in the bottom navigation bar.",
+                    "interface": "The screen displays the initial Go Live+ interface with a prominent red recording button centered on a black background. Above the button, a system permission prompt appears: 'NeighborNet Would Like to Access the Microphone' with the description: 'Allow microphone access to broadcast live, connect to Protect Agents or enable distress detection. See our Privacy Policy for more information.' Two options are presented: 'Don’t Allow' and 'Allow'. Below the red record button, a horizontal toolbar shows icons for optional live settings, including mute/unmute, microphone, flash, and rotate camera. A downward arrow in the top-right corner allows users to minimize or close the screen."
+                },
+                {
+                    "step": 2,
+                    "action": "Tap 'Allow'.",
+                    "interface": "The screen displays the Go Live+ interface, prompting the user to grant camera access. A system pop-up appears in the center: 'NeighborNet Would Like to Access the Camera', with the description: 'Allow camera access to connect to our Agents or broadcast live. See our Privacy Policy for more information.' Two options are available: 'Don’t Allow' and 'Allow'. Below the prompt, a large red button labeled 'Start Alert' is centered on a black background, indicating the user’s entry point to begin streaming. A badge at the bottom shows user progress (e.g., 'Achieve Community Helper'), and a toolbar displays control icons (e.g., night mode, microphone, flash, and rotate camera). A downward arrow in the top-right corner lets users minimize or exit the screen."
+                },
+                {
+                    "step": 3,
+                    "action": "Tap 'Allow'.",
+                    "interface": "The screen displays the main title 'Alert Your Neighbors' in the middle of the interface. Below it shows the user’s current location and daily platform activity (e.g., 'Near xxx location xxxx alerts created today'). Below users can select from predefined alert categories-'Police', 'Fire', 'EMS', 'Collision', 'Missing Pet', 'Local Event' or tap 'More' for additional options, each represented by labeled icon buttons. A large red circular button is centered at the bottom of the screen, allowing the user to initiate a live stream or alert. A toolbar at the very bottom provides access to live stream controls, including night mode, microphone, flash, and rotate camera. A downward-facing arrow in the top-right corner allows users to exit or collapse the screen."
+                },
+                {
+                    "step": 4,
+                    "action": "Select an incident type.",
+                    "interface": "The screen shows a minimal black background indicating the start of a NeighborNet Live+ broadcast. At the center, a large countdown number is displayed: 3, 2, 1, followed by the message: 'Starting live broadcast…', signaling that the stream is about to go live. Below the message is a rounded 'Cancel' button, allowing the user to stop the broadcast before it begins."
+                },
+                {
+                    "step": 5,
+                    "action": "Wait for 3 seconds to start broadcast.",
+                    "interface": "The screen shows the active NeighborNet Live+ broadcast in progress. In the top-left corner, a red 'LIVE' label is displayed next to the selected incident type and user’s location. In the top-right, a progress bar with the description: 'Finding related incidents within 0.25 miles...' is shown, followed by a status message: 'Stay Live – Hold your camera steady'. A recording duration appears in the bottom-right corner, along with an 'X' button inside a red circle that allows users to end the stream. Next to it is a live recording timer and a toolbar that provides access to live stream controls, including night mode, microphone, flash, and rotate camera. The rest of the screen displays the live video feed."
+                },
+                {
+                    "step": 6,
+                    "system_action": "Decide whether there are any reported incidents within 0.25 miles and the incidents have been active in the last 20 minutes.",
+                    "system_answer": "no"
+                },
+                {
+                    "step": 7,
+                    "endpoint": false,
+                    "interface": "A modal appears in the center of the screen with the message: 'Your Alert Was Not Published', indicating that the user's attempt to start a NeighborNet Live+ broadcast has failed. A prominent white button labeled 'Try Broadcasting Again' allows the user to reattempt the stream."
+                }
+            ]
+          },
+          {
+            "flow_id": "flow7",
+            "steps": [
+              {
+                "start": "Launch the NeighborNet on mobile phone",
+                "interface": "Home page (Map page) displays a location-based NeighborNet map, highlighting real-time community updates. A variety of icons are overlaid on a simplified neighborhood grid, each representing different report types such as auto collisions, police presence, missing pets, public health notices, neighbor disputes, or live video streams. The user's current location is marked with a blue dot. A header at the top labeled 'Updates' allows for filtering, with a search icon in the top-right corner. A bottom navigation bar provides access to five main sections: Map (active), News, Alert Community, Alerts, and You."
+              },
+              {
+                "step": 1,
+                "action": "Browse the News and find an incident nearby.",
+                "interface": "The incident details page shows video or photo preview at the top of the screen. Below it are location, distance, incident title, viewer metrics, and a map with an incident type icon. Below, a set of interactive buttons appears, allowing users to engage, including: emoji reaction, a 'SHARE' button, a big red 'RECORD' button in the middle, and a 'WARN FRIENDS' button at the right. Under those interactive buttons, there is a Summary section, a Timeline with timestamped updates section, and a Chat section for more user comments."
+              },
+              {
+                "step": 2,
+                "action": "Tap the 'RECORD' button to go live.",
+                "interface": "A pop-up titled 'WHOA!' appears with the message: 'You can only broadcast on incidents when you are within 0.25 miles and when the incident has been active in the last 20 minutes.' Below this message, a single large button is shown: 'OK, GOT IT!'"
+              },
+              {
+                "step": 3,
+                "action": "Tap the button 'OK, GOT IT!' to continue.",
+                "interface": "The screen displays the initial Go Live+ interface with a prominent red recording button centered on a black background. Above the button, a system permission prompt appears: 'NeighborNet Would Like to Access the Microphone' with detailed description: 'Allow microphone access to broadcast live, connect to Protect Agents or enable distress detection. See our Privacy Policy for more information.' Two options are presented: 'Don’t Allow' and 'Allow'. Below the red recording button, there is a horizontal toolbar that shows icons for optional live settings, including mute/unmute, microphone, flash, and rotate camera. A downward arrow in the top-right corner allows users to minimize or close the screen."
+              },
+              {
+                "step": 4,
+                "action": "Tap 'Allow'.",
+                "interface": "The screen displays the Go Live+ interface, prompting the user to grant camera access. A system pop-up appears in the center: 'NeighborNet Would Like to Access the Camera', with the description: 'Allow camera access to connect to our Agents or broadcast live. See our Privacy Policy for more information.' Two options are available: 'Don’t Allow' and 'Allow'. Below the prompt, a large red button labeled 'Start Alert' is centered on a black background, indicating the user’s entry point to begin streaming. A badge at the bottom shows user progress (e.g., 'Achieve Community Helper'), and a toolbar displays control icons (e.g., night mode, microphone, flash, and rotate camera). A downward arrow in the top-right corner lets users minimize or exit the screen."
+            },
+            {
+                "step": 5,
+                "action": "Tap 'Allow'.",
+                "interface": "The screen displays the main title 'Alert Your Neighbors' in the middle of the interface. Below it shows the user’s current location and daily platform activity (e.g., 'Near xxx location xxxx alerts created today'). Below users can select from predefined alert categories-'Police', 'Fire', 'EMS', 'Collision', 'Missing Pet', 'Local Event' or tap 'More' for additional options, each represented by labeled icon buttons. A large red circular button is centered at the bottom of the screen, allowing the user to initiate a live stream or alert. A toolbar at the very bottom provides access to live stream controls, including night mode, microphone, flash, and rotate camera. A downward-facing arrow in the top-right corner allows users to exit or collapse the screen."
+            },
+            {
+                "step": 6,
+                "action": "Select an incident type.",
+                "interface": "The screen shows a minimal black background indicating the start of a NeighborNet Live+ broadcast. At the center, a large countdown number is displayed: 3, 2, 1, followed by the message: 'Starting live broadcast…', signaling that the stream is about to go live. Below the message is a rounded 'Cancel' button, allowing the user to stop the broadcast before it begins."
+            },
+            {
+                "step": 7,
+                "action": "Wait for 3 seconds to start broadcast.",
+                "interface": "The screen shows the active NeighborNet Live+ broadcast in progress. In the top-left corner, a red 'LIVE' label is displayed next to the selected incident type and user’s location. In the top-right, a progress bar with the description: 'Finding related incidents within 0.25 miles...' is shown, followed by a status message: 'Stay Live – Hold your camera steady'. A recording duration appears in the bottom-right corner, along with an 'X' button inside a red circle that allows users to end the stream. Next to it is a live recording timer and a toolbar that provides access to live stream controls, including night mode, microphone, flash, and rotate camera. The rest of the screen displays the live video feed."
+            },
+            {
+                "step": 8,
+                "system_action": "Decide whether there are any reported incidents within 0.25 miles and the incidents have been active in the last 20 minutes.",
+                "system_answer": "yes"
+              },
+              {
+                "step": 9,
+                "endpoint": true,
+                "interface": "While staying on the live stream page, a comment bubble starts to appear on the top-right of the screen, and a floating bottom bar offers viewer status and reaction emojis."
+              }
+            ]
+          },
+          {
+            "flow_id": "flow8",
+            "steps": [
+                {
+                    "start": "Launch the NeighborNet on mobile phone",
+                    "interface": "Home page (Map page) displays a location-based NeighborNet map, highlighting real-time community updates. A variety of icons are overlaid on a simplified neighborhood grid, each representing different report types such as auto collisions, police presence, missing pets, public health notices, neighbor disputes, or live video streams. The user's current location is marked with a blue dot. A header at the top labeled 'Updates' allows for filtering, with a search icon in the top-right corner. A bottom navigation bar provides access to five main sections: Map (active), News, Alert Community, Alerts, and You."
+                },
+                {
+                    "step": 1,
+                    "action": "Browse the News and find an incident nearby.",
+                    "interface": "The incident details page shows video or photo preview at the top of the screen. Below it are location, distance, incident title, viewer metrics, and a map with an incident type icon. Below, a set of interactive buttons appears, allowing users to engage, including: emoji reaction, a 'SHARE' button, a big red 'RECORD' button in the middle, and a 'WARN FRIENDS' button at the right. Under those interactive buttons, there is a Summary section, a Timeline with timestamped updates section, and a Chat section for more user comments."
+                },
+                {
+                    "step": 2,
+                    "action": "Tap the 'RECORD' button to go live.",
+                    "interface": "A pop-up titled 'WHOA!' appears with the message: 'You can only broadcast on incidents when you are within 0.25 miles and when the incident has been active in the last 20 minutes.' Below this message, a single large button is shown: 'OK, GOT IT!'"
+                },
+                {
+                    "step": 3,
+                    "action": "Tap the button 'OK, GOT IT!' to continue.",
+                    "interface": "The screen displays the initial Go Live+ interface with a prominent red recording button centered on a black background. Above the button, a system permission prompt appears: 'NeighborNet Would Like to Access the Microphone' with detailed description: 'Allow microphone access to broadcast live, connect to Protect Agents or enable distress detection. See our Privacy Policy for more information.' Two options are presented: 'Don’t Allow' and 'Allow'. Below the red recording button, there is a horizontal toolbar that shows icons for optional live settings, including mute/unmute, microphone, flash, and rotate camera. A downward arrow in the top-right corner allows users to minimize or close the screen."
+                },
+                {
+                    "step": 4,
+                    "action": "Tap 'Allow'.",
+                    "interface": "The screen displays the Go Live+ interface, prompting the user to grant camera access. A system pop-up appears in the center: 'NeighborNet Would Like to Access the Camera', with the description: 'Allow camera access to connect to our Agents or broadcast live. See our Privacy Policy for more information.' Two options are available: 'Don’t Allow' and 'Allow'. Below the prompt, a large red button labeled 'Start Alert' is centered on a black background, indicating the user’s entry point to begin streaming. A badge at the bottom shows user progress (e.g., 'Achieve Community Helper'), and a toolbar displays control icons (e.g., night mode, microphone, flash, and rotate camera). A downward arrow in the top-right corner lets users minimize or exit the screen."
+                },
+                {
+                    "step": 5,
+                    "action": "Tap 'Allow'.",
+                    "interface": "The screen displays the main title 'Alert Your Neighbors' in the middle of the interface. Below it shows the user’s current location and daily platform activity (e.g., 'Near xxx location xxxx alerts created today'). Below users can select from predefined alert categories-'Police', 'Fire', 'EMS', 'Collision', 'Missing Pet', 'Local Event' or tap 'More' for additional options, each represented by labeled icon buttons. A large red circular button is centered at the bottom of the screen, allowing the user to initiate a live stream or alert. A toolbar at the very bottom provides access to live stream controls, including night mode, microphone, flash, and rotate camera. A downward-facing arrow in the top-right corner allows users to exit or collapse the screen."
+                },
+                {
+                    "step": 6,
+                    "action": "Select an incident type.",
+                    "interface": "The screen shows a minimal black background indicating the start of a NeighborNet Live+ broadcast. At the center, a large countdown number is displayed: 3, 2, 1, followed by the message: 'Starting live broadcast…', signaling that the stream is about to go live. Below the message is a rounded 'Cancel' button, allowing the user to stop the broadcast before it begins."
+                },
+                {
+                    "step": 7,
+                    "action": "Wait for 3 seconds to start broadcast.",
+                    "interface": "The screen shows the active NeighborNet Live+ broadcast in progress. In the top-left corner, a red 'LIVE' label is displayed next to the selected incident type and user’s location. In the top-right, a progress bar with the description: 'Finding related incidents within 0.25 miles...' is shown, followed by a status message: 'Stay Live – Hold your camera steady'. A recording duration appears in the bottom-right corner, along with an 'X' button inside a red circle that allows users to end the stream. Next to it is a live recording timer and a toolbar that provides access to live stream controls, including night mode, microphone, flash, and rotate camera. The rest of the screen displays the live video feed."
+                },
+                {
+                    "step": 8,
+                    "system_action": "Decide whether there are any reported incidents within 0.25 miles and the incidents have been active in the last 20 minutes.",
+                    "system_answer": "no"
+                },
+                {
+                    "step": 9,
+                    "endpoint": false,
+                    "interface": "A modal appears in the center of the screen with the message: 'Your Alert Was Not Published', indicating that the user's attempt to start a NeighborNet Live+ broadcast has failed. A prominent white button labeled 'Try Broadcasting Again' allows the user to reattempt the stream."
+                }
+            ]
+          },
+          {
+            "flow_id": "flow9",
+            "steps": [
+                {
+                    "start": "Receive an incident notification from NeighborNet",
+                    "interface": "A system push notification from the NeighborNet app appears on the mobile lock screen or notification banner. It includes the app name, NeighborNet, a timestamp ('just now'), and an urgent alert message in bold and uppercase, such as 'NEARBY!!! xxxxxxx....'"
+                },
+                {
+                    "step": 1,
+                    "action": "Click the notice to open this incident news on app",
+                    "interface": "The incident details page shows video or photo preview at the top of the screen. Below it are location, distance, incident title, viewer metrics, and a map with an incident type icon. Below, a set of interactive buttons appears, allowing users to engage, including: emoji reaction, a 'SHARE' button, a big red 'RECORD' button in the middle, and a 'WARN FRIENDS' button at the right. Under those interactive buttons, there is a Summary section, a Timeline with timestamped updates section, and a Chat section for more user comments."
+                },
+                {
+                    "step": 2,
+                    "action": "Tap the 'RECORD' button to go live.",
+                    "interface": "A pop-up titled 'WHOA!' appears with the message: 'You can only broadcast on incidents when you are within 0.25 miles and when the incident has been active in the last 20 minutes.' Below this message, a single large button is shown: 'OK, GOT IT!'"
+                },
+                {
+                    "step": 3,
+                    "action": "Tap the button 'OK, GOT IT!' to continue.",
+                    "interface": "The screen displays the initial Go Live+ interface with a prominent red recording button centered on a black background. Above the button, a system permission prompt appears: 'NeighborNet Would Like to Access the Microphone' with detailed description: 'Allow microphone access to broadcast live, connect to Protect Agents or enable distress detection. See our Privacy Policy for more information.' Two options are presented: 'Don’t Allow' and 'Allow'. Below the red recording button, there is a horizontal toolbar that shows icons for optional live settings, including mute/unmute, microphone, flash, and rotate camera. A downward arrow in the top-right corner allows users to minimize or close the screen."
+                },
+                {
+                    "step": 4,
+                    "action": "Tap 'Allow'.",
+                    "interface": "The screen displays the Go Live+ interface, prompting the user to grant camera access. A system pop-up appears in the center: 'NeighborNet Would Like to Access the Camera', with the description: 'Allow camera access to connect to our Agents or broadcast live. See our Privacy Policy for more information.' Two options are available: 'Don’t Allow' and 'Allow'. Below the prompt, a large red button labeled 'Start Alert' is centered on a black background, indicating the user’s entry point to begin streaming. A badge at the bottom shows user progress (e.g., 'Achieve Community Helper'), and a toolbar displays control icons (e.g., night mode, microphone, flash, and rotate camera). A downward arrow in the top-right corner lets users minimize or exit the screen."
+                },
+                {
+                    "step": 5,
+                    "action": "Tap 'Allow'.",
+                    "interface": "The screen displays the main title 'Alert Your Neighbors' in the middle of the interface. Below it shows the user’s current location and daily platform activity (e.g., 'Near xxx location xxxx alerts created today'). Below users can select from predefined alert categories-'Police', 'Fire', 'EMS', 'Collision', 'Missing Pet', 'Local Event' or tap 'More' for additional options, each represented by labeled icon buttons. A large red circular button is centered at the bottom of the screen, allowing the user to initiate a live stream or alert. A toolbar at the very bottom provides access to live stream controls, including night mode, microphone, flash, and rotate camera. A downward-facing arrow in the top-right corner allows users to exit or collapse the screen."
+                },
+                {
+                    "step": 6,
+                    "action": "Select an incident type.",
+                    "interface": "The screen shows a minimal black background indicating the start of a NeighborNet Live+ broadcast. At the center, a large countdown number is displayed: 3, 2, 1, followed by the message: 'Starting live broadcast…', signaling that the stream is about to go live. Below the message is a rounded 'Cancel' button, allowing the user to stop the broadcast before it begins."
+                },
+                {
+                    "step": 7,
+                    "action": "Wait for 3 seconds to start broadcast.",
+                    "interface": "The screen shows the active NeighborNet Live+ broadcast in progress. In the top-left corner, a red 'LIVE' label is displayed next to the selected incident type and user’s location. In the top-right, a progress bar with the description: 'Finding related incidents within 0.25 miles...' is shown, followed by a status message: 'Stay Live – Hold your camera steady'. A recording duration appears in the bottom-right corner, along with an 'X' button inside a red circle that allows users to end the stream. Next to it is a live recording timer and a toolbar that provides access to live stream controls, including night mode, microphone, flash, and rotate camera. The rest of the screen displays the live video feed."
+                },
+                {
+                    "step": 8,
+                    "system_action": "Decide whether there are any reported incidents within 0.25 miles and the incidents have been active in the last 20 minutes.",
+                    "system_answer": "yes"
+                },
+                {
+                    "step": 9,
+                    "endpoint": true,
+                    "interface": "While staying on the live stream page, a comment bubble starts to appear on the top-right of the screen, and a floating bottom bar offers viewer status and reaction emojis."
+                }
+            ]
+          },
+          {
+            "flow_id": "flow10",
+            "steps": [
+                {
+                    "start": "Receive an incident notification from NeighborNet",
+                    "interface": "A system push notification from the NeighborNet app appears on the mobile lock screen or notification banner. It includes the app name, NeighborNet, a timestamp ('just now'), and an urgent alert message in bold and uppercase, such as 'NEARBY!!! xxxxxxx....'"
+                },
+                {
+                    "step": 1,
+                    "action": "Click the notice to open this incident news on app",
+                    "interface": "The incident details page shows video or photo preview at the top of the screen. Below it are location, distance, incident title, viewer metrics, and a map with an incident type icon. Below, a set of interactive buttons appears, allowing users to engage, including: emoji reaction, a 'SHARE' button, a big red 'RECORD' button in the middle, and a 'WARN FRIENDS' button at the right. Under those interactive buttons, there is a Summary section, a Timeline with timestamped updates section, and a Chat section for more user comments."
+                },
+                {
+                    "step": 2,
+                    "action": "Tap the 'RECORD' button to go live.",
+                    "interface": "A pop-up titled 'WHOA!' appears with the message: 'You can only broadcast on incidents when you are within 0.25 miles and when the incident has been active in the last 20 minutes.' Below this message, a single large button is shown: 'OK, GOT IT!'"
+                },
+                {
+                    "step": 3,
+                    "action": "Tap the button 'OK, GOT IT!' to continue.",
+                    "interface": "The screen displays the initial Go Live+ interface with a prominent red recording button centered on a black background. Above the button, a system permission prompt appears: 'NeighborNet Would Like to Access the Microphone' with detailed description: 'Allow microphone access to broadcast live, connect to Protect Agents or enable distress detection. See our Privacy Policy for more information.' Two options are presented: 'Don’t Allow' and 'Allow'. Below the red recording button, there is a horizontal toolbar that shows icons for optional live settings, including mute/unmute, microphone, flash, and rotate camera. A downward arrow in the top-right corner allows users to minimize or close the screen."
+                },
+                {
+                    "step": 4,
+                    "action": "Tap 'Allow'.",
+                    "interface": "The screen displays the Go Live+ interface, prompting the user to grant camera access. A system pop-up appears in the center: 'NeighborNet Would Like to Access the Camera', with the description: 'Allow camera access to connect to our Agents or broadcast live. See our Privacy Policy for more information.' Two options are available: 'Don’t Allow' and 'Allow'. Below the prompt, a large red button labeled 'Start Alert' is centered on a black background, indicating the user’s entry point to begin streaming. A badge at the bottom shows user progress (e.g., 'Achieve Community Helper'), and a toolbar displays control icons (e.g., night mode, microphone, flash, and rotate camera). A downward arrow in the top-right corner lets users minimize or exit the screen."
+                },
+                {
+                    "step": 5,
+                    "action": "Tap 'Allow'.",
+                    "interface": "The screen displays the main title 'Alert Your Neighbors' in the middle of the interface. Below it shows the user’s current location and daily platform activity (e.g., 'Near xxx location xxxx alerts created today'). Below users can select from predefined alert categories-'Police', 'Fire', 'EMS', 'Collision', 'Missing Pet', 'Local Event' or tap 'More' for additional options, each represented by labeled icon buttons. A large red circular button is centered at the bottom of the screen, allowing the user to initiate a live stream or alert. A toolbar at the very bottom provides access to live stream controls, including night mode, microphone, flash, and rotate camera. A downward-facing arrow in the top-right corner allows users to exit or collapse the screen."
+                },
+                {
+                    "step": 6,
+                    "action": "Select an incident type.",
+                    "interface": "The screen shows a minimal black background indicating the start of a NeighborNet Live+ broadcast. At the center, a large countdown number is displayed: 3, 2, 1, followed by the message: 'Starting live broadcast…', signaling that the stream is about to go live. Below the message is a rounded 'Cancel' button, allowing the user to stop the broadcast before it begins."
+                },
+                {
+                    "step": 7,
+                    "action": "Wait for 3 seconds to start broadcast.",
+                    "interface": "The screen shows the active NeighborNet Live+ broadcast in progress. In the top-left corner, a red 'LIVE' label is displayed next to the selected incident type and user’s location. In the top-right, a progress bar with the description: 'Finding related incidents within 0.25 miles...' is shown, followed by a status message: 'Stay Live – Hold your camera steady'. A recording duration appears in the bottom-right corner, along with an 'X' button inside a red circle that allows users to end the stream. Next to it is a live recording timer and a toolbar that provides access to live stream controls, including night mode, microphone, flash, and rotate camera. The rest of the screen displays the live video feed."
+                },
+                {
+                    "step": 8,
+                    "system_action": "Decide whether there are any reported incidents within 0.25 miles and the incidents have been active in the last 20 minutes.",
+                    "system_answer": "no"
+                },
+                {
+                    "step": 9,
+                    "endpoint": false,
+                    "interface": "A modal appears in the center of the screen with the message: 'Your Alert Was Not Published', indicating that the user's attempt to start a NeighborNet Live+ broadcast has failed. A prominent white button labeled 'Try Broadcasting Again' allows the user to reattempt the stream."
+                }
+            ]
+          }
+    ]
+} 

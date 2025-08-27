@@ -30,12 +30,14 @@ interface Persona {
     costs_and_consequences: string[]
   }
   stories?: Array<{
+    persona_identity: string
     story: string
     information_leaked: string
     flow_in_app: Array<{
       function: number
       flow_id: string
-      step_causing_harm: string
+      step_causing_harm: string[]
+      design_problems: string[]
     }>
     leakage_source: string
     leak_to: string
@@ -55,10 +57,11 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('')
 
   useEffect(() => {
-    // Load personas from the JSON file using dynamic import
+    // Load personas from the JSON file based on selected app
     const loadPersonas = async () => {
       try {
-        const response = await fetch('/src/assets/app1_persona.json')
+        const fileName = selectedApp === 'APP1' ? 'app1_persona.json' : 'app2_persona.json'
+        const response = await fetch(`/src/assets/${fileName}`)
         const data = await response.json()
         setPersonas(data)
       } catch (error) {
@@ -129,7 +132,7 @@ function App() {
     }
     
     loadPersonas()
-  }, [])
+  }, [selectedApp])
 
   const handlePersonaSelect = (index: number) => {
     if (selectedPersonas.includes(index)) {
@@ -186,7 +189,7 @@ function App() {
   // If we're on the analysis page, show the PrivacyHarmAnalysis component
   if (currentPage === 'analysis') {
     const selectedPersonasData = selectedPersonas.map(i => personas[i])
-    return <PrivacyHarmAnalysis selectedPersonas={selectedPersonasData} onBack={handleBack} />
+          return <PrivacyHarmAnalysis selectedPersonas={selectedPersonasData} selectedApp={selectedApp} onBack={handleBack} />
   }
 
   // Otherwise, show the persona selection page
@@ -208,13 +211,13 @@ function App() {
           className={`app-button ${selectedApp === 'APP1' ? 'active' : ''}`}
           onClick={() => setSelectedApp('APP1')}
         >
-          APP1
+          WeMusic
         </button>
         <button 
           className={`app-button ${selectedApp === 'APP2' ? 'active' : ''}`}
           onClick={() => setSelectedApp('APP2')}
         >
-          APP2
+          NeighborNet
         </button>
       </div>
 

@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 // import reactLogo from './assets/react.svg'
 import personaImage from './assets/persona.png'
 import './PrivacyHarmAnalysis.css'
@@ -31,12 +31,14 @@ interface Persona {
     costs_and_consequences: string[]
   }
   stories?: Array<{
+    persona_identity: string
     story: string
     information_leaked: string
     flow_in_app: Array<{
       function: number
       flow_id: string
-      step_causing_harm: string
+      step_causing_harm: string[]
+      design_problems: string[]
     }>
     leakage_source: string
     leak_to: string
@@ -50,55 +52,54 @@ interface Persona {
 
 interface PrivacyHarmAnalysisProps {
   selectedPersonas: Persona[]
+  selectedApp: 'APP1' | 'APP2'
   onBack: () => void
 }
 
-function PrivacyHarmAnalysis({ selectedPersonas, onBack }: PrivacyHarmAnalysisProps) {
+function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyHarmAnalysisProps) {
   const [currentPersonaIndex, setCurrentPersonaIndex] = useState(0)
-  const [currentStoryIndex, setCurrentStoryIndex] = useState(0)
-  const [selectedHarmFilter, setSelectedHarmFilter] = useState<string>('all')
   const [hoveredSentence, setHoveredSentence] = useState<string>('')
+  const [selectedFlowIndex, setSelectedFlowIndex] = useState<number | null>(null)
+  const [imageZoom, setImageZoom] = useState(1)
+  const [imageLoadError, setImageLoadError] = useState<boolean>(false)
 
+  // Reset image error when persona changes
+  useEffect(() => {
+    setImageLoadError(false)
+    console.log(`Switched to persona: ${currentPersona.basic_info.name}, App: ${selectedApp}`)
+  }, [currentPersonaIndex, selectedApp])
   
   const currentPersona = selectedPersonas[currentPersonaIndex]
-  const currentStory = currentPersona.stories?.[currentStoryIndex]
+  const currentStory = currentPersona.stories?.[0]
 
-  // Get all unique harms across all stories for filtering
-  const allHarms = useMemo(() => {
-    const harms = new Set<string>()
-    selectedPersonas.forEach(persona => {
-      persona.stories?.forEach(story => {
-        story.harms.forEach(harm => {
-          harms.add(harm.harm)
-        })
-      })
-    })
-    return Array.from(harms)
-  }, [selectedPersonas])
 
-  // Filter stories based on selected harm
-  const filteredStories = useMemo(() => {
-    if (selectedHarmFilter === 'all') return currentPersona.stories || []
-    return currentPersona.stories?.filter(story => 
-      story.harms.some(harm => harm.harm === selectedHarmFilter)
-    ) || []
-  }, [currentPersona, selectedHarmFilter])
 
   const handleSwitchPersona = () => {
     setCurrentPersonaIndex((prevIndex) => (prevIndex + 1) % selectedPersonas.length)
-    setCurrentStoryIndex(0) // Reset to first story when switching personas
-  }
-
-  const handleSwitchStory = () => {
-    if (filteredStories.length > 0) {
-      setCurrentStoryIndex((prevIndex) => (prevIndex + 1) % filteredStories.length)
-    }
   }
 
   const getPersonaDescription = (persona: Persona) => {
     const vulnerability = persona.contextual_info.vulnerability_type_brief_description.split(' - ')[1] || 
                         persona.contextual_info.vulnerability_type_brief_description
     return vulnerability
+  }
+
+  const getPersonaImage = (personaName: string) => {
+    // Get the persona-specific image based on the selected app
+    const appFolder = selectedApp === 'APP1' ? 'app1_persona' : 'app2_persona'
+    const imagePath = `/src/assets/${appFolder}/${personaName}.png`
+    console.log(`Constructing image path: ${imagePath} for persona: ${personaName} in app: ${selectedApp}`)
+    return imagePath
+  }
+
+  const handleImageError = () => {
+    console.log(`Failed to load image for ${currentPersona.basic_info.name} from ${selectedApp}`)
+    setImageLoadError(true)
+  }
+
+  const handleImageLoad = () => {
+    console.log(`Successfully loaded image for ${currentPersona.basic_info.name} from ${selectedApp}`)
+    setImageLoadError(false)
   }
 
   // Split story into sentences for hover functionality
@@ -111,25 +112,44 @@ function PrivacyHarmAnalysis({ selectedPersonas, onBack }: PrivacyHarmAnalysisPr
         <div className="pha-persona-profile">
           <div className="pha-avatar">
             {(() => {
-              const personaImageUrl = personaImage
+              const personaImageUrl = getPersonaImage(currentPersona.basic_info.name)
+              const isDefaultImage = imageLoadError
+              
+              console.log(`Rendering avatar for ${currentPersona.basic_info.name}:`, {
+                imageUrl: personaImageUrl,
+                isDefaultImage,
+                selectedApp,
+                imageLoadError
+              })
+              
               return (
-                <div
-                  className={`pha-avatar-circle ${personaImageUrl ? 'has-image' : 'placeholder'}`}
-                  style={personaImageUrl ? { backgroundImage: `url(${personaImageUrl})` } : undefined}
-                >
-                  {!personaImageUrl && currentPersona.basic_info.name.charAt(0)}
+                <div className={`pha-avatar-circle ${!isDefaultImage ? 'has-image' : 'placeholder'}`}>
+                  {!isDefaultImage ? (
+                    <img
+                      src={personaImageUrl}
+                      alt={`${currentPersona.basic_info.name} persona`}
+                      className="pha-persona-image"
+                      onError={handleImageError}
+                      onLoad={handleImageLoad}
+                    />
+                  ) : (
+                    currentPersona.basic_info.name.charAt(0)
+                  )}
                 </div>
               )
             })()}
           </div>
-          <div className="pha-persona-details">
-            <div className="pha-name-age">
-              <span className="pha-name">{currentPersona.basic_info.name}</span>
-              <span className="pha-age">({currentPersona.basic_info.age} years old)</span>
-            </div>
-            <div className="pha-vulnerability">
-              Persona type: {getPersonaDescription(currentPersona)}
-            </div>
+                           <div className="pha-persona-details">
+                   <div className="pha-name-age">
+                     <span className="pha-name">{currentPersona.basic_info.name}</span>
+                     <span className="pha-age">({currentPersona.basic_info.age} years old)</span>
+                   </div>
+                   <div className="pha-persona-identity">
+                     {currentPersona.stories?.[0]?.persona_identity}
+                   </div>
+                   <div className="pha-vulnerability">
+                     Persona type: {getPersonaDescription(currentPersona)}
+                   </div>
             <div className="pha-meta-and-cared">
               <div className="pha-meta-vertical">
                 <div className="pha-meta-item">
@@ -271,18 +291,6 @@ function PrivacyHarmAnalysis({ selectedPersonas, onBack }: PrivacyHarmAnalysisPr
           <div className="pha-story-block">
             <div className="pha-block-header">
               <div className="pha-block-title">Story Description & Harm Analysis</div>
-              <div className="pha-story-controls">
-                <span className="pha-story-counter">
-                  Story {currentStoryIndex + 1} of {filteredStories.length}
-                </span>
-                <button 
-                  className={`pha-story-switch-btn ${filteredStories.length <= 1 ? 'disabled' : ''}`}
-                  onClick={handleSwitchStory}
-                  disabled={filteredStories.length <= 1}
-                >
-                  Switch Story
-                </button>
-              </div>
             </div>
             <div className="pha-story-content">
               <div className="pha-story-text">
@@ -345,14 +353,38 @@ function PrivacyHarmAnalysis({ selectedPersonas, onBack }: PrivacyHarmAnalysisPr
               </div>
             </div>
           </div>
+          
+          {/* Design Problems Form - Under Story Description */}
+          <div className="pha-form-section pha-form-left">
+            <div className="pha-form-container">
+              <div className="pha-form-header">
+                <h3>Design Problems Identification</h3>
+                {/* <p>What specific design problems do you see in this step? Please describe them briefly.</p> */}
+              </div>
+              <div className="pha-form-content">
+                <iframe
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSfA8OV1mFHyzodtisJsyBzUjtHBwzFzGSeetnp2WQreYwM3OQ/viewform?usp=dialog"
+                  width="100%"
+                  height="500"
+                  frameBorder="0"
+                  marginHeight="0"
+                  marginWidth="0"
+                  title="Design Problems Form"
+                  className="pha-embedded-form"
+                >
+                  Loading
+                </iframe>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Right Section - Lo-fi Prototype */}
         <div className="pha-right-section">
           <div className="pha-prototype-container">
-            <div className="pha-prototype-title">Lo-fi Prototype</div>
+            <div className="pha-prototype-title">Persona Usage Flow</div>
             <div className="pha-prototype-content">
-              {/* Function Flow Display */}
+              {/* Function Flow Display with Lo-fi Prototypes */}
               <div className="pha-function-flow">
                 <div className="pha-function-title">Story Flow:</div>
                 <div className="pha-function-list">
@@ -376,12 +408,43 @@ function PrivacyHarmAnalysis({ selectedPersonas, onBack }: PrivacyHarmAnalysisPr
                     }
                     return (
                       <div key={index} className="pha-function-item">
-                        <span className="pha-function-number">{flow.function}</span>
-                        <span className="pha-function-text">{functionText}</span>
+                        <div className="pha-function-header">
+                          <span className="pha-function-number">{flow.function}</span>
+                          <span className="pha-function-text">{functionText}</span>
+                        </div>
                         {/* <div className="pha-flow-details">
                           <span className="pha-flow-id">{flow.flow_id}</span>
-                          <span className="pha-step-harm">{flow.step_causing_harm}</span>
+                          <div className="pha-step-harm-list">
+                            {flow.step_causing_harm.map((step, stepIndex) => (
+                              <span key={stepIndex} className="pha-step-harm">
+                                {step}
+                              </span>
+                            ))}
+                          </div>
                         </div> */}
+                        
+                        {/* Lo-fi Prototype for this flow */}
+                        <div className="pha-lofi-flow-item">
+                          {/* <div className="pha-lofi-flow-title">
+                            Lo-fi Prototype
+                          </div> */}
+                          <div className="pha-lofi-flow-content">
+                            <div 
+                              className="pha-lofi-small-version"
+                              onClick={() => {
+                                setSelectedFlowIndex(index)
+                                setImageZoom(1)
+                              }}
+                            >
+                              <img 
+                                src="/src/assets/lofi_collections/example_small.png" 
+                                alt={`Flow ${flow.function} small version`}
+                                className="pha-lofi-small-image"
+                              />
+                              <div className="pha-lofi-click-hint">Click to view full flow</div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     )
                   })}
@@ -394,22 +457,87 @@ function PrivacyHarmAnalysis({ selectedPersonas, onBack }: PrivacyHarmAnalysisPr
                   <h4>Related Information:</h4>
                   <p>Sentence: "{hoveredSentence}"</p>
                   <p>This space will show the lo-fi prototype related to the hovered content.</p>
-                  <div className="pha-prototype-placeholder">
-                    <div className="pha-placeholder-item">1</div>
-                    <div className="pha-placeholder-item">2</div>
-                    <div className="pha-placeholder-item">3</div>
-                  </div>
                 </div>
-              ) : (
-                <div className="pha-prototype-placeholder">
-                  <div className="pha-placeholder-item">1</div>
-                  <div className="pha-placeholder-item">2</div>
-                  <div className="pha-placeholder-item">3</div>
-                </div>
-              )}
+              ) : null}
+            </div>
+          </div>
+          
+          {/* Design Suggestions Form - Under Persona Usage Flow */}
+          <div className="pha-form-section pha-form-right">
+            <div className="pha-form-container">
+              <div className="pha-form-header">
+                <h3>Design Suggestions</h3>
+                {/* <p>What alternative design idea would you suggest to address this problem? Please describe how it would improve the user's experience or reduce harm.</p> */}
+              </div>
+              <div className="pha-form-content">
+                <iframe
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSdmHl-2J6r7993cMZPHLT-7NWXiX6VUIkekKBFtZYJGbTUlsw/viewform?usp=dialog"
+                  width="100%"
+                  height="500"
+                  frameBorder="0"
+                  marginHeight="0"
+                  marginWidth="0"
+                  title="Design Suggestions Form"
+                  className="pha-embedded-form"
+                >
+                  Loading
+                </iframe>
+              </div>
             </div>
           </div>
         </div>
+
+        {/* Flow Modal - Big Version */}
+        {selectedFlowIndex !== null && (
+          <div className="pha-flow-modal-overlay" onClick={() => setSelectedFlowIndex(null)}>
+            <div className="pha-flow-modal" onClick={(e) => e.stopPropagation()}>
+              <div className="pha-flow-modal-header">
+                <h3>Flow {currentStory?.flow_in_app[selectedFlowIndex]?.function}: {
+                  (() => {
+                    const flow = currentStory?.flow_in_app[selectedFlowIndex]
+                    if (!flow) return ''
+                    switch (flow.function) {
+                      case 1:
+                        return 'Viewing Friend Activity on the music app'
+                      case 2:
+                        return 'Adding friends to the Friend Activity Feed via Facebook connection'
+                      case 3:
+                        return 'Enjoying private listening via Private Session'
+                      case 4:
+                        return 'Removing friends from the Friend Activity Feed'
+                      default:
+                        return `Function ${flow.function}`
+                    }
+                  })()
+                }</h3>
+                <button 
+                  className="pha-flow-modal-close"
+                  onClick={() => setSelectedFlowIndex(null)}
+                >
+                  ×
+                </button>
+              </div>
+              <div className="pha-flow-modal-content">
+                <div 
+                  className="pha-image-container"
+                  onWheel={(e) => {
+                    e.preventDefault()
+                    const delta = e.deltaY > 0 ? -0.1 : 0.1
+                    setImageZoom(prev => Math.max(0.5, Math.min(3, prev + delta)))
+                  }}
+                >
+                  <img 
+                    src="/src/assets/lofi_collections/example_big.png" 
+                    alt={`Flow ${currentStory?.flow_in_app[selectedFlowIndex]?.function} big version`}
+                    className="pha-lofi-big-image"
+                    style={{ transform: `scale(${imageZoom})` }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
       </div>
     </div>
   )
