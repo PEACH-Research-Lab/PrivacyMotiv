@@ -1,6 +1,6 @@
-import { useState, useMemo, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 // import reactLogo from './assets/react.svg'
-import personaImage from './assets/persona.png'
+// import personaImage from './assets/persona.png'
 import './PrivacyHarmAnalysis.css'
 
 interface Persona {
@@ -366,9 +366,6 @@ function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyH
                   src="https://docs.google.com/forms/d/e/1FAIpQLSfA8OV1mFHyzodtisJsyBzUjtHBwzFzGSeetnp2WQreYwM3OQ/viewform?usp=dialog"
                   width="100%"
                   height="500"
-                  frameBorder="0"
-                  marginHeight="0"
-                  marginWidth="0"
                   title="Design Problems Form"
                   className="pha-embedded-form"
                 >
@@ -474,9 +471,6 @@ function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyH
                   src="https://docs.google.com/forms/d/e/1FAIpQLSdmHl-2J6r7993cMZPHLT-7NWXiX6VUIkekKBFtZYJGbTUlsw/viewform?usp=dialog"
                   width="100%"
                   height="500"
-                  frameBorder="0"
-                  marginHeight="0"
-                  marginWidth="0"
                   title="Design Suggestions Form"
                   className="pha-embedded-form"
                 >
