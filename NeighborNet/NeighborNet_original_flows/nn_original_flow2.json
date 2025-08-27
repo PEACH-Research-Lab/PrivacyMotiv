@@ -1,0 +1,419 @@
+{
+"user_flow_title": "Commenting and Reacting on NN Live+",
+  "flows": [
+    {
+      "flow_id": "flow1",
+      "steps": [
+        {
+          "start": "After finding an interesting NeighborNet Live+ feed on the app",
+          "interface": "Live stream details page shows a video with a red 'LIVE' label, location and distance (e.g., '14.8 mi · 48th Drexel Blvd'), title ('Red SUV Wedged Between Pole, Tree After Crash'), viewer stats ('98.4K notified; 15.4K views'), and a map with a crash icon. Below are the Summary, Timeline, and Chat sections."
+        },
+        {
+          "step": 1,
+          "action": "Scroll down to explore more details about this Live+ feed.",
+          "interface": "Summary gives more info (e.g., 'The red SUV is wedged between a pole and tree'). Timeline shows timestamped updates (e.g., '06:08, ambulance dispatched for a man with ear injury'; '05:33, Police notified city services about the unstable pole'). Video stays pinned at the top, emoji reaction bar with counts (e.g., 149 reactions) floats on the right, and Chat input bar remains at the bottom."
+        },
+        {
+          "step": 2,
+          "action": "Tap the chat input bar.",
+          "interface": "The comment page appears, showing a vertical list of user comments in chronological order. Each comment includes a user profile icon, username (e.g., 'Irenemer'), timestamp (e.g., '07:29'), comment text (e.g., 'Keep that camera steady'), and buttons to like, dislike, or reply. Usernames can be custom (e.g., 'mamacaf') or anonymous (e.g., 'ChicagoUser936184012'). Input field at the bottom says 'Leave a public comment...' with a blue arrow to send. The page title stays at the top, with a back arrow to return to the main post."
+        },
+        {
+          "step": 3,
+          "action": "Like a comment (e.g., Irenemer's) and type your own.",
+          "interface": "A 'Community Guidelines' pop-up appears with three rules: '1. Be kind' (no harassment or hate), '2. Be respectful' (no personal info), '3. Be helpful' (no spam or ads). Link to 'Read more →' and an 'X' to close. Background is dimmed."
+        },
+        {
+          "step": 4,
+          "action": "Close the pop-up and submit your comment (e.g., 'Hope everybody is OK! Could you please keep the camera steady and go closer to the car?')",
+          "system_action": "The system checks your comment and finds it follows the Community Guidelines."
+        },
+        {
+          "step": 5,
+          "system_action": "Your comment is posted and shown in the feed. It also appears on the reporter's screen.",
+          "interface": "The comment section scrolls to your comment. Video keeps playing at the top."
+        },
+        {
+          "step": 6,
+          "action": "Tap on the video to continue watching.",
+          "endpoint": true,
+          "interface": "Live stream continues. Reporter says, 'OK, I see many viewers request, I’ll come a bit closer to the scene now and you can see....'",
+          "true_reasoning": "Your comment appears in the feed and the host responds, confirming successful engagement through comments."
+        }
+      ]
+    },
+    {
+      "flow_id": "flow2",
+      "steps": [
+        {
+          "start": "After finding an interesting NeighborNet Live+ feed on the app",
+          "interface": "Live stream details page shows a video with a red 'LIVE' label, location and distance (e.g., '14.8 mi · 48th Drexel Blvd'), title ('Red SUV Wedged Between Pole, Tree After Crash'), viewer stats ('98.4K notified; 15.4K views'), and a map with a crash icon. Below are the Summary, Timeline, and Chat sections."
+        },
+        {
+          "step": 1,
+          "action": "Scroll down to explore more details about this Live+ feed.",
+          "interface": "Summary gives more info (e.g., 'The red SUV is wedged between a pole and tree'). Timeline shows timestamped updates (e.g., '06:08, ambulance dispatched for a man with ear injury'; '05:33, Police notified city services about the unstable pole'). Video stays pinned at the top, emoji reaction bar with counts (e.g., 149 reactions) floats on the right, and Chat input bar remains at the bottom."
+        },
+        {
+          "step": 2,
+          "action": "Tap the chat input bar.",
+          "interface": "The comment page appears, showing a vertical list of user comments in chronological order. Each comment includes a user profile icon, username (e.g., 'Irenemer'), timestamp (e.g., '07:29'), comment text (e.g., 'Keep that camera steady'), and buttons to like, dislike, or reply. Usernames can be custom or anonymous. Input field at the bottom says 'Leave a public comment...' with a blue arrow to send."
+        },
+        {
+          "step": 3,
+          "action": "Like a comment and type your own.",
+          "interface": "A 'Community Guidelines' pop-up appears with three rules: '1. Be kind', '2. Be respectful', '3. Be helpful'. Link to 'Read more →' and an 'X' to close. Background is dimmed."
+        },
+        {
+          "step": 4,
+          "action": "Close the pop-up and submit your comment (e.g., 'Coward! Go closer to the car!')",
+          "system_action": "The system checks your comment and finds it violates the Community Guidelines."
+        },
+        {
+          "step": 5,
+          "system_action": "Your comment is removed and not posted. Input field clears.",
+          "interface": "The comment page remains open, but your comment does not appear."
+        },
+        {
+          "step": 6,
+          "action": "Close the keyboard and browse the comments.",
+          "endpoint": false,
+          "interface": "Your comment is not listed in the feed.",
+          "false_reasoning": "No system response or host interaction confirms the comment was rejected."
+        }
+      ]
+    },
+    {
+      "flow_id": "flow3",
+      "steps": [
+        {
+          "start": "After finding an interesting NeighborNet Live+ feed on the app",
+          "interface": "Live stream details page shows a video with a red 'LIVE' label, location and distance (e.g., '14.8 mi · 48th Drexel Blvd'), title ('Red SUV Wedged Between Pole, Tree After Crash'), viewer stats ('98.4K notified; 15.4K views'), and a map with a crash icon. Below are the Summary, Timeline, and Chat sections."
+        },
+        {
+          "step": 1,
+          "action": "Scroll down to explore more details about this Live+ feed.",
+          "interface": "Summary gives more info (e.g., 'The red SUV is wedged between a pole and tree'). Timeline shows timestamped updates (e.g., '06:08, ambulance dispatched for a man with ear injury'; '05:33, Police notified city services about the unstable pole'). Video stays pinned at the top, emoji reaction bar with counts (e.g., 149 reactions) floats on the right, and Chat input bar remains at the bottom."
+        },
+        {
+          "step": 2,
+          "action": "Tap the video preview.",
+          "interface": "Full-screen video in horizontal view with red 'LIVE' label, location, title, reporter name (e.g., 'maniiarii'), viewer stats. On-screen: comment bubble with featured comments (e.g., 'Irenemer' comments 'Keep that camera steady'), emoji stats, share and exit buttons."
+        },
+        {
+          "step": 3,
+          "action": "Tap the comment bubble.",
+          "interface": "A semi-transparent chat panel opens on the right side titled 'Chat'. It shows real-time comments with user icons, names (e.g., 'Irenemer'), and messages (e.g., 'Keep that camera steady'). Usernames may be custom (e.g., 'mamacaf') or anonymous (e.g., 'ChicagoUser936184012'). Comments include reactions, jokes, and local references (e.g., 'Well I know he saw dat tree!! But then again, maybe not!!! 🤔'). Below is an input field labeled 'Chat with your community...' with '@' and send icons. An 'X' button at the top-right closes the chat."
+        },
+        {
+          "step": 4,
+          "action": "Tap input box to type your comment.",
+          "interface": "The screen scrolls to the bottom of the chat. A message from 'NeighborNet' appears: 'Please be respectful when commenting. Read our guidelines.' The text 'Read our guidelines' is a clickable link."
+        },
+        {
+          "step": 5,
+          "action": "Type and submit your comment (e.g., 'Hope everybody is OK! Could you please keep the camera steady and go closer to the car?')",
+          "system_action": "The system checks your comment and finds it follows the Community Guidelines."
+        },
+        {
+          "step": 6,
+          "system_action": "Your comment is posted and shown in chat. It also appears on the reporter's screen.",
+          "interface": "Your comment appears at the bottom of chat."
+        },
+        {
+          "step": 7,
+          "action": "Return to the video to continue watching.",
+          "endpoint": true,
+          "interface": "Live stream continues. Reporter says, 'OK, I see many viewers request, I’ll come a bit closer to the scene now and you can see....'",
+          "true_reasoning": "Your comment appears in chat and the host responds, confirming successful engagement."
+        }
+      ]
+    },
+    {
+      "flow_id": "flow4",
+      "steps": [
+        {
+          "start": "After finding an interesting NeighborNet Live+ feed on the app",
+          "interface": "Live stream details page shows a video with a red 'LIVE' label, location and distance (e.g., '14.8 mi · 48th Drexel Blvd'), title ('Red SUV Wedged Between Pole, Tree After Crash'), viewer stats ('98.4K notified; 15.4K views'), and a map with a crash icon. Below are the Summary, Timeline, and Chat sections."
+        },
+        {
+          "step": 1,
+          "action": "Scroll down to explore more details about this Live+ feed.",
+          "interface": "Summary gives more info (e.g., 'The red SUV is wedged between a pole and tree'). Timeline shows timestamped updates (e.g., '06:08, ambulance dispatched for a man with ear injury'; '05:33, Police notified city services about the unstable pole'). Video stays pinned at the top, emoji reaction bar with counts (e.g., 149 reactions) floats on the right, and Chat input bar remains at the bottom."
+        },
+        {
+          "step": 2,
+          "action": "Tap the video preview.",
+          "interface": "Full-screen video in horizontal view with red 'LIVE' label, location, title, reporter name (e.g., 'maniiarii'), viewer stats. On-screen: comment bubble with featured comments (e.g., 'Irenemer' comments 'Keep that camera steady'), emoji stats, share and exit buttons."
+        },
+        {
+          "step": 3,
+          "action": "Tap the comment bubble.",
+          "interface": "A semi-transparent chat panel opens on the right side titled 'Chat'. It shows real-time comments with user icons, names (e.g., 'Irenemer'), and messages (e.g., 'Keep that camera steady'). Usernames may be custom (e.g., 'mamacaf') or anonymous (e.g., 'ChicagoUser936184012'). Comments include reactions, jokes, and local references (e.g., 'Well I know he saw dat tree!! But then again, maybe not!!! 🤔'). Below is an input field labeled 'Chat with your community...' with '@' and send icons. An 'X' button at the top-right closes the chat."
+        },
+        {
+          "step": 4,
+          "action": "Tap input box to type your comment.",
+          "interface": "The screen scrolls to the bottom of the chat. A message from 'NeighborNet' appears: 'Please be respectful when commenting. Read our guidelines.' The text 'Read our guidelines' is a clickable link."
+        },
+        {
+          "step": 5,
+          "action": "Type and submit your comment (e.g., 'Coward! Go closer to the car!')",
+          "system_action": "The system checks your comment and finds it violates the Community Guidelines."
+        },
+        {
+          "step": 6,
+          "system_action": "Your comment is removed and not posted. Input field clears.",
+          "interface": "Chat remains open but your comment does not appear."
+        },
+        {
+          "step": 6,
+          "action": "Close the keyboard and the chat feed.",
+          "endpoint": false,
+          "interface": "Your comment is not listed in the feed.",
+          "false_reasoning": "Your comment did not post and no host or user response occurred, indicating failed engagement."
+        }
+      ]
+    },
+    {
+      "flow_id": "flow5",
+      "steps": [
+        {
+          "start": "After finding an interesting NeighborNet Live+ feed on the app",
+          "interface": "Live stream details page shows a video with a red 'LIVE' label, location and distance (e.g., '14.8 mi · 48th Drexel Blvd'), title ('Red SUV Wedged Between Pole, Tree After Crash'), viewer stats ('98.4K notified; 15.4K views'), and a map with a crash icon. Below are the Summary, Timeline, and Chat sections."
+        },
+        {
+          "step": 1,
+          "action": "Scroll down to explore more details about this Live+ feed.",
+          "interface": "Summary gives more info (e.g., 'The red SUV is wedged between a pole and tree'). Timeline shows timestamped updates (e.g., '06:08, ambulance dispatched for a man with ear injury'; '05:33, Police notified city services about the unstable pole'). Video stays pinned at the top, emoji reaction bar with counts (e.g., 149 reactions) floats on the right, and Chat input bar remains at the bottom."
+        },
+        {
+          "step": 2,
+          "action": "Tap the emoji reaction icon.",
+          "interface": "A floating reaction bar appears with four emojis and their counts (e.g., sad face '26', heart '8', prayer hands '152', angry face '104')."
+        },
+        {
+          "step": 3,
+          "action": "Click an emoji to react.",
+          "interface": "The selected emoji animates upward toward the video and disappears. The count under the emoji increases by 1, confirming the reaction was sent."
+        },
+        {
+          "step": 4,
+          "action": "Tap the chat input bar.",
+          "interface": "The comment page appears, showing a vertical list of user comments in chronological order. Each comment includes a user profile icon, username (e.g., 'Irenemer'), timestamp (e.g., '07:29'), comment text (e.g., 'Keep that camera steady'), and buttons to like, dislike, or reply. Usernames can be custom (e.g., 'mamacaf') or anonymous (e.g., 'ChicagoUser936184012'). Input field at the bottom says 'Leave a public comment...' with a blue arrow to send. The page title stays at the top, with a back arrow to return to the main post."
+        },
+        {
+          "step": 5,
+          "action": "Like a comment (e.g., Irenemer's) and type your own.",
+          "interface": "A 'Community Guidelines' pop-up appears with three rules: '1. Be kind' (no harassment or hate), '2. Be respectful' (no personal info), '3. Be helpful' (no spam or ads). Link to 'Read more →' and an 'X' to close. Background is dimmed."
+        },
+        {
+          "step": 6,
+          "action": "Close the pop-up and submit your comment (e.g., 'Hope everybody is OK! Could you please keep the camera steady and go closer to the car?')",
+          "system_action": "The system checks your comment and finds it follows the Community Guidelines."
+        },
+        {
+          "step": 7,
+          "system_action": "Your comment is posted and shown in the feed. It also appears on the reporter's screen.",
+          "interface": "The comment section scrolls to your comment. Video keeps playing at the top."
+        },
+        {
+          "step": 8,
+          "action": "Tap on the video to continue watching.",
+          "endpoint": true,
+          "interface": "Live stream continues. Reporter says, 'OK, I see many viewers request, I’ll come a bit closer to the scene now and you can see....'",
+          "true_reasoning": "Your comment appears in the feed and the host responds, confirming successful engagement through comments."
+        }
+      ]
+    },
+    {
+      "flow_id": "flow6",
+      "steps": [
+        {
+          "start": "After finding an interesting NeighborNet Live+ feed on the app",
+          "interface": "Live stream details page shows a video with a red 'LIVE' label, location and distance (e.g., '14.8 mi · 48th Drexel Blvd'), title ('Red SUV Wedged Between Pole, Tree After Crash'), viewer stats ('98.4K notified; 15.4K views'), and a map with a crash icon. Below are the Summary, Timeline, and Chat sections."
+        },
+        {
+          "step": 1,
+          "action": "Scroll down to explore more details about this Live+ feed.",
+          "interface": "Summary gives more info (e.g., 'The red SUV is wedged between a pole and tree'). Timeline shows timestamped updates (e.g., '06:08, ambulance dispatched for a man with ear injury'; '05:33, Police notified city services about the unstable pole'). Video stays pinned at the top, emoji reaction bar with counts (e.g., 149 reactions) floats on the right, and Chat input bar remains at the bottom."
+        },
+        {
+          "step": 2,
+          "action": "Tap the emoji reaction icon.",
+          "interface": "A floating reaction bar appears with four emojis and their counts (e.g., sad face '26', heart '8', prayer hands '152', angry face '104')."
+        },
+        {
+          "step": 3,
+          "action": "Click an emoji to react.",
+          "interface": "The selected emoji animates upward toward the video and disappears. The count under the emoji increases by 1, confirming the reaction was sent."
+        },
+        {
+          "step": 4,
+          "action": "Tap the chat input bar.",
+          "interface": "The comment page appears, showing a vertical list of user comments in chronological order. Each comment includes a user profile icon, username (e.g., 'Irenemer'), timestamp (e.g., '07:29'), comment text (e.g., 'Keep that camera steady'), and buttons to like, dislike, or reply. Usernames can be custom (e.g., 'mamacaf') or anonymous (e.g., 'ChicagoUser936184012'). Input field at the bottom says 'Leave a public comment...' with a blue arrow to send. The page title stays at the top, with a back arrow to return to the main post."
+        },
+        {
+          "step": 5,
+          "action": "Like a comment (e.g., Irenemer's) and type your own.",
+          "interface": "A 'Community Guidelines' pop-up appears with three rules: '1. Be kind' (no harassment or hate), '2. Be respectful' (no personal info), '3. Be helpful' (no spam or ads). Link to 'Read more →' and an 'X' to close. Background is dimmed."
+        },
+        {
+          "step": 6,
+          "action": "Close the pop-up and submit your comment (e.g., 'Coward! Go closer to the car!')",
+          "system_action": "The system checks your comment and finds it violates the Community Guidelines."
+        },
+        {
+          "step": 7,
+          "system_action": "Your comment is removed and not posted. Input field clears.",
+          "interface": "The comment page remains open, but your comment does not appear."
+        },
+        {
+          "step": 8,
+          "action": "Close the keyboard and browse the comments.",
+          "endpoint": false,
+          "interface": "Your comment is not listed in the feed.",
+          "false_reasoning": "No system response or host interaction confirms the comment was rejected."
+        }
+      ]
+    },
+    {
+      "flow_id": "flow7",
+      "steps": [
+        {
+          "start": "After finding an interesting NeighborNet Live+ feed on the app",
+          "interface": "Live stream details page shows a video with a red 'LIVE' label, location and distance (e.g., '14.8 mi · 48th Drexel Blvd'), title ('Red SUV Wedged Between Pole, Tree After Crash'), viewer stats ('98.4K notified; 15.4K views'), and a map with a crash icon. Below are the Summary, Timeline, and Chat sections."
+        },
+        {
+          "step": 1,
+          "action": "Scroll down to explore more details about this Live+ feed.",
+          "interface": "Summary gives more info (e.g., 'The red SUV is wedged between a pole and tree'). Timeline shows timestamped updates (e.g., '06:08, ambulance dispatched for a man with ear injury'; '05:33, Police notified city services about the unstable pole'). Video stays pinned at the top, emoji reaction bar with counts (e.g., 149 reactions) floats on the right, and Chat input bar remains at the bottom."
+        },
+        {
+          "step": 2,
+          "action": "Tap the emoji reaction icon.",
+          "interface": "A floating reaction bar appears with four emojis and their counts (e.g., sad face '26', heart '8', prayer hands '152', angry face '104')."
+        },
+        {
+          "step": 3,
+          "action": "Click an emoji to react.",
+          "interface": "The selected emoji animates upward toward the video and disappears. The count under the emoji increases by 1, confirming the reaction was sent."
+        },
+        {
+          "step": 4,
+          "action": "Tap the video preview.",
+          "interface": "Full-screen video in horizontal view with red 'LIVE' label, location, title, reporter name (e.g., 'maniiarii'), viewer stats. On-screen: comment bubble with featured comments (e.g., 'Irenemer' comments 'Keep that camera steady'), emoji stats, share and exit buttons."
+        },
+        {
+          "step": 5,
+          "action": "Tap the comment bubble.",
+          "interface": "A semi-transparent chat panel opens on the right side titled 'Chat'. It shows real-time comments with user icons, names (e.g., 'Irenemer'), and messages (e.g., 'Keep that camera steady'). Usernames may be custom (e.g., 'mamacaf') or anonymous (e.g., 'ChicagoUser936184012'). Comments include reactions, jokes, and local references (e.g., 'Well I know he saw dat tree!! But then again, maybe not!!! 🤔'). Below is an input field labeled 'Chat with your community...' with '@' and send icons. An 'X' button at the top-right closes the chat."
+        },
+        {
+          "step": 6,
+          "action": "Tap input box to type your comment.",
+          "interface": "The screen scrolls to the bottom of the chat. A message from 'NeighborNet' appears: 'Please be respectful when commenting. Read our guidelines.' The text 'Read our guidelines' is a clickable link."
+        },
+        {
+          "step": 7,
+          "action": "Type and submit your comment (e.g., 'Hope everybody is OK! Could you please keep the camera steady and go closer to the car?')",
+          "system_action": "The system checks your comment and finds it follows the Community Guidelines."
+        },
+        {
+          "step": 8,
+          "system_action": "Your comment is posted and shown in chat. It also appears on the reporter's screen.",
+          "interface": "Your comment appears at the bottom of chat."
+        },
+        {
+          "step": 9,
+          "action": "Return to the video to continue watching.",
+          "endpoint": true,
+          "interface": "Live stream continues. Reporter says, 'OK, I see many viewers request, I’ll come a bit closer to the scene now and you can see....'",
+          "true_reasoning": "Your comment appears in chat and the host responds, confirming successful engagement."
+        }
+      ]
+    },
+    {
+      "flow_id": "flow8",
+      "steps": [
+        {
+          "start": "After finding an interesting NeighborNet Live+ feed on the app",
+          "interface": "Live stream details page shows a video with a red 'LIVE' label, location and distance (e.g., '14.8 mi · 48th Drexel Blvd'), title ('Red SUV Wedged Between Pole, Tree After Crash'), viewer stats ('98.4K notified; 15.4K views'), and a map with a crash icon. Below are the Summary, Timeline, and Chat sections."
+        },
+        {
+          "step": 1,
+          "action": "Scroll down to explore more details about this Live+ feed.",
+          "interface": "Summary gives more info (e.g., 'The red SUV is wedged between a pole and tree'). Timeline shows timestamped updates (e.g., '06:08, ambulance dispatched for a man with ear injury'; '05:33, Police notified city services about the unstable pole'). Video stays pinned at the top, emoji reaction bar with counts (e.g., 149 reactions) floats on the right, and Chat input bar remains at the bottom."
+        },
+        {
+          "step": 2,
+          "action": "Tap the emoji reaction icon.",
+          "interface": "A floating reaction bar appears with four emojis and their counts (e.g., sad face '26', heart '8', prayer hands '152', angry face '104')."
+        },
+        {
+          "step": 3,
+          "action": "Click an emoji to react.",
+          "interface": "The selected emoji animates upward toward the video and disappears. The count under the emoji increases by 1, confirming the reaction was sent."
+        },
+        {
+          "step": 4,
+          "action": "Tap the video preview.",
+          "interface": "Full-screen video in horizontal view with red 'LIVE' label, location, title, reporter name (e.g., 'maniiarii'), viewer stats. On-screen: comment bubble with featured comments (e.g., 'Irenemer' comments 'Keep that camera steady'), emoji stats, share and exit buttons."
+        },
+        {
+          "step": 5,
+          "action": "Tap the comment bubble.",
+          "interface": "A semi-transparent chat panel opens on the right side titled 'Chat'. It shows real-time comments with user icons, names (e.g., 'Irenemer'), and messages (e.g., 'Keep that camera steady'). Usernames may be custom (e.g., 'mamacaf') or anonymous (e.g., 'ChicagoUser936184012'). Comments include reactions, jokes, and local references (e.g., 'Well I know he saw dat tree!! But then again, maybe not!!! 🤔'). Below is an input field labeled 'Chat with your community...' with '@' and send icons. An 'X' button at the top-right closes the chat."
+        },
+        {
+          "step": 6,
+          "action": "Tap input box to type your comment.",
+          "interface": "The screen scrolls to the bottom of the chat. A message from 'NeighborNet' appears: 'Please be respectful when commenting. Read our guidelines.' The text 'Read our guidelines' is a clickable link."
+        },
+        {
+          "step": 7,
+          "action": "Type and submit your comment (e.g., 'Coward! Go closer to the car!')",
+          "system_action": "The system checks your comment and finds it violates the Community Guidelines."
+        },
+        {
+          "step": 8,
+          "system_action": "Your comment is removed and not posted. Input field clears.",
+          "interface": "Chat remains open but your comment does not appear."
+        },
+        {
+          "step": 9,
+          "action": "Close the keyboard and the chat feed.",
+          "endpoint": false,
+          "interface": "Your comment is not listed in the feed.",
+          "false_reasoning": "Your comment did not post and no host or user response occurred, indicating failed engagement."
+        }
+      ]
+    },
+    {
+      "flow_id": "flow9",
+      "steps": [
+        {
+          "start": "After finding an interesting NeighborNet Live+ feed on the app",
+          "interface": "Live stream details page shows a video with a red 'LIVE' label, location and distance (e.g., '14.8 mi · 48th Drexel Blvd'), title ('Red SUV Wedged Between Pole, Tree After Crash'), viewer stats ('98.4K notified; 15.4K views'), and a map with a crash icon. Below are the Summary, Timeline, and Chat sections."
+        },
+        {
+          "step": 1,
+          "action": "Scroll down to explore more details about this Live+ feed.",
+          "interface": "Summary gives more info (e.g., 'The red SUV is wedged between a pole and tree'). Timeline shows timestamped updates (e.g., '06:08, ambulance dispatched for a man with ear injury'; '05:33, Police notified city services about the unstable pole'). Video stays pinned at the top, emoji reaction bar with counts (e.g., 149 reactions) floats on the right, and Chat input bar remains at the bottom."
+        },
+        {
+          "step": 2,
+          "action": "Tap the emoji reaction icon.",
+          "interface": "A floating reaction bar appears in the center of the screen with four emojis and their counts (e.g., sad face '26', heart '8', prayer hands '152', angry face '104')."
+        },
+        {
+          "step": 3,
+          "action": "Click an emoji to react.",
+          "endpoint": true,
+          "interface": "The selected emoji animates toward the video and disappears. The count below it increases by 1, confirming your reaction was sent.",
+          "true_reasoning": "The animation and updated count confirm successful engagement with the Live+ feed through emoji quick reaction."
+        }
+      ]
+    }
+  ]
+}

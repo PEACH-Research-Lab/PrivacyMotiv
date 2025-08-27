@@ -1,0 +1,55 @@
+{
+  "user_flow_title": "Finding and Watching NN Live+ Streams Nearby",
+  "flows": [
+    {
+      "flow_id": "flow1",
+      "steps": [
+        {
+          "start": "Launch NeighborNet on mobile phone",
+          "interface": "Home page (Map page) displays a location-based NeighborNet map with real-time community updates. Icons represent events like auto collisions, police presence, missing pets, public health notices, neighbor disputes, or live video streams. User's location marked by blue dot. Header labeled 'Updates' allows filtering; search icon in top-right corner. Bottom navigation bar includes: Map (active), News, Alert Community, Alerts, You."
+        },
+        {
+          "step": 1,
+          "action": "Drag and zoom the map to explore live video updates in the neighborhood.",
+          "system_action": "The system checks and finds that there are live streams in the past 24 hours.",
+          "interface": "Live stream thumbnails appear on the map overlaid with icons. Red-bordered thumbnails indicate live streams; grey-bordered thumbnails indicate past recordings."
+        },
+        {
+          "step": 2,
+          "action": "Tap a grey-bordered thumbnail to view stream details.",
+          "interface": "Details page displays a video preview at the top. Below are location and distance (e.g., 'xx mi · xx Ave'), incident title, viewer metrics (e.g., 'xx notified; xx views'), a map preview with event-type icon. Timeline section includes timestamped neighbor posts describing the event (e.g., 'xx mins ago, xxxxx...'), and Chat section allows user engagement with comments and additional info."
+        },
+        {
+          "step": 3,
+          "action": "Tap the video to watch the stream.",
+          "endpoint": true,
+          "interface": "Horizontal full-width video (e.g., parakeet on rusty fence). Above video: location ('xx mi · xxx Ave'), title, reporter name and headshot ('xxx'), viewer metrics ('xx notified; xx views'). Comment bubble displays neighbor advice ( a user named 'xxx'comments'xxx...'). Bottom bar offers Share button, emoji reactions like pray hands count 'xx', and exit button.",
+          "true_reasoning": "The task is successful because the video played in full-screen mode, user saw viewer comments, and full event details were accessed."
+        }
+      ]
+    },
+    {
+      "flow_id": "flow2",
+      "steps": [
+        {
+          "start": "Launch NeighborNet on mobile phone",
+          "interface": "Home page (Map page) displays a location-based NeighborNet map with real-time community updates. Icons represent events like auto collisions, police presence, missing pets, public health notices, neighbor disputes, or live video streams. User's location marked by blue dot. Header labeled 'Updates' allows filtering; search icon in top-right corner. Bottom navigation bar includes: Map (active), News, Alert Community, Alerts, You."
+        },
+        {
+          "step": 1,
+          "action": "Drag and zoom the map to explore neighborhood.",
+          "system_action": "The system checks and finds that there are no live streams in the past 24 hours.",
+          "interface": "Map only displays static icons for event types; no thumbnails or video indicators. User sees updates for auto collisions, police presence, etc., but no video streams."
+        },
+        {
+          "step": 2,
+          "action": "Continue exploring broader neighborhood via map interactions.",
+          "system_action": "The system checks and finds that there are still no live streams in the past 24 hours.",
+          "endpoint": false,
+          "interface": "Map continues displaying only static event icons without any video thumbnails, confirming absence of streamable content.",
+          "false_reasoning": "No live or previously recorded streams were available, only static images, so the task failed in discovering and watching a live stream."
+        }
+      ]
+    }
+  ]
+}
