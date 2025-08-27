@@ -166,15 +166,14 @@ html, body, #root {
 
 .persona-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 16px;
-  max-width: 2000px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto 40px auto;
-  padding: 0 180px;
+  padding: 0 20px;
   justify-items: center;
-  align-items: center;
+  align-items: start;
 }
 
 .persona-box {
@@ -184,8 +183,9 @@ html, body, #root {
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  width: 300px;
-  height: 170px;
+  width: 100%;
+  min-height: 170px;
+  max-width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -350,15 +350,16 @@ html, body, #root {
 /* Responsive design */
 @media (max-width: 1200px) {
   .persona-grid {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    max-width: 1200px;
   }
 }
 
 @media (max-width: 900px) {
   .persona-grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    max-width: 900px;
+    padding: 0 15px;
   }
   
   .app-selection {
@@ -369,21 +370,32 @@ html, body, #root {
   .search-container {
     padding: 0 10px;
   }
+  
+  .privacy-motiv-container {
+    padding: 60px 20px;
+  }
 }
 
 @media (max-width: 600px) {
   .persona-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    max-width: 600px;
+    padding: 0 10px;
+    gap: 15px;
   }
   
   .privacy-motiv-container {
-    padding: 20px 10px;
+    padding: 40px 15px;
   }
   
   .privacy-motiv-title {
-    font-size: 1.2rem;
-    margin-left: 10px;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+  }
+  
+  .privacy-motiv-instructions {
+    font-size: 1rem;
+    margin-bottom: 24px;
   }
   
   .next-button {
