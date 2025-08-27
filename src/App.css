@@ -95,6 +95,22 @@ html, body, #root {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+.app-button.disabled {
+  background: #e0e0e0 !important;
+  color: #999 !important;
+  cursor: not-allowed !important;
+  opacity: 0.6;
+  transform: none !important;
+  box-shadow: none !important;
+  border-color: #ccc !important;
+}
+
+.app-button.disabled:hover {
+  background: #e0e0e0 !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
 /* Search Bar Styles */
 .search-container {
   width: 100%;

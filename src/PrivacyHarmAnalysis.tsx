@@ -62,12 +62,50 @@ function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyH
   const [selectedFlowIndex, setSelectedFlowIndex] = useState<number | null>(null)
   const [imageZoom, setImageZoom] = useState(1)
   const [imageLoadError, setImageLoadError] = useState<boolean>(false)
+  const [imagePosition, setImagePosition] = useState({ x: 0, y: 0 })
+  const [isDragging, setIsDragging] = useState(false)
+  const [dragStart, setDragStart] = useState({ x: 0, y: 0 })
 
   // Reset image error when persona changes
   useEffect(() => {
     setImageLoadError(false)
+    setImagePosition({ x: 0, y: 0 })
+    setImageZoom(1)
     console.log(`Switched to persona: ${currentPersona.basic_info.name}, App: ${selectedApp}`)
   }, [currentPersonaIndex, selectedApp])
+
+  // Mouse drag handlers for image panning
+  const handleMouseDown = (e: React.MouseEvent) => {
+    if (imageZoom > 1) {
+      setIsDragging(true)
+      setDragStart({
+        x: e.clientX - imagePosition.x,
+        y: e.clientY - imagePosition.y
+      })
+    }
+  }
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (isDragging && imageZoom > 1) {
+      setImagePosition({
+        x: e.clientX - dragStart.x,
+        y: e.clientY - dragStart.y
+      })
+    }
+  }
+
+  const handleMouseUp = () => {
+    setIsDragging(false)
+  }
+
+  const handleMouseLeave = () => {
+    setIsDragging(false)
+  }
+
+  const resetImageView = () => {
+    setImageZoom(1)
+    setImagePosition({ x: 0, y: 0 })
+  }
   
   const currentPersona = selectedPersonas[currentPersonaIndex]
   const currentStory = currentPersona.stories?.[0]
@@ -94,6 +132,17 @@ function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyH
     const imagePath = `${basePath}/${appFolder}/${personaName}.png`
   
     console.log(`Constructing image path: ${imagePath} for persona: ${personaName} in app: ${selectedApp}`)
+    return imagePath
+  }
+
+  const getLofiImagePath = (personaName: string, flowFunction: number, size: 'small' | 'big') => {
+    // Get the lo-fi prototype image based on the selected app, persona, and flow function
+    const appFolder = selectedApp === 'APP1' ? 'App1' : 'App2'
+    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    const basePath = isLocalhost ? '' : '/PrivacyMotiv'
+    const imagePath = `${basePath}/lofi_collections/${appFolder}/${personaName}/${personaName}_${flowFunction}_${size}.png`
+  
+    console.log(`Constructing lo-fi image path: ${imagePath} for persona: ${personaName}, flow: ${flowFunction}, size: ${size} in app: ${selectedApp}`)
     return imagePath
   }
 
@@ -152,31 +201,33 @@ function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyH
                    <div className="pha-persona-identity">
                      {currentPersona.stories?.[0]?.persona_identity}
                    </div>
-                   <div className="pha-vulnerability">
-                     Persona type: {getPersonaDescription(currentPersona)}
-                   </div>
-            <div className="pha-meta-and-cared">
-              <div className="pha-meta-vertical">
-                <div className="pha-meta-item">
-                  <span className="pha-meta-label">Tech Comfort Level</span>
-                  <span className="pha-tech-badge">{currentPersona.basic_info.tech_comfort_level}</span>
-                </div>
-                <div className="pha-meta-item">
-                  <span className="pha-meta-label">Privacy Awareness</span>
-                  <span className="pha-awareness-badge">{currentPersona.contextual_info.privacy_awareness_level}</span>
-                </div>
-              </div>
-              <div className="pha-info-cared">
-                <div className="pha-info-label">Information Cared:</div>
-                <div className="pha-info-tags">
-                  {currentPersona.contextual_info.information_cared_about.map((info, index) => (
-                    <span key={index} className="pha-info-tag">
-                      {info}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
+                    <div className="pha-vulnerability">
+                      Persona type: {getPersonaDescription(currentPersona)}
+                    </div>
+                    
+                    {/* Information Cared Section - Right under persona type */}
+                    <div className="pha-info-cared">
+                      <div className="pha-info-label">Information Cared:</div>
+                      <div className="pha-info-tags">
+                        {currentPersona.contextual_info.information_cared_about.map((info, index) => (
+                          <span key={index} className="pha-info-tag">
+                            {info}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                    
+                    {/* Tech and Privacy Meta Info */}
+                    {/* <div className="pha-meta-vertical"> */}
+                      {/* <div className="pha-meta-item">
+                        <span className="pha-meta-label">Tech Comfort Level</span>
+                        <span className="pha-tech-badge">{currentPersona.basic_info.tech_comfort_level}</span>
+                      </div>
+                      <div className="pha-meta-item">
+                        <span className="pha-meta-label">Privacy Awareness</span>
+                        <span className="pha-awareness-badge">{currentPersona.contextual_info.privacy_awareness_level}</span>
+                      </div> */}
+                    {/* </div> */}
             {/* <div className="pha-tech-level">
               Tech Comfort Level: <span className="pha-tech-badge">{currentPersona.basic_info.tech_comfort_level}</span>
               <span style={{ marginLeft: "1rem" }}></span>
@@ -208,7 +259,7 @@ function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyH
           </div>
         </div> */}
 
-                <div className="pha-middle-section">
+        <div className="pha-middle-section">
           <div className="pha-vertical-separator"></div>
           <div className="pha-privacy-overview">
             <div className="pha-privacy-tensions-compact">
@@ -391,23 +442,42 @@ function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyH
                 <div className="pha-function-title">Story Flow:</div>
                 <div className="pha-function-list">
                   {currentStory?.flow_in_app.map((flow, index) => {
-                    let functionText = ''
-                    switch (flow.function) {
-                      case 1:
-                        functionText = 'Viewing Friend Activity on the music app'
-                        break
-                      case 2:
-                        functionText = 'Adding friends to the Friend Activity Feed via Facebook connection'
-                        break
-                      case 3:
-                        functionText = 'Enjoying private listening via Private Session'
-                        break
-                      case 4:
-                        functionText = 'Removing friends from the Friend Activity Feed'
-                        break
-                      default:
-                        functionText = `Function ${flow.function}`
-                    }
+                                         let functionText = ''
+                     if (selectedApp === 'APP1') {
+                       switch (flow.function) {
+                         case 1:
+                           functionText = 'Viewing Friend Activity on the music app'
+                           break
+                         case 2:
+                           functionText = 'Adding friends to the Friend Activity Feed via Facebook connection'
+                           break
+                         case 3:
+                           functionText = 'Enjoying private listening via Private Session'
+                           break
+                         case 4:
+                           functionText = 'Removing friends from the Friend Activity Feed'
+                           break
+                         default:
+                           functionText = `Function ${flow.function}`
+                       }
+                     } else if (selectedApp === 'APP2') {
+                       switch (flow.function) {
+                         case 1:
+                           functionText = 'Finding and Watching NN Live+ Streams Nearby'
+                           break
+                         case 2:
+                           functionText = 'Commenting and Reacting on NN Live+'
+                           break
+                         case 3:
+                           functionText = 'Going NN Live+ to Alert Neighbors'
+                           break
+                         case 4:
+                           functionText = 'Hiding and Deleting Your Live+ History'
+                           break
+                         default:
+                           functionText = `Function ${flow.function}`
+                       }
+                     }
                     return (
                       <div key={index} className="pha-function-item">
                         <div className="pha-function-header">
@@ -438,12 +508,16 @@ function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyH
                                 setImageZoom(1)
                               }}
                             >
-                              <img 
-                                // src="/src/assets/lofi_collections/example_small.png" 
-                                src="./lofi_collections/example_small.png"
-                                alt={`Flow ${flow.function} small version`}
-                                className="pha-lofi-small-image"
-                              />
+                                                             <img 
+                                 src={getLofiImagePath(currentPersona.basic_info.name, flow.function, 'small')}
+                                 alt={`Flow ${flow.function} small version`}
+                                 className="pha-lofi-small-image"
+                                 onError={(e) => {
+                                   // Fallback to example image if persona-specific image not found
+                                   const target = e.target as HTMLImageElement
+                                   target.src = './lofi_collections/example_small.png'
+                                 }}
+                               />
                               <div className="pha-lofi-click-hint">Click to view full flow</div>
                             </div>
                           </div>
@@ -492,24 +566,40 @@ function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyH
           <div className="pha-flow-modal-overlay" onClick={() => setSelectedFlowIndex(null)}>
             <div className="pha-flow-modal" onClick={(e) => e.stopPropagation()}>
               <div className="pha-flow-modal-header">
-                <h3>Flow {currentStory?.flow_in_app[selectedFlowIndex]?.function}: {
-                  (() => {
-                    const flow = currentStory?.flow_in_app[selectedFlowIndex]
-                    if (!flow) return ''
-                    switch (flow.function) {
-                      case 1:
-                        return 'Viewing Friend Activity on the music app'
-                      case 2:
-                        return 'Adding friends to the Friend Activity Feed via Facebook connection'
-                      case 3:
-                        return 'Enjoying private listening via Private Session'
-                      case 4:
-                        return 'Removing friends from the Friend Activity Feed'
-                      default:
-                        return `Function ${flow.function}`
-                    }
-                  })()
-                }</h3>
+                                 <h3>Flow {currentStory?.flow_in_app[selectedFlowIndex]?.function}: {
+                   (() => {
+                     const flow = currentStory?.flow_in_app[selectedFlowIndex]
+                     if (!flow) return ''
+                     if (selectedApp === 'APP1') {
+                       switch (flow.function) {
+                         case 1:
+                           return 'Viewing Friend Activity on the music app'
+                         case 2:
+                           return 'Adding friends to the Friend Activity Feed via Facebook connection'
+                         case 3:
+                           return 'Enjoying private listening via Private Session'
+                         case 4:
+                           return 'Removing friends from the Friend Activity Feed'
+                         default:
+                           return `Function ${flow.function}`
+                       }
+                     } else if (selectedApp === 'APP2') {
+                       switch (flow.function) {
+                         case 1:
+                           return 'Finding and Watching NN Live+ Streams Nearby'
+                         case 2:
+                           return 'Commenting and Reacting on NN Live+'
+                         case 3:
+                           return 'Going NN Live+ to Alert Neighbors'
+                         case 4:
+                           return 'Hiding and Deleting Your Live+ History'
+                         default:
+                           return `Function ${flow.function}`
+                       }
+                     }
+                     return `Function ${flow.function}`
+                   })()
+                 }</h3>
                 <button 
                   className="pha-flow-modal-close"
                   onClick={() => setSelectedFlowIndex(null)}
@@ -518,6 +608,15 @@ function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyH
                 </button>
               </div>
               <div className="pha-flow-modal-content">
+                {/* Zoom Controls */}
+                <div className="pha-zoom-info">
+                  <div className="pha-zoom-level">Zoom: {Math.round(imageZoom * 100)}%</div>
+                  <div className="pha-zoom-hint">Scroll to zoom, drag to pan when zoomed in</div>
+                  <button className="pha-zoom-reset" onClick={resetImageView}>
+                    Reset View
+                  </button>
+                </div>
+                
                 <div 
                   className="pha-image-container"
                   onWheel={(e) => {
@@ -525,13 +624,26 @@ function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyH
                     const delta = e.deltaY > 0 ? -0.1 : 0.1
                     setImageZoom(prev => Math.max(0.5, Math.min(3, prev + delta)))
                   }}
+                  onMouseDown={handleMouseDown}
+                  onMouseMove={handleMouseMove}
+                  onMouseUp={handleMouseUp}
+                  onMouseLeave={handleMouseLeave}
+                  style={{ cursor: isDragging ? 'grabbing' : imageZoom > 1 ? 'grab' : 'zoom-in' }}
                 >
                   <img 
-                    // src="/src/assets/lofi_collections/example_big.png" 
-                    src="./lofi_collections/example_big.png"
+                    src={getLofiImagePath(currentPersona.basic_info.name, currentStory?.flow_in_app[selectedFlowIndex]?.function || 1, 'big')}
                     alt={`Flow ${currentStory?.flow_in_app[selectedFlowIndex]?.function} big version`}
                     className="pha-lofi-big-image"
-                    style={{ transform: `scale(${imageZoom})` }}
+                    style={{ 
+                      transform: `scale(${imageZoom}) translate(${imagePosition.x / imageZoom}px, ${imagePosition.y / imageZoom}px)`,
+                      cursor: isDragging ? 'grabbing' : imageZoom > 1 ? 'grab' : 'zoom-in'
+                    }}
+                    draggable={false}
+                    onError={(e) => {
+                      // Fallback to example image if persona-specific image not found
+                      const target = e.target as HTMLImageElement
+                      target.src = './lofi_collections/example_big.png'
+                    }}
                   />
                 </div>
               </div>

@@ -218,8 +218,11 @@ function App() {
           WeMusic
         </button>
         <button 
-          className={`app-button ${selectedApp === 'APP2' ? 'active' : ''}`}
+          // className={`app-button ${selectedApp === 'APP2' ? 'active' : ''}`}
+          // onClick={() => setSelectedApp('APP2')}
+          className={`app-button disabled ${selectedApp === 'APP2' ? 'active' : ''}`}
           onClick={() => setSelectedApp('APP2')}
+          disabled={true}
         >
           NeighborNet
         </button>
