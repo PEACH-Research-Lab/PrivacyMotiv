@@ -638,12 +638,19 @@
 
 
 /* Main Layout */
-.pha-main-layout {
+/* .pha-main-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   gap: 32px;
   align-items: start;
+} */
+.pha-main-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 /* Full-width prototype row spans both columns */
@@ -652,13 +659,20 @@
 }
 
 /* Left Section */
-.pha-left-section {
+/* .pha-left-section {
   display: flex;
   flex-direction: column;
   gap: 24px;
   flex: 1;
   grid-row: 1;
   grid-column: 1;
+} */
+.pha-left-section {
+  flex: 1;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .pha-story-block {
@@ -876,13 +890,20 @@
 }
 
 /* Right Section - Harms, Consequences, and Prototype */
-.pha-right-section {
+/* .pha-right-section {
   display: flex;
   flex-direction: column;
   gap: 24px;
   height: 100%;
   grid-row: 1;
   grid-column: 2;
+} */
+.pha-right-section {
+  flex: 1;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .pha-prototype-container {
@@ -1242,9 +1263,21 @@
 }
 
 /* Form Sections */
-.pha-form-section {
+/* .pha-form-section {
   margin-top: 24px;
   grid-row: 2;
+} */
+.pha-form-section {
+  margin-top: 24px;
+  width: 100%;
+}
+
+.pha-form-left {
+  margin-top: 24px;
+}
+
+.pha-form-right {
+  margin-top: 24px;
 }
 
 .pha-form-container {
