@@ -88,7 +88,11 @@ function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyH
     // Get the persona-specific image based on the selected app
     const appFolder = selectedApp === 'APP1' ? 'app1_persona' : 'app2_persona'
     // const imagePath = `/src/assets/${appFolder}/${personaName}.png`
-    const imagePath = `/${appFolder}/${personaName}.png`
+    // const imagePath = `/PrivacyMotiv/${appFolder}/${personaName}.png`
+    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    const basePath = isLocalhost ? '' : '/PrivacyMotiv'
+    const imagePath = `${basePath}/${appFolder}/${personaName}.png`
+  
     console.log(`Constructing image path: ${imagePath} for persona: ${personaName} in app: ${selectedApp}`)
     return imagePath
   }

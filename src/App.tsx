@@ -62,7 +62,10 @@ function App() {
       try {
         const fileName = selectedApp === 'APP1' ? 'app1_persona.json' : 'app2_persona.json'
         // const response = await fetch(`/src/assets/${fileName}`)
-        const response = await fetch(`/${fileName}`)
+        // const response = await fetch(`/PrivacyMotiv/${fileName}`)
+        const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+        const basePath = isLocalhost ? '' : '/PrivacyMotiv'
+        const response = await fetch(`${basePath}/${fileName}`)
         const data = await response.json()
         setPersonas(data)
       } catch (error) {
