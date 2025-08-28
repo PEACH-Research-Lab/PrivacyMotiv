@@ -630,7 +630,7 @@ function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyH
                   onWheel={(e) => {
                     e.preventDefault()
                     const delta = e.deltaY > 0 ? -0.1 : 0.1
-                    setImageZoom(prev => Math.max(0.5, Math.min(3, prev + delta)))
+                    setImageZoom(prev => Math.max(0.5, Math.min(6, prev + delta)))
                   }}
                   onMouseDown={handleMouseDown}
                   onMouseMove={handleMouseMove}
