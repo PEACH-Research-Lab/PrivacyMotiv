@@ -1210,7 +1210,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 400px;
+  min-height: 800px;
   cursor: zoom-in;
   border: 2px dashed rgba(128, 167, 197, 0.3);
   transition: border-color 0.2s ease;
