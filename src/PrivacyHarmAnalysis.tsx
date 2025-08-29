@@ -315,30 +315,6 @@ function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyH
       </div>
 
 
-
-
-      {/* Harm Filter Tags */}
-      {/* <div className="pha-harm-filter">
-        <div className="pha-filter-label">Filter by Harm Type:</div>
-        <div className="pha-filter-tags">
-          <button 
-            className={`pha-filter-tag ${selectedHarmFilter === 'all' ? 'active' : ''}`}
-            onClick={() => setSelectedHarmFilter('all')}
-          >
-            All Harms
-          </button>
-          {allHarms.map(harm => (
-            <button 
-              key={harm}
-              className={`pha-filter-tag ${selectedHarmFilter === harm ? 'active' : ''}`}
-              onClick={() => setSelectedHarmFilter(harm)}
-            >
-              {harm}
-            </button>
-          ))}
-        </div>
-      </div> */}
-
       {/* Main Content Layout */}
       <div className="pha-main-layout">
         {/* Left Section - Story Description */}
