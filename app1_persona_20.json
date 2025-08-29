@@ -269,6 +269,121 @@
     },
     {
       "basic_info": {
+        "name": "Jamal",
+        "age": 15,
+        "tech_comfort_level": "high"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Intersectional identities and characteristics - Child navigating social media",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["posts", "location tagging", "social connections"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Self-expression - wants to post but fears visibility by adults",
+          "Privacy vs. Support - parental monitoring vs peer privacy"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Withholding disclosure",
+            "description": "Omits identifying info and avoids location tags."
+          },
+          {
+            "response": "Controlling disclosure",
+            "description": "Uses private accounts or separate pseudonymous profiles."
+          }
+        ],
+        "costs_and_consequences": [
+          "Less authentic social engagement",
+          "Mental load managing multiple profiles"
+        ]
+      },
+      "additional_privacy_responses_and_costs": {
+          "privacy_tensions_with_short_description": [
+              "Privacy vs. Self-expression - limits public sharing to maintain control over personal identifiers",
+              "Privacy vs. Support - avoids location sharing to limit monitoring",
+              "Privacy vs. Platform engagement - lack of effective tools can discourage participation"
+          ],
+          "privacy_responses": [
+              {
+                  "response": "Selective audience sharing",
+                  "description": "Shares personal or sensitive content only with trusted contacts or private lists."
+              },
+              {
+                  "response": "Account separation",
+                  "description": "Maintains distinct profiles for different audiences, such as parents and peers."
+              },
+              {
+                  "response": "Tool-based boundary regulation",
+                  "description": "Uses available platform settings to manage visibility across different social circles."
+              }
+          ],
+          "costs_and_consequences": [
+              "Reduced potential for wider recognition or engagement on posts",
+              "Ongoing effort to maintain multiple accounts and manage distinct audiences",
+              "Possible reduced participation in online spaces due to fear of unintended exposure"
+          ]
+      },
+      "stories": [
+        {
+          "persona_identity": "Jamal is a 15-year-old boy, a high school sophomore and aspiring beatmaker; as a minor navigating social media he's in a vulnerable group, and his tech comfort is high because he edits music on his laptop and manages separate profiles for peers and adults.",
+          "story": "After school, Jamal opens his music app to check what people are listening to and notices his coach's name in the activity feed. Remembering that his own listening is visible to friends, he tries to remove the coach from his view so he won't draw attention from adults. He unfollows the coach, expecting that to sever the connection. The coach's name doesn't go away, and Jamal doesn't realize the connection persists through Facebook syncing. At practice the next day, the coach casually references the late-night tracks Jamal played, making it clear he still sees Jamal's activity. Jamal feels exposed and starts second-guessing what he listens to and when.",
+          "information_leaked": "Jamal's listening activity (recent tracks with explicit labels, recency/timing of playback within the last 7 days) and social connection to an adult contact (his coach) via Facebook sync.",
+          "flow_in_app": [
+            {
+              "function": 1,
+              "flow_id": "flow6",
+              "step_causing_harm": [
+                "Step 1: Tap the Friend Activity icon; system finds mutual-followed or Facebook-synced friends sharing activity and displays the feed."
+              ],
+              "design_problems": [
+                "Cross-platform Facebook syncing is opaque; it creates persistent visibility links that are not clearly explained to minors.",
+                "Implied reciprocity: surfacing Facebook-synced contacts in the feed suggests symmetric visibility without clarifying control boundaries."
+              ]
+            },
+            {
+              "function": 4,
+              "flow_id": "flow3",
+              "step_causing_harm": [
+                "Step 3: Click 'Unfollow'; system detects the person is a Facebook-synced friend and keeps them in the Friend Activity feed."
+              ],
+              "design_problems": [
+                "Unfollow does not break Facebook-synced visibility, but the app provides no warning or guidance.",
+                "Mismatch between user mental model and system behavior: 'Unfollow' suggests removing access, yet visibility persists.",
+                "Lack of a clear, child-appropriate control to revoke visibility from Facebook-synced adults without full account disconnection."
+              ]
+            }
+          ],
+          "leakage_source": "The music app's automatic sharing of listening activity to Facebook-synced contacts and the app's persistence of that link despite unfollowing.",
+          "leak_to": "Jamal's high school coach (an adult Facebook contact).",
+          "harms": [
+            {
+              "harm": "Reputational harm",
+              "cause": "The coach infers Jamal's late-night listening patterns and explicit music tastes from the Friend Activity feed."
+            },
+            {
+              "harm": "Psychological harm — emotional distress",
+              "cause": "Feeling watched by an adult in a leisure space intended for peers creates embarrassment and anxiety."
+            },
+            {
+              "harm": "Autonomy harm — thwarted expectations and lack of control",
+              "cause": "The app implies unfollowing will remove someone, but Facebook sync keeps them connected, undermining Jamal's attempt to control his audience."
+            },
+            {
+              "harm": "Relationship harm",
+              "cause": "Adult oversight of Jamal's personal music choices strains the student-coach relationship and invites monitoring."
+            },
+            {
+              "harm": "Autonomy harm — chilling effects",
+              "cause": "Jamal self-censors his listening to avoid being judged, reducing his freedom to explore music."
+            }
+          ],
+          "consequences": "The coach comments about Jamal's late-night playlist at practice, embarrassing him; Jamal stops playing certain artists, avoids night listening, and withdraws from sharing with peers, increasing his mental load to manage audiences and diminishing his enjoyment of the app."
+        }
+      ]
+    },
+    {
+      "basic_info": {
         "name": "Liam",
         "age": 35,
         "tech_comfort_level": "medium"
@@ -403,6 +518,269 @@
     },
     {
       "basic_info": {
+        "name": "Arjun",
+        "age": 28,
+        "tech_comfort_level": "medium"
+      },
+      "contextual_info": {
+        "vulnerability_type_brief_description": "Intersectional identities and characteristics - Person with physical disability",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["accessibility needs", "mobility data", "assistive device usage"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - assistive services need data access",
+          "Privacy vs. Disclosure of identity - disability status may be stigmatizing"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Controlling disclosure",
+            "description": "Uses platforms where disability info held privately."
+          },
+          {
+            "response": "Non-use",
+            "description": "Avoids platforms that force outing of disability status."
+          }
+        ],
+        "costs_and_consequences": [
+          "Reduced access to some supportive apps",
+          "Social isolation or missing communities"
+        ]
+      },
+      "additional_privacy_responses_and_costs": {
+          "privacy_tensions_with_short_description": [
+              "Privacy vs. Disclosure of identity - providing accessibility info can expose disability status",
+              "Privacy vs. Accessibility - accessible authentication may involve revealing impairment",
+              "Privacy vs. Public participation - avoiding certain spaces to prevent unwanted exposure"
+          ],
+          "privacy_responses": [
+              {
+                  "response": "Use of privacy-centered tools",
+                  "description": "Chooses assistants or platforms that explain privacy practices without requesting extra personal data."
+              },
+              {
+                  "response": "Avoidance of certain authentication methods",
+                  "description": "Chooses authentication approaches that do not require public demonstration of impairment."
+              },
+              {
+                  "response": "Avoidance of monitored spaces",
+                  "description": "Does not enter locations with camera-based systems that could capture assistive device use."
+              }
+          ],
+          "costs_and_consequences": [
+              "May limit engagement with platforms that lack accessible, privacy-respecting information features",
+              "Potential difficulty accessing devices securely",
+              "Increased dependency on less convenient authentication solutions",
+              "Reduced access to public services or events",
+              "Potential social isolation from avoiding monitored environments"
+          ]
+      },
+      "stories": [
+        {
+          "persona_identity": "Arjun is a 28-year-old man who works as a community arts coordinator and uses a wheelchair; as a disabled professional, he's in a vulnerability group where disclosure of disability may carry stigma. His tech comfort is medium because he regularly uses assistive tools but prefers straightforward, clearly explained settings.",
+          "story": "Arjun wanted to keep up with what his coworkers were listening to, so he enabled the app's friend activity feature and turned on sharing to see their updates. Later that night, while preparing materials for an accessibility workshop, he switched to a private mode and listened to disability support podcasts and mobility-focused playlists for several hours. The private mode ended automatically, and the app resumed sharing his listening in the morning. Coworkers who follow him opened the app and saw a string of disability-related titles tied to his account, which he never intended to share beyond that private session.",
+          "information_leaked": "Specific listening history items (e.g., disability support podcasts, wheelchair workout and mobility-therapy playlists), time-of-day and recency of listening (morning feed updates after late-night session), and inferences about disability status and rehabilitation routines via playlist/episode titles.",
+          "flow_in_app": [
+            {
+              "function": 1,
+              "flow_id": "flow2",
+              "step_causing_harm": [
+                "Step 7: Switch 'Share my listening activity' to ON, which enables ongoing broadcast of Arjun's listening to mutual-followed friends."
+              ],
+              "design_problems": [
+                "Expectation mismatch: Sharing is presented as part of seeing friends' activity without clearly emphasizing that Arjun's activity will be broadcast to followers.",
+                "Risky defaults are not surfaced: public exposure of recent artists is on by default and not highlighted alongside sharing.",
+                "No audience controls or per-listen sensitivity settings at the moment of enabling sharing."
+              ]
+            },
+            {
+              "function": 3,
+              "flow_id": "flow4",
+              "step_causing_harm": [
+                "Step 3: Private Session automatically ends after 6 hours, causing listening to resume broadcasting without an explicit, accessible alert."
+              ],
+              "design_problems": [
+                "Auto-expiration silently reverts to sharing without a clear, persistent notification or consent renewal.",
+                "Status change relies on a subtle visual indicator that is easy to miss for users with accessibility needs.",
+                "No option to auto-extend or lock Private Session, nor a warning countdown before it ends."
+              ]
+            }
+          ],
+          "leakage_source": "The music app's Friend Activity system automatically resuming sharing after Private Session expiration.",
+          "leak_to": "Mutual-followed coworkers on the music app who check their Friend Activity feed.",
+          "harms": [
+            {
+              "harm": "Reputational harm",
+              "cause": "The app publicly signals disability-related listening, enabling colleagues to infer sensitive health information."
+            },
+            {
+              "harm": "Psychological harm - emotional distress",
+              "cause": "Unintended disclosure produces anxiety and embarrassment when coworkers comment on the content."
+            },
+            {
+              "harm": "Autonomy harm - thwarted expectations and lack of control",
+              "cause": "Ambiguous sharing setup and silent Private Session expiry undermine Arjun's attempt to control who sees his listening."
+            },
+            {
+              "harm": "Relationship harms",
+              "cause": "Coworkers' perceptions shift after exposure to sensitive listening, straining professional dynamics."
+            },
+            {
+              "harm": "Discrimination harms",
+              "cause": "Managers may subtly deprioritize Arjun for public-facing tasks after inferring disability-related needs from the feed."
+            }
+          ],
+          "consequences": "A coworker mentions the disability support content in a team chat; Arjun feels exposed and stops using the app socially. His manager quietly removes him from an upcoming client presentation, and he withdraws from music-sharing groups to avoid further exposure, increasing social isolation."
+        }
+      ]
+    },
+    {
+      "basic_info": {
+        "name": "Maya",
+        "age": 30,
+        "tech_comfort_level": "high"
+      },
+      "contextual_info": {
+      "vulnerability_type_brief_description": "Intersectional identities and characteristics - Gender non-conforming individual",
+        "privacy_awareness_level": "high",
+        "information_cared_about": ["gender identity", "social media footprint", "dating profiles"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Disclosure of identity - outing exposes to harassment",
+          "Privacy vs. Support - wants community but risks doxxing"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Controlling disclosure",
+            "description": "Maintains anonymous or pseudonym profiles focused on identity support."
+          },
+          {
+          "response": "Privacy-enhancing technologies",
+            "description": "Uses anonymous services and encrypted messaging."
+          }
+        ],
+        "costs_and_consequences": [
+          "Difficulty building personal connections under pseudonym",
+          "Technical overhead and stress"
+        ]
+    },
+    "additional_privacy_responses_and_costs": {
+          "privacy_tensions_with_short_description": [
+              "Privacy vs. Disclosure of identity - fear of being outed through online activity",
+              "Privacy vs. Support - desire for connection vs. risk of exposure",
+              "Privacy vs. Community visibility - activism increases risk of targeting"
+          ],
+          "privacy_responses": [
+              {
+                "response": "Limiting online disclosures",
+                "description": "Carefully restricts the amount of personal or identity-related information shared online."
+              },
+              {
+                "response": "Pseudonymous use",
+                "description": "Creates and maintains anonymous or pseudonym dating profiles to seek support or connections without disclosure."
+              },
+              {
+                "response": "Non-use of services",
+                "description": "Avoids platforms perceived as risky due to potential exposure."
+              },
+              {
+                "response": "Reliance on encrypted communication",
+                "description": "Uses encrypted messaging apps and anonymous platforms to safeguard activist communication."
+              }
+          ],
+          "costs_and_consequences": [
+              "Restricted opportunities for authentic self-expression online",
+              "Difficulty forming meaningful connections under pseudonym",
+              "Exclusion from supportive or compatible dating communities",
+              "Added technical burden of managing secure communication tools",
+              "Stress from navigating constant threats of harassment"
+          ]
+    },
+    "stories": [
+      {
+        "persona_identity": "Maya (they/them) is a gender non-conforming UX researcher at a fintech startup. Their high tech comfort comes from years of testing privacy features professionally, yet their visible LGBTQ+ activism and nonconformity heighten their vulnerability to outing and workplace bias.",
+        "story": "Seeking connection with queer musicians and friends, Maya enabled the app's friend activity features and turned on sharing so they could reciprocate. They immediately noticed a coworker in the feed and tried to remove that person, assuming it would also limit what the coworker could see. Later, hoping to find more supportive friends, Maya connected the app to Facebook, which silently linked their real name and expanded who could view their listening. Within hours, the coworker saw identity‑revealing playlists and mentioned them in a team chat. Maya turned on a private session afterward, but the disclosure had already happened.",
+        "information_leaked": "Real name (via Facebook linkage), listening activity (playlist and track titles related to LGBTQ+ identity), recent listening timestamps, and social graph connections on the app (coworker link via Facebook sync).",
+        "flow_in_app": [
+          {
+            "function": 1,
+            "flow_id": "flow2",
+            "step_causing_harm": [
+              "Step 7: Find 'Share my listening activity' and switch the toggle button to ON."
+            ],
+            "design_problems": [
+              "No explicit pre-confirmation of who will see the activity (e.g., coworkers synced via Facebook or mutual follows).",
+              "No granular controls at enable time (cannot exclude specific contacts or limit by group).",
+              "Framing nudges users to enable sharing without clarifying identity linkage risks."
+            ]
+          },
+          {
+            "function": 4,
+            "flow_id": "flow3",
+            "step_causing_harm": [
+              "Step 3: Click on the 'Unfollow' button (on a Facebook-synced friend), which does not remove their visibility in Friend Activity."
+            ],
+            "design_problems": [
+              "Ambiguous semantics: 'Unfollow' does not sever Facebook-based visibility but looks like it should.",
+              "No clear notice that Facebook-synced contacts remain connected regardless of unfollow.",
+              "No easy, per-contact \"hide me from this person\" control without resorting to hard Block."
+            ]
+          },
+          {
+            "function": 2,
+            "flow_id": "flow1",
+            "step_causing_harm": [
+              "Step 4: Enter Facebook account information and click 'Log In' (which links real-name identity and auto-syncs contacts who can see activity)."
+            ],
+            "design_problems": [
+              "Assurance focuses on not posting to Facebook, while downplaying in-app exposure to Facebook friends.",
+              "No granular selection of which Facebook friends to sync; no preview of what profile identity will be shown.",
+              "Implicit, broad consent to expand the audience for shared activity without highlighting outing risks."
+            ]
+          },
+          {
+            "function": 3,
+            "flow_id": "flow1",
+            "step_causing_harm": [
+              "Step 2: Click 'Private Session' (creates a false sense of safety because previously shared activity remains visible to others)."
+            ],
+            "design_problems": [
+              "No clear disclosure that Private Session is not retroactive and won't remove past activity already exposed.",
+              "Short-lived session with auto-expiry not surfaced at the moment of activation, undermining control."
+            ]
+          }
+        ],
+        "leakage_source": "The music app's Friend Activity sharing and Facebook contact sync (platform design and defaults).",
+        "leak_to": "A coworker connected via Facebook sync (and, secondarily, colleagues who were shown the coworker's chat message about Maya's listening).",
+        "harms": [
+          {
+            "harm": "Reputational Harms",
+            "cause": "Linking Facebook identity to the app and globally sharing listening activity exposed identity-revealing playlists to a coworker."
+          },
+          {
+            "harm": "Psychological Harms — Emotional Distress",
+            "cause": "Unanticipated exposure triggered anxiety and fear of targeted harassment after the coworker's public mention."
+          },
+          {
+            "harm": "Autonomy Harms — Thwarted Expectations & Lack of Control",
+            "cause": "'Unfollow' failed to sever visibility for a Facebook-synced contact, and Private Session did not retroactively hide past activity."
+          },
+          {
+            "harm": "Relationship Harms",
+            "cause": "Coworker's disclosure in a team chat strained workplace relationships and trust."
+          },
+          {
+            "harm": "Discrimination Harms",
+            "cause": "Exposure of gender identity in a professional context increased the risk of bias in assignments and evaluations."
+          }
+        ],
+        "consequences": "A coworker commented on Maya's identity-related listening in a team chat, leading to embarrassment, stress, and a meeting with their manager. Maya stopped listening to LGBTQ+ content at work (chilling effect), spent hours reconfiguring settings, and created a separate, pseudonymous account. They filed a complaint with the app and now avoid connecting social accounts, at the cost of reduced community discovery."
+      }
+     ]
+    },
+    {
+      "basic_info": {
         "name": "Elena",
         "age": 29,
         "tech_comfort_level": "medium"
@@ -514,6 +892,144 @@
      ]
     },
     {
+      "basic_info": {
+        "name": "Noah",
+        "age": 40,
+        "tech_comfort_level": "low"
+      },
+      "contextual_info": {
+      "vulnerability_type_brief_description": "Socioeconomic disadvantage - Low literacy adult",
+        "privacy_awareness_level": "low",
+        "information_cared_about": ["identity", "financial data", "basic navigation data"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Accessibility - cannot understand consent forms",
+          "Privacy vs. Support - wants services but unsure what gives away info"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Apathy",
+            "description": "Clicks through defaults or avoids use entirely."
+          },
+          {
+          "response": "Non-use",
+            "description": "Avoids apps and platforms perceived complex."
+          }
+        ],
+        "costs_and_consequences": [
+          "Exclusion from digital services or aid",
+          "Misunderstanding of terms leading to unexpected exposure"
+        ]
+    },
+    "additional_privacy_responses_and_costs": {
+      "privacy_tensions_with_short_description": [
+          "Privacy vs. Accessibility - complexity of privacy notices forces bypassing them",
+          "Privacy vs. Support - uncertainty about what data is shared prevents engagement with services"
+      ],
+      "privacy_responses": [
+          {
+            "response": "Click-through behavior",
+            "description": "Skips over or accepts default privacy settings without reading notices."
+          },
+          {
+            "response": "Avoidance of digital services",
+            "description": "Chooses not to engage with apps or platforms that feel overwhelming due to text-heavy privacy or security requirements."
+          }
+      ],
+      "costs_and_consequences": [
+          "Inadvertent exposure of sensitive data",
+          "No awareness of the scope of consent provided",
+          "Exclusion from useful services and opportunities",
+          "Increased vulnerability due to reliance on offline or informal alternatives"
+      ]
+    },
+    "stories": [
+      {
+        "persona_identity": "Noah is a 40-year-old man working night shifts as a warehouse picker. As a low-literacy adult facing socioeconomic pressures, he struggles to read dense settings and notices, which explains his low tech comfort.",
+        "story": "Noah turns on the music app's friend activity view to keep up with coworkers and notices a colleague he'd rather not share with. He tries to remove that person but they still show up in his list, which he takes to mean the problem is solved. To be safe, he starts a private session during his shift. The next day, wanting more people to follow for music tips, he links the app to Facebook. After the private session expires, his listening—like a playlist about dealing with debt—becomes visible to the newly synced coworkers, including his supervisor. A coworker jokes about his 'money stress' music, and Noah realizes the app has been showing his activity to them despite his attempts to stay private.",
+        "information_leaked": "Noah's username and profile on the music app; his current and recent (past 7 days) listening activity, including playlist and track titles suggestive of financial stress; timestamps/activity recency; newly linked social graph via Facebook (which coworkers he is connected to).",
+        "flow_in_app": [
+          {
+            "function": 1,
+            "flow_id": "flow3",
+            "step_causing_harm": [
+              "Step 4: Turn on 'See what your friends are playing', which encourages social visibility without clarifying it doesn't control Noah's own sharing."
+            ],
+            "design_problems": [
+              "Ambiguous mental model: The feature name implies reciprocity and may mislead low-literacy users into thinking viewing ≈ controlling what others see.",
+              "No inline disclosure about how Noah's own sharing works or where to turn it off."
+            ]
+          },
+          {
+            "function": 4,
+            "flow_id": "flow3",
+            "step_causing_harm": [
+              "Step 3: Click 'Unfollow' on a Facebook-synced friend, but the person still appears and remains connected."
+            ],
+            "design_problems": [
+              "Misleading feedback: The person remains visible; no clear explanation that Facebook-synced links persist and that 'unfollow' doesn't stop them from seeing Noah's activity.",
+              "No clear pathway or prompt to block or to review/disable Noah's own sharing after the unsuccessful unfollow."
+            ]
+          },
+          {
+            "function": 3,
+            "flow_id": "flow6",
+            "step_causing_harm": [
+              "Step 5: Start a Private Session (temporary protection).",
+              "Step 6: Private Session automatically ends after 6 hours, silently restoring sharing."
+            ],
+            "design_problems": [
+              "Temporary privacy with silent expiry: After the padlock disappears, sharing resumes by default without a clear, persistent warning.",
+              "Critical setting ('Share my listening activity' defaults to ON in Social) is not surfaced when starting or ending Private Session, creating a trap for low-literacy users."
+            ]
+          },
+          {
+            "function": 2,
+            "flow_id": "flow1",
+            "step_causing_harm": [
+              "Step 4: Log in and connect Facebook, which immediately syncs coworkers and expands the audience for Noah's default-on listening sharing after Private Session ends."
+            ],
+            "design_problems": [
+              "Consent bundling: The flow emphasizes 'Connect with Facebook' without a clear, plain-language notice that Facebook friends will see Noah's listening in-app.",
+              "No just-in-time prompt to review or toggle 'Share my listening activity' before completing the connection.",
+              "Reassurance framing ('We'll never post to Facebook') distracts from the in-app exposure risk."
+            ]
+          }
+        ],
+        "leakage_source": "The music app's Friend Activity system and default-on 'Share my listening activity' setting activated after Private Session expiry, amplified by the Facebook connection.",
+        "leak_to": "Facebook-synced coworkers and the shift supervisor within the music app's Friend Activity feed, including the coworker Noah tried to unfollow.",
+        "harms": [
+          {
+            "harm": "Reputational Harms",
+            "cause": "Supervisors and coworkers infer financial problems from playlist titles and recent listening visible through the app's Friend Activity after syncing."
+          },
+          {
+            "harm": "Psychological Harms - Emotional Distress",
+            "cause": "Public exposure of sensitive listening leads to embarrassment and anxiety."
+          },
+          {
+            "harm": "Autonomy Harms - Failure to Inform",
+            "cause": "The app does not clearly explain that viewing friends does not control one's own sharing and that Private Session is temporary and defaults back to sharing."
+          },
+          {
+            "harm": "Autonomy Harms - Lack of Control",
+            "cause": "Unfollow fails for Facebook-synced contacts and the app does not offer an obvious, accessible route to prevent those contacts from seeing Noah's activity before completing Facebook sync."
+          },
+          {
+            "harm": "Relationship Harms",
+            "cause": "Coworkers and a supervisor see sensitive music choices, straining workplace dynamics."
+          },
+          {
+            "harm": "Economic Harms",
+            "cause": "Workplace perception issues risk fewer favorable shifts or opportunities due to stigma from visible listening activity."
+          }
+        ],
+        "consequences": "Noah is teased at work and worries his supervisor now doubts his reliability. He avoids the app, loses the social and motivational benefits of music at work, and fears his hours may be affected. He feels less willing to use digital services, reinforcing exclusion and ongoing stress."
+      }
+    ]
+  },
+  {
     "basic_info": {
       "name": "Rosa",
       "age": 55,
@@ -624,6 +1140,267 @@
           }
         ],
         "consequences": "Rosa is pressured by a broker to accept a lowball land deal, loses trust in local networks as rumors spread, experiences heightened anxiety, and retreats from using digital services—furthering her exclusion from tools and programs that could support her farm."
+      }
+    ]
+    },
+    {
+      "basic_info": {
+        "name": "Leo",
+        "age": 17,
+        "tech_comfort_level": "high"
+      },
+      "contextual_info": {
+      "vulnerability_type_brief_description": "Socioeconomic disadvantage - Urban poor teenager",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["social ties", "financial help", "school info"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - school support apps require personal info",
+          "Privacy vs. Disclosure of identity - peers might judge background"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Withholding disclosure",
+            "description": "Uses minimal profile info or anonymous submission."
+          },
+          {
+            "response": "Controlling disclosure",
+            "description": "Uses different accounts for school, social, and support."
+          }
+        ],
+        "costs_and_consequences": [
+          "Fragmented identity across platforms",
+          "Mental effort managing clones"
+        ]
+    },
+    "additional_privacy_responses_and_costs": {
+      "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - access to school apps requires sharing personal details",
+          "Privacy vs. Disclosure of identity - fear of peer judgment drives careful control of visibility",
+          "Privacy vs. Opportunity - online presence offers benefits but risks surveillance"
+      ],
+      "privacy_responses": [
+          {
+            "response": "Reluctant compliance",
+            "description": "Shares required data for educational access despite not fully understanding risks."
+          },
+          {
+            "response": "Audience restriction",
+            "description": "Uses privacy settings or anonymous posting to limit who can view sensitive content."
+          },
+          {
+            "response": "Self-censorship",
+            "description": "Avoids posting about sensitive topics like finances or school struggles to prevent stigma or monitoring."
+          }
+      ],
+      "costs_and_consequences": [
+          "Unaware of long-term implications of student data collection",
+          "Emotional and cognitive effort in maintaining multiple accounts",
+          "Fragmented identity across platforms",
+          "Loss of authentic expression",
+          "Missed opportunities for support due to withholding information"
+      ]
+    },
+    "stories": [
+      {
+        "persona_identity": "Leo is a 17-year-old male high school student from a low-income urban neighborhood; he's highly tech-comfortable because he's self-taught, juggling multiple accounts and settings to manage privacy while accessing free tools and support online.",
+        "story": "Trying to see what classmates are listening to, Leo turns on sharing so he can use the app's friend feed. It looks empty, so he assumes nothing of his is visible. Later he links his Facebook to find friends, and his recent listening— including a playlist about emergency grants for students—instantly becomes visible to those synced contacts. A classmate notices and starts teasing him in a group chat. Panicked, Leo switches to a private session to hide future activity, but the damage is already done and the recent history remains exposed to those who already saw it.",
+        "information_leaked": "Leo's current and recent listening activity (tracks and playlists from the last 7 days), including a playlist about financial hardship resources, along with inferences about his socioeconomic status and school struggles.",
+        "flow_in_app": [
+          {
+            "function": 1,
+            "flow_id": "flow4",
+            "step_causing_harm": [
+              "Step 4: Switch 'Share my listening activity' to ON while the feed appears empty, leading Leo to believe nothing is visible."
+            ],
+            "design_problems": [
+              "The sharing toggle provides no clear, just-in-time warning that enabling it will expose activity to any future synced friends.",
+              "Empty feed state creates a misleading safety cue (thwarted expectations) that nothing will be shared.",
+              "No minor-sensitive defaults or protective prompts given Leo's age."
+            ]
+          },
+          {
+            "function": 2,
+            "flow_id": "flow1",
+            "step_causing_harm": [
+              "Step 4: Logging into Facebook to connect accounts, which immediately grants many Facebook contacts visibility into Leo's already-enabled listening activity."
+            ],
+            "design_problems": [
+              "No post-connection interstitial summarizing who will gain access and that sharing is currently ON.",
+              "Default is broad, immediate sharing to all synced contacts (no granular approval per contact).",
+              "No delay or option to review/clear recent listening before exposure."
+            ]
+          },
+          {
+            "function": 3,
+            "flow_id": "flow1",
+            "step_causing_harm": [
+              "N/A - mitigation only; the private session is enabled after the leak and does not retroactively hide recent activity."
+            ],
+            "design_problems": [
+              "Private Session offers no retroactive clearing of the last 7 days of activity.",
+              "The quick-enable path provides no clear notice about the 6-hour limit or that past listening remains visible."
+            ]
+          }
+        ],
+        "leakage_source": "The music app's Friend Activity auto-sharing after Facebook sync (platform-level disclosure), subsequently amplified by a classmate who noticed the feed.",
+        "leak_to": "Newly synced Facebook contacts on the app (classmates, after-school counselor, coach); at least one classmate who shared the information in a group chat.",
+        "harms": [
+          {
+            "harm": "Reputational harms",
+            "cause": "The app auto-shares Leo's listening history to a wide set of synced contacts without a clear, pre-exposure review step, enabling peers to infer financial hardship."
+          },
+          {
+            "harm": "Psychological harms - emotional distress",
+            "cause": "Unexpected exposure of sensitive listening creates embarrassment and anxiety, worsened by peer teasing."
+          },
+          {
+            "harm": "Autonomy harms - thwarted expectations and lack of control",
+            "cause": "The empty feed and lack of warnings when turning on sharing mislead Leo about visibility; post-connection exposure occurs before he can review or limit access."
+          },
+          {
+            "harm": "Relationship harms",
+            "cause": "Peers' teasing and stigma in school social circles following the exposure of sensitive listening."
+          }
+        ],
+        "consequences": "Leo is mocked in a group chat, deletes the sensitive playlist, and avoids listening to helpful resources on the app. He tightens his settings and self-censors, increasing the mental burden of managing accounts and missing out on potentially valuable support information."
+      }
+    ]
+    },
+    {
+      "basic_info": {
+        "name": "Layla",
+        "age": 19,
+        "tech_comfort_level": "medium"
+      },
+      "contextual_info": {
+      "vulnerability_type_brief_description": "Socioeconomic disadvantage - Housing-insecure youth",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["location", "shelter history", "service usage"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - shelter services require registration",
+          "Privacy vs. Disclosure of identity - fears data used against housing status"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Withholding disclosure",
+            "description": "Shares only essential info when asked."
+          },
+          {
+            "response": "Asking for help",
+            "description": "Inquires privately from known support organizations."
+          }
+        ],
+        "costs_and_consequences": [
+          "Reduced access to certain support if incomplete",
+          "Risk of trusting unreliable guidance"
+        ]
+    },
+    "additional_privacy_responses_and_costs": {
+      "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - data disclosure required for access to shelter or services",
+          "Privacy vs. Location safety - phones provide support access but risk exposure of movement or shelter locations",
+          "Privacy vs. Digital continuity - erasing digital traces protects privacy but disrupts records"
+      ],
+      "privacy_responses": [
+          {
+            "response": "Minimal disclosure",
+            "description": "Shares only what is absolutely necessary during intake processes to reduce risk."
+          },
+          {
+            "response": "Limiting phone use",
+            "description": "Restricts use of apps or services perceived as risky in order to protect sensitive data."
+          },
+          {
+            "response": "Data deletion and wiping",
+            "description": "Actively removes sensitive information from devices to prevent exposure."
+          }
+      ],
+      "costs_and_consequences": [
+          "Incomplete disclosures may restrict access to critical resources",
+          "Persistent mistrust of service providers",
+          "Reduced access to safety-enhancing features and communication tools",
+          "Isolation from potential support networks",
+          "Loss of valuable records or communication history",
+          "Additional stress from needing constant digital hygiene practices"
+      ]
+    },
+    "stories": [
+      {
+        "persona_identity": "Layla is a 19-year-old woman working part-time at a café; as a housing-insecure youth, she's cautious about what she shares. Her tech comfort is medium because she's used phones and apps at libraries and shelters but hasn't had consistent guidance or stable access.",
+        "story": "Layla turns on friend activity in her music app to feel connected and switches on sharing so mutual friends can see what she's listening to. Later that night she starts a private session while playing a calming playlist published by the local youth shelter, assuming it will stay private. After several hours, the private session silently ends and her listening is once again visible. Worried about who can see her activity, she unfollows a classmate to reduce exposure. The next day, hoping to find a mentor, she connects her Facebook to add more friends; the app pulls in many contacts, including that same classmate and a coworker. Because sharing is on, they immediately see her recent plays, including the shelter's playlist, revealing she's using those services.",
+        "information_leaked": "Her use of a local youth shelter's services (inferred from listening to a shelter-branded playlist), approximate late-night activity patterns, and ongoing engagement with support resources via the music app.",
+        "flow_in_app": [
+          {
+            "function": 1,
+            "flow_id": "flow5",
+            "step_causing_harm": [
+              "Step 4: Switch 'Share my listening activity' to ON, enabling her activity to be visible to friends."
+            ],
+            "design_problems": [
+              "Scope ambiguity: the toggle does not clearly explain who will see activity now or after new connections are added.",
+              "Nudge framing: prompts encourage enabling sharing without a just-in-time summary of exposure."
+            ]
+          },
+          {
+            "function": 3,
+            "flow_id": "flow4",
+            "step_causing_harm": [
+              "Step 3: Private Session automatically ends after 6 hours without a persistent alert, returning her to public sharing."
+            ],
+            "design_problems": [
+              "Silent auto-expiration with only a subtle icon change; no prominent reminder or renewal prompt.",
+              "Expectation mismatch: users can believe they remain private overnight when they do not."
+            ]
+          },
+          {
+            "function": 4,
+            "flow_id": "flow2",
+            "step_causing_harm": [
+              "Step 2: Unfollowing a mutual friend removes them from her feed but does not prevent their reappearance via future Facebook sync."
+            ],
+            "design_problems": [
+              "Fragmented control: unfollow lacks warning that Facebook sync can re-add the same person as a separate connection type.",
+              "No 'hide me from this person' or cross-channel block option to persist across connection mechanisms."
+            ]
+          },
+          {
+            "function": 2,
+            "flow_id": "flow1",
+            "step_causing_harm": [
+              "Step 4: Successful Facebook login auto-syncs many contacts without selection, instantly exposing her current listening (since sharing is ON) to those contacts."
+            ],
+            "design_problems": [
+              "Bundled consent: no granular selection of which Facebook friends to add.",
+              "Misleading reassurance: message focuses on not posting to Facebook, obscuring in-app exposure to Facebook friends.",
+              "No post-sync privacy checkpoint to confirm or limit who can see her activity."
+            ]
+          }
+        ],
+        "leakage_source": "The music app's default sharing settings combined with Facebook auto-sync and the silent expiration of Private Session.",
+        "leak_to": "Newly synced Facebook friends (e.g., a classmate and a café coworker) and any mutual in-app friends who can view her activity.",
+        "harms": [
+          {
+            "harm": "Reputational harm",
+            "cause": "Friend Activity reveals she listens to a shelter-branded playlist, letting acquaintances infer she uses housing support."
+          },
+          {
+            "harm": "Psychological harm (emotional distress)",
+            "cause": "Loss of control over who sees sensitive listening triggers anxiety about gossip and stigma."
+          },
+          {
+            "harm": "Autonomy harms (failure to inform, thwarted expectations, lack of control)",
+            "cause": "Private Session auto-ends without clear notice; unfollowing does not prevent reappearance after Facebook sync; sharing scope is unclear when enabling and after syncing."
+          },
+          {
+            "harm": "Relationship harms",
+            "cause": "Coworkers/classmates gain sensitive knowledge that can strain social and workplace interactions."
+          }
+        ],
+        "consequences": "A coworker makes a comment about the shelter playlist, prompting rumors; Layla avoids the shelter's digital resources and stops using the app, losing a coping tool and support links, while experiencing increased stress and mistrust of online services."
       }
     ]
     },
@@ -901,6 +1678,132 @@
           }
         ],
         "consequences": "Joy's application was quietly dropped by the staffing partner. She withdrew from using the app for support content, disconnected from helpful communities, and created yet another account to compartmentalize her identity—adding to emotional burden and ongoing effort to manage privacy. She missed a near-term income opportunity and became more reluctant to engage with digital tools she needs for reentry."
+      }
+    ]
+    },
+    {
+      "basic_info": {
+        "name": "Ben",
+        "age": 27,
+        "tech_comfort_level": "medium"
+      },
+      "contextual_info": {
+      "vulnerability_type_brief_description": "Internal and experiential factors - Person with severe anxiety",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["mental health data", "support group usage", "location"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - mental health apps track usage",
+          "Privacy vs. Disclosure of identity - stigma about anxiety"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Withholding disclosure",
+            "description": "Avoids linking real identity to mental health apps."
+          },
+          {
+          "response": "Privacy-enhancing technologies",
+          "description": "Uses anonymous accounts or privacy-respecting platforms."
+          }
+        ],
+        "costs_and_consequences": [
+          "Less personalized recommendations",
+          "Difficult to maintain continuity in support"
+        ]
+    },
+    "additional_privacy_responses_and_costs": {
+      "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - monitoring features undermine sense of safety",
+          "Privacy vs. Disclosure of identity - anonymity helps manage anxiety but limits openness",
+          "Privacy vs. Mental well-being - breaches amplify anxiety symptoms"
+      ],
+      "privacy_responses": [
+        {
+          "response": "Avoidance of apps",
+          "description": "Chooses not to use certain mental health apps that track too much personal data."
+        },
+        {
+          "response": "Anonymous communication",
+          "description": "Engages in support groups or online spaces using anonymous or text-only interactions to manage anxiety."
+        },
+        {
+          "response": "Heightened caution",
+          "description": "Becomes more cautious about where and how personal information is shared online after exposure to breaches."
+        }
+      ],
+      "costs_and_consequences": [
+          "Missed opportunities for supportive digital interventions",
+          "Increased anxiety from perception of being surveilled",
+          "Restricted ability to form deeper or more personal online connections",
+          "Reinforcement of avoidance behaviors tied to anxiety",
+          "Chronic stress from fear of potential misuse of data",
+          "Reduced engagement with digital platforms due to breach concerns"
+      ]
+    },
+    "stories": [
+      {
+        "persona_identity": "Ben is a 27-year-old male customer support representative who manages severe anxiety; his job's constant digital communication increases stress. He has medium tech comfort because he uses desktop tools at work daily but avoids advanced settings that might trigger mistakes or data exposure.",
+        "story": "Trying to feel less isolated during a rough week, Ben turned on sharing in the music app so he could see what friends were listening to and feel connected. He unfollowed one acquaintance to limit who he saw, which reassured him. Later, he used the app's Facebook connection to find more people to follow. Without realizing it, this immediately let his Facebook contacts on the app see that he was listening to anxiety coping playlists and mental health podcasts under his real name. A coworker noticed and mentioned it in a team chat, leaving Ben shaken and embarrassed.",
+        "information_leaked": "Ben's real identity linked to his account; the fact he listens to mental health content (e.g., anxiety coping playlists, meditation tracks, therapy podcasts); recent listening timestamps and frequency patterns; the existence of specific mental-health-themed playlists in his library.",
+        "flow_in_app": [
+          {
+            "function": 1,
+            "flow_id": "flow2",
+            "step_causing_harm": [
+              "Step 7: Find 'Share my listening activity' and switch the toggle button to ON."
+            ],
+            "design_problems": [
+              "Ambiguous scope: Turning on 'Share my listening activity' doesn't warn that future Facebook-connections will immediately gain visibility of current listening.",
+              "No granular controls: Cannot pre-limit visibility to specific groups before enabling sharing.",
+              "Conflation: Seeing friends' activity and broadcasting one's own are intertwined in setup, nudging users to share."
+            ]
+          },
+          {
+            "function": 4,
+            "flow_id": "flow2",
+            "step_causing_harm": [
+              "Step 2: Click on the 'Following' button (successfully unfollows a mutual friend, creating a false sense that visibility is now limited)."
+            ],
+            "design_problems": [
+              "Scope opacity: Removing one person provides no disclosure that new connections (e.g., via Facebook sync later) will still see future activity.",
+              "Missing guidance: No prompts linking to audience controls or warning about broader sharing rules after unfollowing."
+            ]
+          },
+          {
+            "function": 2,
+            "flow_id": "flow1",
+            "step_causing_harm": [
+              "Step 4: Enter Facebook account information and click 'Log In' (successful connection automatically syncs contacts and exposes Ben's ongoing listening to them because sharing was already ON)."
+            ],
+            "design_problems": [
+              "Default broadcast: Auto-syncing immediately expands the audience without explicit re-consent to share activity with newly added contacts.",
+              "Misleading reassurance: Messaging about not posting to Facebook omits that in-app visibility to Facebook friends increases.",
+              "No per-contact or category-based opt-in: Lacks a step to choose which Facebook contacts can see activity before enabling sync."
+            ]
+          }
+        ],
+        "leakage_source": "The music app's Friend Activity feature and Facebook sync integration (system defaults and auto-sharing behavior).",
+        "leak_to": "A coworker who is a Facebook contact and uses the music app, as well as other Facebook friends who use the app.",
+        "harms": [
+          {
+            "harm": "Psychological harm (emotional distress, anxiety spike).",
+            "cause": "The app auto-broadcasts sensitive listening activity to newly synced contacts, revealing mental health struggles without clear, contextual consent."
+          },
+          {
+            "harm": "Reputational harm.",
+            "cause": "Coworkers can infer mental health status from visible listening, creating stigma at work."
+          },
+          {
+            "harm": "Autonomy harms (Thwarted Expectations; Lack of Control; Failure to Inform).",
+            "cause": "Interface fails to explain that enabling sharing plus later Facebook syncing expands the audience; removal of one friend does not protect against new connections."
+          },
+          {
+            "harm": "Relationship harm.",
+            "cause": "A coworker discusses Ben's listening in a team setting, straining professional relationships."
+          }
+        ],
+        "consequences": "Ben experiences a panic episode, deletes playlists and turns features off, and avoids the app—reducing his self-care routines. At work, he becomes quieter in meetings after the incident, and his manager shifts him away from client-facing tasks due to perceived instability."
       }
     ]
     },
@@ -1258,6 +2161,145 @@
           }
         ],
         "consequences": "Kiran received cool comments about his music, was excluded from a public-facing program he'd requested, and now avoids using the app at work. He feels pressure to self-censor and plans to create a new account with obscured identity, at the cost of losing his existing network."
+      }
+    ]
+    },
+    {
+      "basic_info": {
+        "name": "Jose",
+        "age": 26,
+        "tech_comfort_level": "high"
+      },
+      "contextual_info": {
+      "vulnerability_type_brief_description": "Intersectional identities and characteristics - Migrant laborer",
+        "privacy_awareness_level": "moderate",
+        "information_cared_about": ["immigration status", "location tracking", "work history"]
+      },
+      "privacy_responses_and_costs": {
+        "privacy_tensions_with_short_description": [
+          "Privacy vs. Support - some platforms require status disclosure",
+        "Privacy vs. Autonomy - surveillance via location-based check-ins"
+        ],
+        "privacy_responses": [
+          {
+            "response": "Controlling disclosure",
+            "description": "Uses separate phone or SIM to minimize linking."
+          },
+          {
+            "response": "Privacy lies",
+            "description": "Provides generic information in employer-platforms."
+          }
+        ],
+        "costs_and_consequences": [
+          "Less reliable communication with official services",
+          "Risk of sanctions if status exposed"
+        ]
+    },
+    "additional_privacy_responses_and_costs": {
+      "privacy_tensions_with_short_description": [
+          "Privacy vs. Employment Security - disclosure of immigration status as a condition of work",
+          "Privacy vs. Autonomy - constant monitoring by smart devices limits freedom",
+          "Privacy vs. Support Access - platforms require sensitive disclosures for services"
+      ],
+      "privacy_responses": [
+        {
+          "response": "Minimizing disclosure",
+          "description": "Withholds or downplays sensitive details like immigration documents unless strictly required."
+        },
+        {
+          "response": "Strategic avoidance",
+          "description": "Alters behavior or avoids certain areas of the home to reduce exposure to monitoring devices."
+        },
+        {
+          "response": "Use of pseudonyms",
+          "description": "Creates alternate accounts or uses different names to safeguard identity while accessing services."
+        }
+      ],
+      "costs_and_consequences": [
+        "Fear of job loss if disclosure is resisted",
+        "Persistent anxiety about exposure of immigration status",
+        "Loss of personal autonomy in living spaces",
+        "Emotional stress from continuous monitoring",
+        "Difficulty in accessing official services with pseudonymous accounts",
+        "Risk of being denied support if information is inconsistent"
+      ]
+    },
+    "stories": [
+      {
+        "persona_identity": "Jose is a 26-year-old male construction worker and migrant laborer. His high tech comfort comes from helping crewmates set up dual-SIM phones and privacy tools to keep personal and work lives separated, a strategy shaped by his vulnerable employment and immigration context.",
+        "story": "Trying to feel less isolated on long shifts, Jose turns on sharing so he can see what friends are listening to. Later that day he starts a private session to discreetly play a migrant-rights podcast during his commute, assuming it will stay private. Hours pass, and after work he connects the music app to his Facebook to find familiar faces. A coworker instantly sees his recent listening in the app's friend feed and mentions it in the break area. When Jose tries to remove that coworker from his feed, the connection stays because it came from Facebook, leaving him exposed. The coworker repeats the observation to a supervisor, who then questions Jose's priorities at work.",
+        "information_leaked": "Jose's real name (synced from Facebook), his recently played tracks in the past 7 days including a migrant-rights podcast, his current listening status, and the fact that he is active on the app at specific times.",
+        "flow_in_app": [
+          {
+            "function": 1,
+            "flow_id": "flow4",
+            "step_causing_harm": [
+              "Step 4: Turn on 'Share my listening activity' after opening the friend activity area."
+            ],
+            "design_problems": [
+              "Encourages enabling sharing without a clear warning that future Facebook connections will immediately see activity.",
+              "No granular audience controls (e.g., limit to selected friends) before turning sharing on."
+            ]
+          },
+          {
+            "function": 3,
+            "flow_id": "flow4",
+            "step_causing_harm": [
+              "Step 3: Private Session automatically ends after 6 hours without an interruptive alert, reverting to sharing."
+            ],
+            "design_problems": [
+              "Ephemeral privacy with weak signaling; no countdown or explicit reminder on expiry.",
+              "Default reverts to sharing instead of maintaining privacy until explicitly turned off."
+            ]
+          },
+          {
+            "function": 2,
+            "flow_id": "flow1",
+            "step_causing_harm": [
+              "Step 4: Successful Facebook connection auto-syncs contacts, making Jose's current and recent listening instantly visible to those contacts."
+            ],
+            "design_problems": [
+              "Cross-context identity linking by default (Facebook to music app) without a review/approval list of contacts.",
+              "No post-sync privacy gate to confirm visibility settings before exposing activity."
+            ]
+          },
+          {
+            "function": 4,
+            "flow_id": "flow3",
+            "step_causing_harm": [
+              "Step 3: Selecting 'Unfollow' on a Facebook-synced contact fails to remove them from the feed."
+            ],
+            "design_problems": [
+              "Inconsistent removal behavior for Facebook-synced contacts with no explanation.",
+              "Lack of clear, accessible option to fully remove or limit visibility to synced contacts without resorting to a hard block."
+            ]
+          }
+        ],
+        "leakage_source": "The music app's Friend Activity feature auto-sharing to newly synced Facebook contacts after Private Session expired.",
+        "leak_to": "A coworker who is now a Facebook-synced contact in the app; subsequently shared verbally with the supervisor and other colleagues.",
+        "harms": [
+          {
+            "harm": "Reputational Harms",
+            "cause": "The app exposes Jose's recent listening (migrant-rights podcast) to coworkers, shaping negative judgments about his priorities and beliefs."
+          },
+          {
+            "harm": "Discrimination Harms",
+            "cause": "Supervisors infer sensitive immigration-related concerns from his listening and treat him differently at work."
+          },
+          {
+            "harm": "Autonomy Harms — Failure to Inform, Thwarted Expectations, Lack of Control",
+            "cause": "The app encourages turning on sharing without warning about future Facebook sync, silently ends Private Session, and makes it difficult to remove Facebook-synced contacts."
+          },
+          {
+            "harm": "Psychological Harms — Emotional Distress",
+            "cause": "Jose experiences anxiety and fear of job-related consequences after realizing that coworkers and supervisors can see his listening."
+          },
+          {
+            "harm": "Relationship Harms",
+            "cause": "Coworker gossip and supervisor scrutiny strain workplace relationships."
+          }
+        ],
+        "consequences": "Jose is informally reassigned to less desirable shifts and fewer hours after the supervisor hears about his listening, worsening his financial stability and increasing his stress about exposure of sensitive issues."
       }
     ]
     },
