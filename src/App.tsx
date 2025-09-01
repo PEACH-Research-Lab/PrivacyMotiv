@@ -50,7 +50,9 @@ interface Persona {
 }
 
 function App() {
-  const [selectedApp, setSelectedApp] = useState<'APP1' | 'APP2'>('APP1')
+  // const [selectedApp, setSelectedApp] = useState<'APP1' | 'APP2'>('APP1')
+  const [selectedApp, setSelectedApp] = useState<'APP1' | 'APP2'>('APP2')
+
   const [selectedPersonas, setSelectedPersonas] = useState<number[]>([])
   const [personas, setPersonas] = useState<Persona[]>([])
   const [currentPage, setCurrentPage] = useState<'selection' | 'analysis'>('selection')
@@ -212,17 +214,20 @@ function App() {
       {/* App Selection Buttons */}
       <div className="app-selection">
         <button 
-          className={`app-button ${selectedApp === 'APP1' ? 'active' : ''}`}
+          // className={`app-button ${selectedApp === 'APP1' ? 'active' : ''}`}
+          // onClick={() => setSelectedApp('APP1')}
+          className={`app-button disabled ${selectedApp === 'APP1' ? 'active' : ''}`}
           onClick={() => setSelectedApp('APP1')}
+          disabled={true}
         >
           WeMusic
         </button>
         <button 
-          // className={`app-button ${selectedApp === 'APP2' ? 'active' : ''}`}
-          // onClick={() => setSelectedApp('APP2')}
-          className={`app-button disabled ${selectedApp === 'APP2' ? 'active' : ''}`}
+          className={`app-button ${selectedApp === 'APP2' ? 'active' : ''}`}
           onClick={() => setSelectedApp('APP2')}
-          disabled={true}
+          // className={`app-button disabled ${selectedApp === 'APP2' ? 'active' : ''}`}
+          // onClick={() => setSelectedApp('APP2')}
+          // disabled={true}
         >
           NeighborNet
         </button>
