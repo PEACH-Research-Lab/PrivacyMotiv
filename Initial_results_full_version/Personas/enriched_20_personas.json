@@ -15,20 +15,20 @@
                 "Privacy vs. Support - afraid to identify to receive assistance",
                 "Privacy vs. Disclosure of identity - risk of stigma or denial of aid"
             ],
-        "privacy_responses": [
-            {
-                "response": "Apathy",
-                "description": "Feels surveillance is inevitable, so avoids acting or reporting."
-            },
-            {
-                "response": "Non-use",
-                "description": "Avoids official portals or apps to not expose status."
-            }
-        ],
-        "costs_and_consequences": [
-            "Missed access to legal aid, medical care, or language support",
-            "Continued vulnerability without reporting abuse or needs"
-        ]
+            "privacy_responses": [
+                {
+                    "response": "Apathy",
+                    "description": "Feels surveillance is inevitable, so avoids acting or reporting."
+                },
+                {
+                    "response": "Non-use",
+                    "description": "Avoids official portals or apps to not expose status."
+                }
+            ],
+            "costs_and_consequences": [
+                "Missed access to legal aid, medical care, or language support",
+                "Continued vulnerability without reporting abuse or needs"
+            ]
         },
         "additional_privacy_responses_and_costs": {
             "privacy_tensions_with_short_description": [

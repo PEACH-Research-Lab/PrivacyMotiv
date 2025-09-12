@@ -516,21 +516,11 @@ function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyH
           
           {/* Design Suggestions Form - Under Persona Usage Flow */}
           <div className="pha-form-section pha-form-right">
-            <div className="pha-form-container">
+            {/* <div className="pha-form-container">
               <div className="pha-form-header">
                 <h3>Design Suggestions</h3>
-                {/* <p>What alternative design idea would you suggest to address this problem? Please describe how it would improve the user's experience or reduce harm.</p> */}
               </div>
               <div className="pha-form-content">
-                {/* <iframe
-                  src="https://docs.google.com/forms/d/e/1FAIpQLSdmHl-2J6r7993cMZPHLT-7NWXiX6VUIkekKBFtZYJGbTUlsw/viewform?usp=dialog"
-                  width="100%"
-                  height="500"
-                  title="Design Suggestions Form"
-                  className="pha-embedded-form"
-                >
-                  Loading
-                </iframe> */}
                 <iframe
                   src="https://docs.google.com/forms/d/e/1FAIpQLSda2uHUtxADNRF7vf30PIK7HpM9lq9K5sIFv7gOYc6psYHCPw/viewform"
                   width="100%"
@@ -541,7 +531,7 @@ function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyH
                   Loading
                 </iframe>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
