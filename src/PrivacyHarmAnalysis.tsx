@@ -504,13 +504,13 @@ function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyH
               </div>
 
               {/* Hover Information */}
-              {hoveredSentence ? (
+              {/* {hoveredSentence ? (
                 <div className="pha-hover-info">
                   <h4>Related Information:</h4>
                   <p>Sentence: "{hoveredSentence}"</p>
                   <p>This space will show the lo-fi prototype related to the hovered content.</p>
                 </div>
-              ) : null}
+              ) : null} */}
             </div>
           </div>
           
