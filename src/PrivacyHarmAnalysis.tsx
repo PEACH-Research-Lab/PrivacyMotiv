@@ -58,7 +58,7 @@ interface PrivacyHarmAnalysisProps {
 
 function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyHarmAnalysisProps) {
   const [currentPersonaIndex, setCurrentPersonaIndex] = useState(0)
-  const [hoveredSentence, setHoveredSentence] = useState<string>('')
+  // const [hoveredSentence, setHoveredSentence] = useState<string>('')
   const [selectedFlowIndex, setSelectedFlowIndex] = useState<number | null>(null)
   const [imageZoom, setImageZoom] = useState(1)
   const [imageLoadError, setImageLoadError] = useState<boolean>(false)
@@ -330,8 +330,8 @@ function PrivacyHarmAnalysis({ selectedPersonas, selectedApp, onBack }: PrivacyH
                   <span
                     key={index}
                     className="pha-sentence"
-                    onMouseEnter={() => setHoveredSentence(sentence)}
-                    onMouseLeave={() => setHoveredSentence('')}
+                    // onMouseEnter={() => setHoveredSentence(sentence)}
+                    // onMouseLeave={() => setHoveredSentence('')}
                   >
                     {sentence.trim()}.
                   </span>
